@@ -58,3 +58,47 @@ With these buttons, you can make atoms either isotropic or anisotropic. If there
 `anis`
 
 **Note**: If the tickbox is ticked, then refinement will happen automatically after changing either `isot`/`anis` or `hadd`.
+
+# Quicktools 
+
+This is a selection of the tools needed for model building.
+
+## Change Peaks to Carbon
+This tool will change all visible electron density peaks to Carbon atoms, regardless of the peak height.
+
+`name $Q C`
+
+## Change Peaks to Hydrogen
+All visible Q-peaks will be turned into Hydrogen atoms
+
+`name $Q H`
+
+## Tidy the Structure
+Small and geometrically impossible peaks will be removed, all remaining peaks will be turned into Carbon.
+
+`clean`
+
+## Set Formula to what is on screen now
+Once the structure on the screen is finished, you can 'synchronise' the formula contained in the files with that on the screen.
+
+`fixUnit`
+
+## Delete all Hydrogen atoms
+Deletes all selected Hydrogen atoms from your structure. If no hydrogen atoms are selected, all will be deleted. Undo with `Ctr`+`Z`.
+
+`kill $H`
+
+## Show or Hide Denisty Peaks
+Toggle between three states: Show electron density peaks, show them with bonds or hide them.
+
+`showQ`
+
+## Show or Hide Hydrogen Atoms
+Toggle between three states: Show Hydrogen atoms, show them with inernal Hydrogen bonds or hide them.
+
+`showH`
+
+## Assemble and Center the Structure
+Fragments will be assembled and the structure will be centered on the screen.
+
+`center`
