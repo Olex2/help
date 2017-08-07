@@ -155,3 +155,129 @@ When you are done, press the `Esc` key.
 ## Split or move with `shift`
 This tool can also be used to move any atom (including Hydrogen atoms) to any position. Left click on the atom while pressing the `shift` key - and you can move any atom where you would like it to be. Any constraints and restraints applied to that atom will still apply. **If you click on an atom without holding down the `shift` key, the atom will be split!** So take great care with this tool!
 When you are done, press the `Esc` key.
+
+# Electron Density 
+
+The electron density viewer will calculate various electron density maps and allowsthe display of these in a variety of formats. **Please Note**: Close to zero, these maps become very messy (and slow to display). Olex2 therefore does not display these regions.
+
+## Available maps
+
+### diff 
+Will calculate the difference map.
+### fcalc 
+Will display the calculated electron density.
+### 2Fo-Fc 
+Will calculate the map of 2Fobs-Fcalc.
+
+## Available Source
+
+### olex 
+Olex2 will calculate the structure factors.
+### fcf 
+The structure factors will be read from a ShelXL fcf.
+
+## Command Line
+`CalcFourier`
+
+# Peaks and USIO sliders
+
+## Electron Density Peak Slider 
+Electron Density Peak Slider Move the slider to the **left** to filter out strongest peaks first, or to the **right** to filter out weakest peaks first. You can then do things like `name $Q C` - and this will only apply to the currently visible peaks. The same goes for the Select and Delete buttons. 
+
+## Uiso Select Slider 
+This tool allows the selection of atoms according to their Ueq values.
+
+### Slide to the RIGHT
+This will select atoms where the Ueq value is LARGER than the value indicated by the slider. 
+
+`sel atoms where xatom.uiso > 0.06xatom.type!='Q'` 
+
+### Slide to the LEFT
+This will select atoms where the Ueq value is SMALLER than the value indicated by the slider. 
+
+`sel atoms where xatom.uiso` 
+
+# Growing 
+Olex2 shows the asymmetric unit by default. The tools combinded here in three drop-down boxes are very powerful, and will allow you to 'assemble' your structure in exactly the way you want it to be. In Olex2 you can keep refining your structure without 'destroying' the assembly you have created.
+
+## Grow
+
+### Grow All
+All 'missing' connected symmetry equivalent atoms will be generated. 
+
+`grow`
+
+### Shells
+This will grow atoms shell-by-shell from the currently displayed image. 
+
+`grow -s`
+
+### Complete
+This will generate all missing symmetry equivalent atoms of an already grown structure, independent of whether these are bound to the main fragment or not. In other words: all solvent molecules and counter-ion will be generated according to what is already shown. 
+
+`grow -w`
+
+### Asym. Unit
+Removes all symmetry equivalent atoms and displays the asymmetric unit. 
+
+`fuse`
+
+### Complete shown growing bonds
+If you are in a growing mode, then clickable growing bonds will be shown. All of these can be grown with this command:
+
+`grow -b`
+
+## Mode Grow
+Similar to grow, but now this command will be executed only after you click on an object. When you enter a growing mode, clickable 'growing bonds' will sprout from atoms where the kind of growing you have asked for is applicable. 
+
+`mode grow`
+
+There are various modifiers for this command: 
+
+### Short Contacts
+Will show these growable 'bonds' to those atoms where 'short interactions' exist. 
+
+`mode grow -s` 
+
+### Selection
+Will show growable 'bonds' to other occurances of the currently selected atoms.
+
+`mode grow -r` 
+
+Van der Waals Radii
+Will show growable 'bonds' to other occurances of the currently selected atoms that are at least the indicated distance away from the selected atom. 
+
+`mode grow -v 2.0`
+
+### Move
+when you click on growable bonds the symmetry equivalent atom will be moved to the new position. This is really useful when you are trying to assemble a meaningful asymmetric unit for extended structures (polymers). 
+
+`mode grow -a`
+
+### Shells
+This will grow atoms shell-by-shell from the currently displayed image. 
+
+`grow -s`
+
+## Assemble
+This tool does not strictly belong to the 'growing' family of tools, but it is frequently used together with the growing tools. It allows you to re-arrange the asymmetric unit contents into a different configuration. 
+
+### Broken Fragments
+Sometimes, your structure may become 'broken' - parts that should be bonded are shown as separate fragments. This tool will bring them back together. 
+
+`compaq -a`
+
+### Atom-to-Atom
+Similar to the 'Broken Fragments' tool, but a different algorithm is used. 
+
+`compaq -c` 
+
+### Metal Last
+In this tool, metal ions are taken out of the equation at first (which is very useful when trying to assemble a ligand!) and then the metal ion is placed at the shortest possible distance. 
+
+`compaq -m`
+
+### Q-Peaks
+This will move all electron density peaks as closely to existing atoms as possible. 
+
+`compaq -q` 
