@@ -1,10 +1,19 @@
 # H2_SETTINGS-TARGET
 General Settings for Olex2
 
-# Atom r
-Change the radius of the selected atoms (in PERS mode). Clicking on `SET` will make this the default.
+# Atom Settings
+Some attributes of who atoms are diplayed ibn Olex2 can be modified within a specific style.
 
-# Bond r
+## Atom Radius
+Change the radius of the selected atoms (in PERS mode). Clicking on `SET` will make this the default. The atom radius can manually be set with the command `arad` and `azoom`.
+
+###arad
+I am not actually sure what the exact difference between **arad** and **azoom** is.
+
+###azoom
+I am not actually sure what the exact difference between **arad** and **azoom** is.
+
+# Bond Settings
 Change the radius of the selected bonds. Clicking on `SET` will make this the default.
 
 # Background

@@ -1,16 +1,15 @@
-# Labels 
+# Labels
+You can select what you would like to see as labels in the molecule display. If a particular property is not applicable for a particular atom, there will be no label. To see all the command line options for the labels, type `help labels`.
 
-You can select what you would like to see as labels in the molecule display. If a particular property is not applicable for a particular atom, there will be no label. 
-
-## Toggle On/Off 
+## Toggle On/Off
 This is to display or hide atom or Q-peak labels. It will switch other types of labelling off, but selecting it again will display atom name labels. [F3] does the same thing.
 
-## Atom Names 
+## Atom Names
 All atom names of **non-hydrogen atoms** will be displayed next to the atoms. 
 
 `labels -l`
 
-## Crystallographic Occupancy 
+## Crystallographic Occupancy
 This displays the crystallographic occupancy of any atoms which are not 100% occupied i.e. their occupancy is not 1. 
 
 `labels -o`
@@ -18,7 +17,7 @@ This displays the crystallographic occupancy of any atoms which are not 100% occ
 ## Chemical Occupancy
 Same as above, but the occupancy values for atoms that are located on symmetry elements are not shown.
 
-## Parts 
+## Parts
 Displays PART numbers for any atoms not in PART 0. 
 
 `labels -p`
@@ -31,7 +30,7 @@ If atoms are linked, the link code will be shown. (FVAR 21/-21 in ShelXL languag
 ## H Atom Labels
 This will include the hydrogen atom labels along with the atom name and Q-peak labels 
 
-`labels -hl`
+`labels -h -l`
 
 ## Variables
 Displays any atoms where the occupancy is linked to any variable.
@@ -42,7 +41,8 @@ This is useful to check the AFIX commands that are being applied to the structur
 ## Q-Peak Intensities
 Relative intensities of the Q-peaks will be displayed on the structure. 
 
-# Toolbar Model 
+
+# Toolbar Model
 
 This is a collection of three basic tools needed for model building.
 
@@ -164,8 +164,10 @@ The electron density viewer will calculate various electron density maps and all
 
 ### diff 
 Will calculate the difference map.
+
 ### fcalc 
 Will display the calculated electron density.
+
 ### 2Fo-Fc 
 Will calculate the map of 2Fobs-Fcalc.
 
@@ -173,6 +175,7 @@ Will calculate the map of 2Fobs-Fcalc.
 
 ### olex 
 Olex2 will calculate the structure factors.
+
 ### fcf 
 The structure factors will be read from a ShelXL fcf.
 
