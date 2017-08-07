@@ -6,3 +6,10 @@ Enter the degrees of rotation into the spin boxes, then press the buttons to rot
 
 ## Even finer control
 Using the command line, rotation about fractions of degrees are also possible: `rota 2 -10.2` This will rotate the structure around the y axis by -10.2 degrees. 
+
+# Auto Rotation 
+This automatically rotates the structure; x rotates the structure from top to bottom, y rotates from left to right and z rotates around in the plane of the page. The speed of rotation can be set using the slider bar. Clicking on a, b or c resets the view to look down the specific axis.
+This is maybe not very useful, but can be fun. 
+
+# Zoom Slider
+XXX
