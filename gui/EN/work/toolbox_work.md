@@ -281,3 +281,11 @@ In this tool, metal ions are taken out of the equation at first (which is very u
 This will move all electron density peaks as closely to existing atoms as possible. 
 
 `compaq -q` 
+
+# Finishing
+
+## Quick Sort
+XXX
+
+## Quick Images
+XXX
