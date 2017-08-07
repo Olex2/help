@@ -19,3 +19,28 @@ The atom type of the atom will be changed as well as all other settings will be 
 `name sel type` - Will change all currently selected atoms into the new type.
 
 `name sel integer` - Will renumber all currently selected atoms in the order of which they were selected starting from.
+
+# Automatic Hydrogen Naming 
+Olex2 will keep track of the naming of hydrogen atoms automatically. This feature can be switched off by unticking the 'Automatic Hydrogen Naming' box. 
+
+# Match Naming 
+
+If you have a structure with two or more matching moieties, you only need to name one of these. Olex2 will then match this naming scheme to the other molecule.This is important in structures with Z' larger than 1 and also in structures where a metal is coordinated to more than one ligand of the same type. In this case you will need to set the maximum number of bonds for the central metal ion to 0 (right-click, then Bonds).
+Select **any one atom** of the correctly named molecule, and then select **any one atom** of the *other* molecule.
+
+## Add a suffix
+Enter a suffix character into the box, then click the link.This will transfer the naming scheme of the first molecule to the second molecule with the suffix letter you have chosen.
+
+`match sel -n=suffix`
+
+## Replace a suffix
+Instead of merely adding a suffix, you can also replace the first character of the original naming scheme with another character. This is useful, for example, if you wish to name all atoms in one ligand like C101, C102, C102 ... and corresponding atoms in the other ligand like C201, C202, C203 ...
+
+`suffix'>match sel -n=$suffix`
+
+## Replace last character
+Equally, the last character of an atom name can be replaced:
+
+`suffix'>match sel -n=-suffix`
+
+There is no gui for these replacements, you will have to type the lines above from the command line. 
