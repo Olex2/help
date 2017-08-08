@@ -34,7 +34,7 @@ The default format is the png file format. This format offers lossless compressi
 ## Size  
 There is no limit to the size of the exported bitmap file. If the number given is smaller than 100, the size refers to a multiple of the screen-size. Otherwise it refers to the width of the image in pixels. 
 
-`pict fred.png 300`
+Command (example): `pict fred.png 300`
 
 # Bitmap Image Trim 
 XXX
@@ -48,7 +48,7 @@ Some would argue that there is no better way to represent a crystal structure on
 ## ORTEP  
 There are very many different options for generating ORTEP-style drawings. Many of these can be set from this GUI, for some more exotic options you may have to consult the manual of Olex2. 
 
-`pictPS`
+Command: `pictPS`
 
 # Help with ORTEP
 XXX
@@ -57,7 +57,7 @@ XXX
 POVRAY is a popular format that exports your structure as a 3-D object. Not only can you do beautiful images with rendered shadows and backgrounds with this, but you can make 3-D animations (provided you know PORVRAY!).
 **There are no options here**. Olex2 will export a POVRAY file and you will have to deal with this file yourself! 
 
-`pictPR filename.pov`
+Command (example): `pictPR filename.pov`
 
 # Image Series
 XXX
