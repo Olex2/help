@@ -14,4 +14,4 @@ Requires special hardware
 Also requires special hardware to be viewed correctly
 
 ## Normal View 
-Returns to the normal display modeMore Info Online 
+Returns to the normal display mode !!!More Info Online!!!
