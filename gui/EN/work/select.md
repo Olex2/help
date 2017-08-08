@@ -8,13 +8,13 @@ Selects only the types that are clicked on.
 Adds the clicked types to the selection.
 
 ## Command Line Examples   
-`sel $c` (Selects all C atoms)
+Command: `sel $c` (Selects all C atoms)
 
-`sel -u` (Deselects everything)
+Command: `sel -u` (Deselects everything)
 
-`sel c1` (Selects C1)
+Command: `sel c1` (Selects C1)
 
-`sel $c $n` (Selects all C and N atoms) 
+Command: `sel $c $n` (Selects all C and N atoms) 
 
 # Selections 
 XXX
@@ -22,22 +22,22 @@ XXX
 ## Invert
 Inverts the current selection.
 
-`sel -i`
+Command: `sel -i`
 
 ## Deselect
 Deselects (unselects) the all selected atoms.
 
-`sel -u` 
+Command: `sel -u` 
 
 ## Delete
 Deletes all selected atoms. Same as pressing the 'Delete' key. Undo with `Ctrl`+`Z`.
 
-`kill sel` 
+Command: `kill sel` 
 
 ## Previous Selection
 Re-select all atoms of the previous selection. 
 
-`selback` 
+Command: `selback` 
 
 # Select Criteria 
 To select all atoms for which Uiso is within user defined parameters. 
