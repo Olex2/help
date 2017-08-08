@@ -11,7 +11,7 @@ You can enter any HFIX command in the box and then press the button - hydrogen a
 ## H 'Improve' 
 Another command taken straight from the XP syntax. This will move the selected hydrogen atoms along the bond axis to the distance typed in the box (or the one selected from the pre-set values in the drop-down box. The distances in the box are typical bond distances as observed by neutron diffraction. 
 
-`himp 0.983`
+Command: `himp 0.983`
 
 # Toolbar Hydrogen_3 
 This is one of the older tools in Olex2 and is due for refurbishment soon! 
@@ -20,13 +20,13 @@ This is one of the older tools in Olex2 and is due for refurbishment soon!
 This will geometrically place hydrogen atoms and constrain them depending on the environment the hydrogen atoms are in. If you want to refine them freely, select the atoms and type AFIX 0 `HADD`
 
 ## Show Hydrogen Labels  
-`labels -h -l` 
+Command: `labels -h -l` 
 
 ## Hide Hydrogen Labels  
-`labels -l` 
+Command: `labels -l` 
 
 ## Show AFIX constraints  
-`labels -h -a`
+Command: `labels -h -a`
 
 # Htab Slider
 XXX
