@@ -34,7 +34,7 @@ Usually, you will have determined the space group during data processing.
 Olex2 can also determine the space group. Press the 'Suggest SG' link and the most likely choices will appear in the drop-down box on the right. You can type 'text' to see the full output of the data analysis.
 You can also type any space group into the box - when leaving the box, your structure will be set up ready to solve in that new space group. 
 
-`sg`
+Command: `sg`
 
 # Solution Settings Extra 
 XXX
