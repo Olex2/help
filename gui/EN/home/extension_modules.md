@@ -17,4 +17,4 @@ An e-mail will be sent to you and you need to **activate it from the link in the
 This can be any text for your records and that will help you identify the machine where the module has been installed to. Typically this is something like *My Work Computer*.
 
 ## Modules
-All extension modules that are available for this version of Olex2 (version number and also alpha, beta or release) will be listed here. Select the module you are interested in and the 'Please Choos a Module' button will change to 'Install'. Press this button to start the installation.
+All extension modules that are available for this version of Olex2 (version number and also alpha, beta or release) will be listed here. Select the module you are interested in and the 'Please Choose a Module' button will change to 'Install'. Press this button to start the installation.
