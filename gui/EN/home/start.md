@@ -30,5 +30,5 @@ A structure with Z' = 2.
 ## ZZULI2
 A structure that requires 'growing'.
 
-# #Water
+## Water
 A metal complex with bound water molecules and one molecule of water of hydration.
