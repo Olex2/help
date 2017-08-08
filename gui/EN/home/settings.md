@@ -7,10 +7,10 @@ Some attributes of how atoms are displayed in Olex2 can be modified within a spe
 ## Atom Radius
 Change the radius of the selected atoms (in PERS mode). Clicking on `SET` will make this the default. The atom radius can be set manually be set with the command `arad` and `azoom`.
 
-###arad
+### arad
 I am not actually sure what the exact difference between **arad** and **azoom** is.
 
-###azoom
+### azoom
 I am not actually sure what the exact difference between **arad** and **azoom** is.
 
 # Bond Settings
@@ -28,12 +28,12 @@ A choice of different backgrounds is available for Olex2. Depending on the conte
 # GUI Width
 The width of the GUI (by which we mean the panel with all the commands on) can be adjusted to suit your needs. Try the built-in links, but you can also enter any arbitrary value. The font-size of the items on the GUI will also adjust.
 
-![The Olex2 GUI](../images/gui.jpg)
+![The Olex2 GUI](images/gui.jpg)
 
-##Value < 1
+## Value < 1
 The GUI width will adjust as a fraction of the screen width. 0.33 will divide Olex2 into 2/3 molecule and 1/3 GUI, for example.
 
-##Value > 100
+## Value > 100
 The absolute GUI width in pixels.
 
 Keyboard: `panel 520`, `panel 0.33`
