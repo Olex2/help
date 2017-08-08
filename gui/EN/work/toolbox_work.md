@@ -7,12 +7,12 @@ This is to display or hide atom or Q-peak labels. It will switch other types of 
 ## Atom Names
 All atom names of **non-hydrogen atoms** will be displayed next to the atoms. 
 
-`labels -l`
+Command: `labels -l`
 
 ## Crystallographic Occupancy
 This displays the crystallographic occupancy of any atoms which are not 100% occupied i.e. their occupancy is not 1. 
 
-`labels -o`
+Command: `labels -o`
 
 ## Chemical Occupancy
 Same as above, but the occupancy values for atoms that are located on symmetry elements are not shown.
@@ -20,17 +20,17 @@ Same as above, but the occupancy values for atoms that are located on symmetry e
 ## Parts
 Displays PART numbers for any atoms not in PART 0. 
 
-`labels -p`
+Command: `labels -p`
 
 ## Link Codes
 If atoms are linked, the link code will be shown. (FVAR 21/-21 in ShelXL language) 
 
-`labels -lo`
+Command: `labels -lo`
 
 ## H Atom Labels
 This will include the hydrogen atom labels along with the atom name and Q-peak labels 
 
-`labels -h -l`
+Command: `labels -h -l`
 
 ## Variables
 Displays any atoms where the occupancy is linked to any variable.
@@ -49,23 +49,23 @@ This is a collection of three basic tools needed for model building.
 ## Assign Atom Types
 All atom types that are currently in your formula are represented as a small button. You can click on one of these buttons and it will go into an atom type assignment mode for this particular atom type. Atoms you click subsequently will become that atom type. Alternatively, you can make a selection of atoms first, and then click the atom type symbol. The buttons will appear red if there are fewer atoms of that type in your model compared to the formula you have initially given. They turn green if the numbers do agree.
 
-`name sel C` (make all selected atoms C)
+Command: `name sel C` (make all selected atoms C)
 
-`mode name C` (clicked atoms will become C)
+Command: `mode name C` (clicked atoms will become C)
 
 ## Geometrically Place Hydrogen Atoms
 Pressing this button will cause Olex2 to place hydrogen atoms geometrically. If there is no selection of atoms, hydrogen atoms will be placed where possible. If there is a selection, they will only be added to the selected atoms.
 
-`hadd`
+Command: `hadd`
 
-`hadd 137` (will use specifed AFIX if possible)
+Command: `hadd 137` (will use specifed AFIX if possible)
 
 ## Toggle Isotropic/Anisotropic
 With these buttons, you can make atoms either isotropic or anisotropic. If there is no selection this will apply to all atoms; if there is a selection, then this change will only apply to the selection.
 
-`isot`
+Command: `isot`
 
-`anis`
+Command: `anis`
 
 **Note**: If the tickbox is ticked, then refinement will happen automatically after changing either `isot`/`anis` or `hadd`.
 
@@ -76,42 +76,42 @@ This is a selection of the tools needed for model building.
 ## Change Peaks to Carbon
 This tool will change all visible electron density peaks to Carbon atoms, regardless of the peak height.
 
-`name $Q C`
+Command: `name $Q C`
 
 ## Change Peaks to Hydrogen
 All visible Q-peaks will be turned into Hydrogen atoms
 
-`name $Q H`
+Command: `name $Q H`
 
 ## Tidy the Structure
 Small and geometrically impossible peaks will be removed, all remaining peaks will be turned into Carbon.
 
-`clean`
+Command: `clean`
 
 ## Set Formula to what is on screen now
 Once the structure on the screen is finished, you can 'synchronise' the formula contained in the files with that on the screen.
 
-`fixUnit`
+Command: `fixUnit`
 
 ## Delete all Hydrogen atoms
 Deletes all selected Hydrogen atoms from your structure. If no hydrogen atoms are selected, all will be deleted. Undo with `Ctr`+`Z`.
 
-`kill $H`
+Command: `kill $H`
 
 ## Show or Hide Denisty Peaks
 Toggle between three states: Show electron density peaks, show them with bonds or hide them.
 
-`showQ`
+Command: `showQ`
 
 ## Show or Hide Hydrogen Atoms
 Toggle between three states: Show Hydrogen atoms, show them with inernal Hydrogen bonds or hide them.
 
-`showH`
+Command: `showH`
 
 ## Assemble and Center the Structure
 Fragments will be assembled and the structure will be centered on the screen.
 
-`center`
+Command: `center`
 
 # Part Links 
 
@@ -180,7 +180,7 @@ Olex2 will calculate the structure factors.
 The structure factors will be read from a ShelXL fcf.
 
 ## Command Line
-`CalcFourier`
+Command: `CalcFourier`
 
 # Peaks and USIO sliders
 
@@ -193,12 +193,12 @@ This tool allows the selection of atoms according to their Ueq values.
 ### Slide to the RIGHT
 This will select atoms where the Ueq value is LARGER than the value indicated by the slider. 
 
-`sel atoms where xatom.uiso > 0.06xatom.type!='Q'` 
+Command: `sel atoms where xatom.uiso > 0.06xatom.type!='Q'` 
 
 ### Slide to the LEFT
 This will select atoms where the Ueq value is SMALLER than the value indicated by the slider. 
 
-`sel atoms where xatom.uiso` 
+Command: `sel atoms where xatom.uiso` 
 
 # Growing 
 Olex2 shows the asymmetric unit by default. The tools combinded here in three drop-down boxes are very powerful, and will allow you to 'assemble' your structure in exactly the way you want it to be. In Olex2 you can keep refining your structure without 'destroying' the assembly you have created.
@@ -208,59 +208,59 @@ Olex2 shows the asymmetric unit by default. The tools combinded here in three dr
 ### Grow All
 All 'missing' connected symmetry equivalent atoms will be generated. 
 
-`grow`
+Command: `grow`
 
 ### Shells
 This will grow atoms shell-by-shell from the currently displayed image. 
 
-`grow -s`
+Command: `grow -s`
 
 ### Complete
 This will generate all missing symmetry equivalent atoms of an already grown structure, independent of whether these are bound to the main fragment or not. In other words: all solvent molecules and counter-ion will be generated according to what is already shown. 
 
-`grow -w`
+Command: `grow -w`
 
 ### Asym. Unit
 Removes all symmetry equivalent atoms and displays the asymmetric unit. 
 
-`fuse`
+Command: `fuse`
 
 ### Complete shown growing bonds
 If you are in a growing mode, then clickable growing bonds will be shown. All of these can be grown with this command:
 
-`grow -b`
+Command: `grow -b`
 
 ## Mode Grow
 Similar to grow, but now this command will be executed only after you click on an object. When you enter a growing mode, clickable 'growing bonds' will sprout from atoms where the kind of growing you have asked for is applicable. 
 
-`mode grow`
+Command: `mode grow`
 
 There are various modifiers for this command: 
 
 ### Short Contacts
 Will show these growable 'bonds' to those atoms where 'short interactions' exist. 
 
-`mode grow -s` 
+Command: `mode grow -s` 
 
 ### Selection
 Will show growable 'bonds' to other occurances of the currently selected atoms.
 
-`mode grow -r` 
+Command: `mode grow -r` 
 
 Van der Waals Radii
 Will show growable 'bonds' to other occurances of the currently selected atoms that are at least the indicated distance away from the selected atom. 
 
-`mode grow -v 2.0`
+Command: `mode grow -v 2.0`
 
 ### Move
 when you click on growable bonds the symmetry equivalent atom will be moved to the new position. This is really useful when you are trying to assemble a meaningful asymmetric unit for extended structures (polymers). 
 
-`mode grow -a`
+Command: `mode grow -a`
 
 ### Shells
 This will grow atoms shell-by-shell from the currently displayed image. 
 
-`grow -s`
+Command: `grow -s`
 
 ## Assemble
 This tool does not strictly belong to the 'growing' family of tools, but it is frequently used together with the growing tools. It allows you to re-arrange the asymmetric unit contents into a different configuration. 
@@ -268,22 +268,22 @@ This tool does not strictly belong to the 'growing' family of tools, but it is f
 ### Broken Fragments
 Sometimes, your structure may become 'broken' - parts that should be bonded are shown as separate fragments. This tool will bring them back together. 
 
-`compaq -a`
+Command: `compaq -a`
 
 ### Atom-to-Atom
 Similar to the 'Broken Fragments' tool, but a different algorithm is used. 
 
-`compaq -c` 
+Command: `compaq -c` 
 
 ### Metal Last
 In this tool, metal ions are taken out of the equation at first (which is very useful when trying to assemble a ligand!) and then the metal ion is placed at the shortest possible distance. 
 
-`compaq -m`
+Command: `compaq -m`
 
 ### Q-Peaks
 This will move all electron density peaks as closely to existing atoms as possible. 
 
-`compaq -q` 
+Command: `compaq -q` 
 
 # Finishing
 
