@@ -13,12 +13,12 @@ Press `Esc` repeatedly, or press the `Esc` link in the orange mode box to get ou
 ## Occupancies 
 The occupancies will be linked such that the individual occupancies add up to unity. 
 
-`fvar sel` 
+Command: `fvar sel` 
 
 ## Parts and Occupancies   
 The occupancies will be linked such that the individual occupancies add up to unity, and the selected atoms will be added to Parts.
 
-`part -p=2 -lo sel`
+Commands: `part -p=2 -lo sel`
 
 **Note**: the -p parameter determines the number of parts that should be assigned. -lo stands for 'link occupancy'.
 
@@ -34,9 +34,9 @@ XXX
 # Show Parts
 If your structure contains atoms that have been assigned to parts, then it is sometimes useful to look only at atoms belonging to the same part. 
 
-`showP 1` Will show only atoms belonging to Part 1.
+Command: `showP 1` Will show only atoms belonging to Part 1.
 
-`showP 0 2` Will only show atoms that don't belong to a Part and those that belong to Part 2. 
+Command: `showP 0 2` Will only show atoms that don't belong to a Part and those that belong to Part 2. 
 
-`showP 0` Will show all atoms. 
+Command: `showP 0` Will show all atoms. 
 
