@@ -2,7 +2,7 @@
 This GUI can be used for naming atoms in a molecule. However, in some cases it might be better to use the command line to name atoms more efficiently.
 
 ## Using The Gui
-After pressing the 'GO' button, you will be in a mode. That means, that something# will happen to all subsequently clicked atoms. In this case:
+After pressing the 'GO' button, you will be in a mode. That means, that something will happen to all subsequently clicked atoms. In this case:
 
 ### Start
 The clicked atom will be named with the Current atom type (unless 'Type' is set to something else) and numbered starting from the number that is entered in this box.
