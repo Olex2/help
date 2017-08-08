@@ -31,16 +31,16 @@ Select **any one atom** of the correctly named molecule, and then select **any o
 ## Add a suffix
 Enter a suffix character into the box, then click the link.This will transfer the naming scheme of the first molecule to the second molecule with the suffix letter you have chosen.
 
-`match sel -n=suffix`
+Command: `match sel -n=suffix`
 
 ## Replace a suffix
 Instead of merely adding a suffix, you can also replace the first character of the original naming scheme with another character. This is useful, for example, if you wish to name all atoms in one ligand like C101, C102, C102 ... and corresponding atoms in the other ligand like C201, C202, C203 ...
 
-`suffix'>match sel -n=$suffix`
+Command: `suffix'>match sel -n=$suffix`
 
 ## Replace last character
 Equally, the last character of an atom name can be replaced:
 
-`suffix'>match sel -n=-suffix`
+Command: `suffix'>match sel -n=-suffix`
 
 There is no gui for these replacements, you will have to type the lines above from the command line. 
