@@ -26,7 +26,7 @@ Calculates the voids and channels in the structure. This calculation is based on
 # Calculate Solvent Accessible Voids 
 Calculates the solvent accessible voids. This calculation is based on the smtbx/cctbx Olex2 libraries. 
 
-`calcsolv`
+Command: `calcsolv`
 
 Calculates voids that are large enough to contain solvent. Probe/Å adjusts the probe size (think of it as a 'sphere' rolling about the structure - a smaller sphere will fit into smaller gaps and therefore return a larger void than a larger sphere would). The Grid/Å is the resolution of the map that will be explored when calculating the voids. If the resolution is too high, the calculation might take a Very Long Time at not much benefit. Click on Void to toggle between displaying and not dis-playing solvent accessible voids. On the graphics screen the size of any solvent accessible voids that are found will be displayed. 
 
