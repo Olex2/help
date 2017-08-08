@@ -1,7 +1,7 @@
 # Naming 
 This GUI can be used for naming atoms in a molecule. However, in some cases it might be better to use the command line to name atoms more efficiently.
 
-## Using The Gui
+## Using The GUI
 After pressing the 'GO' button, you will be in a mode. That means, that something will happen to all subsequently clicked atoms. In this case:
 
 ### Start
@@ -43,4 +43,4 @@ Equally, the last character of an atom name can be replaced:
 
 Command: `suffix'>match sel -n=-suffix`
 
-There is no gui for these replacements, you will have to type the lines above from the command line. 
+There is no GUI for these replacements, you will have to type the lines above from the command line. 
