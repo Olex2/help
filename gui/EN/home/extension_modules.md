@@ -1,5 +1,3 @@
-#Extension Modules
-
 # Extension Modules
 
 The **Extension Modules** provide either functionality or make commonly used tasks easier to use. We are currently working on a number of these modules and will make them available for testing as they are ready. You are welcome to test and use them, provided you agree to the following conditions:
