@@ -25,7 +25,7 @@ Inverts the current selection.
 `sel -i`
 
 ## Deselect
-Deselects (Unselects) the all selected atoms.
+Deselects (unselects) the all selected atoms.
 
 `sel -u` 
 
