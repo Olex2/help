@@ -16,9 +16,9 @@ The atom type of the atom will be changed as well as all other settings will be 
 
 ## Using the Command Line
 
-`name sel type` - Will change all currently selected atoms into the new type.
+Command: `name sel type` - Will change all currently selected atoms into the new type.
 
-`name sel integer` - Will renumber all currently selected atoms in the order of which they were selected starting from.
+Command: `name sel integer` - Will renumber all currently selected atoms in the order of which they were selected starting from.
 
 # Automatic Hydrogen Naming 
 Olex2 will keep track of the naming of hydrogen atoms automatically. This feature can be switched off by unticking the 'Automatic Hydrogen Naming' box. 
