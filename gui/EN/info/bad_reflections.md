@@ -8,7 +8,7 @@ The 'OMIT' button allows you to omit all reflections where |Error/esd| > than <v
 No entry
 
 # LIST BAD REFLECTIONS
-**AA list of those reflections that have been flagged by the refinement program ShelXL will be shown in this panel.**
+**A list of those reflections that have been flagged by the refinement program ShelXL will be shown in this panel.**
 
 ## Omit all equivalents of a reflection
 You may choose to omit a reflection totally by pressing the OMIT link. This will insert the appropriate OMIT instruction.
