@@ -5,22 +5,22 @@ You can select what you would like to see as labels in the molecule display. If 
 This is to display or hide atom or Q-peak labels. It will switch other types of labelling off, but selecting it again will display atom name labels. [F3] does the same thing.
 
 ## Atom Names
-||`labels -l`||all atom names of **non-hydrogen atoms** will be displayed next to the atoms.||
+|`labels -l`|all atom names of **non-hydrogen atoms** will be displayed next to the atoms.|
 
 ## Crystallographic Occupancy
-||`labels -o`||This displays the crystallographic occupancy of any atoms which are not 100% occupied i.e. their occupancy is not 1.||
+|`labels -o`|This displays the crystallographic occupancy of any atoms which are not 100% occupied i.e. their occupancy is not 1.|
 
 ## Chemical Occupancy
 Same as above, but the occupancy values for atoms that are located on symmetry elements are not shown.
 
 ## Parts
-||`labels -p`||Displays PART numbers for any atoms not in PART 0.||
+|`labels -p`|Displays PART numbers for any atoms not in PART 0.|
 
 ## Link Codes
-||`labels -lo`||If atoms are linked, the link code will be shown. (FVAR 21/-21 in ShelXL language)||
+|`labels -lo`|If atoms are linked, the link code will be shown. (FVAR 21/-21 in ShelXL language)|
 
 ## H Atom Labels
-||`labels -h -l`||This will include the hydrogen atom labels along with the atom name and Q-peak labels||
+|`labels -h -l`|This will include the hydrogen atom labels along with the atom name and Q-peak labels|
 
 ## Variables
 Displays any atoms where the occupancy is linked to any variable.
@@ -42,22 +42,22 @@ All atom types that are currently in your formula are represented as a small but
 
 You can click on one of these buttons and it will go into an atom type assignment mode for this particular atom type. Atoms you click subsequently will become that atom type. Alternatively, you can make a selection of atoms first, and then click the atom type symbol. The buttons will appear red if there are fewer atoms of that type in your model compared to the formula you have initially given. They turn green if the numbers do agree.
 
-||`name sel C` || turns all selected atoms into carbon ||
-||`mode name C` || mode, where subsequently clicked atoms will turn into carbon atoms ||
-||`name \$Q C` || turns all Q-peaks into carbon atoms ||
+|`name sel C` | turns all selected atoms into carbon |
+|`mode name C` | mode, where subsequently clicked atoms will turn into carbon atoms |
+|`name \$Q C` | turns all Q-peaks into carbon atoms |
 
 ## Geometrically Place Hydrogen Atoms
 Pressing this button will cause Olex2 to place hydrogen atoms geometrically. If there is no selection of atoms, hydrogen atoms will be placed where possible. If there is a selection, they will only be added to the selected atoms.
 
-||`hadd`|| adds hydrogen atoms to all selected atoms (or all, if none selected)||
-||`hadd 137`||will use specifed AFIX **if possible**. (137 adds three hydrogen atoms to a methl group, for example.||
-||`hadd -137`||if the connectivity does not allow the addition of the specified AFIX atoms, it is still possible to place them in this way. Two atoms must be selected to denote a vector, with the atom to which hydrogen atoms are to be added selected *first*||
+|`hadd`| adds hydrogen atoms to all selected atoms (or all, if none selected)|
+|`hadd 137`|will use specifed AFIX **if possible**. (137 adds three hydrogen atoms to a methl group, for example.|
+|`hadd -137`|if the connectivity does not allow the addition of the specified AFIX atoms, it is still possible to place them in this way. Two atoms must be selected to denote a vector, with the atom to which hydrogen atoms are to be added selected *first*|
 
 ## Toggle Isotropic/Anisotropic
 With these buttons, you can make atoms either isotropic or anisotropic. If there is no selection this will apply to all atoms; if there is a selection, then this change will only apply to the selection.
 
-||`isot`||all selected atoms will be refined **isotropically**||
-||`anis`||all selected atoms will be refined **anisotropically** (ellipsoids will result)||
+|`isot`|all selected atoms will be refined **isotropically**|
+|`anis`|all selected atoms will be refined **anisotropically** (ellipsoids will result)|
 
 Note: If the tickbox is ticked, then refinement will happen automatically after changing either `isot`/`anis` or `hadd`.
 
@@ -66,24 +66,24 @@ This is a selection of the tools needed for model building.
 
 
 ## Affect atoms in the model or whether they are shown
-||`name \$Q C`||$spy.MakeHoverButton('toolbar-QC','name \$Q C')||This tool will change all visible electron density peaks to Carbon atoms, regardless of the peak height.||
+|`name \$Q C`|$spy.MakeHoverButton('toolbar-QC','name \$Q C')|This tool will change all visible electron density peaks to Carbon atoms, regardless of the peak height.|
 
-||`name \$Q H`||$spy.MakeHoverButton('toolbar-QH','name \$Q H')||All visible Q-peaks will be turned into Hydrogen atoms||
+|`name \$Q H`|$spy.MakeHoverButton('toolbar-QH','name \$Q H')|All visible Q-peaks will be turned into Hydrogen atoms|
 
-||`clean`||$spy.MakeHoverButton('toolbar-tidy','clean')||Tidy the Structure: Small and geometrically impossible peaks will be removed, all remaining peaks will be turned into Carbon.||
+|`clean`|$spy.MakeHoverButton('toolbar-tidy','clean')|Tidy the Structure: Small and geometrically impossible peaks will be removed, all remaining peaks will be turned into Carbon.|
 
-||`kill \$H`||$spy.MakeHoverButton('toolbar-killH','kill \$H')||Deletes all selected Hydrogen atoms from your structure. If no hydrogen atoms are selected, all will be deleted. Undo with **Ctr+Z**.||
+|`kill \$H`|$spy.MakeHoverButton('toolbar-killH','kill \$H')|Deletes all selected Hydrogen atoms from your structure. If no hydrogen atoms are selected, all will be deleted. Undo with **Ctr+Z**.|
 
-||`showQ`||$spy.MakeHoverButton('toolbar-Q','showQ')||**CTRL+Q**. Toggle between three states: Show electron density peaks, show them with bonds or hide them.||
+|`showQ`|$spy.MakeHoverButton('toolbar-Q','showQ')|**CTRL+Q**. Toggle between three states: Show electron density peaks, show them with bonds or hide them.|
 
-||`showH`||$spy.MakeHoverButton('toolbar-H','showH')||**CTRL+H**. Toggle between three states: Show H atoms, show them with H-bonds or hide them. Hydrogen atoms remain in the model.||
+|`showH`|$spy.MakeHoverButton('toolbar-H','showH')|**CTRL+H**. Toggle between three states: Show H atoms, show them with H-bonds or hide them. Hydrogen atoms remain in the model.|
 
-||`center`||$spy.MakeHoverButton('toolbar-center','compaq>>compaq -a>>center')||Fragments will be assembled and the structure will be centered on the screen.||
+|`center`|$spy.MakeHoverButton('toolbar-center','compaq>>compaq -a>>center')|Fragments will be assembled and the structure will be centered on the screen.|
 
 ##Affect the fomula of the structure
-||Z'||Set the value of Z' here. For a molecular structure this is typically the sum formula of the molecule. If there are two independent molecules on the screen, Z' must be set to 2. If the molecule needs to be grown, Z' will smaller than one (often 0.5).||
+|Z'|Set the value of Z' here. For a molecular structure this is typically the sum formula of the molecule. If there are two independent molecules on the screen, Z' must be set to 2. If the molecule needs to be grown, Z' will smaller than one (often 0.5).|
 
-||`fixunit`||$spy.MakeHoverButton('toolbar-OK','fixunit')|| Adjusts the sum formula to what is currently present in the model, taking the value of Z' into account.||
+|`fixunit`|$spy.MakeHoverButton('toolbar-OK','fixunit')| Adjusts the sum formula to what is currently present in the model, taking the value of Z' into account.|
 
 
 # Part Links
