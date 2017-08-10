@@ -1,5 +1,5 @@
 # Report
-Here is a collection of tools that can hlp you to for a report about your structure.
+Here is a collection of tools that can help you to form a report about your structure.
 
 # Collection 
 Here you can enter any information you might have concerning the Data Collection of your structure.
