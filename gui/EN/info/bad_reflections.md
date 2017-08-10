@@ -29,5 +29,5 @@ When the 'AND' tickbox is ticked, the conditions you specify for h, k and l have
 No entry
 
 # Edit Reflections
-This will display your hkl data sorted by the 'worst fitting' reflections. The Each equivalent occurance of this reflection is shown separately and you can 'omit' just that occurance from the refienment, rather than omit the entire reflection (Olex2 will move it to the end of the file, past the '0 0 0' line). This is particularly useful if you would otherwise omit an entire important reflections.
+This will display your hkl data sorted by the 'worst fitting' reflections. The Each equivalent occurance of this reflection is shown separately and you can 'omit' just that occurance from the refinment, rather than omit the entire reflection (Olex2 will move it to the end of the file, past the '0 0 0' line). This is particularly useful if you would otherwise omit an entire important reflections.
 Please put the '-' character in the front of a reflection you wish to omit and remove this character if from an 'omitted' reflection in order to include it in the refinement again.
