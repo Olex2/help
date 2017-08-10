@@ -8,10 +8,11 @@ Some attributes of how atoms are displayed in Olex2 can be modified within a spe
 Change the radius of the selected atoms (in PERS mode). Clicking on `SET` will make this the default. The atom radius can be set manually be set with the command `arad` and `azoom`.
 
 ### arad
-I am not actually sure what the exact difference between **arad** and **azoom** is.
+This parameter affects the radius of the selected (or all, if there is no selection) atoms *in Ball and Stick* (PERS) mode only. Typically, the radius in PERS mode is taken from a definition file (and isn't the same for all elements). **arad** overrides these settings. A typical value for H atoms would be `arad 0.2`
 
 ### azoom
-I am not actually sure what the exact difference between **arad** and **azoom** is.
+This *zooms* the displayed atom sizes regardless of whehter the atoms are shown in *Ball and Stick** (PERS) or *Ellipsoid* (TELP) modes. This value is given in % -- and scales the selected atoms. `arad 100` shows the original atom size, larger/smaller values vary the display accordingly.
+Note: This can play havoc with the ORTEP '50%% probability' convention. In order to ensure that all atoms are shown with the standard probability, please use `telp 50` -- and if a different probability is desired, use that, e.g. `telp 30`.
 
 # Bond Settings
 Change the radius of the selected bonds. Clicking on `SET` will make this the default. Please note that this will change the radius of *all bonds of the same type*. If you wish to set the radius of a single occurrence of a bond, you must select the bond and type `individualize` first.
@@ -31,7 +32,7 @@ The width of the GUI (by which we mean the panel with all the commands on) can b
 ![The Olex2 GUI](images/gui.jpg)
 
 ## Value < 1
-The GUI width will adjust as a fraction of the screen width. 0.33 will divide Olex2 into 2/3 molecule and 1/3 GUI, for example.
+The GUI width will adjust as a fraction of the screen width **0.33** will divide Olex2 into 2/3 molecule and 1/3 GUI, for example.
 
 ## Value > 100
 The absolute GUI width in pixels.
@@ -48,7 +49,9 @@ If selected, tooltips will be shown when hovering over items.
 A pictogram of all current atom types appears in the main window. With the left mouse and the pressed SHIFT key, this can be moved to any position. This legend can be switched on and off by typing `legend`.
 
 # Info
-If selected, more information on a structure is shown in the top panel. The keyboard command for this is `showwindow info true|false`
+If selected, more information on a structure is shown in the top panel.
+Keyboard: `showwindow info`
+Options: true|false
 
 # Alerts
 The `Reset` link will reset all alerts.

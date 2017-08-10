@@ -1,24 +1,22 @@
-# Calculate CHN Analysis 
-Calculates the expected values of a CHN analysis from your structure model.
+<target>Olex2 provides a variety of chemical tools. Here they are:</target>
 
-Command: `calcCHN()` 
+# Molecular Mass
 
-# Calculate Molecular Isotope Pattern 
-Simulates a molecular isotope pattern for your structure. 
+## Calculate CHN Analysis
+Calculates the expected values of a CHN analysis from your structure model. `calcCHN()`
 
-Command: `calcms` 
+## Calculate Molecular Isotope Pattern
+Simulates a molecular isotope pattern for your structure. `calcms`
 
-# Calculate Molecular Volume 
-Calculates the molecular volume of the structure.
+# Molecular Volume
 
-Command: `vvol()` 
+## Calculate Molecular Volume
+Calculates the molecular volume of the structure. `vvol()`
 
-# Calculate Polyhedral Volume 
-Calculates the polyhedral volume of a polyheder that is defined by the selected atom. 
+## Calculate Polyhedral Volume
+Calculates the polyhedral volume of a polyheder that is defined by the selected atom. `calcvol`
 
-Command: `calcvol`
+# Molecular Bounding Box
 
-# Calculate Bounding Box 
-A rectangular bounding box is calculated for your molecule and displayed on the screen. 
-
-Command: `wbox`
+## Calculate Bounding Box
+A rectangular bounding box is calculated for your molecule and displayed on the screen. `wbox`

@@ -23,11 +23,11 @@ Conditions for reflections to be excluded can be set here
 This will exclude all reflections where h, k, and l fulfill the conditions you specify independently
 
 ## AND Mode
-When the 'AND' tickbox is ticked, the conditions you specify for h, k and l have to be fulfilled simultanesoulsy in the same reflection 
+When the 'AND' tickbox is ticked, the conditions you specify for h, k and l have to be fulfilled simultanesoulsy in the same reflection
 
 # SHOW HKL FILE
 No entry
 
-# Edit Reflections 
+# Edit Reflections
 This will display your hkl data sorted by the 'worst fitting' reflections. The Each equivalent occurance of this reflection is shown separately and you can 'omit' just that occurance from the refienment, rather than omit the entire reflection (Olex2 will move it to the end of the file, past the '0 0 0' line). This is particularly useful if you would otherwise omit an entire important reflections.
-Please put the '-' character in the front of a reflection you wish to omit and remove this character if from an 'omitted' reflection in order to include it in the refinement again. 
+Please put the '-' character in the front of a reflection you wish to omit and remove this character if from an 'omitted' reflection in order to include it in the refinement again.
