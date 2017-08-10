@@ -36,11 +36,17 @@ Relative intensities of the Q-peaks will be displayed on the structure.
 This is a collection of three basic tools needed for model building.
 
 ## Assign Atom Types
-All atom types that are currently in your formula are represented as a small button:
 
-|- $spy.MakeElementButtonsFromFormula('mode') -|
+All atom types that are currently in your formula are represented as a small button.
+
+
+### Using the GUI
+|$spy.MakeElementButtonsFromFormula('mode')|All atoms present in the model are shown.|
 
 You can click on one of these buttons and it will go into an atom type assignment mode for this particular atom type. Atoms you click subsequently will become that atom type. Alternatively, you can make a selection of atoms first, and then click the atom type symbol. The buttons will appear red if there are fewer atoms of that type in your model compared to the formula you have initially given. They turn green if the numbers do agree.
+
+### Using the Command Line
+It is usually much more efficient to assign atom types using the keybard. Here are the three essential command you need to know:
 
 |`name sel C` | turns all selected atoms into carbon |
 |`mode name C` | mode, where subsequently clicked atoms will turn into carbon atoms |
