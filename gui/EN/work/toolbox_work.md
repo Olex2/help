@@ -84,7 +84,7 @@ This is a selection of the tools needed for model building.
 
 |`showH`|$spy.MakeHoverButton('toolbar-H','showH')|**CTRL+H**. Toggle between three states: Show H atoms, show them with H-bonds or hide them. Hydrogen atoms remain in the model.|
 
-|`center`|$spy.MakeHoverButton('toolbar-center','compaq>>compaq -a>>center')|Fragments will be assembled and the structure will be centered on the screen.|
+|`compaq>>compaq-a>>center`|$spy.MakeHoverButton('toolbar-center','compaq>>compaq -a>>center')|Fragments will be assembled and the structure will be centered on the screen.|
 
 ##Affect the fomula of the structure
 |Z'|Set the value of Z' here. For a molecular structure this is typically the sum formula of the molecule. If there are two independent molecules on the screen, Z' must be set to 2. If the molecule needs to be grown, Z' will smaller than one (often 0.5).|
