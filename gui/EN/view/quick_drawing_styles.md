@@ -14,7 +14,7 @@ This tool allows you to quickly select from a number of preset drawing styles. I
 
 ## Sphere Packing
 |`sfil`|Atoms are represented as space-filling spheres.|
-
+Check for Github sentence.
 ## Tubes
 |`tubes`|Atoms are represented as connected tubes.|
 
@@ -26,6 +26,7 @@ This tool allows you to quickly select from a number of preset drawing styles. I
 
 # Atom Styles 
 The visual style of the atom display can be customised. Clicking on the link will display a periodic table, from where you can start customising your styles.
+
 
 ## About Styles and Scenes
 There are two types of style sheets in Olex2 - one deals with the atom objects (styles) and the other deals with the lighting and background settings (scene). Both have to be carefully tuned to each other in order to get good results. To load or save a style or scene, right-click on the background and then follow the relevant links. 

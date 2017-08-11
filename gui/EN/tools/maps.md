@@ -1,4 +1,6 @@
-# Xgrid 
+# Map Header 
+
+# Map Header
 
 ## Available Display Modes
 
@@ -34,4 +36,4 @@ Calculates voids that are large enough to contain solvent. Probe/Å adjusts the 
 XXX
 
 # Masks 
-The Masks option serves as an alternative to SQUEEZE which is implemented in Platon !!!More Info Online!!!. These sorts of approaches should only be used when the solvent can't be identified or modelled, effort should be made to try and identify or model solvent. If refinement has been attempted using both ShelXL and olex2.refine the option to select either olex or an .fcf files, ensure that the file from the last cycle of refinement is used. 
+The Masks option serves as an alternative to SQUEEZE which is implemented in Platon !!!More Info Online!!!. These sorts of approaches should only be used when the solvent can't be identified or modelled, effort should be made to try and identify or model solvent. If refinement has been attempted using both ShelXL and olex2.refine the option to select either olex or an .fcf files, ensure that the file from the last cycle of refinement is used.
