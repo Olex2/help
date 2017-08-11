@@ -17,7 +17,7 @@ This parameter affects the radius of the selected (or all, if there is no select
 |`arad 0.2`| |
 
 ### azoom
-This *zooms* the displayed atom sizes regardless of whehter the atoms are shown in *Ball and Stick** (PERS) or *Ellipsoid* (TELP) modes. This value is given in % -- and scales the selected atoms. 
+This *zooms* the displayed atom sizes regardless of whether the atoms are shown in *Ball and Stick** (PERS) or *Ellipsoid* (TELP) modes. This value is given in % -- and scales the selected atoms. 
 
 |`arad 100`| |
 
