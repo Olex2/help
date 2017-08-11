@@ -14,7 +14,6 @@ This tool allows you to quickly select from a number of preset drawing styles. I
 
 ## Sphere Packing
 |`sfil`|Atoms are represented as space-filling spheres.|
-Check for Github sentence.
 ## Tubes
 |`tubes`|Atoms are represented as connected tubes.|
 
