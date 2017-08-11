@@ -1,6 +1,6 @@
 <target>Olex2 provides a variety of chemical tools. Here they are:</target>
 
-# Molecular Mass
+# Chemical Tools
 
 ## Calculate CHN Analysis
 Calculates the expected values of a CHN analysis from your structure model. 

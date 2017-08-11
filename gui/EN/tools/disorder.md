@@ -34,9 +34,8 @@ XXX
 # Show Parts
 If your structure contains atoms that have been assigned to parts, then it is sometimes useful to look only at atoms belonging to the same part. 
 
-Command: `showP 1` Will show only atoms belonging to Part 1.
+|`showP 1`|Will show only atoms belonging to Part 1.|
 
-Command: `showP 0 2` Will only show atoms that don't belong to a Part and those that belong to Part 2. 
+|`showP 0 2`|Will only show atoms that don't belong to a Part and those that belong to Part 2.|
 
-Command: `showP 0` Will show all atoms. 
-
+|`showP 0`|Will show all atoms.|

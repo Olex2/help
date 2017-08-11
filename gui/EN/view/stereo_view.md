@@ -1,4 +1,5 @@
 # Stereo View 
+# Stereo View
 Depending on the hardware you use, there are various options of obtaining a stereo view for your structures. (Something to do with glasses?)
 
 ## Color stereo

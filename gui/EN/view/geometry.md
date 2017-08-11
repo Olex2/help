@@ -1,4 +1,4 @@
-# Calculate Mean Plane 
+# Calculate Mean Plane
 Select atoms that you wish to define a plane for. A plane will be displayed in the ring and a centroid generated, all symmetry related planes will automatically be added to any other molecules on the screen.
 
 # Calculate Best Plane 
@@ -14,4 +14,4 @@ Carries out a refinement to save the necessary information to display E.S.D info
 Displays the distance between atoms (for two selected atoms), the angle (for three selected atoms) or the torsion angle, angle and distance (for four selected atoms), all with an esd as long as a refinement to save the esd information has been carried out.
 
 # Pi Pi Interactions 
-Automatically searches for any π-π interactions in your structure. If found the relevant parameters are returned. 
+Automatically searches for any π-π interactions in your structure. If found the relevant parameters are returned.

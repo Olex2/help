@@ -2,7 +2,7 @@
 Tools for dealing with reflections that do not fit well
 
 # OMIT REFLECTIONS
-The 'OMIT' button allows you to omit all reflections where |Error/esd| > than <value> in the box. The 'Clear omits' clears **all** omits -- all previously omitted reflections will be back for refinement (except those that are omitted with a general OMIT, e.g. 'OMIT -3 52')
+The 'OMIT' button allows you to omit all reflections where Error/esd > than value in the box. The 'Clear omits' clears **all** omits -- all previously omitted reflections will be back for refinement (except those that are omitted with a general OMIT, e.g. 'OMIT -3 52')
 
 # SORT BAD REFLECTIONS
 No entry
