@@ -1,4 +1,4 @@
-TThis menu contains some links that help you to get started with Olex2.
+This menu contains some links that help you to get started with Olex2.
 
 # Open a Structure
 Olex2 can read many different crystallographic file formats. When  you are working with a crystal structure, the most common way to get into it is by means of opening an ins file. Typically, an hkl file of the same filename would have been created by your data processing software at the same time. If this pair of files is present, you are all set to go.
