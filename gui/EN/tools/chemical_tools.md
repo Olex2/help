@@ -1,7 +1,7 @@
 <target>Olex2 provides a variety of chemical tools. Here they are:</target>
 # Calculate CHN Analysis
 
-|`calcCHN()`|Calculates the expected values of a CHN analysis from your structure model.|
+|calcCHN()|Calculates the expected values of a CHN analysis from your structure model.|
 
 # Calculate Molecular Isotope Pattern
 

@@ -1,4 +1,4 @@
-# Select Atoms 
+# Select-Atoms-help 
 Selects the atom types listed. 
 
 ## Exclusive  
@@ -43,4 +43,4 @@ Command: `selback`
 To select all atoms for which Uiso is within user defined parameters. 
 
 # Select Rings 
-Select all rings of the specified type (for example) C6, C5N, C5, C5O within the structure. You can type your own ring criteria in the box. 
+Select all rings of the specified type (for example) C6, C5N, C5, C5O within the structure. You can type your own ring criteria in the box.
