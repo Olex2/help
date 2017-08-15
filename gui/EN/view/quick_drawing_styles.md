@@ -1,43 +1,31 @@
-# Quick Drawing Styles 
+# Quick Drawing Styles
+
+# Quick Drawing Styles
 This tool allows you to quickly select from a number of preset drawing styles. If no atoms are selected, then the new style will apply to all atoms, otherwise it will apply only to the current selection.
 
 ## Balls & Sticks
-Atoms are shown as spheres. The size of the sphere depends on the radius of the atom type represented by the sphere. 
-
-Command: `pers`
+|`pers`|Atoms are shown as spheres. The size of the sphere depends on the radius of the atom type represented by the sphere.|
 
 ## Ellipsoids 
-Aniosotropic atoms are shown as ellipsoids. Isotropic atoms are shown as spheres, who'se size depends on the value of the Uiso of the individual atom represented by the sphere. 
-
-Command: `telp n` where default n = 50%
+|`telp n` where default n = 50%|Aniosotropic atoms are shown as ellipsoids. Isotropic atoms are shown as spheres, who'se size depends on the value of the Uiso of the individual atom represented by the sphere.|
 
 ## Wireframe
-The structure is shown as a wireframe.
-
-Command: `proj`
+|`proj`|The structure is shown as a wireframe.|
 
 ## Sphere Packing
-Atoms are represented as space-filling spheres.
-
-Command: `sfil`
-
+|`sfil`|Atoms are represented as space-filling spheres.|
 ## Tubes
-Atoms are represented as connected tubes.
-
-Command: `tubes`
+|`tubes`|Atoms are represented as connected tubes.|
 
 ## Default Style
-All display settings are reset to the default values.
-
-Command: `default`
+|`default`|All display settings are reset to the default values.|
 
 ## Polyhedra
-Shows the structure in a polyhedral representation.
-
-Command: `mask atoms 37`
+|`mask atoms 37`|Shows the structure in a polyhedral representation.|
 
 # Atom Styles 
 The visual style of the atom display can be customised. Clicking on the link will display a periodic table, from where you can start customising your styles.
+
 
 ## About Styles and Scenes
 There are two types of style sheets in Olex2 - one deals with the atom objects (styles) and the other deals with the lighting and background settings (scene). Both have to be carefully tuned to each other in order to get good results. To load or save a style or scene, right-click on the background and then follow the relevant links. 

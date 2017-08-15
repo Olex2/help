@@ -8,8 +8,7 @@ The **Extension Modules** provide either functionality or make commonly used tas
   4. Some of these modules will not be available free of charge after the end of the testing phase.
 
 ## Email 
-You must enter a **valid e-mail address**, select the module you wish to test and then press the button below.
-An e-mail will be sent to you and you need to **activate it from the link in the e-mail**. After activation, go back to this tool here and select the requested module again from the drop-down menu. This will install the module, which will be available **after restarting Olex2**.
+You must enter a **valid e-mail address**, select the module you wish to test and then press the button below. An e-mail will be sent to you and you need to **activate it from the link in the e-mail**. After activation, go back to this tool here and select the requested module again from the drop-down menu. This will install the module, which will be available **after restarting Olex2**.
 
 ## Reference
 This can be any text for your records and that will help you identify the machine where the module has been installed to. Typically this is something like *My Work Computer*.

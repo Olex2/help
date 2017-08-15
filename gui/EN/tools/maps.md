@@ -1,4 +1,6 @@
-# Xgrid 
+# Map Header 
+
+# Map Header
 
 ## Available Display Modes
 
@@ -20,18 +22,23 @@ A box with moveable sides will appear. Left-click on the coloured areas and then
 ### Level 
 When a map is displayed the slider bar enables you to adjust the detail shown in the map. 
 
-# Calculate Voids 
+# Calculate Voids
+ 
+# Calculate Voids
 Calculates the voids and channels in the structure. This calculation is based on the Olex2 internal libraries, and help is available from `help calcvoid`
 
 # Calculate Solvent Accessible Voids 
-Calculates the solvent accessible voids. This calculation is based on the smtbx/cctbx Olex2 libraries. 
 
-Command: `calcsolv`
+# Calculate Solvent Accessible Voids
+|`calcsolv`|Calculates the solvent accessible voids. This calculation is based on the smtbx/cctbx Olex2 libraries. |
+
 
 Calculates voids that are large enough to contain solvent. Probe/Å adjusts the probe size (think of it as a 'sphere' rolling about the structure - a smaller sphere will fit into smaller gaps and therefore return a larger void than a larger sphere would). The Grid/Å is the resolution of the map that will be explored when calculating the voids. If the resolution is too high, the calculation might take a Very Long Time at not much benefit. Click on Void to toggle between displaying and not dis-playing solvent accessible voids. On the graphics screen the size of any solvent accessible voids that are found will be displayed. 
 
 # Electron density
 XXX
 
-# Masks 
-The Masks option serves as an alternative to SQUEEZE which is implemented in Platon !!!More Info Online!!!. These sorts of approaches should only be used when the solvent can't be identified or modelled, effort should be made to try and identify or model solvent. If refinement has been attempted using both ShelXL and olex2.refine the option to select either olex or an .fcf files, ensure that the file from the last cycle of refinement is used. 
+# masks-help
+
+# Masks
+The Masks option serves as an alternative to SQUEEZE which is implemented in Platon !!!More Info Online!!!. These sorts of approaches should only be used when the solvent can't be identified or modelled, effort should be made to try and identify or model solvent. If refinement has been attempted using both ShelXL and olex2.refine the option to select either olex or an .fcf files, ensure that the file from the last cycle of refinement is used.

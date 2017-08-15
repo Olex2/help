@@ -1,4 +1,4 @@
-# Solution Program 
+# __Solution Program__ 
 Select the program you want to use for Structure Solution. 
 
 ## Choice of Programs 

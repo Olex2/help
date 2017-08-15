@@ -1,11 +1,13 @@
 # Labels
-You can select what you would like to see as labels in the molecule display. If a particular property is not applicable for a particular atom, there will be no label. To see all the command line options for the labels, type `help labels`.
+You can select what you would like to see as labels in the molecule display. If a particular property is not applicable for a particular atom, there will be no label. 
+ 
+|`help labels`|To see all the command line options for the labels|
 
 ## Toggle On/Off
 This is to display or hide atom or Q-peak labels. It will switch other types of labelling off, but selecting it again will display atom name labels. [F3] does the same thing.
 
 ## Atom Names
-|`labels -l`|all atom names of **non-hydrogen atoms** will be displayed next to the atoms.|
+|`labels -l`|All atom names of **non-hydrogen atoms** will be displayed next to the atoms.|
 
 ## Crystallographic Occupancy
 |`labels -o`|This displays the crystallographic occupancy of any atoms which are not 100% occupied i.e. their occupancy is not 1.|
@@ -46,22 +48,22 @@ You can click on one of these buttons and it will go into an atom type assignmen
 ### Using the Command Line
 It is usually much more efficient to assign atom types using the keybard. Here are the three essential command you need to know:
 
-|`name sel C` | turns all selected atoms into carbon |
-|`mode name C` | mode, where subsequently clicked atoms will turn into carbon atoms |
-|`name \$Q C` | turns all Q-peaks into carbon atoms |
+|`name sel C` | Turns all selected atoms into carbon |
+|`mode name C` | Mode, where subsequently clicked atoms will turn into carbon atoms |
+|`name \$Q C` | Turns all Q-peaks into carbon atoms |
 
 ## Geometrically Place Hydrogen Atoms
 Pressing this button will cause Olex2 to place hydrogen atoms geometrically. If there is no selection of atoms, hydrogen atoms will be placed where possible. If there is a selection, they will only be added to the selected atoms.
 
-|`hadd`| adds hydrogen atoms to all selected atoms (or all, if none selected)|
-|`hadd 137`|will use specifed AFIX **if possible**. (137 adds three hydrogen atoms to a methl group, for example.|
-|`hadd -137`|if the connectivity does not allow the addition of the specified AFIX atoms, it is still possible to place them in this way. Two atoms must be selected to denote a vector, with the atom to which hydrogen atoms are to be added selected *first*|
+|`hadd`| Adds hydrogen atoms to all selected atoms (or all, if none selected)|
+|`hadd 137`|Will use specifed AFIX **if possible**. (137 adds three hydrogen atoms to a methl group, for example.|
+|`hadd -137`|If the connectivity does not allow the addition of the specified AFIX atoms, it is still possible to place them in this way. Two atoms must be selected to denote a vector, with the atom to which hydrogen atoms are to be added selected *first*|
 
 ## Toggle Isotropic/Anisotropic
 With these buttons, you can make atoms either isotropic or anisotropic. If there is no selection this will apply to all atoms; if there is a selection, then this change will only apply to the selection.
 
-|`isot`|all selected atoms will be refined **isotropically**|
-|`anis`|all selected atoms will be refined **anisotropically** (ellipsoids will result)|
+|`isot`|All selected atoms will be refined **isotropically**|
+|`anis`|All selected atoms will be refined **anisotropically** (ellipsoids will result)|
 
 Note: If the tickbox is ticked, then refinement will happen automatically after changing either **isot**, **anis** or **hadd**.
 
@@ -98,7 +100,7 @@ This is a selection of quick-links regarding displaying of PARTS in your structu
 
 | `showp 1` | Shows only the atoms PART 1 | 
 
-| `showp` | Show all | 
+| `showp` | Show all parts| 
 
 | `sel part 1` | Selects all atoms in PART 1 | 
 
@@ -237,7 +239,7 @@ There are various modifiers for this command:
 |`mode grow -v 2.0`|Will show growable 'bonds' to other occurances of the currently selected atoms that are at least the indicated distance away from the selected atom.|
 
 ### Move
-|`mode grow -a`|when you click on growable bonds the symmetry equivalent atom will be moved to the new position. This is really useful when you are trying to assemble a meaningful asymmetric unit for extended structures (polymers).|
+|`mode grow -a`|When you click on growable bonds the symmetry equivalent atom will be moved to the new position. This is really useful when you are trying to assemble a meaningful asymmetric unit for extended structures (polymers).|
 
 ### Shells
 See above.

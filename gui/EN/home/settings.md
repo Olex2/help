@@ -1,18 +1,34 @@
 # H2_SETTINGS-TARGET
 General Settings for Olex2
 
-# Atom Settings
+# Atom Styles
 Some attributes of how atoms are displayed in Olex2 can be modified within a specific style.
 
 ## Atom Radius
-Change the radius of the selected atoms (in PERS mode). Clicking on `SET` will make this the default. The atom radius can be set manually be set with the command `arad` and `azoom`.
+Change the radius of the selected atoms (in PERS mode). Clicking on 'SET' will make this the default. The atom radius can be set manually be set with the commands:
+
+|`arad` | | 
+
+|`azoom`| |
 
 ### arad
-This parameter affects the radius of the selected (or all, if there is no selection) atoms *in Ball and Stick* (PERS) mode only. Typically, the radius in PERS mode is taken from a definition file (and isn't the same for all elements). **arad** overrides these settings. A typical value for H atoms would be `arad 0.2`
+This parameter affects the radius of the selected (or all, if there is no selection) atoms *in Ball and Stick* (PERS) mode only. Typically, the radius in PERS mode is taken from a definition file (and isn't the same for all elements). **arad** overrides these settings. A typical value for H atoms would be 
+
+|`arad 0.2`| |
 
 ### azoom
-This *zooms* the displayed atom sizes regardless of whehter the atoms are shown in *Ball and Stick** (PERS) or *Ellipsoid* (TELP) modes. This value is given in % -- and scales the selected atoms. `arad 100` shows the original atom size, larger/smaller values vary the display accordingly.
-Note: This can play havoc with the ORTEP '50%% probability' convention. In order to ensure that all atoms are shown with the standard probability, please use `telp 50` -- and if a different probability is desired, use that, e.g. `telp 30`.
+This *zooms* the displayed atom sizes regardless of whether the atoms are shown in *Ball and Stick** (PERS) or *Ellipsoid* (TELP) modes. This value is given in % -- and scales the selected atoms. 
+
+|`arad 100`| |
+
+shows the original atom size, larger/smaller values vary the display accordingly.
+Note: This can play havoc with the ORTEP '50%% probability' convention. In order to ensure that all atoms are shown with the standard probability, please use 
+
+|`telp 50`| |
+
+ -- and if a different probability is desired, use that, e.g. 
+
+|`telp 30`| |
 
 # Bond Settings
 Change the radius of the selected bonds. Clicking on `SET` will make this the default. Please note that this will change the radius of *all bonds of the same type*. If you wish to set the radius of a single occurrence of a bond, you must select the bond and type `individualize` first.
@@ -57,15 +73,11 @@ Options: true|false
 The `Reset` link will reset all alerts.
 
 # Console Lines
-In order to avoid too much clutter on the GUI, we have decided to provide the console output behind the molecule. Here you can set the number of lines of output you would like to see. The command:
+In order to avoid too much clutter on the GUI, we have decided to provide the console output behind the molecule. Here you can set the number of lines of output you would like to see. The commands:
 
-`lines 10`
+|`lines 10`|will set the console to only show 10 lines.|
 
-will set the console to only show 10 lines.
-
-`lines -1`
-
-will show all lines.
+|`lines -1`|will show all lines.|
 
 # Save View
 When active, drawing settings such as styles and backgrounds will be saved with the structure. This is somewhat experimental; if things go wrong, you may have to reload the chosen style for that particular structure.
