@@ -10,7 +10,10 @@ You can navigate to a file by clicking on the link under the Start tool, or by u
 Alternatively, you can drag and drop any recognised file into Olex2. This file will then be opened, and the current directory will be set to the one where the file was  dragged from.
 
 ## Command Line
-`reap`, `reap [filename]`
+
+|`reap`|Open a file via the file browser|
+
+|`reap [filename]`|Open the specified file [filename]|
 
 # Sample Structures
 We provide some sample structures for you to experiment with. These sample structures are copied into your Olex2 user area on startup. If you delete the them, they will come back in their original state on restart.
