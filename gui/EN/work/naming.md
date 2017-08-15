@@ -1,4 +1,6 @@
-# Naming 
+# naming-help
+
+# Naming
 This GUI can be used for naming atoms in a molecule. However, in some cases it might be better to use the command line to name atoms more efficiently.
 
 ## Using The GUI
@@ -16,14 +18,14 @@ The atom type of the atom will be changed as well as all other settings will be 
 
 ## Using the Command Line
 
-Command: `name sel type` - Will change all currently selected atoms into the new type.
+|`name sel type`|Will change all currently selected atoms into the new type.|
 
-Command: `name sel integer` - Will renumber all currently selected atoms in the order of which they were selected starting from.
+|`name sel integer`|Will re-number all currently selected atoms in the order of which they were selected starting from.|
 
-# Automatic Hydrogen Naming 
+# Automatic Hydrogen Naming
 Olex2 will keep track of the naming of hydrogen atoms automatically. This feature can be switched off by unticking the 'Automatic Hydrogen Naming' box. 
 
-# Match Naming 
+# Match Naming
 
 If you have a structure with two or more matching moieties, you only need to name one of these. Olex2 will then match this naming scheme to the other molecule.This is important in structures with Z' larger than 1 and also in structures where a metal is coordinated to more than one ligand of the same type. In this case you will need to set the maximum number of bonds for the central metal ion to 0 (right-click, then Bonds).
 Select **any one atom** of the correctly named molecule, and then select **any one atom** of the *other* molecule.
@@ -43,4 +45,4 @@ Equally, the last character of an atom name can be replaced:
 
 Command: `suffix'>match sel -n=-suffix`
 
-There is no GUI for these replacements, you will have to type the lines above from the command line. 
+There is no GUI for these replacements, you will have to type the lines above from the command line.

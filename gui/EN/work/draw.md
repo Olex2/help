@@ -41,18 +41,18 @@ XXX
 # Bitmap Image Attributes1 
 XXX 
 
-# Postscript Images 
+# Postscript Images
 Some would argue that there is no better way to represent a crystal structure on paper than a clear black and white ORTEP drawing. You can make these drawings using Olex2. 
 
 ## ORTEP  
-There are very many different options for generating ORTEP-style drawings. Many of these can be set from this GUI, for some more exotic options you may have to consult the manual of Olex2. 
 
-Command: `pictPS`
+|`pictPS`|There are very many different options for generating ORTEP-style drawings. Many of these can be set from this GUI, for some more exotic options you may have to consult the manual of Olex2.|
+
 
 ## How to use
 XXX
 
-# Povray Images 
+# Povray Images
 POVRAY is a popular format that exports your structure as a 3-D object. Not only can you do beautiful images with rendered shadows and backgrounds with this, but you can make 3-D animations (provided you know PORVRAY!) 
 
 ## POVRAY 

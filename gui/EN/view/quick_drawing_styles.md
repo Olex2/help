@@ -42,7 +42,7 @@ When you see the periodic table, type the word 'pers' - and you will see a spher
 # Bonds
 XXX
 
-# Graphical objects
+# Bond Properties
 Here are a number of functions one can use to help with arrangement of molecules:
 ## Cell
 Toggles between showing the unit cell OFF/ON.
