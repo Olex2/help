@@ -12,9 +12,9 @@ c:showq false
 
 p:This tutorial will show you how to use grow on a molecule in order to demonstrate how molecules interact with each other within the structure
 
-p:First we need to load an extended structure model so for this we will use <b>ZZULI2</b> from the <b>sample structures</b>
+p:First we need to load an extended structure model so for this we will use <b>Timmy</b> from the <b>sample structures</b>
 c:freeze(true)
-c:reap 'DataDir()/samples/ZZULI2/ZZULI2.res'
+c:reap 'DataDir()/samples/Timmy/Timmy'
 c:spy.revert_to_original()
 c:mpln -n
 c:freeze(false)
@@ -39,8 +39,8 @@ h:h2-symmetry-generation
 c:html.ItemState h2-view-symmetry-generation 1
 
 p:Click on the tab marked <b>Growing</b> in order to access some of the different grow modes.
-h:h3-growing
-c:html.ItemState h3-growing 1
+h:h3-Growing
+c:html.ItemState h3-Growing 1
 
 p:In the expanded tab it now means you can select 3 different modes of growing.
 
@@ -49,7 +49,7 @@ c:html.setbg(GROW_SHORT,red)
 c:html.setstate(GROW_SHORT,true)
 
 p:In order to then cause the molecule to grow you have to select the button <b>Grow Mode</b>.
-h:button-grow_mode
+h:GROW
 c:run(mode grow GetData(GROW_SHORT) GetData(GROW_SELECTION) GetData(GROW_VDW))
 
 p:You can now make the molecule grow by one molecular unit whenever you click on one of the grey bonds with a purple end, but the screen will not auto zoom if you choose to grow using the GUI method
