@@ -3,17 +3,17 @@
 c:html.ItemState home-start 2
 c:showQ True
 
-p:Welcome to this first demo introducing you to *Olex2*. To get the most out of it, please read this text carefully and when you are done press the _Next_ button.
+p:Welcome to this first demo introducing you to *Olex2*. To get the most out of it, please read this text carefully and when you are done press the 'Next' button.
 
-p:You can exit the tutorial window to move the molecule in the graphics window if you like.<br>If you would like to use the Graphical User Interface (GUI) properly, press _cancel_ and leave the tutorial.
+p:You can exit the tutorial window to move the molecule in the graphics window if you like.<br>If you would like to use the Graphical User Interface (GUI) properly, press 'Cancel' and leave the tutorial.
 
-p:Structures are loaded from the **Start** tool. The tool will be highlighted when you press _Next_.
+p:Structures are loaded from the <b>Start</b> tool. The tool will be highlighted when you press 'Next'.
 
 h:h2-Start
 c:html.ItemState home-start 1
 c:reset
 
-p:You can choose a sample structure by clicking one of the links next to the title **Sample Structure**. In this tutorial, we will be solving and refining one of the sample structures that come with OLEX2 - "SUCROSE". Please press <c>Next</c> to load it (this may take some time!).
+p:You can choose a sample structure by clicking one of the links next to the title <b>Sample Structure</b>. In this tutorial, we will be solving and refining one of the sample structures that come with OLEX2 - "SUCROSE". Please press '<c>Next</c>' to load it (this may take some time!).
 c:refresh
 c:freeze(true)
 c:reap DataDir()/samples/sucrose/sucrose.res
@@ -22,41 +22,41 @@ c:mpln -n
 c:freeze(false)
 c:refresh
 
-p:By clicking on the **Work** tab, we get access to the main tools in OLEX2:
+p:By clicking on the <b>Work</b> tab, we get access to the main tools in OLEX2:
 h:tab-work;3
 c:spy.demo.switch_tab_for_tutorials(work)
 
-p:Structure **Solution**, **Refinement** and **Reports**
+p:Structure <b>Solution</b>, <b>Refinement</b> and <b>Reports</b>
 h:btn-solve;3
 h:btn-refine;3
 h:btn-report;3
 
-p:To solve your crystal structure with OLEX2 you need to provide a reflection file (**name.hkl**) and an input file (name.ins) containing the crystallographic unit cell you determined during the diffraction experiment.
+p:To solve your crystal structure with OLEX2 you need to provide a reflection file (<b>name.hkl</b>) and an input file (name.ins) containing the crystallographic unit cell you determined during the diffraction experiment.
 
-p:We can solve the structure of our example sucrose by typing <c>solve</c> into the graphics window or by clicking the **Solve** button. We will do this now.
+p:We can solve the structure of our example sucrose by typing <c>solve</c> into the graphics window or by clicking the <b>Solve</b> button. We will do this now.
 h:btn-solve;1
 c:solve
 c:waitfor process
 c:refresh
 
-p:We can tidy this solution by typing _clean_ or by pressing the **Clean** button.
+p:We can tidy this solution by typing 'clean' or by pressing the <b>Clean</b> button.
 h:toolbar-tidy
 c:clean
 c:compaq -a
 c:refresh
 
-p:Let's press the **Refine** button or type <c>refine</c> and refine what we've got so far.
+p:Let's press the <b>Refine</b> button or type '<c>refine</c>' and refine what we've got so far.
 h:btn-refine;1
 c:refine
 
-p:For every instruction that you can use in the graphics window, a short help description tells you the function and possibly switches. If you type <c>help clean</c>...
+p:For every instruction that you can use in the graphics window, a short help description tells you the function and possibly switches. If you type '<c>help clean</c>'...
 c:help clean
 c:refresh
 
 p:...the macro Clean is described in the graphics window. Let's clean once again.
 c:clean
 
-p:With the **Uiso Slider** in the **Toolbox Work** we can select all those atoms that look 'too small'
+p:With the <b>Uiso Slider</b> in the <b>Toolbox Work</b> we can select all those atoms that look 'too small'
 c:html.ItemState work-main-toolbar 1
 c:html.ItemState h3-peak-and-uiso-sliders 1
 c:html.setBG(UISO_SELECT_SLIDER,#ff0000)
@@ -65,7 +65,7 @@ c:html.setvalue(UisoSelectVal,<0.035)
 c:sel atoms where xatom.uiso < 0.035&&xatom.type!='Q'
 c:refresh
 
-p:... and make them into Oxygen by pressing the **O** button.
+p:... and make them into Oxygen by pressing the <b>O</b> button.
 h:btn-elementO
 c:name sel O
 c:refresh
@@ -76,29 +76,29 @@ c:refine
 p:Clean...
 c:clean
 
-p:Now it's time to make everything **anisotropic**. Type <c>anis</c> or click on the **ANIS** button.
-h:toolbar-ANIS
+p:Now it's time to make everything <b>anisotropic</b>. Type '<c>anis</c>' or click on the <b>ANIS</b> button.
+h:toolbar-anis
 c:anis
 c:refine
 
 p:... clean it ...
 c:clean
 
-p:Let's add some hydrogen atoms to this. Type <c>hadd</c> or click on the **ADD H** button:
+p:Let's add some hydrogen atoms to this. Type '<c>hadd</c>' or click on the <b>Add H</b> button:
 h:small-Add_H
 c:hadd
 c:refine
 c:refresh
 
-p:You can toggle the display of electron density peaks (Q-peaks) by repeatedly pressing the **Q** button or by <c>CTRL+Q</c>
-h:toolbar-q
+p:You can toggle the display of electron density peaks (Q-peaks) by repeatedly pressing the <b>Q</b> button or by '<c>CTRL+Q</c>'
+h:toolbar-Q
 c:showQ False
 c:refresh
 ##
 
 p:Of course, we can change the settings of the solution program.
 
-p:We do this, by clicking the **Solution Settings** Button.
+p:We do this, by clicking the <b>Solution Settings</b> button.
 h:cbtn-solve
 c:html.ItemState solve-settings 1
 
@@ -107,29 +107,29 @@ p:Here we can choose solution programs and settings ...
 h:SET_snum_solution_PROGRAM_bg
 h:SET_snum_solution_METHOD_bg
 
-p:... set the **Formula** and can determine the **space group**.
+p:... set the <b>Formula</b> and can determine the <b>space group</b>.
 h:SET_SNUM_REFINEMENT_FORMULA_bg
 h:SET_SNUM_REFINEMENT_SPACE_GROUP_bg
 
-p:When you click on **Suggest SG** link, or type <c>sg</c>, watch what happens in the graphics window!
+p:When you click on <b>Suggest SG</b> link, or type '<c>sg</c>', watch what happens in the graphics window!
 c:sg
 c:refresh
 
-p:In order to see all the console output in the graphics window, you can type <c>lines -1</c>.
+p:In order to see all the console output in the graphics window, you can type '<c>lines -1</c>'.
 c:lines -1
 c:refresh
 
-p:To show only 10 lines, type <c>lines 10</c>
+p:To show only 10 lines, type '<c>lines 10</c>'.
 c:lines 10
 c:refresh
 c:html.ItemState solve-settings 2
 
-p:If you type <c>text</c> or press the little text icon, you will get a 'transcript' of the console in your text editor
+p:If you type '<c>text</c>' or press the little text icon, you will get a 'transcript' of the console in your text editor.
 h:toolbar-text
 c:text
 c:refresh
 
-p:To clear the console output, type <c>clear</c>
+p:To clear the console output, type '<c>clear</c>'.
 c:clear
 c:refresh
 c:html.ItemState solve-settings 2

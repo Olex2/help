@@ -11,44 +11,44 @@ c:html.ItemState index-home 1
 c:lines 10
 c:showq false
 
-p:This tutorial will show you how to use the sorting options in Olex2, the first thing this tutorial will do is to load sucrose as an example to show this.
+p:This tutorial will show you how to use the sorting options in Olex2. The first thing this tutorial will do is to load sucrose as an example to show this.
 c:freeze(true)
 c:reap 'DataDir()/samples/sucrose/sucrose.res'
 c:spy.revert_to_original()
 c:freeze(false)
 
-p:First you need to click on the <b>Work</b> tab in the top toolbar
+p:First, you need to click on the <b>Work</b> tab in the top toolbar.
 h:tab-work
 c:spy.demo.switch_tab_for_tutorials(work)
 
-p:Then you need to select the <b>Sorting</b> tab
+p:Then you need to select the <b>Sorting</b> tab.
 h:h2-sorting
 c:html.ItemState h2-work-sorting 1
 
-p:Once the tab has been opened there will be 4 buttons in the tab, the first button <b>Mass & Label</b> creates a table that sorts the atoms by mass but allows for the labels to be used in other areas
+p:Once the tab has been opened there will be 4 buttons in the tab, the first button <b>Mass & Label</b> creates a table that sorts the atoms by mass but allows for the labels to be used in other areas.
 
-p:The table gives you the results for the Atom label, Type, its X,Y and Z position, Ueq, Chemical Occupancy, Peak, R-bond and R-VdW
+p:The table gives you the results for the Atom label, Type, its X,Y and Z position, Ueq, Chemical Occupancy, Peak, R-bond and R-VdW.
 
-p:Selecting the button will create a table of results in the command window
-h:button-sort
+p:Selecting the button will create a table of results in the command window.
+h:small-Sort
 c:html.call(IMG_BUTTON-SORT.onclick)
 c:info
 c:refresh
 
-p:In order to see all the lines of text in the command window you need to type the command <c>lines -1</c>
+p:In order to see all the lines of text in the command window you need to type the command '<c>lines -1</c>'.
 c:lines -1
 c:refresh
 
-p:Alternately you could type in the command <c>text</c> in order to bring a window up that contains all the text that will also let you scroll up and down, you could also do this by clicking on the notepad icon at the top of the window
+p:Alternately you could type in the command '<c>text</c>' in order to bring a window up that contains all the text that will also let you scroll up and down, you could also do this by clicking on the notepad icon at the top of the window.
 h:toolbar-text
 c:text
 
-p:To make it easier to find the relevant information you can also type in the command <c>clear</c> before the the <c>text</c> command as this will only show the table you are wanting to look at now.
+p:To make it easier to find the relevant information you can also type in the command '<c>clear</c>' before the '<c>text</c>' command as this will only show the table you are wanting to look at now.
 c:clear
 c:html.call(IMG_BUTTON-SORT.onclick)
 c:text
 
-p:The next button <b>Atom Label</b> sorts the table alphabetically by the Atoms label name
+p:The next button <b>Atom Label</b> sorts the table alphabetically by the Atoms label name.
 h:button-atom_label
 c:sort +al
 c:info
@@ -69,8 +69,8 @@ c:reap 'DataDir()/samples/ZP2/ZP2.res'
 c:spy.revert_to_original()
 c:freeze(false)
 
-p:Now you can click on the <b>Moieties</b> button
-h:button-moieties
+p:Now you can click on the <b>Moieties</b> button.
+h:button_full-Separate_Moieties
 c:sort moiety
 c:info
 c:refresh
@@ -78,19 +78,19 @@ c:refresh
 p:You can view the results for these through either medium again but it is recommended to view this through the text box as not all the results will fit into the command window.
 c:text
 
-p:You can also mix and match some of these options in order to get different types of sorted tables for all the available sort options type the command <c>help sort</c>
+p:You can also mix and match some of these options in order to get different types of sorted tables. For all the available sort options type the command '<c>help sort</c>'.
 c:help sort
 c:refresh
 
-p:An example that you may want to try out would be to mix the moiety sort with the mass and label sort, to do this type into the command line <c>sort +ml moiety</c>
+p:An example that you may want to try out would be to mix the moiety sort with the mass and label sort. To do this type into the command line '<c>sort +ml moiety</c>'.
 c:sort +ml moiety
 c:info
 c:refresh
 
-p:This should of now produced a table that has the atoms sorted by their atomic mass but still relative to which molecule they came from with the labels they have been given.
+p:This should have now produced a table that has the atoms sorted by their atomic mass but still relative to which molecule they came from with the labels they have been given.
 c:text
 
-p:You can also switch which way round the molecules appear in the moiety list by adding an extra part to the end of the command line so for example in the example we are using if you enter in the command <c>sort +ml moiety F2 F1</c>
+p:You can also switch which way round the molecules appear in the moiety list by adding an extra part to the end of the command line so for example in the example we are using, if you enter in the command '<c>sort +ml moiety F2 F1</c>'
 c:sort +ml moiety F2 F1
 c:info
 c:refresh

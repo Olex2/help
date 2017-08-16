@@ -37,6 +37,7 @@ Change the radius of the selected bonds. Clicking on 'SET' will make this the de
 
 |`individualize`| If you wish to set the radius of a single occurrence of a bond, you must select the bond and type this command first.|
 
+
 # background
 A choice of different backgrounds is available for Olex2. Depending on the context, sometimes a dark background works better than a light one, and sometimes a graduated background is best. It is easy to switch between them.
 
@@ -57,9 +58,9 @@ The GUI width will adjust as a fraction of the screen width **0.33** will divide
 ## Value > 100
 The absolute GUI width in pixels.
 
-Keyboard: `panel 520`, `panel 0.33`
+|Keyboard: |`panel 520`|`panel 0.33`|
 
-# GUI left/right
+# GUI side
 Set whether the GUI should be on the left or right of the screen
 
 # Tooltips
@@ -70,8 +71,9 @@ A pictogram of all current atom types appears in the main window. With the left 
 
 # Info bar
 If selected, more information on a structure is shown in the top panel.
-Keyboard: `showwindow info`
-Options: true|false
+
+|Keyboard: |`showwindow info`|
+|Options: |`true/false`|
 
 # Reset Alerts
 The 'Reset' link will reset all alerts.
@@ -83,10 +85,19 @@ In order to avoid too much clutter on the GUI, we have decided to provide the co
 
 |`lines -1`|will show all lines.|
 
+# Fader
+XXX
+
 # auto save view
 When active, drawing settings such as styles and backgrounds will be saved with the structure. This is somewhat experimental; if things go wrong, you may have to reload the chosen style for that particular structure.
 
 When this option is **not** active, then a structure will be loaded with the same style as the previous structure.
+
+# Start Olex2 In
+XXX
+
+# Solo Mode
+XXX
 
 # Auto Close Settings Panels
 XXX
@@ -101,4 +112,7 @@ XXX
 XXX
 
 # Enable Network
+XXX
+
+# olex2 debug mode
 XXX

@@ -11,7 +11,7 @@ c:html.ItemState tab* 2
 c:lines 10
 c:showq false
 
-p:This tutorial will look at how to use the pack function in Olex 2 in order to show how the molecules interact with each other, the first thing this tutorial will do is to load sucrose as an example to show this.
+p:This tutorial will look at how to use the pack function in Olex 2 in order to show how the molecules interact with each other. The first thing this tutorial will do is to load sucrose as an example to show this.
 c:freeze(true)
 c:reap 'DataDir()/samples/sucrose/sucrose.res'
 c:spy.revert_to_original()
@@ -25,8 +25,8 @@ p:Then you need to open the toolbar called <b>Symmetry Generation</b> by clickin
 h:h2-symmetry-generation
 c:html.ItemState h2-view-symmetry-generation 1
 
-p:...you then need to open the tab called <b>Packing</b>
-h:h3-h3-packing
+p:...you then need to open the tab called <b>Packing</b>.
+h:h3-Packing
 c:html.ItemState h3-packing 1
 
 p:You can then either choose using the slider how many units you want to pack the molecule by
@@ -37,21 +37,21 @@ c:setvalue(packradius,getvalue(slidepackradius))
 c:pack getvalue(packradius)
 c:refresh
 
-p:...or you can choose to type the command <c>pack</c> to show the maximum amount aloud to be shown
+p:...or you can choose to type the command '<c>pack</c>' to show the maximum amount allowed to be shown.
 c:pack
 c:refresh
 
-p:You can move, rotate and use functions on these as you would for a normal single unit of the molecule for example here is the molecule rotating 90 degrees along the x axis
+p:You can move, rotate and use functions on these as you would for a normal single unit of the molecule, for example here is the molecule rotating 90 degrees along the x axis.
 c:rota x 90
 c:refresh
 
-p:In order to reduce this back down to a single unit again you have to click on the tab called <b>Symmetry Tools</b>
+p:In order to reduce this back down to a single unit again you have to click on the tab called <b>Symmetry Tools</b>.
 c:html.ItemState h3-packing 2
-h:h3-h3-symmetry-tools
+h:h3-Symmetry-Tools
 c:html.ItemState h3-symmetry-tools 1
 
-p:Once on the symmetry tools tab you need to click on <b>Fuse</b> in order to reduce the model to one unit again or type the command <c>fuse</c>
-h:button-fuse
+p:Once on the Symmetry Tools tab you need to click on <b>Fuse</b> in order to reduce the model to one unit again or type the command '<c>fuse</c>'.
+h:three-Fuse
 c:fuse
 c:refresh
 

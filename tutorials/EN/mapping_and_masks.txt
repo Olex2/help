@@ -10,7 +10,7 @@ c:html.ItemState tab* 2
 c:lines 10
 c:showq false
 
-p:This tutorial will explain how to set up different types of maps in order to help understand the structure better, the first thing this tutorial will do is to load sucrose as an example to show this.
+p:This tutorial will explain how to set up different types of maps in order to help understand the structure better. The first thing this tutorial will do is to load sucrose as an example to show this.
 c:freeze(true)
 c:reap 'DataDir()/samples/sucrose/sucrose.res'
 c:spy.revert_to_original()
@@ -21,19 +21,19 @@ h:tab-tools
 c:spy.demo.switch_tab_for_tutorials(tools)
 
 p:You then need to click on the <b>Maps</b> tab
-h:h2-maps
+h:h2-Maps
 c:html.ItemState h2-tools-masks 1
 
 p:From this screen you can create a map for your 3D model lets start by creating a mask for the model.
 
 p:To run a mask you first need to click on the <b>Masks</b> tab
-h:h3-masks
+h:h3-Masks
 c:html.ItemState h3-masks 1
 
 p:Once in the tab leave all the numbers at their default values
 
 p:Now click on the button marked <b>Mask</b>
-h:button_small-mask
+h:small-Mask
 c:spy.gui.maps.MaskView()
 c:spy.OlexCctbxMasks()
 c:refresh
@@ -76,13 +76,13 @@ c:html.setvalue(snum_xgrid_depth_value,math.eval(html.getvalue(snum_xgrid_depth_
 c:refresh
 
 p:There are also other types of maps you can use by selecting one of the other tabs such as <b>Electron Density</b>
-h:h3-electron-density
+h:h3-Electron-Density
 c:html.ItemState h3-electron-density 1
 
 p:This will allow you to see the electron densities in the maps and will also change as you move the molecule through the plane
 
 p:To do this all you need to do is click on the button marked <b>map</b>
-h:button_small-map
+h:small-Map
 c:spy.mapview()
 c:refresh
 
