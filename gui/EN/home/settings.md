@@ -30,10 +30,14 @@ Note: This can play havoc with the ORTEP '50%% probability' convention. In order
 
 |`telp 30`| |
 
-# Bond Settings
-Change the radius of the selected bonds. Clicking on `SET` will make this the default. Please note that this will change the radius of *all bonds of the same type*. If you wish to set the radius of a single occurrence of a bond, you must select the bond and type `individualize` first.
+# Bond-Styles-help
 
-# Background
+# Bond Styles
+Change the radius of the selected bonds. Clicking on 'SET' will make this the default. Please note that this will change the radius of *all bonds of the same type*. 
+
+|`individualize`| If you wish to set the radius of a single occurrence of a bond, you must select the bond and type this command first.|
+
+# background
 A choice of different backgrounds is available for Olex2. Depending on the context, sometimes a dark background works better than a light one, and sometimes a graduated background is best. It is easy to switch between them.
 
 ## Solid Colour/White
@@ -64,13 +68,13 @@ If selected, tooltips will be shown when hovering over items.
 # Legend
 A pictogram of all current atom types appears in the main window. With the left mouse and the pressed SHIFT key, this can be moved to any position. This legend can be switched on and off by typing `legend`.
 
-# Info
+# Info bar
 If selected, more information on a structure is shown in the top panel.
 Keyboard: `showwindow info`
 Options: true|false
 
-# Alerts
-The `Reset` link will reset all alerts.
+# Reset Alerts
+The 'Reset' link will reset all alerts.
 
 # Console Lines
 In order to avoid too much clutter on the GUI, we have decided to provide the console output behind the molecule. Here you can set the number of lines of output you would like to see. The commands:
@@ -79,22 +83,22 @@ In order to avoid too much clutter on the GUI, we have decided to provide the co
 
 |`lines -1`|will show all lines.|
 
-# Save View
+# auto save view
 When active, drawing settings such as styles and backgrounds will be saved with the structure. This is somewhat experimental; if things go wrong, you may have to reload the chosen style for that particular structure.
 
 When this option is **not** active, then a structure will be loaded with the same style as the previous structure.
 
-# Close Settings
+# Auto Close Settings Panels
 XXX
 
-# Modules-Update_Notification-help
+# Modules Update Notification
 If updates to extension modules are availabe, a pop-up box will appear after Olex2 is started. This can be switched off here.
 
-# Unit Cell Style
+# Unitcell rendering
 XXX
 
-# User Database
+# User db location
 XXX
 
-# Network operations
+# Enable Network
 XXX

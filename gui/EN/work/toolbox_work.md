@@ -189,15 +189,17 @@ The structure factors will be read from a ShelXL fcf.
 ## Electron Density Peak Slider
 Electron Density Peak Slider Move the slider to the **left** to filter out strongest peaks first, or to the **right** to filter out weakest peaks first. You can then do things like `name $Q C` - and this will only apply to the currently visible peaks. The same goes for the Select and Delete buttons.
 
-## Uiso Select Slider
+# USIO-select-slider-help
+
+# Uiso Select Slider
 This tool allows the selection of atoms according to their Ueq values.
 
-### Slide to the RIGHT
+## Slide to the RIGHT
 This will select atoms where the Ueq value is LARGER than the value indicated by the slider.
 
 Command: `sel atoms where xatom.uiso > 0.06xatom.type!='Q'`
 
-### Slide to the LEFT
+## Slide to the LEFT
 This will select atoms where the Ueq value is SMALLER than the value indicated by the slider.
 
 Command: `sel atoms where xatom.uiso`

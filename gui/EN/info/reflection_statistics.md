@@ -3,7 +3,7 @@
 # Reflection File
 Olex2 will manage the reflection file against which you want to refine your model. Select the file from the drop-down menu and this is the file that will be used.
 
-## Reflection Graph 
+# Reflection Graph
 These diagnosic graphs can be very useful when you run into problems with your structure. Please note that some of the graphs available from here are purely a function of the diffraction data, while other's take your model into account. The header 'Reflection Statistics' is therefore not strictly-speaking true -- but calling it only 'Statistics' doesn't seem quite right either!
 
 ### Wilson Plot 
