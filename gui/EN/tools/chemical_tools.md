@@ -9,16 +9,15 @@
 
 
 # Calculate Molecular Volume
-Calculates the molecular volume of the structure. 
 
-Command:`vvol()`
+|`vvol()`|Calculates the molecular volume of the structure.| 
+
 
 # Calculate Polyhedral Volume
-Calculates the polyhedral volume of a polyheder that is defined by the selected atom. 
 
-Command:`calcvol`
+|`calcvol`|Calculates the polyhedral volume of a polyheder that is defined by the selected atom.|
+
 
 # Calculate Bounding Box
-A rectangular bounding box is calculated for your molecule and displayed on the screen. 
-
-Command:`wbox`
+ 
+|`wbox`|A rectangular bounding box is calculated for your molecule and displayed on the screen.|

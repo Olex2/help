@@ -3,7 +3,7 @@
 c:html.ItemState home-start 2
 c:showQ True
 
-p:Welcome to this first demo introducing you to *Olex2*. To get the most out of it, please read this text carefully and when you are done press the 'Next' button.
+p:Welcome to this first demo introducing you to <font color="rgb(255,100,50)">Olex2</font color="rgb(255,100,50)">. To get the most out of it, please read this text carefully and when you are done press the 'Next' button.
 
 p:You can exit the tutorial window to move the molecule in the graphics window if you like.<br>If you would like to use the Graphical User Interface (GUI) properly, press 'Cancel' and leave the tutorial.
 
@@ -13,7 +13,7 @@ h:h2-Start
 c:html.ItemState home-start 1
 c:reset
 
-p:You can choose a sample structure by clicking one of the links next to the title <b>Sample Structure</b>. In this tutorial, we will be solving and refining one of the sample structures that come with OLEX2 - "SUCROSE". Please press '<c>Next</c>' to load it (this may take some time!).
+p:You can choose a sample structure by clicking one of the links next to the title <b>Sample Structure</b>. In this tutorial, we will be solving and refining one of the sample structures that come with Olex2 - <b>Sucrose</b>. Please press 'Next' to load it (this may take some time!).
 c:refresh
 c:freeze(true)
 c:reap DataDir()/samples/sucrose/sucrose.res
@@ -22,18 +22,18 @@ c:mpln -n
 c:freeze(false)
 c:refresh
 
-p:By clicking on the <b>Work</b> tab, we get access to the main tools in OLEX2:
+p:By clicking on the <b>Work</b> tab, we get access to the main tools in Olex2:
 h:tab-work;3
 c:spy.demo.switch_tab_for_tutorials(work)
 
-p:Structure <b>Solution</b>, <b>Refinement</b> and <b>Reports</b>
+p:Here we have structure <b>Solution</b>, <b>Refinement</b> and <b>Reports</b>
 h:btn-solve;3
 h:btn-refine;3
 h:btn-report;3
 
-p:To solve your crystal structure with OLEX2 you need to provide a reflection file (<b>name.hkl</b>) and an input file (name.ins) containing the crystallographic unit cell you determined during the diffraction experiment.
+p:To solve your crystal structure with Olex2 you need to provide a reflection file (<b>name.hkl</b>) and an input file (<b>name.ins</b>) containing the crystallographic unit cell you determined during the diffraction experiment.
 
-p:We can solve the structure of our example sucrose by typing <c>solve</c> into the graphics window or by clicking the <b>Solve</b> button. We will do this now.
+p:We can solve the structure of our example sucrose by typing '<c>solve</c>' into the graphics window or by clicking the <b>Solve</b> button. We will do this now.
 h:btn-solve;1
 c:solve
 c:waitfor process
@@ -53,10 +53,10 @@ p:For every instruction that you can use in the graphics window, a short help de
 c:help clean
 c:refresh
 
-p:...the macro Clean is described in the graphics window. Let's clean once again.
+p:...the 'macro Clean' is described in the graphics window. Let's clean once again.
 c:clean
 
-p:With the <b>Uiso Slider</b> in the <b>Toolbox Work</b> we can select all those atoms that look 'too small'
+p:With the <b>Uiso Slider</b> in the <b>Toolbox Work</b> we can select all those atoms that look 'too small'.
 c:html.ItemState work-main-toolbar 1
 c:html.ItemState h3-peak-and-uiso-sliders 1
 c:html.setBG(UISO_SELECT_SLIDER,#ff0000)
@@ -65,7 +65,7 @@ c:html.setvalue(UisoSelectVal,<0.035)
 c:sel atoms where xatom.uiso < 0.035&&xatom.type!='Q'
 c:refresh
 
-p:... and make them into Oxygen by pressing the <b>O</b> button.
+p:...and make them into Oxygen by pressing the <b>O</b> button.
 h:btn-elementO
 c:name sel O
 c:refresh
@@ -73,7 +73,7 @@ c:refresh
 p:Refine this again...
 c:refine
 
-p:Clean...
+p:...and clean.
 c:clean
 
 p:Now it's time to make everything <b>anisotropic</b>. Type '<c>anis</c>' or click on the <b>ANIS</b> button.
@@ -81,16 +81,16 @@ h:toolbar-anis
 c:anis
 c:refine
 
-p:... clean it ...
+p:...clean it...
 c:clean
 
-p:Let's add some hydrogen atoms to this. Type '<c>hadd</c>' or click on the <b>Add H</b> button:
+p:Let's add some hydrogen atoms to this. Type '<c>hadd</c>' or click on the <b>Add H</b> button.
 h:small-Add_H
 c:hadd
 c:refine
 c:refresh
 
-p:You can toggle the display of electron density peaks (Q-peaks) by repeatedly pressing the <b>Q</b> button or by '<c>CTRL+Q</c>'
+p:You can toggle the display of electron density peaks (Q-peaks) by repeatedly pressing the <b>Q</b> button or by '<c>CTRL+Q</c>'.
 h:toolbar-Q
 c:showQ False
 c:refresh
@@ -103,11 +103,11 @@ h:cbtn-solve
 c:html.ItemState solve-settings 1
 
 
-p:Here we can choose solution programs and settings ...
+p:Here we can choose solution programs and settings...
 h:SET_snum_solution_PROGRAM_bg
 h:SET_snum_solution_METHOD_bg
 
-p:... set the <b>Formula</b> and can determine the <b>space group</b>.
+p:...set the <b>Formula</b> and can determine the <b>space group</b>.
 h:SET_SNUM_REFINEMENT_FORMULA_bg
 h:SET_SNUM_REFINEMENT_SPACE_GROUP_bg
 
@@ -134,8 +134,8 @@ c:clear
 c:refresh
 c:html.ItemState solve-settings 2
 
-p:We hope you enjoyed this first introduction to <font color="rgb(255,100,50)">OLEX2</font color="rgb(255,100,50)"> - please let us know if we missed out any essential steps in this manual by visiting www.olex2.org and getting engaged in the OLEX2 development.
+p:We hope you enjoyed this first introduction to Olex2 - please let us know if we missed out any essential steps in this manual by visiting www.olex2.org and getting engaged in the Olex2 development.
 
 
 c:spy.demo.switch_tab_for_tutorials(home)
-p:End of tutorial, press next to repeat the tutorial or cancel to exit. <br><font size='1'>Written by Stefanie Freitag-Pohl.</font>
+p:End of tutorial, press 'Next' to repeat the tutorial or 'Cancel' to exit. <br><font size='1'>Written by Stefanie Freitag-Pohl.</font>

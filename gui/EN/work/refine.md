@@ -20,9 +20,10 @@ Some refinement programs (e.g. SHELXL) will continue refining up to a maximum nu
 You can simply type, for example:`refine 4 5` meaning that 4 cycles of refinement will be carried out and that you will be shown 5 residual electron density peaks once the refinement has finished. The values will be remembered for future refinements.
 
 # Weighting Scheme
-A weighting scheme should be applied to your data. This is usually done when your model is finished. All refinement programs will suggest a suitable weighting scheme. By clicking on the coloured line you will apply these suggestions. By ticking the box, Olex2 will automatically update to the suggested values after each cycle.
 
-Command: `weight`
+|`weight`|A weighting scheme should be applied to your data. This is usually done when your model is finished.|
+
+All refinement programs will suggest a suitable weighting scheme. By clicking on the coloured line you will apply these suggestions. By ticking the box, Olex2 will automatically update to the suggested values after each cycle.
 
 # Extinction Correction
 Extinction affects the intensity of reflections and can result in systematically absent reflections being observed under special conditions. This parameter is designed to account for the intensity changes associated with extinction, the method used is a compromise to cover primary and secondary extinction. In general this should not be included until all of the non-hydrogen atoms have been located.

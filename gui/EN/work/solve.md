@@ -33,9 +33,9 @@ For molecular compounds this number is easy to see - just count the number of fu
 Usually, you will have determined the space group during data processing. 
 
 ## Suggest SG 
-Olex2 can also determine the space group. Press the 'Suggest SG' link and the most likely choices will appear in the drop-down box on the right. You can type 'text' to see the full output of the data analysis.
-You can also type any space group into the box - when leaving the box, your structure will be set up ready to solve in that new space group. 
-`sg`
+ 
+|`sg`|Olex2 can also determine the space group. Press the 'Suggest SG' link and the most likely choices will appear in the drop-down box on the right. You can type 'text' to see the full output of the data analysis.|
 
+You can also type any space group into the box - when leaving the box, your structure will be set up ready to solve in that new space group.
 # Solution Settings Extra 
 XXX

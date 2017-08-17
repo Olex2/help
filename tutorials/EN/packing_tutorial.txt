@@ -11,7 +11,7 @@ c:html.ItemState tab* 2
 c:lines 10
 c:showq false
 
-p:This tutorial will look at how to use the pack function in Olex 2 in order to show how the molecules interact with each other. The first thing this tutorial will do is to load sucrose as an example to show this.
+p:This tutorial will look at how to use the pack function in Olex 2, in order to show how the molecules interact with each other. The first thing this tutorial will do is to load <b>Sucrose</b> as an example to show this.
 c:freeze(true)
 c:reap 'DataDir()/samples/sucrose/sucrose.res'
 c:spy.revert_to_original()
@@ -21,7 +21,7 @@ p:First you need to click on the <b>View</b> tab in the top toolbar.
 h:tab-view
 c:spy.demo.switch_tab_for_tutorials(view)
 
-p:Then you need to open the toolbar called <b>Symmetry Generation</b> by clicking it, which will extend the tab
+p:Then you need to open the toolbar called <b>Symmetry Generation</b> by clicking it, which will extend the tab...
 h:h2-symmetry-generation
 c:html.ItemState h2-view-symmetry-generation 1
 
@@ -29,7 +29,7 @@ p:...you then need to open the tab called <b>Packing</b>.
 h:h3-Packing
 c:html.ItemState h3-packing 1
 
-p:You can then either choose using the slider how many units you want to pack the molecule by
+p:You can then choose how many units you want to pack the molecule by, either by using the slider...
 c:html.setbg(slidepackradius,red)
 c:html.setvalue(slidepackradius,15)
 c:html.setvalue(packradius,15)
@@ -37,11 +37,11 @@ c:setvalue(packradius,getvalue(slidepackradius))
 c:pack getvalue(packradius)
 c:refresh
 
-p:...or you can choose to type the command '<c>pack</c>' to show the maximum amount allowed to be shown.
+p:...or you can type the command '<c>pack</c>' to show the maximum amount allowed to be shown.
 c:pack
 c:refresh
 
-p:You can move, rotate and use functions on these as you would for a normal single unit of the molecule, for example here is the molecule rotating 90 degrees along the x axis.
+p:You can move, rotate and use functions on these as you would for a normal single unit of the molecule. For example here is the molecule rotating 90 degrees along the x axis.
 c:rota x 90
 c:refresh
 
@@ -50,9 +50,9 @@ c:html.ItemState h3-packing 2
 h:h3-Symmetry-Tools
 c:html.ItemState h3-symmetry-tools 1
 
-p:Once on the Symmetry Tools tab you need to click on <b>Fuse</b> in order to reduce the model to one unit again or type the command '<c>fuse</c>'.
+p:Once on the <b>Symmetry Tools</b> tab you need to click on <b>Fuse</b> in order to reduce the model to one unit again, or type the command '<c>fuse</c>'.
 h:three-Fuse
 c:fuse
 c:refresh
 
-p:End of tutorial, press next to repeat the tutorial or cancel to exit.
+p:End of tutorial, press 'Next' to repeat the tutorial or 'Cancel' to exit.

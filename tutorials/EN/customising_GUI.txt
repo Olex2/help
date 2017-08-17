@@ -34,7 +34,7 @@ p:...<b>execout</b> which allows you to edit material for the output text printe
 
 p:...<b>error</b> which allows you to edit material for reporting errors in the console...
 
-p:And <b>exception</b> which allows you to edit material for reporting exception in the console. 
+p:...and <b>exception</b> which allows you to edit material for reporting exception in the console. 
 
 p:Another useful function that can be entered into the command line is '<c>save</c>'. This will bring up the save as menu if no file name is provided. You also need to add in extra prefixes if you want certain settings saved which are scene, style, view, model.
 c:save style
@@ -57,14 +57,14 @@ p:The default value for brad is one so in order to get the bonds back to their n
 c:brad 1
 c:refresh
 
-p:This particular command you can use in the GUI by going to View in the toolbar then opening the tab Quick Drawing Styles.
+p:This particular command you can use in the GUI by going to <b>View</b> in the toolbar then opening the tab <b>Quick Drawing Styles</b>.
 h:tab-view
 c:spy.demo.switch_tab_for_tutorials(view)
 h:h2-quick-drawing-styles
 c:html.ItemState h2-view-quick-drawing-styles 1
 
 p:You can also have the model shown as spheres by typing the command '<c>ads sph</c>'. You can also do this by selecting the button <b>Balls & Sticks</b>.
-h:ball-and-stick
+h:toolbar-ball-and-stick
 c:ads sph
 
 p:You can also choose to have the model shown with Ellipsoids by either selecting the button <b>Ellipsoids | H</b> or you can enter in the command '<c>ads elp</c>'.
@@ -77,7 +77,7 @@ c:ads ort
 c:refresh
 
 p:The final command for this customisation is '<c>ads std</c>' which is a standalone atom (i.e. grown as a cross in wire-frame mode) which can also be found in the GUI as <b>Tubes</b>.
-h:button-Tubes
+h:toolbar-wireframe
 c:ads std
 c:refresh
 
@@ -126,4 +126,4 @@ p:To return all the atoms back to there actual size simply type in the command '
 c:azoom 100
 c:refresh
 
-p:End of tutorial, click on the next button to replay the tutorial or the cancel button to exit.
+p:End of tutorial, click on the 'Next' button to replay the tutorial or the 'Cancel' button to exit.

@@ -1,4 +1,5 @@
-# Calculate Mean Plane
+# Calculate Mean Plane-help
+
 Select atoms that you wish to define a plane for. A plane will be displayed in the ring and a centroid generated, all symmetry related planes will automatically be added to any other molecules on the screen.
 
 # Calculate Best Plane
@@ -7,7 +8,7 @@ Select atoms that you wish to define a line for. A line will be fitted and displ
 # Distances And Angles
 Displays the distance between atoms (for two selected atoms), the angle (for three selected atoms) or the torsion angle, angle and distance (for four selected atoms). 
 
-# Refine With E.S.D Info
+# Refine with e.s.d Info
 Carries out a refinement to save the necessary information to display E.S.D information on parameters. 
 
 # Distances And Angles With E.S.D

@@ -12,11 +12,11 @@ c:lines 10
 
 p:This tutorial will teach you how to use the different 3D settings that are available on Olex2
 
-p:In order to access the different settings go to <b>View</b> in the top tab
+p:In order to access the different settings go to <b>View</b> in the top tab.
 h:tab-view
 c:spy.demo.switch_tab_for_tutorials(view)
 
-p:Then you need to go on the tab for <b>Stereo View</b>
+p:Then you need to go on the tab for <b>Stereo View</b>.
 h:h2-Stereo-View
 c:html.ItemState h2-view-stereo-view 1
 
@@ -27,28 +27,28 @@ c:refresh
 
 p:This mode allows you to view the model in 3D via a pair of red blue glasses.
 
-p:In order to go back to the normal 2D view click on the button marked <b>Normal View</b>
+p:In order to go back to the normal 2D view click on the button marked <b>Normal View</b>.
 h:two-Normal_View
 c:gl.stereo(normal)
 c:refresh
 
-p:The next button in this tab is <b>Stereo Anaglyph</b> which enables the model to be seen by red blue glasses as well
+p:The next button in this tab is <b>Stereo Anaglyph</b> which enables the model to be seen by red blue glasses as well.
 h:two-Stereo_(Anaglyph)
 c:gl.stereo(anaglyph)
 c:refresh
 
-p:The last button in this area is the <b>hardware</b> button which will only work if you have a 3D monitor and the glasses to go with them.
+p:The last button in this area is the <b>hardware</b> button, which will only work if you have a 3D monitor and the glasses to go with them.
 c:gl.stereo(normal)
 h:two-Stereo_(Hardware)
 c:gl.stereo(hardware)
 c:refresh
 
-p:There is one more viewing option but this one can only be used by entering in the command <c>gl.stereo(cross)</c>
+p:There is one more viewing option but this one can only be used by entering in the command '<c>gl.stereo(cross)</c>'.
 c:gl.stereo(normal)
 c:gl.stereo(cross)
 c:refresh
 
-p:This viewing method works like a magic eye book where you have to cross your eyes and the image appears to be 3D
+p:This viewing method works like a magic eye book, where you have to cross your eyes and the image appears to be 3D.
 c:gl.stereo(normal)
 
-p:End of tutorial, click on the next button to replay the tutorial or the cancel button to exit.
+p:End of tutorial, click on the 'Next' button to replay the tutorial or the 'Cancel' button to exit.
