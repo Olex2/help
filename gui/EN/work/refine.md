@@ -17,7 +17,9 @@ The standard format for a reflection file is the 'hkl' file. From this drop-down
 Some refinement programs (e.g. SHELXL) will continue refining up to a maximum number of cycles. Here you can set this number. olex.refine will go up to the maximum number, but might stop beforehand if the refinement is settled.
 
 ## From the Command Line
-You can simply type, for example:`refine 4 5` meaning that 4 cycles of refinement will be carried out and that you will be shown 5 residual electron density peaks once the refinement has finished. The values will be remembered for future refinements.
+You can simply type, for example:
+`refine 4 5`
+meaning that 4 cycles of refinement will be carried out and that you will be shown 5 residual electron density peaks once the refinement has finished. The values will be remembered for future refinements.
 
 # Weighting Scheme
 

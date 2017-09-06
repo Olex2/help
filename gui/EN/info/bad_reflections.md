@@ -14,7 +14,7 @@ No entry
 You may choose to omit a reflection totally by pressing the OMIT link. This will insert the appropriate OMIT instruction.
 
 ## Omit a particular instance of a reflection
-You can also choose to omit a particular reflection (e.g. because it was under the beam-stop). To do so, click the <a href=edithkl>Edit Reflections</a> link at the bottom of the list of bad reflections. This will bring up a window with all the reflections in your reflection file, grouped by equivalent reflections. By adding the minus symbol '-' in front of a particular reflections, this reflection will be moved to the bottom of the .hkl file (after the '0 0 0' instruction, which tells the refinement program to ignore it.
+You can also choose to omit a particular reflection (e.g. because it was under the beam-stop). To do so, click the <a href=edithkl>Edit Reflections</a> link at the bottom of the list of bad reflections. This will bring up a window with all the reflections in your reflection file, grouped by equivalent reflections. By adding the minus symbol '-' in front of a particular reflections, this reflection will be moved to the bottom of the hkl file (after the '0 0 0' instruction, which tells the refinement program to ignore it.
 
 # Exclude hkl
 Conditions for reflections to be excluded can be set here

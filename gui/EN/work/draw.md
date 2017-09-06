@@ -14,9 +14,7 @@ Olex2 can produce bitmap images of your structures in a variety of formats. Ther
 At the moment, Olex2 saves images in the RGB colour space. If you require CMYK images for your publications, you will find many image conversion services available on the web, where you can upload your RGB file and will get a CMYK file back. 
 
 ## Transparancy  
-Olex2 does not currently support transparancy. However, you can set the background of your image to some colour that does not occur in your structure (pink is a good choice) and it then becomes very easy to convert all pixels with that colour to transparent in PowerPoint or Word. 
-
-Command: `command line text`
+Olex2 does not currently support transparancy. However, you can set the background of your image to some colour that does not occur in your structure (pink is a good choice) and it then becomes very easy to convert all pixels with that colour to transparent in Pwerpoint or Word. 
 
 # Bitmap Image Attributes 
 These are the properties of the image that will be exported from Olex2. All images will end up in the current structure folder and will not contain any text that is displayed in Olex2 (other than labels, of course!) 
@@ -32,19 +30,19 @@ There is no limit to the size of the exported bitmap file. If the number given i
 
 Command (example): `pict fred.png 300`
 
-# Add_Fog 
+# Add_Fog
 XXX
 
-# Bitmap Image Trim 
+# Bitmap Image Trim
 XXX
 
-# Bitmap Image Attributes1 
+# Bitmap Image Attributes1
 XXX 
 
 # Postscript Images
 Some would argue that there is no better way to represent a crystal structure on paper than a clear black and white ORTEP drawing. You can make these drawings using Olex2. 
 
-## ORTEP  
+## ORTEP
 
 |`pictPS`|There are very many different options for generating ORTEP-style drawings. Many of these can be set from this GUI, for some more exotic options you may have to consult the manual of Olex2.|
 

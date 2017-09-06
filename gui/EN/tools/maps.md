@@ -1,11 +1,9 @@
-# Map Header 
-
 # Map Header
 
 ## Available Display Modes
 
 ### contour, plane  
-This is an interactive slice of the map in the plane of the screen. The molecule can be rotated and also zoomed through this plane. This is done by holding down the **SHIFT** key while dragging the left mouse key on the area of the map or using the depth slider. The visible area of the map can be adjusted with the size slider, or by holding down the **CTRL** key whilst dragging the right mouse key. Finally, the levels can be adjusted with the **SHIFT** key and right mouse key. In contour mode, the number of contours can be altered with the contours slider. Positive electron density is displayed as solid lines, whilst negative electron density (holes) are displayed as dashed lines. A contour map will be included in any postscript drawing created whilst the map is displayed.
+This is an interactive slice of the map in the plane of the screen. The molecule can be rotated and also zoomed through this plane. This is done by holding down the **SHIFT** key while dragging the left mouse key on the area of the map or using the depth slider. The visible area of the map can be adjusted with the size slider, or by holding down the **Ctrl** key whilst dragging the right mouse key. Finally, the levels can be adjusted with the **SHIFT** key and right mouse key. In contour mode, the number of contours can be altered with the contours slider. Positive electron density is displayed as solid lines, whilst negative electron density (holes) are displayed as dashed lines. A contour map will be included in any postscript drawing created whilst the map is displayed.
 
 ### surface, wire, point  
 These are all three dimensional displays of the electron density. However, the 3D display will only work if there is enough electron density to display, otherwise the 2D display will the shown. It is a good idea to start adjusting the levels in the points view, and only then to select wire or surface for a graphically more demanding display. Negative values of electron density (holes) will be displayed in a reddish colour. The extended mode will extend the grid to an array of 27 (3 x 3 x 3) unit cells.
@@ -25,7 +23,9 @@ When a map is displayed the slider bar enables you to adjust the detail shown in
 # Calculate Voids
  
 # Calculate Voids
-Calculates the voids and channels in the structure. This calculation is based on the Olex2 internal libraries, and help is available from `help calcvoid`
+Calculates the voids and channels in the structure. This calculation is based on the Olex2 internal libraries, and help is available from 
+
+|`help calcvoid`| |
 
 # Calculate Solvent Accessible Voids 
 
@@ -41,4 +41,4 @@ XXX
 # masks-help
 
 # Masks
-The Masks option serves as an alternative to SQUEEZE which is implemented in Platon !!!More Info Online!!!. These sorts of approaches should only be used when the solvent can't be identified or modelled, effort should be made to try and identify or model solvent. If refinement has been attempted using both ShelXL and olex2.refine the option to select either olex or an .fcf files, ensure that the file from the last cycle of refinement is used.
+The Masks option serves as an alternative to SQUEEZE which is implemented in Platon !!!More Info Online!!!. These sorts of approaches should only be used when the solvent can't be identified or modelled, effort should be made to try and identify or model solvent. If refinement has been attempted using both ShelXL and olex2.refine the option to select either olex or an fcf files, ensure that the file from the last cycle of refinement is used.

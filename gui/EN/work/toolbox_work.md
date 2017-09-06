@@ -135,7 +135,7 @@ This will simply generate two atoms (at the focal points of the ellipsoids) and 
 This tool operates on a selection of atoms, which can consist of any number of atoms.
 
 ## Fit or Split One Atom
-Select one atom, then select whether you want to fit or split the atom. If you want to **fit** the atom, you can now move that atom with the left mouse to any position you like by pressing the **SHIFT** key; when you are finished, press the **ESC** key.
+Select one atom, then select whether you want to fit or split the atom. If you want to **fit** the atom, you can now move that atom with the left mouse to any position you like by pressing the **SHIFT** key; when you are finished, press the **Esc** key.
 
 If you want to split the atom, you will now see **two** atoms, both of which you can move with the left mouse while holding the **SHIFT** key pressed. The occupancies of the two atoms are linked, and the atoms will now belong to different parts.
 
@@ -146,14 +146,14 @@ While pressing the **SHIFT** key, you can move the selection as a group. While p
 ## Fit or Split Three or more Atoms
 Select three or more atoms, then select whether you want to fit or split the group. Split will generate a duplicate group, fit will not.
 
-While pressing the **SHIFT** key, you can move the entire group. You can now **activate** any bond around which you wish to rotate the group by **right-clicking** on it. While pressing the **CTRL** key, you can rotate the group around this activated bond.
-When you are done, press the **ESC** key.
+While pressing the **SHIFT** key, you can move the entire group. You can now **activate** any bond around which you wish to rotate the group by **right-clicking** on it. While pressing the **Ctrl** key, you can rotate the group around this activated bond.
+When you are done, press the **Esc** key.
 
 ## Split SAME
 This is one of the most powerful tools in Olex2. If a grouping of atoms is disordered, and yoiu can model one of the parts (no matter how badly), this tool is what you need. Simply select the entire grouping you with to split, then press this button (or type **mode fit -s same**) and you can now generate a duplicate grouping. Everything will be constrained, so if this *can* be modelled, then the refinement will sort this out all by itself -- sometimes a large number of refinement cycles is needed.
 
 ## Split or move with **SHIFT**
-This tool can also be used to move any atom (including Hydrogen atoms) to any position. Left click on the atom while pressing the **SHIFT** key - and you can move any atom where you would like it to be. Any constraints and restraints applied to that atom will still apply. When you are done, press the **ESC** key.
+This tool can also be used to move any atom (including Hydrogen atoms) to any position. Left click on the atom while pressing the **SHIFT** key - and you can move any atom where you would like it to be. Any constraints and restraints applied to that atom will still apply. When you are done, press the **Esc** key.
 
 Note: If you click on an atom without holding down the **SHIFT** key, the atom will be split! So take great care with this tool! 
 

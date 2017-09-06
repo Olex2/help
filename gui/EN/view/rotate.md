@@ -8,9 +8,9 @@ Enter the degrees of rotation into the spin boxes, then press the buttons to rot
 ## Even finer control
 Using the command line, rotation about fractions of degrees are also possible: 
 
-|`rota 2 -10.2`| |
+|`rota 2 -10.2`|This will rotate the structure around the y axis by -10.2 degrees.|
 
-This will rotate the structure around the y axis by -10.2 degrees. 
+ 
 
 # Auto Rotation 
 # Auto Rotation
