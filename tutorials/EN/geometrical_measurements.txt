@@ -14,6 +14,7 @@ c:freeze(true)
 c:reap 'DataDir()/samples/THPP/THPP.res'
 c:spy.revert_to_original()
 c:mpln -n
+c:showQ False
 c:freeze(false)
 
 p:To start with you need to click on the <b>View</b> tab.
