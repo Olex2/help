@@ -10,7 +10,7 @@ c:html.ItemState tab* 2
 c:lines 10
 c:showq false
 
-p:This tutorial will show you how to use <b>grow</b> on a molecule in order to demonstrate how molecules interact with each other within the structure.
+p:This `tutorial` **will** show you how to use **grow** on a molecule. Sometimes the asymmetric consists only of part of the molecular unit and this gui[ needs to be grown ] to see the whole picture.
 
 p:First we need to load an extended structure model, so for this we will use <b>Timmy</b> from the <b>Sample Structures</b>.
 c:freeze(true)
@@ -22,11 +22,14 @@ c:refresh
 
 p:The next thing to do in order to help keep all of the molecule in view is to set the command window to automatic zoom so that it keeps the molecule in view at all times.
 
-p:To do this, in the command line enter '<c>echo extrazoom()</c>'. To check what the default value is set to this should usually be <b>1.25</b>.
+p:To do this, in the command line enter `echo extrazoom`. To check what the default value is set to this should usually be **1.25**.
 c:echo extrazoom()
 
-p:Once you've checked the value you can change it to any value you want. Here we are going to change it to 1, so enter in '<c>echo extrazoom(1)</c>'.
+p:Once you've checked the value you can change it to any value you want. Here we are going to change it to **1**, so enter in `echo extrazoom(1)`. Note: this is optional, and the exact value varies from structure to structure.
 c:echo extrazoom(1)
+
+p:Before the **extrazoom** command takes effect, you need to issue a `fuse` command.
+C:fuse
 
 p:This should now make the screen automatically zoom in and out to fit the molecule to the right proportions.
 

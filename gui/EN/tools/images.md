@@ -20,7 +20,7 @@ Olex2 can produce bitmap images of your structures in a variety of formats. Ther
 At the moment, Olex2 saves images in the RGB colour space. If you require CMYK images for your publications, you will find many image conversion services available on the web, where you can upload your RGB file and will get a CMYK file back. 
 
 ## Transparency
-Olex2 does not currently support transparency. However, you can set the background of your image to some colour that does not occur in your structure (pink is a good choice) and it then becomes very easy to convert all pixels with that colour to
+You can set the background to the structure as transparent -- but purely white parts of your structure will also become transparent. However, you can set the background of your image to some colour that does not occur in your structure (pink is a good choice) and it then becomes very easy to convert all pixels with that colour to a transparent background in something like PowerPoint. Of course, using professional image processing software also offers many options to achieve a transparent background.
 
 # Bitmap Image Attributes 
 These are the properties of the image that will be exported from Olex2. All images will end up in the current structure folder and will not contain any text that is displayed in Olex2 (other than labels, of course!) 
