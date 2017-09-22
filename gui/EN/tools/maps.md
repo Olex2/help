@@ -2,41 +2,41 @@
 
 ## Available Display Modes
 
-### contour, plane  
+### contour, plane
 This is an interactive slice of the map in the plane of the screen. The molecule can be rotated and also zoomed through this plane. This is done by holding down the **SHIFT** key while dragging the left mouse key on the area of the map or using the depth slider. The visible area of the map can be adjusted with the size slider, or by holding down the **Ctrl** key whilst dragging the right mouse key. Finally, the levels can be adjusted with the **SHIFT** key and right mouse key. In contour mode, the number of contours can be altered with the contours slider. Positive electron density is displayed as solid lines, whilst negative electron density (holes) are displayed as dashed lines. A contour map will be included in any postscript drawing created whilst the map is displayed.
 
-### surface, wire, point  
+### surface, wire, point
 These are all three dimensional displays of the electron density. However, the 3D display will only work if there is enough electron density to display, otherwise the 2D display will the shown. It is a good idea to start adjusting the levels in the points view, and only then to select wire or surface for a graphically more demanding display. Negative values of electron density (holes) will be displayed in a reddish colour. The extended mode will extend the grid to an array of 27 (3 x 3 x 3) unit cells.
 
-### Extended 
+### Extended
 Will extend the map display out from the unit cell.
 
-### Edit Style 
+### Edit Style
 Edits the colour of the various map surfaces.
 
-### Select Volume  
+### Select Volume
 A box with moveable sides will appear. Left-click on the coloured areas and then move the sides while pressing the **SHIFT** key. The map will be calculated only inside the defined box. You can delete the box by right-clicking on it and select 'Hide'.
 
-### Level 
-When a map is displayed the slider bar enables you to adjust the detail shown in the map. 
+### Level
+When a map is displayed the slider bar enables you to adjust the detail shown in the map.
 
 # Calculate Voids
- 
+
 # Calculate Voids
-Calculates the voids and channels in the structure. This calculation is based on the Olex2 internal libraries, and help is available from 
+Calculates the voids and channels in the structure. This calculation is based on the Olex2 internal libraries, and help is available from
 
 |`help calcvoid`| |
 
-# Calculate Solvent Accessible Voids 
+# Calculate Solvent Accessible Voids
 
 # Calculate Solvent Accessible Voids
 |`calcsolv`|Calculates the solvent accessible voids. This calculation is based on the smtbx/cctbx Olex2 libraries. |
 
 
-Calculates voids that are large enough to contain solvent. Probe/Å adjusts the probe size (think of it as a 'sphere' rolling about the structure - a smaller sphere will fit into smaller gaps and therefore return a larger void than a larger sphere would). The Grid/Å is the resolution of the map that will be explored when calculating the voids. If the resolution is too high, the calculation might take a Very Long Time at not much benefit. Click on Void to toggle between displaying and not dis-playing solvent accessible voids. On the graphics screen the size of any solvent accessible voids that are found will be displayed. 
+Calculates voids that are large enough to contain solvent. Probe/&Aring; adjusts the probe size (think of it as a 'sphere' rolling about the structure - a smaller sphere will fit into smaller gaps and therefore return a larger void than a larger sphere would). The Grid/ANGST is the resolution of the map that will be explored when calculating the voids. If the resolution is too high, the calculation might take a Very Long Time at not much benefit. Click on Void to toggle between displaying and not displaying solvent accessible voids. On the graphics screen the size of any solvent accessible voids that are found will be displayed.
 
 # Electron density
-XXX
+TBI
 
 # masks-help
 

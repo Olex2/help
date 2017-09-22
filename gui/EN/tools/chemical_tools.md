@@ -10,7 +10,7 @@
 
 # Calculate Molecular Volume
 
-|`vvol()`|Calculates the molecular volume of the structure.| 
+|`vvol()`| Calculates the molecular volume of the structure.|
 
 
 # Calculate Polyhedral Volume
@@ -19,5 +19,5 @@
 
 
 # Calculate Bounding Box
- 
+
 |`wbox`|A rectangular bounding box is calculated for your molecule and displayed on the screen.|

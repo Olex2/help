@@ -1,5 +1,5 @@
-# H2_SETTINGS-TARGET
-General Settings for Olex2
+# settings-target
+The main settings for Olex2
 
 # Atom Settings
 Some attributes of how atoms are displayed in Olex2 can be modified within a specific style.
@@ -8,12 +8,12 @@ Some attributes of how atoms are displayed in Olex2 can be modified within a spe
 Change the radius of the selected atoms (in PERS mode). Clicking on 'SET' will make this the default. The atom radius can be set manually be set with the **arad** and **azoom** commands.
 
 ### arad
-This parameter affects the radius of the selected (or all, if there is no selection) atoms *in Ball and Stick* (PERS) mode only. Typically, the radius in PERS mode is taken from a definition file (and isn't the same for all elements). **arad** overrides these settings. A typical value for H atoms would be 
+This parameter affects the radius of the selected (or all, if there is no selection) atoms *in Ball and Stick* (PERS) mode only. Typically, the radius in PERS mode is taken from a definition file (and isn't the same for all elements). **arad** overrides these settings. A typical value for H atoms would be
 
 |`arad 0.2`| Sets the radius of the selected atoms(s) to a value of 0.2 |
 
 ### azoom
-This *zooms* the displayed atom sizes regardless of whether the atoms are shown in *Ball and Stick** (PERS) or *Ellipsoid* (TELP) modes. This value is given in percent - and scales the selected atoms. 
+This *zooms* the displayed atom sizes regardless of whether the atoms are shown in *Ball and Stick** (PERS) or *Ellipsoid* (TELP) modes. This value is given in percent - and scales the selected atoms.
 
 |`azoom 120`| Scales the selected atom(s) to 120 percent |
 
@@ -21,18 +21,18 @@ This *zooms* the displayed atom sizes regardless of whether the atoms are shown 
 
 100 shows the original atom size, larger/smaller values vary the display accordingly.
 
-Note: This can play havoc with the ORTEP '50 PERCENT probability' convention. In order to ensure that all atoms are shown with the standard probability, please use 
+Note: This can play havoc with the ORTEP '50 PERCENT probability' convention. In order to ensure that all atoms are shown with the standard probability, please use
 
 |`telp 50`| Sets the ADP display to a 50 percent probability level |
 
- -- and if a different probability is desired, use that, e.g. 
+ -- and if a different probability is desired, use that, e.g.
 
 |`telp 30`| Sets the ADP display to a 30 percent probability level |
 
 # Bond Settings
 
 ## Bond Width
-Change the radius of the selected bonds. Clicking on 'SET' will make this the default. Please note that this will change the radius of *all bonds of the same type*. 
+Change the radius of the selected bonds. Clicking on 'SET' will make this the default. Please note that this will change the radius of *all bonds of the same type*.
 
 |`individualise`| If you wish to set the radius of a single occurrence of a bond, you must select the bond and type this command first.|
 
@@ -76,7 +76,9 @@ Set whether the GUI should be on the left or right of the screen
 If selected, tooltips will be shown when hovering over items.
 
 # Legend
-A pictogram of all current atom types appears in the main window. With the left mouse and the pressed SHIFT key, this can be moved to any position. This legend can be switched on and off by typing `legend`.
+A pictogram of all current atom types appears in the main window. With the left mouse and the pressed SHIFT key, this can be moved to any position.
+
+| `legend` | Switch the legend on or off. |
 
 # Info Bar
 
@@ -137,3 +139,4 @@ If this box is not ticked, then Olex2 will not communicate with the internet at 
 
 # Debug Mode
 This setting is for developers only. Please leave this switch to *off*, unless you know what you are doing.
+

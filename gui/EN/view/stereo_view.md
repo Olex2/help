@@ -1,6 +1,6 @@
-# Stereo View 
 # Stereo View
-Depending on the hardware you use, there are various options of obtaining a stereo view for your structures. 
+# Stereo View
+Depending on the hardware you use, there are various options of obtaining a stereo view for your structures.
 
 ## Color stereo
 This results in grey-scale colour for colours matching with colours of the glasses
@@ -8,11 +8,11 @@ This results in grey-scale colour for colours matching with colours of the glass
 ## Anaglyph
 Rendering of two spatially separated projections. To be viewed without glasses, but eyes need to be 'crossed'
 
-## Hardware stereo 
+## Hardware stereo
 Requires special hardware
 
-## Interlaced stereo 
+## Interlaced stereo
 Also requires special hardware to be viewed correctly
 
-## Normal View 
+## Normal View
 Returns to the normal display mode !!!More Info Online!!!

@@ -1,4 +1,7 @@
-This menu contains some links that help you to get started with Olex2.
+# start-target
+Start here!
+- Sample Structures
+- Open Exising File
 
 # Open a Structure
 Olex2 can read many different crystallographic file formats. When  you are working with a crystal structure, the most common way to get into it is by means of opening an ins file. Typically, an hkl file of the same filename would have been created by your data processing software at the same time. If this pair of files is present, you are all set to go.
@@ -17,7 +20,7 @@ Alternatively, you can drag and drop any recognised file into Olex2. This file w
 We provide some sample structures for you to experiment with. These sample structures are copied into your Olex2 user area on start-up. If you delete the them, they will come back in their original state on restart.
 
 ## Sucrose URL[https://youtu.be/8QvmKSnJFPs,YOUTUBE]
-This very simple structure of sucrose (from our coffee room...) is an ideal structure to get started with. 
+This very simple structure of sucrose (from our coffee room...) is an ideal structure to get started with.
 
 ## THPP URL[https://youtu.be/Ruwyh3xmBME,YOUTUBE] URL[https://youtu.be/Gm7KWPDFRUw,YOUTUBE]
 An example of a simple disordered structure.
@@ -41,10 +44,10 @@ A continuous solid: Calcium Tartarate
 We are in the process of getting all Olex2 documentation into a unified format. In the meantime, we apologize for the slightly haphazard state of our documentation.
 
 ## Inline Help
-Since you are reading this, you have found the little info symbols. All tools should now have one of these help links. This is your first port of call if you are stuck. 
+Since you are reading this, you have found the little info symbols. All tools should now have one of these help links. This is your first port of call if you are stuck.
 
 ## Help Document
-We also provided a help document, which is shipped with this version of Olex2 and is linked on the GUI. 
+We also provided a help document, which is shipped with this version of Olex2 and is linked on the GUI.
 
 ## Online Help
 An increasing amount of online help is also available. Please try out a Google Search, and you will find a lot of third-party material about Olex2.
