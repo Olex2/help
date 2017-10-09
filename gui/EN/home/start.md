@@ -38,7 +38,7 @@ A metal complex with bound water molecules and one molecule of water of hydratio
 A tricky disorder across a symmetry element.
 
 ##Timmy
-A continuous solid: Calcium Tartarate
+A continuous solid: Calcium Tartrate.
 
 # Documentation
 We are in the process of getting all Olex2 documentation into a unified format. In the meantime, we apologize for the slightly haphazard state of our documentation.
