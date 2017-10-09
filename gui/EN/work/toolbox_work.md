@@ -165,7 +165,7 @@ While pressing the **SHIFT** key, you can move the entire group. You can now **a
 When you are done, press the **Esc** key.
 
 ## Split SAME
-This is one of the most powerful tools in Olex2. If a grouping of atoms is disordered, and yoiu can model one of the parts (no matter how badly), this tool is what you need. Simply select the entire grouping you with to split, then press this button (or type **mode fit -s same**) and you can now generate a duplicate grouping. Everything will be constrained, so if this *can* be modelled, then the refinement will sort this out all by itself -- sometimes a large number of refinement cycles is needed.
+This is one of the most powerful tools in Olex2. If a grouping of atoms is disordered, and you can model one of the parts (no matter how badly), this tool is what you need. Simply select the entire grouping you wish to split, then press this button (or type **mode fit -s same**) and you can now generate a duplicate grouping. Everything will be constrained, so if this *can* be modelled, then the refinement will sort this out all by itself -- sometimes a large number of refinement cycles is needed.
 
 ## Split or move with **SHIFT**
 This tool can also be used to move any atom (including Hydrogen atoms) to any position. Left click on the atom while pressing the **SHIFT** key - and you can move any atom where you would like it to be. Any constraints and restraints applied to that atom will still apply. When you are done, press the **Esc** key.
