@@ -51,7 +51,7 @@ Olex2 reads your source files, and extracts relevant information to include into
 # CIF Part 1
 This section deals with your CIF file. The CIF file contains everything that is known about your structure in a format that has been defined by the IUCr. Getting a complete and correct cif file is vital for the successful publication of your structures in any peer reviewed journals.
 
-Ideally, the creation of the CIF file should be completely automatic and you won't have to worry about it. But just in case, we povide a number of tools here to help you with your CIF files.
+Ideally, the creation of the CIF file should be completely automatic and you won't have to worry about it. But just in case, we provide a number of tools here to help you with your CIF files.
 
 ## Edit CIF Info
 Pressing this button will bring up a text editor, in which all the information that is known about your structure is shown. You can modify the contents of this file and even add and remove items. Your edits will take precedence over any previous values.

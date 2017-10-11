@@ -23,7 +23,7 @@ Plotted against resolution should be around 1.0.
 Plots the percentage completeness against the resolution. For good data this should be about 100% complete in all regions.
 
 ### Normal probability
-This plots the ordered weighted deviations, w(Fobs^2 - k * Fcalc^2), against the deviations that would be expected if the errors in the data are normally distributed. If the errors are truly normally distributed, then this plot should be linear with a slope of one and zero intercept. Significant departures from this ideal may indicate problems with your datatset, model, or weighting scheme.
+This plots the ordered weighted deviations, w(Fobs^2 - k * Fcalc^2), against the deviations that would be expected if the errors in the data are normally distributed. If the errors are truly normally distributed, then this plot should be linear with a slope of one and zero intercept. Significant departures from this ideal may indicate problems with your dataset, model, or weighting scheme.
 
 ### Scale factor vs resolution
 These should be approximately constant around 1.0 across the whole data range, a low value at high values of 2&Theta; can indicate that the data is weak or not present in that region.
