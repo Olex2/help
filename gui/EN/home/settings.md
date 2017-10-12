@@ -1,7 +1,7 @@
 # H2_SETTINGS-TARGET
 General Settings for Olex2
 
-# Atom Styles
+# Atom Settings
 Some attributes of how atoms are displayed in Olex2 can be modified within a specific style.
 
 ## Atom Radius
@@ -30,9 +30,8 @@ Note: This can play havoc with the ORTEP '50%% probability' convention. In order
 
 |`telp 30`| |
 
-# Bond-Styles-help
+# Bond Settings
 
-# Bond Styles
 Change the radius of the selected bonds. Clicking on 'SET' will make this the default. Please note that this will change the radius of *all bonds of the same type*. 
 
 |`individualize`| If you wish to set the radius of a single occurrence of a bond, you must select the bond and type this command first.|
