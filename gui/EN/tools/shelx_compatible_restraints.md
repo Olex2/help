@@ -2,15 +2,16 @@
 These are the SHELX restraints. All of these will also apply to a refinement using the olex2.refine.
 
 # DFIX
-**DFIX d s[0.02] atom pair(s)** <br>
-<br>
-Fixes a distance **d** between pairs of atoms to a given value in &Aring; within an estimated standard deviation of &plusmn; **s** (standard setting 0.02 &Aring;).<br>
-<br>
-**Example:** *DFIX 1.54 0.01 C1 C2 C2 C3 C3 C4*<br>
-<br>
+## DFIX d s[0.02] atom pair(s)
+Fixes a distance **d** between pairs of atoms to a given value in &Aring; within an estimated standard deviation of &plusmn; **s** (standard setting 0.02 &Aring;)
+
+Note: DFIX 1.54 0.01 C1 C2 C2 C3 C3 C4
+
 Gives a butane carbon atom chain with bond distances between 1.53 and 1.55 &Aring;.<br>
-<br>
+
 ![0.3 n-butane](images/butane.jpg)
+
+
 
 # SADI
 **SADI s[0.02] atom pairs** <br>
