@@ -73,8 +73,11 @@ The width of the GUI (by which we mean the panel with all the commands on) can b
 
 |`panel 520`| The absolute GUI width in pixels. |
 
-# GUI side
+# GUI Side
 Set whether the GUI should be on the left or right of the screen
+
+# GUI Links
+Set whether some of the links on the GUI are displayed as buttons or as hyperlinks.
 
 # Tooltips
 If selected, tooltips will be shown when hovering over items.
@@ -136,7 +139,7 @@ This sets the thickness of the cylinders or lines.
 Right-Click on either the cylinders or lines, then choose **Draw Styles**. For the lines, there is only a single object to set, for the cylinders, the little spheres in the corners as well as the cylinders themselves can be set independently.
 
 # User Database
-Olex2 supports a database of people and their institutions. You can set the location of this sqlite database here (a restart is required) and you can also manage your databse from here.
+Olex2 supports a database of people and their institutions. You can set the location of this sqlite database here (a restart is required) and you can also manage your database from here.
 
 # Enable Network
 If this box is not ticked, then Olex2 will not communicate with the internet at all, except for checking for updates on startup.
@@ -144,3 +147,5 @@ If this box is not ticked, then Olex2 will not communicate with the internet at 
 # Debug Mode
 This setting is for developers only. Please leave this switch to *off*, unless you know what you are doing.
 
+# PATH
+Semicolon-separated strings entered in this box will be added to the **System Path** as new values **before** any existing folders -- this means: any crystallographic software in the folders listed here will be found by Olex2 *first* and therefore will be used. 

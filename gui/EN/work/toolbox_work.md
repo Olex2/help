@@ -1,3 +1,12 @@
+# toolbox work-target
+A collection of useful tools
+- Make all peaks Carbon
+- Move Atoms
+- Show/Hide Peaks
+- Expand Short Contacts
+- Peak Slider
+- Disorder Tools
+
 # Labels
 You can select what you would like to see as labels in the molecule display. If a particular property is not applicable for a particular atom, there will be no label.
 
@@ -7,31 +16,37 @@ You can select what you would like to see as labels in the molecule display. If 
 This is to display or hide atom or Q-peak labels. It will switch other types of labelling off, but selecting it again will display atom name labels. [F3] does the same thing.
 
 ## Atom Names
-|`labels -l`|All atom names of **non-hydrogen atoms** will be displayed next to the atoms.|
+|`labels -l`| All atom names of **non-hydrogen atoms** will be displayed next to the atoms. |
 
 ## Crystallographic Occupancy
-|`labels -o`|This displays the crystallographic occupancy of any atoms which are not 100% occupied i.e. their occupancy is not 1.|
+|`labels -o`| This displays the crystallographic occupancy of any atoms which are not 100% occupied i.e. their occupancy is not 1. |
 
 ## Chemical Occupancy
-Same as above, but the occupancy values for atoms that are located on symmetry elements are not shown.
+|`labels -co`| Displays the 'chemical occupancy' on the labels. Basically, the occupancy values for atoms that are located on symmetry elements are not shown. |
 
 ## Parts
-|`labels -p`|Displays PART numbers for any atoms not in PART 0.|
+|`labels -p`| Displays PART numbers for any atoms not in PART 0. |
 
 ## Link Codes
-|`labels -lo`|If atoms are linked, the link code will be shown. (FVAR 21/-21 in ShelXL language)|
+|`labels -lo`| If atoms are linked, the link code will be shown. (FVAR 21/-21 in ShelXL language) |
 
 ## H Atom Labels
-|`labels -h -l`|This will include the hydrogen atom labels along with the atom name and Q-peak labels|
+| `labels -h -l` | This will include the hydrogen atom labels along with the atom name and Q-peak labels |
 
 ## Variables
-Displays any atoms where the occupancy is linked to any variable.
+| `labels -v` | Displays any atoms where the occupancy is linked to any variable |
 
 ## AFIX Commands
-This is useful to check the AFIX commands that are being applied to the structure.
+| `labels -a -h` | This is useful to check the AFIX commands that are being applied to the structure |
 
 ## Q-Peak Intensities
-Relative intensities of the Q-peaks will be displayed on the structure.
+| `labels -qi` | Relative intensities of the Q-peaks will be displayed on the structure |
+
+## Residue Numbers
+| `labels -rn` | Show the number of the residue an atom belongs to |
+
+## Residue Class
+| `labels -rc` | Show the number of the residue class an atom belongs to |
 
 
 # Toolbar Model
