@@ -1,5 +1,5 @@
 # Symmetry Tools
-Tools for growing your structure, changing the composition/location of the asymmetric unit and viewing the basis vectors and cell. 
+Tools for growing your structure, changing the composition/location of the asymmetric unit and viewing the basis vectors and cell.
 
 # symmetry tools 1
 The tools in this row are useful for re-organising parts of a structure if there is more than one moiety present in the structure.
@@ -8,14 +8,14 @@ The tools in this row are useful for re-organising parts of a structure if there
   1. Select the atom to which you want to move another moiety close to.
   2. Activate the mode by clicking on the 'Move Near' button.
   3. Click on on atom of each moiety that you wish to move close to the previously selected atom
-  
+
 |`mode move`| |
 
 ## Copy Near
   1. Select the atom to which you want to copy another moiety close to.
   2. Activate the mode by clicking on the 'Copy Near' button.
   3. Click on on atom of each moiety that you wish to copy close to the previously selected atom
-  
+
 |`mode move -c`| |
 
 ## Assemble
@@ -23,26 +23,26 @@ The tools in this row are useful for re-organising parts of a structure if there
 |`compaq` , `compaq -a` |In cases where parts of your structure have become fragmented or 'disjointed', this command will re-assemble the fragments.|
 
 # symmetry tools 2
-Tools in this row will achieve centering of the moieties in a stucture. 
+Tools in this row will achieve centering of the moieties in a stucture.
 
-## Centre on Cell 
- 
+## Centre on Cell
+
 
 |`move`| All moieties in the structure will be centred on the cell.|
 
-## Centre on Largest Part  
+## Centre on Largest Part
 
 |`move`| All moieties in the structure will be centred on the largest moiety.|
 # symmetry tools 3
-These tool switch symmetry related items on the screen on and off. 
+These tool switch symmetry related items on the screen on and off.
 
-## Show Basis  
+## Show Basis
 
 |`basis`|Displays/Hides the basis vectors of this structure.|
 
-## Show Cell  
+## Show Cell
 
-|`cell`|Displays/Hides a drawing of the unit cell.| 
+|`cell`|Displays/Hides a drawing of the unit cell.|
 
 ## Quality
 
@@ -51,14 +51,14 @@ These tool switch symmetry related items on the screen on and off.
 # symmetry tools 4
 
 ## Fuse
- 
 
-|`fuse`|Display the asymmetric unit of the structure only. All symmetry generated atoms will be removed.| 
+
+|`fuse`|Display the asymmetric unit of the structure only. All symmetry generated atoms will be removed.|
 
 ## Grow All
- 
 
-|`grow`|All symmetry equivalent atoms that are required to show the 'complete' structure will be generated. Of course, in the case of polymeric structures, this is somewhat arbitrary, and more controlled growing conditions will need to be employed.| 
+
+|`grow`|All symmetry equivalent atoms that are required to show the 'complete' structure will be generated. Of course, in the case of polymeric structures, this is somewhat arbitrary, and more controlled growing conditions will need to be employed.|
 
 # Growing
 Olex2 shows the asymmetric unit by default. The tools combined here in three drop-down boxes are very powerful, and will allow you to 'assemble' your structure in exactly the way you want it to be. In Olex2 you can keep refining your structure without 'destroying' the assembly you have created.
@@ -84,10 +84,10 @@ Olex2 shows the asymmetric unit by default. The tools combined here in three dro
 # Mode Grow
 |`mode grow`|Similar to grow, but now this command will be executed only after you click on an object. When you enter a growing mode, clickable 'growing bonds' will sprout from atoms where the kind of growing you have asked for is applicable.|
 
-There are various modifiers for this command: 
+There are various modifiers for this command:
 
 ### Short Contacts
-|`mode grow -s`|Will show these growable 'bonds' to those atoms where 'short interactions' exist. 
+|`mode grow -s`|Will show these growable 'bonds' to those atoms where 'short interactions' exist.
 
 ### Selection
 |`mode grow -r`|Will show growable 'bonds' to other occurances of the currently selected atoms.|
@@ -105,7 +105,7 @@ There are various modifiers for this command:
 |`grow -s`|This will grow atoms shell-by-shell from the currently displayed image.|
 
 ## Assemble
-This tool does not strictly belong to the 'growing' family of tools, but it is frequently used together with the growing tools. It allows you to re-arrange the asymmetric unit contents into a different configuration. 
+This tool does not strictly belong to the 'growing' family of tools, but it is frequently used together with the growing tools. It allows you to re-arrange the asymmetric unit contents into a different configuration.
 
 ### Broken Fragments
 |`compaq -a`|Sometimes, your structure may become 'broken' - parts that should be bonded are shown as separate fragments. This tool will bring them back together.|
@@ -122,13 +122,13 @@ This tool does not strictly belong to the 'growing' family of tools, but it is f
 
 
 # Packing
-Packing options to display the packing of your structure. 
+Packing options to display the packing of your structure.
 
-## Pack Close Contact 
-Use the slider bar to set the distance from atoms that you want clickable growing options to be displayed. 
+## Pack Close Contact
+Use the slider bar to set the distance from atoms that you want clickable growing options to be displayed.
 
-## Pack Radius 
-Move the slider to adjust the radius around the original molecule where symmetry equivalent molecules should be shown. 
+## Pack Radius
+Move the slider to adjust the radius around the original molecule where symmetry equivalent molecules should be shown.
 
 ## Pack to limits
 

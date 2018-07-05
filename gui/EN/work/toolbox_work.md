@@ -1,6 +1,6 @@
 # Labels
-You can select what you would like to see as labels in the molecule display. If a particular property is not applicable for a particular atom, there will be no label. 
- 
+You can select what you would like to see as labels in the molecule display. If a particular property is not applicable for a particular atom, there will be no label.
+
 |`help labels`|To see all the command line options for the labels|
 
 ## Toggle On/Off
@@ -96,13 +96,13 @@ This is a selection of quick-links regarding displaying of PARTS in your structu
 
 | `showp 0 1` | Shows all atoms in no particular part and all atoms in PART 1 |
 
-| `showp 0 2` | Shows all atoms in no particular part and all atoms in PART 2 | 
+| `showp 0 2` | Shows all atoms in no particular part and all atoms in PART 2 |
 
-| `showp 1` | Shows only the atoms PART 1 | 
+| `showp 1` | Shows only the atoms PART 1 |
 
-| `showp` | Show all parts| 
+| `showp` | Show all parts|
 
-| `sel part 1` | Selects all atoms in PART 1 | 
+| `sel part 1` | Selects all atoms in PART 1 |
 
 The use of the **UP** key is particularly useful in this context!
 
@@ -114,20 +114,20 @@ The tools on this line will fully SPLIT the atom you click next into two atoms.
 ## No Restraints
 This will simply generate two atoms (at the focal points of the ellipsoids) and set the occupancies for each atom to 0.5. One of the atoms will be in PART 1, the other in PART 2. After the splitting has occured, you can move the newly 'generated' atoms to where you would like them to be (by holding the SHIFT key while moving them).
 
-| `mode split` | Splits subsequently clicked atoms | 
+| `mode split` | Splits subsequently clicked atoms |
 
 
 ## EADP
 
-| `mode split -r=EADP` | This will split the atom as above, but will restrain the ADP values for both atoms to be the same. This is useful early on, and should probably be removed once the disorder model is nearly complete. You might want to apply the DELU restraint instead.| 
+| `mode split -r=EADP` | This will split the atom as above, but will restrain the ADP values for both atoms to be the same. This is useful early on, and should probably be removed once the disorder model is nearly complete. You might want to apply the DELU restraint instead.|
 
 ## ISOR
 
-| `mode split -r=ISOR` | This will split the atom as above, and reply an ISOR restraint to each of the two atoms. | 
+| `mode split -r=ISOR` | This will split the atom as above, and reply an ISOR restraint to each of the two atoms. |
 
 ## SIMU
 
-| `mode split -r=SIMU` | As above, but with a SIMU restraint. | 
+| `mode split -r=SIMU` | As above, but with a SIMU restraint. |
 
 
 # Fit Group
@@ -150,12 +150,12 @@ While pressing the **SHIFT** key, you can move the entire group. You can now **a
 When you are done, press the **Esc** key.
 
 ## Split SAME
-This is one of the most powerful tools in Olex2. If a grouping of atoms is disordered, and yoiu can model one of the parts (no matter how badly), this tool is what you need. Simply select the entire grouping you with to split, then press this button (or type **mode fit -s same**) and you can now generate a duplicate grouping. Everything will be constrained, so if this *can* be modelled, then the refinement will sort this out all by itself -- sometimes a large number of refinement cycles is needed.
+This is one of the most powerful tools in Olex2. If a grouping of atoms is disordered, and you can model one of the parts (no matter how badly), this tool is what you need. Simply select the entire grouping you wish to split, then press this button (or type **mode fit -s same**) and you can now generate a duplicate grouping. Everything will be constrained, so if this *can* be modelled, then the refinement will sort this out all by itself -- sometimes a large number of refinement cycles is needed.
 
 ## Split or move with **SHIFT**
 This tool can also be used to move any atom (including Hydrogen atoms) to any position. Left click on the atom while pressing the **SHIFT** key - and you can move any atom where you would like it to be. Any constraints and restraints applied to that atom will still apply. When you are done, press the **Esc** key.
 
-Note: If you click on an atom without holding down the **SHIFT** key, the atom will be split! So take great care with this tool! 
+Note: If you click on an atom without holding down the **SHIFT** key, the atom will be split! So take great care with this tool!
 
 
 # Electron Density
@@ -181,28 +181,26 @@ Olex2 will calculate the structure factors.
 ### fcf
 The structure factors will be read from a ShelXL fcf.
 
-|`CalcFourier`|Calculates the map according to the settings set in the map tool.|
+|`CalcFourier`| Calculates the map according to the settings set in the map tool.|
 
 
-# Peaks and USIO sliders
+# Peak and Uiso Sliders
 
 ## Electron Density Peak Slider
 Electron Density Peak Slider Move the slider to the **left** to filter out strongest peaks first, or to the **right** to filter out weakest peaks first. You can then do things like `name $Q C` - and this will only apply to the currently visible peaks. The same goes for the Select and Delete buttons.
 
-# USIO-select-slider-help
-
-# Uiso Select Slider
+## Uiso Select Slider
 This tool allows the selection of atoms according to their Ueq values.
 
-## Slide to the RIGHT
+### Slide to the RIGHT
 This will select atoms where the Ueq value is LARGER than the value indicated by the slider.
 
-Command: `sel atoms where xatom.uiso > 0.06xatom.type!='Q'`
+|`sel atoms where xatom.uiso > 0.06 xatom.type!='Q'`| |
 
-## Slide to the LEFT
+### Slide to the LEFT
 This will select atoms where the Ueq value is SMALLER than the value indicated by the slider.
 
-Command: `sel atoms where xatom.uiso`
+| `sel atoms where xatom.uiso > 0.08` | Selects all atoms where the Uiso value is larger than 0.08|
 
 
 # Growing
@@ -229,7 +227,7 @@ Olex2 shows the asymmetric unit by default. The tools combined here in three dro
 ## Mode Grow
 |`mode grow`|Similar to grow, but now this command will be executed only after you click on an object. When you enter a growing mode, clickable 'growing bonds' will sprout from atoms where the kind of growing you have asked for is applicable.|
 
-There are various modifiers for this command: 
+There are various modifiers for this command:
 
 ### Short Contacts
 |`mode grow -s`|Will show these growable 'bonds' to those atoms where 'short interactions' exist.|
@@ -247,7 +245,7 @@ There are various modifiers for this command:
 See above.
 
 ## Assemble
-This tool does not strictly belong to the 'growing' family of tools, but it is frequently used together with the growing tools. It allows you to re-arrange the asymmetric unit contents into a different configuration. 
+This tool does not strictly belong to the 'growing' family of tools, but it is frequently used together with the growing tools. It allows you to re-arrange the asymmetric unit contents into a different configuration.
 
 ### Broken Fragments
 |`compaq -a`|Sometimes, your structure may become 'broken' - parts that should be bonded are shown as separate fragments. This tool will bring them back together.|
@@ -264,7 +262,7 @@ This tool does not strictly belong to the 'growing' family of tools, but it is f
 # Finishing
 
 ## Quick Sort
-XXX
+TBI
 
 ## Quick Images
-XXX
+TBI

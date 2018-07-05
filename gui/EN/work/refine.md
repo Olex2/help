@@ -42,4 +42,4 @@ Include in the refinement a solvent contribution to the structure factors as the
 When ticked, the solvent mask will be recomputed before the start of the refinement. This can lead to an improved solvent mask, particularly if the ordered part of the structure was poorly converged before the initial mask search.
 
 # Refinement Settings Extra
-XXX
+TBI

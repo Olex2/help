@@ -23,7 +23,7 @@ The atom type of the atom will be changed as well as all other settings will be 
 |`name sel integer`|Will re-number all currently selected atoms in the order of which they were selected starting from.|
 
 # Automatic Hydrogen Naming
-Olex2 will keep track of the naming of hydrogen atoms automatically. This feature can be switched off by unticking the 'Automatic Hydrogen Naming' box. 
+Olex2 will keep track of the naming of hydrogen atoms automatically. This feature can be switched off by unticking the 'Automatic Hydrogen Naming' box.
 
 # Match Naming
 
