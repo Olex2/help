@@ -84,6 +84,15 @@ One of the really strong points of Olex2 is that it will keep your CIF informati
 ## Merge CIF
 If this box is ticked, the files that are listed in this line will all be merged with your CIF information. 'metacif' is the builtin-file where Olex2 collects all the information about your structure it can. You can edit this file using the 'Edit Cif Info' button above, and **your edits will take precedence over all other sources of information**. If something goes dreadfully wrong here, you may choose to untick this box. However, we really don't recommend this and if you feel that you need to do this, please contact us and we will try and find a solution to your problem. Thank you!
 
+# ABS STR
+For acentric space groups, the basis on which the decision for the given absolute configuration is based should be specified.
+
+Anomalous dispersion: The absolute structure was derived from anomalous dispersion. See Flack/Bernardinelli[https://doi.org/10.1107/S0021889800007184] for guidelines on how to assess significance and validity of absolute structure parameters like the ones of Flack, Hooft, or Parsons.
+Reference molecule: The decision for an absolute structure is based on a chiral reference molecule whose absolute configuration is undoubtedly known.
+Reference molecule + AD: As above; Additionally, the assigned absolute configuration is supported by anomalous dispersion.
+Synthesis: The absolute structure is based on the configuration of a stereocenter whose configuration remained unchanged during synthetical transformations.
+Unknown: There is no chemical evidence or reliable information from anomalous dispersion available that confirms the absolute configuration. Thus, an arbitrary decision on the absolute configuration has been made.
+Not applicable
 
 
 # Request CSD Number
