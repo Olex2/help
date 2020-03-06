@@ -2,9 +2,10 @@
 Start here!
 - Sample Structures
 - Open Existing File
+- Links to more help
 
 # Open a Structure
-Olex2 can read many different crystallographic file formats. When  you are working with a crystal structure, the most common way to get into it is by means of opening an ins file. Typically, an hkl file of the same filename would have been created by your data processing software at the same time. If this pair of files is present, you are all set to go.
+**Olex2** can read many different crystallographic file formats. When  you are working with a crystal structure, the most common way to get into it is by means of opening an **.ins** file. Typically, an **.hkl** file of the same filename would have been created by your data processing software at the same time. If this pair of files is present, you are all set to go.
 
 ## Navigate
 You can navigate to a file by clicking on the link under the Start tool, or by using **File > Open** from the menu bar at the top of Olex2.
@@ -26,7 +27,7 @@ This very simple structure of sucrose (from our coffee room...) is an ideal stru
 An example of a simple disordered structure.
 
 ## Co110
-A simple transition element complex.
+A simple transition element complex of Co with two identical ligands.
 
 ## ZP2
 A structure with Z' = 2.
@@ -34,8 +35,8 @@ A structure with Z' = 2.
 ## Water
 A metal complex with bound water molecules and one molecule of water of hydration.
 
-## 183 URL[https://youtu.be/wb_cgFRSbYk,YOUTUBE]
-A tricky disorder across a symmetry element.
+## Malbac URL[https://youtu.be/3jC2CVqSkgc, YOUTUBE]
+A molecule of tolune across a symmetry element. This is a good example to practice solvent masking, adding molecules with the FragmentDB and also to create such a solvent from scratch.
 
 ##Timmy
 A continuous solid: Calcium Tartrate.
