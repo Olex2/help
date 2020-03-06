@@ -22,5 +22,5 @@ Sometimes it is necessary to refine the extinction, and sometimes it is not. Ole
 
 ## No more \_publ\_* items in the CIF
 
-After many discussions with publishers, the IUCr and the CCDC, we have decided to remove all items starting with \_publ\_* from our CIF files. These have been replaced with \_audit\_* instead. This makes a lot of sense: each structure is a 'stand-alone' piece of work and its authors should be clearly known and acknowledged, regardless of where this structure will eventually end up. More info on URL[https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/Caudit_author.html,\_audit\_author] here
+After many discussions with publishers, the IUCr and the CCDC, we have decided to remove all items starting with \_publ\_* from our CIF files. These have been replaced with \_audit\_* instead. This makes a lot of sense: each structure is a 'stand-alone' piece of work and its authors should be clearly known and acknowledged, regardless of where this structure will eventually end up. More info on URL[https://www.iucr.org/\_\_data/iucr/cifdic\_html/1/cif\_core.dic/Caudit\_author.html, \_audit_author] here
 
