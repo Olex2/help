@@ -1,4 +1,6 @@
-# Map Header
+# Map View
+
+# Map View
 
 ## Available Display Modes
 
@@ -35,10 +37,37 @@ Calculates the voids and channels in the structure. This calculation is based on
 
 Calculates voids that are large enough to contain solvent. Probe/&Aring; adjusts the probe size (think of it as a 'sphere' rolling about the structure - a smaller sphere will fit into smaller gaps and therefore return a larger void than a larger sphere would). The Grid/ANGST is the resolution of the map that will be explored when calculating the voids. If the resolution is too high, the calculation might take a Very Long Time at not much benefit. Click on Void to toggle between displaying and not displaying solvent accessible voids. On the graphics screen the size of any solvent accessible voids that are found will be displayed.
 
-# Electron density
-TBI
-
 # masks-help
 
 # Masks
 The Masks option serves as an alternative to SQUEEZE which is implemented in Platon !!!More Info Online!!!. These sorts of approaches should only be used when the solvent can't be identified or modelled, effort should be made to try and identify or model solvent. If refinement has been attempted using both ShelXL and olex2.refine the option to select either olex or an fcf files, ensure that the file from the last cycle of refinement is used.
+
+# 2D Map Contours
+
+Selects the number of colours and maximum number of contour lines (depending on contour, plane or contour+plane).<br>
+~Hint:~ If you want symmetrical maps around 0 you would select e.g. 21 contours, so 10 will be above 0, 10 below and 1 is for 0 itself. 
+
+# 2D Map Scale
+
+This option controls the static Map settings.
+
+# 2D Static Map Scale
+
+## Min
+
+This will define the minimum value of your map. The slider works in quarter-integer values but also accepts manual input in the text-box next to it.
+
+## Step
+
+This will define the step size between two contours/colours. As with **Min** this slider has pre-defined slider values (difference 0.02), but also manual input will work.
+
+# 2D Map Position and Size
+
+## Depth
+
+This slider controls the depth of the plane "into" the screen. If the value is negative the map will go "behind" the model, positive will move it to the front.<br>
+If you select atoms and click on the **Depth** button the map will be aligned so the map is in plane with these selected atoms.
+
+## Size
+
+Size will control the size of the plotted plane. Bigger values will decrease the visual size, but will increase the resultion of the map.
