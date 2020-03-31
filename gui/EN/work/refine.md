@@ -1,3 +1,30 @@
+#refine-target
+Refine the structure.
+- CTRL+R
+- >>'refine'
+- >>'refine 4 4'
+
+#solve-target
+Solve the structure
+
+#draw-target
+Make an image of the structure using the current settings
+
+#report-target
+Generate a report
+
+#refine-settings-target
+Open the refinement settings
+
+#solve-settings-target
+Open the solution settings
+
+#draw-settings-target
+Open the drawing settings
+
+#report-settings-target
+Open the report settings
+
 # Refinement Program
 Apart from its own refinement engine (olex2.refine), Olex2 also supports all variants of ShelXL. Depending on the refinement package, different refinement methods are available.
 
@@ -32,6 +59,14 @@ Extinction affects the intensity of reflections and can result in systematically
 
 # Refinement Masks
 In some structures, solvent disorder can be so severe that modelling this disorder using atomic sites (i.e. partially occupied atoms) is neither possible nor sensible. In these cases, it is better to not even attempt to model the 'affected area' - but to simply leave the measured electron density in place. This technique requires the calculation of the area that should be 'taken out of the refinement' - and defining *that* depends on the current structure.
+<br>
+<br>
+Watch the video! URL[https://youtu.be/3jC2CVqSkgc,YOUTUBE]
+<br>
+<br>
+
+Our implementation of solvent masking is based on the **BYPASS** paper by P.van der Sluis and A.L. Spek.
+URL[https://doi.org/10.1107/S0108767389011189,PAPER]
 
 ### Use solvent mask
 Include in the refinement a solvent contribution to the structure factors as the discrete Fourier transform of the electron density in the solvent area. The solvent mask can be calculated and displayed under Tools > Maps > Masks. When used with smtbx-refine, the solvent contribution is added internally to that calculated from the ordered part, whilst with SHELXL the solvent contribution is subtracted from the observed data before passing a modified hkl file to the external refinement program.
@@ -40,7 +75,7 @@ Include in the refinement a solvent contribution to the structure factors as the
 When ticked, the solvent mask will be recomputed before the start of the refinement. This can lead to an improved solvent mask, particularly if the ordered part of the structure was poorly converged before the initial mask search.
 
 ### Solvent r
-TBI
+Only grid points within cavities _larger_ than a certain solvent radius (r) are considered. The default value is **1.2 &Aring;**. This avoids adding voids where nothing can possibly live in!
 
 ### Truncation
 TBI

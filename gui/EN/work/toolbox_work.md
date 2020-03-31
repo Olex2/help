@@ -7,6 +7,13 @@ A collection of useful tools
 - Peak Slider
 - Disorder Tools
 
+# shift-move-target
+Move Atoms
+- Hold down SHIFT
+- Move atoms with left mouse button
+Split Atoms
+- Click on an atom to split it
+
 # Labels
 You can select what you would like to see as labels in the molecule display. If a particular property is not applicable for a particular atom, there will be no label.
 
