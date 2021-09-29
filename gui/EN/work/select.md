@@ -30,7 +30,7 @@ Line before a table
 
 ## Deselect
 
-|`sel -u`|Deselects (unselects) the all selected atoms.|
+|`sel -u`|Deselects (unselects) all selected atoms.|
 
 ## Delete
 
