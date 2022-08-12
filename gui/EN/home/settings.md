@@ -1,11 +1,11 @@
 # settings-target
-The main settings for Olex2
+The main settings for Olex2.
 
 # Atom Settings
 Some attributes of how atoms are displayed in Olex2 can be modified within a specific style.
 
 ## Atom Radius
-Change the radius of the selected atoms (in PERS mode). Clicking on 'SET' will make this the default. The atom radius can be set manually be set with the **arad** and **azoom** commands.
+Change the radius of the selected atoms (in PERS mode). Clicking on 'SET' will make this the default. The atom radius can be set manually with the **arad** and **azoom** commands.
 
 ### arad
 This parameter affects the radius of the selected (or all, if there is no selection) atoms *in Ball and Stick* (PERS) mode only. Typically, the radius in PERS mode is taken from a definition file (and isn't the same for all elements). **arad** overrides these settings. A typical value for H atoms would be
@@ -57,7 +57,7 @@ A choice of different backgrounds is available for Olex2. Depending on the conte
 
 | `grad` | Sets the colour of the four corners of the graduated background. |
 
-With **grad -p n.png** you can set a  background picture.
+With **grad -p n.png** you can set a background picture.
 
 
 # GUI Width
