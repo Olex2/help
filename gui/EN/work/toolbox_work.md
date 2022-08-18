@@ -152,7 +152,11 @@ This will simply generate two atoms (at the focal points of the ellipsoids) and 
 | `mode split -r=SIMU` | As above, but with a SIMU restraint. |
 
 
-# Fit Group
+
+# Disorder Tools
+Synopsis
+
+## Fit Group
 
 This tool operates on a selection of atoms, which can consist of any number of atoms.
 
@@ -206,7 +210,7 @@ The structure factors will be read from a ShelXL fcf.
 |`CalcFourier`| Calculates the map according to the settings set in the map tool.|
 
 
-# Peak and Uiso Sliders
+# Peak & Uiso Sliders
 
 ## Electron Density Peak Slider
 Electron Density Peak Slider Move the slider to the **left** to filter out strongest peaks first, or to the **right** to filter out weakest peaks first. You can then do things like `name $Q C` - and this will only apply to the currently visible peaks. The same goes for the Select and Delete buttons.
@@ -284,7 +288,9 @@ This tool does not strictly belong to the 'growing' family of tools, but it is f
 # Finishing
 
 ## Quick Sort
-TBI
+TBI - still!
 
 ## Quick Images
 TBI
+
+

@@ -1,4 +1,5 @@
-<target>Olex2 provides a variety of chemical tools. Here they are:</target>
+Olex2 provides a variety of chemical tools. Here they are:
+
 # Calculate CHN Analysis
 
 |calcCHN()|Calculates the expected values of a CHN analysis from your structure model.|
