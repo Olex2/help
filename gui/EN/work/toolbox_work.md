@@ -154,7 +154,7 @@ This will simply generate two atoms (at the focal points of the ellipsoids) and 
 
 
 # Disorder Tools
-Synopsis
+These are an extremely useful set of commands for dealing with crystallographic disorder.
 
 ## Fit Group
 
