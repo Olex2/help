@@ -30,7 +30,7 @@ An example of a simple disordered structure.
 A simple coordination complex of Co with two identical ligands.
 
 ## ZP2
-A structure with *Z'* = 2.
+A structure with *Z*' = 2.
 
 ## Water
 A metal complex with bound water molecules and one molecule of water of hydration.
