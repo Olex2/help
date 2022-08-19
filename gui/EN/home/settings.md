@@ -13,15 +13,15 @@ This parameter affects the radius of the selected (or all, if there is no select
 |`arad 0.2`| Sets the radius of the selected atoms(s) to a value of 0.2 |
 
 ### azoom
-This *zooms* the displayed atom sizes regardless of whether the atoms are shown in *Ball and Stick** (PERS) or *Ellipsoid* (TELP) modes. This value is given in percent - and scales the selected atoms.
+This *zooms* the displayed atom sizes regardless of whether the atoms are shown in *Ball and Stick* (PERS) or *Ellipsoid* (TELP) modes. This value is given in percent - and scales the selected atoms.
 
 |`azoom 120`| Scales the selected atom(s) to 120 percent |
 
 |`azoom 100`| Scales the selected atom(s) to 100 percent |
 
-100 shows the original atom size, larger/smaller values vary the display accordingly.
+100 shows the original atom size; larger/smaller values vary the display accordingly.
 
-Note: This can play havoc with the ORTEP '50 PERCENT probability' convention. In order to ensure that all atoms are shown with the standard probability, please use
+Note: This setting can play havoc with the ORTEP '50 PERCENT probability' convention. In order to ensure that all atoms are shown with the standard probability, please use
 
 |`telp 50`| Sets the ADP display to a 50 percent probability level |
 
