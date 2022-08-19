@@ -22,4 +22,4 @@ Note: You must be ~online~ to see the list of available modules! The list will r
 
 ## Offline Installation
 
-If it is impossible to perform an online installation of the extension modules, then you may also contact us directly "enquiries@olexsys.org". We will then send you a **.zip** file containing the requested module. Save this file somewhere on your disk and then point to this location after pressing the "Install Offline" button.
+If it is impossible to perform an online installation of the extension modules, then you may also contact us directly at "enquiries@olexsys.org". We will then send you a **.zip** file containing the requested module. Save this file somewhere on your disk and then point to this location after pressing the "Install Offline" button.
