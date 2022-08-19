@@ -36,7 +36,7 @@ A structure with *Z*' = 2.
 A metal complex with bound water molecules and one molecule of water of hydration.
 
 ## Malbac URL[https://youtu.be/3jC2CVqSkgc, YOUTUBE]
-A molecule of toluene across a symmetry element. This is a good example to practice solvent masking, adding molecules with the FragmentDB tool and also to create such a solvent in the structure model from scratch.
+A palladium complex with a molecule of toluene across a symmetry element. This is a good example to practice solvent masking, adding molecules with the FragmentDB tool and also to create such a solvent in the structure model from scratch.
 
 ##Timmy
 A continuous solid: Calcium tartrate.
