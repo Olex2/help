@@ -16,7 +16,7 @@ This can be any text for your records and that will help you identify the machin
 ## Modules
 
 ### List of Extension Modules
-All extension modules that are available for this version of Olex2 (version number and also alpha, beta or release) will be listed here. Select the module you are interested in and the 'Please Choose a Module' button will change to 'Install'. Press this button to start the installation.
+All extension modules that are available for this version of Olex2 (version number and also alpha, beta or release) will be listed here. Select the module you are interested in and the 'Please Choose' button will change to 'Install'. Press this button to start the installation.
 
 Note: You must be ~online~ to see the list of available modules! The list will remain empty if you are offline!
 
