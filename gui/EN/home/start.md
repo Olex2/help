@@ -18,7 +18,7 @@ Alternatively, you can drag and drop any recognised file into Olex2. This file w
 |`reap`|Open a file via the file browser. This command can be followed by a filename: **reap sucrose.ins**, for example. |
 
 # Sample Structures
-We provide some sample structures for you to experiment with. These sample structures are copied into your Olex2 user area on start-up. If you delete the them, they will come back in their original state on restart.
+We provide some sample structures for you to experiment with. These sample structures are copied into your Olex2 user area on start-up. If you delete them, they will come back in their original state on restart.
 
 ## Sucrose URL[https://youtu.be/8QvmKSnJFPs,YOUTUBE]
 This very simple structure of sucrose (from our coffee room...) is an ideal structure to get started with.
@@ -27,19 +27,19 @@ This very simple structure of sucrose (from our coffee room...) is an ideal stru
 An example of a simple disordered structure.
 
 ## Co110
-A simple transition element complex of Co with two identical ligands.
+A simple coordination complex of Co with two identical ligands.
 
 ## ZP2
-A structure with Z' = 2.
+A structure with *Z'* = 2.
 
 ## Water
 A metal complex with bound water molecules and one molecule of water of hydration.
 
 ## Malbac URL[https://youtu.be/3jC2CVqSkgc, YOUTUBE]
-A molecule of tolune across a symmetry element. This is a good example to practice solvent masking, adding molecules with the FragmentDB and also to create such a solvent from scratch.
+A molecule of toluene across a symmetry element. This is a good example to practice solvent masking, adding molecules with the FragmentDB tool and also to create such a solvent in the structure model from scratch.
 
 ##Timmy
-A continuous solid: Calcium Tartrate.
+A continuous solid: Calcium tartrate.
 
 # Documentation
 We are in the process of getting all Olex2 documentation into a unified format. In the meantime, we apologize for the slightly haphazard state of our documentation.
@@ -48,7 +48,7 @@ We are in the process of getting all Olex2 documentation into a unified format. 
 Since you are reading this, you have found the little info symbols. All tools should now have one of these help links. This is your first port of call if you are stuck.
 
 ## Help Document
-We also provided a help document, which is shipped with this version of Olex2 and is linked on the GUI.
+We have also provided a help document, which is shipped with this version of Olex2 and is linked on the GUI.
 
 ## Online Help
 An increasing amount of online help is also available. Please try out a Google Search, and you will find a lot of third-party material about Olex2.
