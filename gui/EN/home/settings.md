@@ -41,10 +41,10 @@ Change the radius of the selected bonds. Clicking on 'SET' will make this the de
 |`individualise`| If you wish to set the radius of a single occurrence of a bond, you must select the bond and type this command first.|
 
 ## Style
-An overall style setting for all atoms.
+Choose an overall style setting for all atoms from the dropdown menu.
 
 ## Bond Colour
-Choose the colour of the bonds here. The default is *elements* -- which means that half the bond will be the colour of one atom and the other half the colour of the other atom.
+Choose the colour of the bonds here. The default is *elements* -- which means that half the bond will be the colour of one atom and the other half the colour of the other atom. Other options may be chosen from the dropdown menu.
 
 # Background
 A choice of different backgrounds is available for Olex2. Depending on the context, sometimes a dark background works better than a light one, and sometimes a graduated background is best. It is easy to switch between them.
@@ -55,7 +55,7 @@ A choice of different backgrounds is available for Olex2. Depending on the conte
 ## Graduated Background
 **F4** toggles between the solid background and the graduated background.
 
-| `grad` | Sets the colour of the four corners of the graduated background. |
+| `grad` | Sets the colour of the four corners of the graduated background. Double click in each coloured box to set the color of each corner. |
 
 With **grad -p n.png** you can set a background picture.
 
