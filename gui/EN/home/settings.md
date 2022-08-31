@@ -67,11 +67,11 @@ The width of the GUI (by which we mean the panel containing all the commands) ca
 
 ## Value < 1
 
-|`panel 0.33`| The GUI width will adjust as a fraction of the screen width **0.33** will divide Olex2 into 2/3 molecule and 1/3 GUI. |
+|`panel 0.33`| If the value entered in the box is less than 1, the GUI width will be set to that fraction of the total width. For example, entering **0.33** will divide the display so that the GUI takes up 1/3 of the width and the structure takes up 2/3. Alternatively, you can type **panel 0.33** in the console. |
 
 ## Value > 100
 
-|`panel 520`| The absolute GUI width in pixels. |
+|`panel 520`| If the value entered in the box is greater than 100, that will set the absolute width of the GUI in pixels. Alternatively, you can type, e.g., **panel 520** to make the GUI 520 pixels wide. |
 
 # GUI Side
 Set whether the GUI should be on the left or right of the screen
