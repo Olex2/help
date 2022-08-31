@@ -8,7 +8,7 @@ Some attributes of how atoms are displayed in Olex2 can be modified within a spe
 Change the radius of the selected atoms (in PERS mode). Clicking on 'SET' will make this the default. The atom radius can be set manually with the **arad** and **azoom** commands.
 
 ### arad
-This parameter affects the radius of the selected (or all, if there is no selection) atoms *in Ball and Stick* (PERS) mode only. Typically, the radius in PERS mode is taken from a definition file (and isn't the same for all elements). **arad** overrides these settings. A typical value for H atoms would be
+This parameter affects the radius of the selected (or all, if there is no selection) atoms in *Ball and Stick* (PERS) mode only. Typically, the radius in PERS mode is taken from a definition file (and isn't the same for all elements). **arad** overrides these settings. A typical value for H atoms would be
 
 |`arad 0.2`| Sets the radius of the selected atoms(s) to a value of 0.2 |
 
@@ -25,7 +25,7 @@ Note: This setting can play havoc with the ORTEP '50 PERCENT probability' conven
 
 |`telp 50`| Sets the ADP display to a 50 percent probability level |
 
- -- and if a different probability is desired, use that, e.g.
+ -- and if a different probability is desired, use that, e.g.,
 
 |`telp 30`| Sets the ADP display to a 30 percent probability level |
 
@@ -61,7 +61,7 @@ With **grad -p n.png** you can set a background picture.
 
 
 # GUI Width
-The width of the GUI (by which we mean the panel with all the commands on) can be adjusted to suit your needs. Try the built-in links, but you can also enter any arbitrary value. The font-size of the items on the GUI will also adjust.
+The width of the GUI (by which we mean the panel containing all the commands) can be adjusted to suit your needs. Try the built-in links, but you can also enter any arbitrary value. The font-size of the items on the GUI will also adjust.
 
 ![0.6 The Olex2 GUI](images/gui.jpg)
 
