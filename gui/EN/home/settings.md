@@ -8,7 +8,7 @@ Some attributes of how atoms are displayed in Olex2 can be modified within a spe
 Change the radius of the selected atoms (in PERS mode). Clicking on 'SET' will make this the default. The atom radius can be set manually with the **arad** and **azoom** commands.
 
 ### arad
-This parameter affects the radius of the selected (or all, if there is no selection) atoms in *Ball and Stick* (PERS) mode only. Typically, the radius in PERS mode is taken from a definition file (and isn't the same for all elements). **arad** overrides these settings. A typical value for H atoms would be
+This parameter affects the radius of the selected (or all, if there is no selection) atoms in *Ball and Stick* (PERS) mode only. Typically, the radius in PERS mode is taken from a definition file (and isn't the same for all elements). **arad** overrides these settings. A typical value for H atoms would be:
 
 |`arad 0.2`| Sets the radius of the selected atoms(s) to a value of 0.2 |
 
@@ -38,7 +38,7 @@ Change the radius of the selected bonds. Clicking on 'SET' will make this the de
 Change the radius of the selected bonds. Clicking on 'SET' will make this the default. Please note that this will change the radius of *all bonds of the same type*.
 >>>>>>> 6914cfb79249f3556223f30c3a943aec2952b637
 
-|`individualise`| If you wish to set the radius of a single occurrence of a bond, you must select the bond and type this command first.|
+|`individualise`| If you wish to set the radius of a single occurrence of a bond, you must select the bond and type this command first. |
 
 ## Style
 Choose an overall style setting for all atoms from the dropdown menu.
@@ -67,14 +67,14 @@ The width of the GUI (by which we mean the panel containing all the commands) ca
 
 ## Value < 1
 
-|`panel 0.33`| If the value entered in the box is less than 1, the GUI width will be set to that fraction of the total width. For example, entering **0.33** will divide the display so that the GUI takes up 1/3 of the width and the structure takes up 2/3. Alternatively, you can type **panel 0.33** in the console. |
+|`panel 0.33`| If the value entered in the box is less than 1, the GUI width will be set to that fraction of the total width. For example, entering **0.33** will divide the display so that the GUI takes up 1/3 of the width and the structure takes up 2/3. |
 
 ## Value > 100
 
-|`panel 520`| If the value entered in the box is greater than 100, that will set the absolute width of the GUI in pixels. Alternatively, you can type, e.g., **panel 520** to make the GUI 520 pixels wide. |
+|`panel 520`| If the value entered in the box is greater than 100, that will set the absolute width of the GUI in pixels. |
 
 # GUI Side
-Set whether the GUI should be on the left or right of the screen
+Set whether the GUI should be on the left or right of the screen.
 
 # GUI Links
 Set whether some of the links on the GUI are displayed as buttons or as hyperlinks.
@@ -83,9 +83,9 @@ Set whether some of the links on the GUI are displayed as buttons or as hyperlin
 If selected, tooltips will be shown when hovering over items.
 
 # Legend
-A pictogram of all current atom types appears in the main window. With the left mouse and the pressed SHIFT key, this can be moved to any position.
+If selected, a pictogram of all current atom types appears in the main window. With the left mouse button and the SHIFT key pressed, this can be moved to any position.
 
-| `legend` | Switch the legend on or off. |
+| `legend` | Switch the legend display on or off. |
 
 # Info Bar
 
@@ -97,7 +97,7 @@ All hidden alerts will be reset.
 # Console Lines
 In order to avoid too much clutter on the GUI, we have decided to provide the console output behind the molecule. Here you can set the number of lines of output you would like to see. The commands:
 
-|`lines 10`|will set the console to only show 10 lines.|
+|`lines 10`|will set the console to only show 10 lines. You can choose a different number of lines to display. |
 
 |`lines -1`|will show all lines.|
 
