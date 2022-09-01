@@ -8,13 +8,13 @@ You may have noticed that the help system looks different to what it used to be.
 
 The entire help system is generated from MarkDown files which are available from 
 
-URL[https://github.com/Olex2/help/tree/master/gui/EN,GITHUB], 
+URL[https://github.com/Olex2/help/tree/master/gui/EN, GITHUB], 
 
 where these files render into some very readable format. This also means: anyone can contribute to our help system -- please request commit permission from us and we will welcome you as a valued contributor. In the long term, we are also planning to make this help available in different languages -- if you can help with a translation, please also let us know.
 
 ## New HAR
 
-The Hishfeld Atom Refinement team around **Simon Grabowsky** and **Dylan Jyatilaka** have been working hard to update this exciting new refinement program. It is available through Olex2 from Tools > HARt.
+The Hishfeld Atom Refinement team of **Simon Grabowsky**, **Dylan Jayatilaka** and coworkers have been working hard to update this exciting new refinement program. It is available through Olex2 from Tools > HARt.
 
 ## EXTI
 
