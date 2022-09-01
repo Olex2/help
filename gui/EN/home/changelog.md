@@ -4,11 +4,11 @@ This is a fairly major update to Olex2. The major changes are outlined below.
 
 ## Reworked Help System for the GUI
 
-You may have noticed that the help system looks different to what it used to be. It is also much more complete -- although nowhere as complete as we would like it to be.
+You may have noticed that the help system looks different to what it used to be. It is also much more complete -- although nowhere as complete as we would like it to be. 
 
 The entire help system is generated from MarkDown files which are available from 
 
-URL[https://github.com/Olex2/help/tree/master/gui/EN,GITHUB],
+URL[https://github.com/Olex2/help/tree/master/gui/EN,GITHUB], 
 
 where these files render into some very readable format. This also means: anyone can contribute to our help system -- please request commit permission from us and we will welcome you as a valued contributor. In the long term, we are also planning to make this help available in different languages -- if you can help with a translation, please also let us know.
 
