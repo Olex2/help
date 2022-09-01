@@ -12,9 +12,9 @@ URL[https://github.com/Olex2/help/tree/master/gui/EN, GITHUB],
 
 where these files render into some very readable format. This also means that anyone can contribute to our help system -- please request commit permission from us and we will welcome you as a valued contributor. In the long term, we are also planning to make this help available in different languages -- if you can help with a translation, please also let us know.
 
-## New NoSpherA2 supersedes HARt
+## NoSpherA2 supersedes HARt
 
-The Hirshfeld Atom Refinement team of **Simon Grabowsky**, **Dylan Jayatilaka**, and coworkers worked hard on this exciting new refinement tool. It has been superseded by the more powerful NoSpherA2, which implements the HARt tool.
+The Hirshfeld Atom Refinement team of **Simon Grabowsky**, **Dylan Jayatilaka**, and coworkers worked hard on this exciting new refinement tool. It has been superseded by the more powerful NoSpherA2 (available under the Work tab) for refinement involving nonspherical form factors. Note that NoSpherA2 still includes the HARt tool for those wishing to perform Hirshfeld atom refinement.
 
 ## EXTI
 
