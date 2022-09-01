@@ -57,7 +57,7 @@ A choice of different backgrounds is available for Olex2. Depending on the conte
 
 | `grad` | Sets the colour of the four corners of the graduated background. Double click in each coloured box to set the color of each corner. |
 
-With **grad -p n.png** you can set a background picture.
+With **grad -p=filename.png** you can set a background picture.
 
 
 # GUI Width
