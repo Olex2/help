@@ -50,7 +50,7 @@ Choose the colour of the bonds here. The default is *elements* -- which means th
 A choice of different backgrounds is available for Olex2. Depending on the context, sometimes a dark background works better than a light one, and sometimes a graduated background is best. It is easy to switch between them.
 
 ## Solid Colour/White
-**F2** will toggle between the solid colour background (as defined in the scene settings) and a solid white background.
+**F2** will toggle between the solid colour background (as defined in the scene settings, accessed by right-clicking in the display area and selecting *Draw style*, then *Scene Properties...*) and a solid white background.
 
 ## Graduated Background
 **F4** toggles between the solid background and the graduated background.
@@ -61,7 +61,7 @@ With **grad -p=filename.png** you can set a background picture.
 
 
 # GUI Width
-The width of the GUI (by which we mean the panel containing all the commands) can be adjusted to suit your needs. Try the built-in links, but you can also enter any arbitrary value. The font-size of the items on the GUI will also adjust.
+The width of the GUI (by which we mean the panel containing all the Olex2 tool tabs and commands) can be adjusted to suit your needs. Try the built-in links, or enter a arbitrary value. The font-size of the items on the GUI will adjust automatically.
 
 ![0.6 The Olex2 GUI](images/gui.jpg)
 
