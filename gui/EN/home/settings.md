@@ -101,13 +101,13 @@ In order to avoid too much clutter on the GUI, we have decided to provide the co
 
 |`lines -1`|will show all lines.|
 
-# Fader
-When ticked, structures will slowly fade in and out.
+# Auto MORE
+Keywords entered here control the output of refinement, e.g., "MORE -1" dictates the amount of refinement information to be written to the .lst output file, "CONF" generates a table of torsion angles, "BOND $H" produces bond length and bond angle information (including bonds to H atoms), and "ACTA" writes a CIF file.
 
 # Auto Save View
-When active, drawing settings such as styles and backgrounds will be saved with the structure. This is somewhat experimental; if things go wrong, you may have to reload the chosen style for that particular structure.
+If checked, drawing settings such as styles and backgrounds will be saved with the structure. This is somewhat experimental; if things go wrong, you may have to reload the chosen style for that particular structure.
 
-When this option is **not** active, then a structure will be loaded with the same style as the previous structure.
+When this box is **not** checked, then a structure will be loaded with the same style as the previous structure.
 
 # Start Olex2 In
 On startup, Olex2 will go straight to the chosen tab.
