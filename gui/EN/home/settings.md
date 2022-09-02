@@ -31,12 +31,8 @@ Note: This setting can play havoc with the ORTEP '50 PERCENT probability' conven
 
 # Bond Settings
 
-<<<<<<< HEAD
-Change the radius of the selected bonds. Clicking on 'SET' will make this the default. Please note that this will change the radius of *all bonds of the same type*. 
-=======
 ## Bond Width
 Change the radius of the selected bonds. Clicking on 'SET' will make this the default. Please note that this will change the radius of *all bonds of the same type*.
->>>>>>> 6914cfb79249f3556223f30c3a943aec2952b637
 
 |`individualise`| If you wish to set the radius of a single occurrence of a bond, you must select the bond and type this command first. |
 
