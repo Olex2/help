@@ -57,8 +57,10 @@ A choice of different backgrounds is available for Olex2. Depending on the conte
 
 | `grad` | Sets the colour of the four corners of the graduated background. Double click in each coloured box to set the color of each corner. |
 
-With **grad -p=filename.png** you can set a background picture.
-
+Note: With **grad -p=filename.png** you can set a background picture. This can be very useful, e.g., if you want to compare two different views of a single structure or compare two different structures side by side on the screen:
+1. First create a picture of your structure by typing **pict struct_a.png 3** in the console (use a larger/smaller number for a higher/lower resolution picture; type **help pict** for more information on the pict command). This will create a file called "struct_a.png" in your current directory. (To find your current directory, type **user** at the console prompt.)
+2. Move/rotate the view of your first structure, or open a new structure, then type **grad -p=struct_a.png**. You will now see your picture displayed as a static screen background to your currently active structure, which can still be moved or rotated as normal.
+3. To remove the picture from the background and return to the normal gradient background type **grad -p**.
 
 # GUI Width
 The width of the GUI (by which we mean the panel containing all the Olex2 tool tabs and commands) can be adjusted to suit your needs. Try the built-in links, or enter a arbitrary value. The font-size of the items on the GUI will adjust automatically.
