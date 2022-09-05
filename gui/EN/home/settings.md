@@ -105,7 +105,7 @@ In order to avoid too much clutter on the GUI, we have decided to provide the co
 # Auto MORE
 Keywords entered here control the output of refinement, e.g., "MORE -1" dictates the amount of refinement information to be written to the .lst output file, "CONF" generates a table of torsion angles, "BOND $H" produces bond length and bond angle information (including bonds to H atoms), and "ACTA" writes a CIF file.
 
-# Auto Save View
+# Save View
 If checked, drawing settings such as styles and backgrounds will be saved with the structure. This is somewhat experimental; if things go wrong, you may have to reload the chosen style for that particular structure.
 
 When this box is **not** checked, then a structure will be loaded with the same style as the previous structure.
@@ -114,39 +114,39 @@ When this box is **not** checked, then a structure will be loaded with the same 
 On startup, Olex2 will go straight to the chosen tab.
 
 # Solo Mode
-When opening a new Tool, all other open tools will automatically be closed.
+When opening a new tool, all other open tools will automatically be closed.
 
 # Close Settings
 I'll write some help about this one once I figured out what this is supposed to do.
 
 # Modules Update Notification
-If updates to extension modules are availabe, a pop-up box will appear after Olex2 is started. This can be switched off here.
+If updates to extension modules are availabe, a pop-up box will appear whenever Olex2 is started. This can be switched off here.
 
 # Unit Cell Style
 The unit cell can be displayed in different ways. First, the cell must be visible:
 
-|`cell`| Switches the unit cell display on |
+|`cell`| Switches the unit cell display on. |
 
 ## Cylinder
-The unit cell box will be made out of cylinders (i.e. 3-D objects)
+The unit cell box will be made out of cylinders (i.e., 3-D objects).
 
 ## Lines
-The unit cell box will be composed of simple Lines.
+The unit cell box will be composed of simple lines.
 
 ## Width
 This sets the thickness of the cylinders or lines.
 
 ## Colour
-Right-Click on either the cylinders or lines, then choose **Draw Styles**. For the lines, there is only a single object to set, for the cylinders, the little spheres in the corners as well as the cylinders themselves can be set independently.
+Right-click on either the cylinders or lines, then choose **Draw Styles**. For the lines, there is only a single object to set, for the cylinders, the little spheres in the corners as well as the cylinders themselves can be set independently.
 
 # User Database
 Olex2 supports a database of people and their institutions. You can set the location of this sqlite database here (a restart is required) and you can also manage your database from here.
 
-# Enable Network
+# Network Operations
 If this box is not ticked, then Olex2 will not communicate with the internet at all, except for checking for updates on startup.
 
 # Debug Mode
-This setting is for developers only. Please leave this switch to *off*, unless you know what you are doing.
+This setting is for developers only. Please leave this switch *off*, unless you know what you are doing.
 
 # PATH
 Semicolon-separated strings entered in this box will be added to the **System Path** as new values **before** any existing folders -- this means: any crystallographic software in the folders listed here will be found by Olex2 *first* and therefore will be used. 
