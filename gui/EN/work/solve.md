@@ -1,5 +1,5 @@
-# Solution Program
-If particular solution programs are installed in a standard way on your system, Olex2 will find them and they will appear automatically as a choice in the drop-down menu. If they don't appear, please make sure that the directory where they are installed is either on the System Path, or has been entered under **Home > Settings > Path**. Please search the web for more information if you have any trouble with this.
+# Program
+If particular solution programs are installed in a standard way on your system, Olex2 will find them and they will appear automatically as a choice in the Program drop-down menu. If they don't appear, please make sure that the directory where they are installed is either on the System Path, or has been entered under **Home > Settings > Path**. Please search the web for more information if you have any trouble with this.
 
 ## Choice of Programs
 Olex2 can make use of many structure solution programs such as
@@ -13,7 +13,7 @@ Olex2 can make use of many structure solution programs such as
   - Sir2008
 
 ## Solution Method
-Select the method you want to use for Structure Solution program. This is only really relevant for **ShelXS** -- all other programs only have one solution method!
+Select the method you want to use for the structure solution program you have selected. This is only really relevant for **ShelXS** -- all other programs only have one solution method!
 
 # Set Reflection File
 The reflection file contains all the data that were collected during the x-ray diffraction experiment in a condensed form.
