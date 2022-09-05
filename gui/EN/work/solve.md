@@ -15,17 +15,18 @@ Olex2 can make use of many structure solution programs such as
 ## Solution Method
 Select the method you want to use for the structure solution program you have selected. This is only really relevant for **ShelXS** -- all other programs only have one solution method!
 
-# Set Reflection File
-The reflection file contains all the data that were collected during the x-ray diffraction experiment in a condensed form.
+# Reflections
+Here you can specify the reflection file, which contains in a condensed form all the data that were collected during the X-ray diffraction experiment.
 
 ## hkl
-The standard format for a reflection file is the **hkl** file. From this drop-down menu, you can choose which file you want to refine your model against. There is no need to rename anything - just choose the file and then press refine.
+The standard format for a reflection file is the **hkl** file. From this drop-down menu, you can choose which file you want to refine your model against. There is no need to rename anything -- just choose the file and then press refine.
 
 ## Other Formats
 Other file formats (including **raw** and **
 
 # Chemical Formula
 The expected chemical composition for the structure. The presence of heavy atoms in the expected composition when they are not actually present in the structure can adversely affect some structure solution programs and vice-versa.
+
 # Z
 
 Z denotes the number of fomula units in the UNIT CELL.
