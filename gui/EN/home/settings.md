@@ -74,7 +74,7 @@ The width of the GUI (by which we mean the panel containing all the Olex2 tool t
 
 |`panel 520`| If the value entered in the box is greater than 100, that will set the absolute width of the GUI in pixels. |
 
-# GUI Side
+# GUI Left/Right
 Set whether the GUI should be on the left or right of the screen.
 
 # GUI Links
@@ -119,7 +119,7 @@ When opening a new tool, all other open tools will automatically be closed.
 # Close Settings
 I'll write some help about this one once I figured out what this is supposed to do.
 
-# Modules Update Notification
+# Modules Update
 If updates to extension modules are availabe, a pop-up box will appear whenever Olex2 is started. This can be switched off here.
 
 # Unit Cell Style
