@@ -24,7 +24,7 @@ p:You then need to click on the <b>Maps</b> tab.
 h:h2-Maps
 c:html.ItemState h2-tools-masks 1
 
-p:From this screen you can create a map for your 3D model. Lets start by creating a mask for the model.
+p:From this screen you can create a map for your 3D model. Let's start by creating a mask for the model.
 
 p:To run a mask you first need to click on the <b>Masks</b> tab.
 h:h3-Masks
@@ -38,23 +38,23 @@ c:spy.gui.maps.MaskView()
 c:spy.OlexCctbxMasks()
 c:refresh
 
-p:Once you have generated a mask you can then go back to the maps part of the tab and select a different type of plane to view by selecting the drop down box next to 'View'.
+p:Once you have generated a mask you can then go back to the <b>Maps</b> part of the tab and select a different type of plane to view by selecting the drop down box next to 'View'.
 c:html.setbg(SET_SNUM_XGRID_VIEW_maps,red)
 c:html.setvalue(SET_SNUM_XGRID_VIEW_maps,plane)
 c:xgrid.rendermode(plane)
 c:html.call(SET_SNUM_XGRID_VIEW_maps.onchange)
 c:refresh
 
-p:You can then select the type of map you would like. The default selection is normally plane which will be a dark square but lets try selecting 'contour+plane' and see what happens.
+p:You can then select the type of map you would like. The default selection is normally plane which will be a dark square but let's try selecting 'contour+plane' and see what happens.
 c:html.ItemState h3-masks 2
 c:html.setbg(SET_SNUM_XGRID_VIEW_maps,white)
 c:html.setvalue(SET_SNUM_XGRID_VIEW_maps,contour+plane)
 c:xgrid.rendermode(contour+plane)
 c:refresh
 
-p:It is recommended to try the different types of view in order to find a suitable one for the situation
+p:It is recommended to try the different views in order to find one suited to your needs.
 
-p:You can change the depth of the plane by using the slider. For example, lets change this to a value of <b>2.4</b>.
+p:You can change the depth of the plane by using the slider. For example, let's change this to a value of <b>2.4</b>.
 c:html.setbg(snum_xgrid_depth_slide,red)
 c:html.setvalue(snum_xgrid_depth_slide,12)
 c:html.setvalue(snum_xgrid_depth_value,2.4)
@@ -68,7 +68,7 @@ p:Then, moving the mouse while holding these buttons, you can alter the depth of
 
 p:You may also want to change the colour of the plane in order to make it more obvious when a part of the molecule is behind it.
 
-p:To do this right click on the plane and select <b>Draw Style</b>. This then allows you to alter the colours and choose a darker shade through the options on the window.
+p:To do this right-click on the plane and select <b>Draw Style</b>. This then allows you to alter the colours and choose a darker shade through the options on the window.
 c:html.setvalue(snum_xgrid_depth_slide,0)
 c:html.setvalue(snum_xgrid_depth_value,0)
 c:xgrid.depth(math.eval(html.getvalue(snum_xgrid_depth_slide)/5))
@@ -86,14 +86,14 @@ h:button_small-Map
 c:spy.mapview()
 c:refresh
 
-p:And to change the way the densities are shown you need to click on the drop down box marked 'View' in <b>Maps</b>.
+p:To change the way the densities are shown, click on the drop down box marked 'View' in <b>Maps</b>.
 c:html.setbg(SET_SNUM_XGRID_VIEW_maps,red)
 
-p:Lets see what happens when we change it to <b>contour</b>.
+p:Let's see what happens when we change it to <b>contour</b>.
 c:html.setvalue(SET_SNUM_XGRID_VIEW_maps,contour)
 c:xgrid.rendermode(contour)
 c:refresh
 
-p:End of tutorial, press 'Next' to repeat the tutorial or 'Cancel' to exit.
+p:End of tutorial. Press 'Next' to repeat the tutorial or 'Cancel' to exit.
 c:spy.gui.maps.mapview()
 c:refresh
