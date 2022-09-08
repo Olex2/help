@@ -35,7 +35,7 @@ p:Once the atoms are highlighted, click on the <b>Mean Plane</b> button and the 
 c:mpln sel
 c:refresh
 
-p:Once the mean plane has been worked out a table containing the results should appear in the text output along with the data for the plane normal and the rms deviation of the atomic positions from the mean plane (in A).
+p:Once the mean plane has been worked out a table containing the results should appear in the text output along with the data for the plane normal and the rms deviation (in Å) of the atomic positions from the mean plane.
 
 p:In order to get rid of the plane it must first be selected by clicking on it. Then you can either press the <b>Delete</b> key on your keyboard or right-click on the plane and choose to either hide it or delete it from there.
 c:sel TXPlane0
