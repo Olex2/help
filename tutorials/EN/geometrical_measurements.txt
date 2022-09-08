@@ -59,7 +59,7 @@ p:The view will now have changed so that you are looking down the best line of t
 c:rota y 90
 c:refresh
 
-p:Alternatively, you can get one between a minimum of two atoms in your structure.
+p:Alternatively, you can draw a line through a minimum of two atoms in your structure.
 c:sel TXLine0
 c:kill sel
 c:sel N12 C41
