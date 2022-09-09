@@ -27,24 +27,24 @@ c:html.ItemState h2-view-geometry 1
 
 p:In this tab there are six different buttons to analyse your model and gather geometric data from it. The first one we will look at is <b>Mean Plane</b> (of active selection).
 
-p:In order to use this feature, one of the rings in the structure must be highlighted. To do this you can hold <b>shift</b> to draw a box over one of the rings with the mouse, or click on each ring atom to select it manually.
+p:To see how this feature is used, highlight one of the rings in the structure. To do this, hold <b>shift</b> and draw a box over one of the rings with the mouse, or click on each ring atom to select it manually.
 c:sel N3 C2 C1 C10 C9 C4
 c:refresh
 
-p:Once the atoms are highlighted, click on the <b>Mean Plane</b> button and the average plane for the selected atoms will be produced on the model. Alternatively, the command '<c>mpln sel</c>' can be entered.
+p:Once the atoms are highlighted, click on the <b>Mean Plane</b> button and the average plane for the selected atoms will be produced on the model. Alternatively, enter the command '<c>mpln sel</c>'.
 c:mpln sel
 c:refresh
 
-p:Once the mean plane has been worked out a table containing the results should appear in the text output along with the data for the plane normal and the rms deviation (in &Aring) of the atomic positions from the mean plane.
+p:Once the mean plane has been worked out, a table containing the results should appear in the text output along with the data for the plane normal and the rms deviation (in &Aring) of the atomic positions from the mean plane.
 
-p:In order to get rid of the plane it must first be selected by clicking on it. Then you can either press the <b>Delete</b> key on your keyboard or right-click on the plane and choose to either hide it or delete it from there.
+p:To remove the plane, first click on it to select it. Then either press the <b>Delete</b> key on your keyboard or right-click on the plane and choose to either hide it or delete it from there.
 c:sel TXPlane0
 c:kill sel
 c:refresh
 
-p:The next function will allow you to find the best line between the selected options by clicking on <b>Best Line</b> (of active selection).
+p:The next function will allow you to find the best line through the selected atoms by clicking on <b>Best Line</b> (of active selection).
 
-p:You can either choose to get an overall best line by selecting the entire molecule by holding <b>ctrl+A</b>...
+p:To get an overall best line through the whole molecule, select all atoms with <b>ctrl+A</b> and click <b>Best Line</b>.
 c:sel -a
 c:line
 
@@ -62,7 +62,7 @@ c:refresh
 p:Alternatively, you can draw a line through a minimum of two atoms in your structure.
 c:sel TXLine0
 c:kill sel
-c:sel N12 C41
+c:sel C4 C9
 c:line sel
 
 p:This will also view down the best line.
