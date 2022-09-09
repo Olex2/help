@@ -55,14 +55,14 @@ c:line -n
 p:And to get the current view normal, use the '<c>direction</c>' command.
 c:direction
 
-p:The view will now have changed so that you are looking down the best line of the active selection...
+p:The view will now have changed so that you are looking down the best line of the active selection.
 c:rota y 90
 c:refresh
 
 p:Alternatively, you can draw a line through a minimum of two atoms in your structure.
 c:sel TXLine0
 c:kill sel
-c:sel C4 C9
+c:sel N5 C10
 c:line sel
 
 p:This will also view down the best line.
