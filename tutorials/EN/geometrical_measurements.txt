@@ -68,7 +68,7 @@ c:line sel
 p:This will also view down the best line.
 c:rota y 90
 
-p:The next function in the tab is <b>Distance and Angles(of selection)</b> which will give the distance and angle of up to 4 atoms in the molecule by selecting them before hand, or you could also type the command '<c>sel</c>' after you have chosen which atoms you would like to measure. <br>The data will then be displayed in the text in the command window 
+p:The next function in the Geometry tool tab is <b>Distances and Angles</b> (of selection) which will give the distances and angles of up to four selected atoms in the structure. Or, type the command '<c>sel</c>' after you have chosen which atoms you would like to analyse. <br>The data will then be displayed in the text in the command window.
 c:sel TXLine0
 c:kill sel
 c:sel F1 C7 N6 C5
