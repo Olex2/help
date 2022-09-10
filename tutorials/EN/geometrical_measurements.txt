@@ -63,10 +63,6 @@ c:kill DEMO_LINE_ALL_ATOMS
 c:sel N5 C10
 c:line sel -n=DEMO_LINE_TWO_ATOMS
 
-p:The "rota y 90" command will will now provide a view down this new line.
-c:rota y 90
-c:refresh
-
 p:The next function in the Geometry tool tab is <b>Distances and Angles</b> (of selection) which will give the distances and angles of up to four selected atoms in the structure. Or, type the command '<c>sel</c>' after you have chosen which atoms you would like to analyse. <br>The data will then be displayed in the text in the command window.
 c:kill DEMO_LINE_TWO_ATOMS
 c:sel F1 C7 N6 C5
