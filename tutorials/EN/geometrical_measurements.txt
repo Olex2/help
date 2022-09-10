@@ -45,7 +45,7 @@ p:The next function will allow you to find the best line through the selected at
 
 p:To get an overall best line through the whole molecule, select all atoms with <b>ctrl+A</b> and click <b>Best Line</b>.
 c:sel -a
-c:line
+c:line -n=DEMO_LINE_ALL_ATOMS
 
 p:To align the molecule along the best line use '<c>line -n</c>'.
 c:sel -a
@@ -59,17 +59,16 @@ c:rota y 90
 c:refresh
 
 p:Alternatively, you can draw a line through a minimum of two atoms in your structure.
-c:sel TXLine0
-c:kill sel
+c:kill DEMO_LINE_ALL_ATOMS
 c:sel N5 C10
-c:line sel
+c:line sel -n=DEMO_LINE_TWO_ATOMS
 
-p:This will also view down the best line.
+p:The "rota y 90" command will will now provide a view down this new line.
 c:rota y 90
+c:refresh
 
 p:The next function in the Geometry tool tab is <b>Distances and Angles</b> (of selection) which will give the distances and angles of up to four selected atoms in the structure. Or, type the command '<c>sel</c>' after you have chosen which atoms you would like to analyse. <br>The data will then be displayed in the text in the command window.
-c:sel TXLine0
-c:kill sel
+c:kill DEMO_LINE_TWO_ATOMS
 c:sel F1 C7 N6 C5
 c:sel
 
