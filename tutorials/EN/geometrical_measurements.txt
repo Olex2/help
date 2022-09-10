@@ -64,6 +64,7 @@ c:sel N5 C10
 c:line sel -n=DEMO_LINE_TWO_ATOMS
 
 p:The next function in the Geometry tool tab is <b>Distances and Angles</b> (of selection). Select up to four atoms, then click this button or type '<c>sel</c>'; the geometric data pertaining to your selection will appear in the command window.
+c:kill DEMO_LINE_TWO_ATOMS
 c:sel -u
 c:sel C11 C10 C1 F1
 c:sel
