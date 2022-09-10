@@ -51,10 +51,10 @@ p:To align the molecule along the best line use '<c>line -n</c>'.
 c:sel -a
 c:line -n
 
-p:And to get the current view normal, use the '<c>direction</c>' command.
+p:The view will now have changed so that you are looking along the best line of the active selection. The '<c>direction</c>' command prints the current orientation of the model (in fractional coordinates).
 c:direction
 
-p:The view will now have changed so that you are looking down the best line of the active selection.
+p:The view may be rotated around the x, y, or z axis using the 'rota' command, e.g., "rota y 90" provides a view perpendicular to the Best Line.
 c:rota y 90
 c:refresh
 
