@@ -63,27 +63,22 @@ c:kill DEMO_LINE_ALL_ATOMS
 c:sel N5 C10
 c:line sel -n=DEMO_LINE_TWO_ATOMS
 
-p:The next function in the Geometry tool tab is <b>Distances and Angles</b> (of selection) which will give the distances and angles of up to four selected atoms in the structure. Or, type the command '<c>sel</c>' after you have chosen which atoms you would like to analyse. <br>The data will then be displayed in the text in the command window.
-c:kill DEMO_LINE_TWO_ATOMS
-c:sel F1 C7 N6 C5
+p:The next function in the Geometry tool tab is <b>Distances and Angles</b> (of selection). Select up to four atoms, then click this button or type '<c>sel</c>'; the geometric data pertaining to your selection will appear in the command window.
+c:sel -u
+c:sel C11 C10 C1 F1
 c:sel
+c:refresh
 
-p:Then there is <b>Refine and save esd info</b> which needs to be clicked once in order to use the rest of the functions in the list as this will refine the model and calculate the needed esd information.
+p:The <b>Refine and Save e.s.d. info</b> button needs to be clicked once to refine the model and calculate needed e.s.d.'s.
 c:delins more
 c:addins more -3
 c:refine
 
-p:One can view the current esd information of up to four atoms. Select four atoms in the structure, then type '<c>esd</c>'; the data will appear in the command window.
+p:Select up to four atoms. Typing '<c>esd</c>' will then cause the e.s.d. data for your selection to appear in the command window in the software.
 c:sel -u
-c:sel C11 C10 C1 F1
+c:sel C1 C2
 c:esd
 c:refresh
-
-#p:Then type '<c>esd</c>'.
-#c:esd
-#c:refresh
-
-#p:This will then cause the data to appear in the command window in the software.
 
 p:To use the <b>Analyse &pi;-&pi; Interactions</b> function, simply click on the button without highlighting anything.
 c:pipi -g
