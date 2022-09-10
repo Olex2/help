@@ -71,6 +71,7 @@ c:sel
 c:refresh
 
 p:The <b>Refine and Save e.s.d. info</b> button needs to be clicked once to refine the model and calculate needed e.s.d.'s.
+c:sel -u
 c:delins more
 c:addins more -3
 c:refine
