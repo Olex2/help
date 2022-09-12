@@ -90,10 +90,12 @@ p:Now the same geometric parameters are displayed as before, with their respecti
 p:To use the <b>Analyse &pi;-&pi; Interactions</b> function, simply click on the button without highlighting anything.
 c:pipi -g
 c:rota x 90
+c:kill DEMO_PLANE
 c:refresh
 
 p:This will duplicate the molecules to show interactions between adjacent aromatic rings and print some geometric data in the command window.
 c:fuse
+c:kill DEMO_PLANE
 c:refresh
 
 p:Another command you could also use would be the '<c>htab</c>' command.
