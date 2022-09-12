@@ -54,7 +54,7 @@ c:line -n
 p:The view will now have changed so that you are looking along the best line of the active selection. The '<c>direction</c>' command prints the current orientation of the model (in fractional coordinates).
 c:direction
 
-p:The view may be rotated around the x, y, or z axis using the 'rota' command, e.g., '<c>rota y 90</c>' provides a view perpendicular to the Best Line.
+p:The view may be rotated around the x, y, or z axis using the 'rota' command, e.g., '<c>rota y 90</c>' provides a view perpendicular to the Best Line. To delete a line, click on it and press the delete key.
 c:rota y 90
 c:refresh
 
