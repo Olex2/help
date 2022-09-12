@@ -77,6 +77,7 @@ c:sel -u
 c:delins more
 c:addins more -3
 c:refine
+c:kill DEMO_PLANE
 
 p:Select up to four atoms. (Here, we have selected the same four atoms as before.) Typing '<c>esd</c>' will then cause the e.s.d. data for your selection to appear in the command window in the software.
 c:sel -u
