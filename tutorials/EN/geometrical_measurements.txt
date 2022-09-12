@@ -78,9 +78,9 @@ c:delins more
 c:addins more -3
 c:refine
 
-p:Select up to four atoms. Typing '<c>esd</c>' will then cause the e.s.d. data for your selection to appear in the command window in the software.
+p:Select up to four atoms. (Here, we have selected the same four atoms as before.) Typing '<c>esd</c>' will then cause the e.s.d. data for your selection to appear in the command window in the software.
 c:sel -u
-c:sel C1 C2
+c:sel C11 C10 C1 F1
 c:esd
 c:refresh
 
