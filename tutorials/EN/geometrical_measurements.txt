@@ -92,7 +92,7 @@ c:pipi -g
 c:rota x 90
 c:refresh
 
-p:This will duplicate the molecules to show interactions between adjacent aromatic rings and print some geometric data in the command window.
+p:This will duplicate the molecules to show interactions between adjacent aromatic rings and print the relevant geometric data, such as the distance between ring centroids, in the command window.
 c:fuse
 c:refresh
 
