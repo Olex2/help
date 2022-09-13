@@ -83,7 +83,8 @@ p:This will allow you to see the electron densities in the maps and will also ch
 
 p:To do this all you need to do is click on the button marked <b>Map</b>.
 h:button_small-Map
-c:spy.mapview()
+#c:spy.mapview()
+c:spy.gui.maps.MapView()
 c:refresh
 
 p:To change the way the densities are shown, click on the drop down box marked 'View' in <b>Maps</b>.
