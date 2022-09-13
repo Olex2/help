@@ -47,7 +47,7 @@ c:html.ItemState h3-Growing 1
 
 p:In the expanded tab you can select three different modes of growing.
 
-p:<b>Short</b> which allows you to grow the molecule by one extra molecule each time, in order to show short intermolecular interactions between molecules.
+p:<b>Short</b> allows you to grow the molecule by one extra molecule each time, in order to show short intermolecular interactions.
 c:html.setbg(GROW_SHORT,red)
 c:html.setstate(GROW_SHORT,true)
 
