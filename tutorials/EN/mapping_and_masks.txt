@@ -45,7 +45,7 @@ c:xgrid.rendermode(plane)
 c:html.call(SET_SNUM_XGRID_VIEW_maps.onchange)
 c:refresh
 
-p:You can then select the type of map you would like. The default selection is normally plane which will be a dark square but let's try selecting 'contour+plane' and see what happens.
+p:You can then select the type of map you would like. The default selection is normally 'plane' which will be a dark square but let's try selecting 'contour+plane' and see what happens.
 c:html.ItemState h3-masks 2
 c:html.setbg(SET_SNUM_XGRID_VIEW_maps,white)
 c:html.setvalue(SET_SNUM_XGRID_VIEW_maps,contour+plane)
