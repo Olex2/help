@@ -10,7 +10,7 @@ c:html.ItemState tab* 2
 c:lines 10
 c:showq false
 
-p:This tutorial will show you how to use **grow** on a molecule. Sometimes the asymmetric consists only of part of the molecular unit and this needs to be expanded to see the whole picture.
+p:This tutorial will show you how to use **grow** on a molecule. Sometimes the asymmetric unit consists only of part of the molecular unit and this needs to be expanded to see the whole picture.
 
 p:First we need to load an extended structure model, so for this we will use <b>Timmy</b> from the <b>Sample Structures</b>.
 c:freeze(true)
