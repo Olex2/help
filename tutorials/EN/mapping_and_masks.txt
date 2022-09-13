@@ -22,7 +22,7 @@ c:spy.demo.switch_tab_for_tutorials(tools)
 
 p:You then need to click on the <b>Maps</b> tab.
 h:h2-Maps
-c:html.ItemState h2-tools-masks 1
+c:html.ItemState h2-tools-maps 1
 
 p:From this screen you can create a map for your 3D model. Let's start by creating a mask for the model.
 
