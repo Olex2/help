@@ -25,7 +25,7 @@ p:The next thing to do is to set the command window to automatic zoom so that al
 p:First, enter `echo extrazoom()` in the command line to check what the current value is (it is usually **1.25**).
 c:echo extrazoom()
 
-p:Once you've checked this value you can change it to any value you want. Here we are going to change it to **1**, so enter in `echo extrazoom(1)`. Note: this is optional, and the exact value varies from structure to structure.
+p:Once you've checked this value you can change it to any value you want. Here we are going to change it to **1**, so enter in `echo extrazoom(1)`. <br>Note: this is optional, and the exact value varies from structure to structure.
 c:echo extrazoom(1)
 
 p:Before the **extrazoom** command takes effect, you need to issue a `fuse` command to display only the asymmetric unit.
