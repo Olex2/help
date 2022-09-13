@@ -29,7 +29,7 @@ p:Once you've checked this value you can change it to any value you want. Here w
 c:echo extrazoom(1)
 
 p:Before the **extrazoom** command takes effect, you need to issue a `fuse` command to display only the asymmetric unit.
-C:fuse
+c:fuse
 
 p:This should now make the screen automatically zoom in or out to fit all the atoms.
 
