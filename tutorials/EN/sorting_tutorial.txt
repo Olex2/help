@@ -17,25 +17,26 @@ c:reap 'DataDir()/samples/sucrose/sucrose.res'
 c:spy.revert_to_original()
 c:freeze(false)
 
-p:First, you need to click on the <b>Work</b> tab in the top toolbar.
+p:Click on the <b>Work</b> tab in the top toolbar.
 h:tab-work
 c:spy.demo.switch_tab_for_tutorials(work)
 
-p:Then you need to select the <b>Sorting</b> tab.
+p:Then select the <b>Sorting</b> tab.
 h:h2-sorting
 c:html.ItemState h2-work-sorting 1
 
-p:Once the tab has been opened there will be 4 buttons in the tab. The first button <b>Mass & Label</b> creates a table that sorts the atoms by mass but allows for the labels to be used in other areas.
+#p:Once the tab has been opened there will be 4 buttons in the tab. The first button <b>Mass & Label</b> creates a table that sorts the atoms by mass but allows for the labels to be used in other areas.
+p:There are four drop-down menus in this tab, which will allow atoms to be sorted in any desired order, e.g., by part number first, then by atomic number (<i>Z</i>), and finally by atomic label.
 
-p:The table gives you the results for the Atom label, Type, its X,Y and Z position, Ueq, Chemical Occupancy, Peak, R-bond and R-VdW.
+#p:The table gives you the results for the Atom label, Type, its X,Y and Z position, Ueq, Chemical Occupancy, Peak, R-bond and R-VdW.
 
-p:Selecting the button will create a table of results in the command window.
+p:Clicking the <b>Sort</b> button will create a table of results in the command window.
 h:small-Sort
 c:html.call(IMG_BUTTON-SORT.onclick)
 c:info
 c:refresh
 
-p:In order to see all the lines of text in the command window you need to type the command '<c>lines -1</c>'.
+p:In order to see all the lines of text in the command window, type the command '<c>lines -1</c>'.
 c:lines -1
 c:refresh
 
