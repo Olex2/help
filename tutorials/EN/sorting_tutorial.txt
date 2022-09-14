@@ -45,29 +45,27 @@ p:In order to see all the lines of text in the command window, type the command 
 c:lines -1
 c:refresh
 
-p:Alternatively, you could type in the command '<c>text</c>' in order to bring a window up that contains all the text and will also let you scroll up and down. You could also do this by clicking on the notepad icon at the top of the window.
+p:If there is insufficient space on the screen to view the entire table, type '<c>text</c>' to open a text file containing the screen output. You could also do this by clicking on the notepad icon at the top of the GUI window.
 h:toolbar-text
 c:text
 
 p:To make it easier to find the relevant information you can also type in the command '<c>clear</c>' before the '<c>text</c>' command as this will only show the table you are wanting to look at now.
 c:clear
-c:html.call(IMG_BUTTON-SORT.onclick)
+#c:html.call(IMG_BUTTON-SORT.onclick)
+c:spy.gui.do_sort()
 c:text
 
-p:The next button <b>Atom Label</b> sorts the table alphabetically by the Atoms label name.
-h:button-atom_label
+p:It is also possible to sort from the command line. For example, '<c>sort +al</c>' will sort the table alphabetically by atom label, after which the results can be displayed with the '<c>info</c>' command as before.
 c:sort +al
+c:sel $*
 c:info
 c:refresh
 
-p:Again you can use which ever method is easiest for you in order to view the table.
-
-p:The next button in the tab is <b>Atomic Mass</b>. This will sort all the atoms by their atomic mass.
-h:button-atomic_mass
+p:To sort by atomic mass, type '<c>sort +m</c>. The '<c>info</c>' command will again display the resorted table.
 c:sort +m
+c:sel $*
+c:info
 c:refresh
-
-p:As before you can view these in any format that you like.
 
 p:The last button in the tab is <b>Moieties</b> which will allow you to sort molecules like <b>ZP2</b> into a split format, so for this example <b>ZP2</b> will be loaded.
 c:freeze(true)
