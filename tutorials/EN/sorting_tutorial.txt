@@ -45,16 +45,16 @@ p:In order to see all the lines of text in the command window, type the command 
 c:lines -1
 c:refresh
 
-p:If there is insufficient space on the screen to view the entire table, type '<c>text</c>' to open a text file containing the screen output. You could also do this by clicking on the notepad icon at the top of the GUI window.
+p:If there is still insufficient space on the screen to view the entire table, type '<c>text</c>' to open a text file containing the screen output. You can also open this text file by clicking on the notepad icon at the top of the GUI window.
 h:toolbar-text
 c:text
 
-p:To make it easier to find the relevant information you can also type in the command '<c>clear</c>' before the '<c>text</c>' command as this will only show the table you are wanting to look at now.
+p:To make it easier to find the relevant information, type in the command '<c>clear</c>' before typing '<c>text</c>' to show only the data table.
 c:clear
 #c:html.call(IMG_BUTTON-SORT.onclick)
 c:spy.gui.do_sort()
 c:text
-
+,
 p:It is also possible to sort from the command line. For example, '<c>sort +al</c>' will sort the table alphabetically by atom label, after which the results can be displayed with the '<c>info</c>' command as before.
 c:sort +al
 c:sel $*
