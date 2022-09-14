@@ -30,9 +30,14 @@ p:There are four drop-down menus in this tab, which will allow atoms to be sorte
 
 #p:The table gives you the results for the Atom label, Type, its X,Y and Z position, Ueq, Chemical Occupancy, Peak, R-bond and R-VdW.
 
-p:Clicking the <b>Sort</b> button will create a table of results in the command window.
+p:Clicking the <b>Sort</b> button will resort the atoms in the structure according to your preferences selected from the drop-down menu and output the sorted list on the screen.
 h:small-Sort
-c:html.call(IMG_BUTTON-SORT.onclick)
+#c:html.call(IMG_BUTTON-SORT.onclick)
+c:spy.gui.do_sort()
+c:refresh
+
+p:After sorting, select all atoms and type 'info' in the command line to print out a table of results (atomic positions, Ueq's, etc.) in the command window.
+c:sel $*
 c:info
 c:refresh
 
