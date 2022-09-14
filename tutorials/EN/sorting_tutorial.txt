@@ -54,7 +54,7 @@ c:clear
 #c:html.call(IMG_BUTTON-SORT.onclick)
 c:spy.gui.do_sort()
 c:text
-,
+
 p:It is also possible to sort from the command line. For example, '<c>sort +al</c>' will sort the table alphabetically by atom label, after which the results can be displayed with the '<c>info</c>' command as before.
 c:sort +al
 c:sel $*
@@ -100,4 +100,4 @@ c:info
 c:refresh
 c:text
 
-p:End of tutorial, press 'Next' to repeat the tutorial or 'Cancel' to exit.
+p:End of tutorial. Press 'Next' to repeat the tutorial or 'Cancel' to exit.
