@@ -49,10 +49,12 @@ p:If there is still insufficient space on the screen to view the entire table, t
 h:toolbar-text
 c:text
 
-p:To make it easier to find the relevant information, type in the command '<c>clear</c>' before typing '<c>text</c>' to show only the data table.
+p:To make it easier to find the relevant information, type in the command '<c>clear</c>' first, then select all atoms, sort them as desired, type '<c>info</c>' again, and then type '<c>text</c>' to display a text file containing only the data table.
 c:clear
 #c:html.call(IMG_BUTTON-SORT.onclick)
+c:sel $*
 c:spy.gui.do_sort()
+c:info
 c:text
 
 p:It is also possible to sort from the command line. For example, '<c>sort +al</c>' will sort the table alphabetically by atom label, after which the results can be displayed with the '<c>info</c>' command as before.
