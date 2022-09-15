@@ -103,7 +103,7 @@ In order to avoid too much clutter on the GUI, we have decided to provide the co
 |`lines -1`|will show all lines.|
 
 # Auto MORE
-Keywords entered here control the output of refinement, e.g., "MORE -1" dictates the amount of refinement information to be written to the .lst output file, "CONF" generates a table of torsion angles, "BOND $H" produces bond length and bond angle information (including bonds to H atoms), and "ACTA" writes a CIF file.
+Keywords entered here control the output of refinement, e.g., 'MORE -1' dictates the amount of refinement information to be written to the .lst output file, 'CONF' generates a table of torsion angles, 'BOND 'DOLLAR'H' produces bond length and bond angle information (including bonds to H atoms), and 'ACTA' writes a CIF file.
 
 # Save View
 If checked, drawing settings such as styles and backgrounds will be saved with the structure. This is somewhat experimental; if things go wrong, you may have to reload the chosen style for that particular structure.
