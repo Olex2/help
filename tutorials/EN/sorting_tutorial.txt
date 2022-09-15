@@ -30,6 +30,8 @@ p:The four drop-down menus under 'Sort Order' in this tab allow atoms to be sort
 p:Clicking the <b>Sort</b> button will re-sort the atoms in the structure according to your preferences selected from the drop-down menu and output the sorted list on the screen.
 h:small-Sort
 #c:html.call(IMG_BUTTON-SORT.onclick)
+c:html.setvalue(sorting_moiety, None)
+c:spy.SetParam('user.sorting.moiety', html.GetValue('sorting_moiety'))
 c:spy.gui.do_sort()
 c:refresh
 
