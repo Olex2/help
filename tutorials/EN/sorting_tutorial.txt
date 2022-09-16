@@ -26,6 +26,12 @@ h:h2-sorting
 c:html.ItemState h2-work-sorting 1
 
 p:The four drop-down menus under <b>Sort Order</b> in this tool tab allow atoms to be sorted in any desired order, e.g., by part number first, then by atomic number (<i>Z</i>), and finally by atomic label. For now, we will select 'None' under the <b>Moiety</b> drop-down menu (we will return to this later in the tutorial).
+c:html.setvalue(sorting_cat1, Part)
+c:html.setvalue(sorting_cat2, Z)
+c:html.setvalue(sorting_cat3, Label)
+c:spy.SetParam('user.sorting.cat1', html.GetValue('sorting_cat1'))
+c:spy.SetParam('user.sorting.cat2', html.GetValue('sorting_cat2'))
+c:spy.SetParam('user.sorting.cat3', html.GetValue('sorting_cat3'))
 c:html.setvalue(sorting_moiety, None)
 c:spy.SetParam('user.sorting.moiety', html.GetValue('sorting_moiety'))
 
