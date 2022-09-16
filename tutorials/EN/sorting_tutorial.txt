@@ -21,11 +21,11 @@ p:Click on the <b>Work</b> tab in the top toolbar.
 h:tab-work
 c:spy.demo.switch_tab_for_tutorials(work)
 
-p:Then select the <b>Sorting</b> tab.
+p:Then select the <b>Sorting</b> tool tab.
 h:h2-sorting
 c:html.ItemState h2-work-sorting 1
 
-p:The four drop-down menus under <b>Sort Order</b> in this tab allow atoms to be sorted in any desired order, e.g., by part number first, then by atomic number (<i>Z</i>), and finally by atomic label. For now, we will select 'None' under the <b>Moiety</b> drop-down menu (we will return to this later in this tutorial).
+p:The four drop-down menus under <b>Sort Order</b> in this tool tab allow atoms to be sorted in any desired order, e.g., by part number first, then by atomic number (<i>Z</i>), and finally by atomic label. For now, we will select 'None' under the <b>Moiety</b> drop-down menu (we will return to this later in this tutorial).
 c:html.setvalue(sorting_moiety, None)
 c:spy.SetParam('user.sorting.moiety', html.GetValue('sorting_moiety'))
 
