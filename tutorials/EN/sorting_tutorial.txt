@@ -29,9 +29,11 @@ p:The four drop-down menus under <b>Sort Order</b> in this tool tab allow atoms 
 c:html.setvalue(sorting_cat1, Part)
 c:html.setvalue(sorting_cat2, Z)
 c:html.setvalue(sorting_cat3, Label)
+c:html.setvalue(sorting_cat4, None)
 c:spy.SetParam('user.sorting.cat1', html.GetValue('sorting_cat1'))
 c:spy.SetParam('user.sorting.cat2', html.GetValue('sorting_cat2'))
 c:spy.SetParam('user.sorting.cat3', html.GetValue('sorting_cat3'))
+c:spy.SetParam('user.sorting.cat4', html.GetValue('sorting_cat4'))
 c:html.setvalue(sorting_moiety, None)
 c:spy.SetParam('user.sorting.moiety', html.GetValue('sorting_moiety'))
 
