@@ -47,7 +47,7 @@ c:sel $*
 c:info
 c:refresh
 
-p:In order to see all the lines of text in the command window, type the command '<c>lines -1</c>' (to display all lines).
+p:In order to see all the lines of text in the command window, type the command '<c>lines -1</c>' (used to display all lines).
 c:lines -1
 c:refresh
 
@@ -66,7 +66,7 @@ c:spy.gui.do_sort()
 p:Now type '<c>info</c>' again to display the table.
 c:info
 
-p:To open the whole data table in a new, decluttered text file, click on the notepad icon as before or type '<c>text</c>'.
+p:To open the whole data table in a new, uncluttered text file, click on the notepad icon as before or type '<c>text</c>'.
 c:text
 
 p:It is also possible to sort from the command line. For example, '<c>sort +al</c>' will sort the table alphabetically by atom label, after which the results can be displayed with the '<c>info</c>' command as before.<br>Note that the order of atoms in alphabetical sorting is C, H, then all other atoms in alphabetical order.
