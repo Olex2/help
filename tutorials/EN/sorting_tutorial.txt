@@ -39,11 +39,11 @@ c:sel $*
 c:info
 c:refresh
 
-p:In order to see all the lines of text in the command window, type the command '<c>lines -1</c>'.
+p:In order to see all the lines of text in the command window, type the command '<c>lines -1</c>' (to display all lines).
 c:lines -1
 c:refresh
 
-p:If there is still insufficient space on the screen to view the entire table, type '<c>text</c>' to open a text file containing the screen output. You can also open this text file by clicking on the notepad icon at the top of the GUI window.
+p:If there is still insufficient space on the screen to view the entire table, you can open a text file containing all the screen output by clicking on the notepad icon at the top of the GUI window. You can also open this text file by typing '<c>text</c>'.
 h:toolbar-text
 c:text
 
@@ -73,7 +73,7 @@ c:sel $*
 c:info
 c:refresh
 
-p:The last function in the <b>Sorting</b> tab is <b>Moieties</b> which allows you to sort atoms in structures like <b>ZP2</b>, that have more than one molecular entity in the asymmetric unit, in a split format. <b>ZP2</b> will now be loaded.
+p:The last function in the <b>Sorting</b> tab is <b>Moieties</b>, which allows you to sort atoms in structures like <b>ZP2</b>, that have more than one molecular entity in the asymmetric unit, in a split format. <b>ZP2</b> will now be loaded.
 c:freeze(true)
 c:reap 'DataDir()/samples/ZP2/ZP2'
 c:spy.revert_to_original()
