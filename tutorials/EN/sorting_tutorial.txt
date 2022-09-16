@@ -25,13 +25,13 @@ p:Then select the <b>Sorting</b> tab.
 h:h2-sorting
 c:html.ItemState h2-work-sorting 1
 
-p:The four drop-down menus under 'Sort Order' in this tab allow atoms to be sorted in any desired order, e.g., by part number first, then by atomic number (<i>Z</i>), and finally by atomic label.
+p:The four drop-down menus under 'Sort Order' in this tab allow atoms to be sorted in any desired order, e.g., by part number first, then by atomic number (<i>Z</i>), and finally by atomic label. For now, we will select 'None' under the <b>Moiety</b> drop-down menu (we will return to this later).
+c:html.setvalue(sorting_moiety, None)
+c:spy.SetParam('user.sorting.moiety', html.GetValue('sorting_moiety'))
 
 p:Clicking the <b>Sort</b> button will re-sort the atoms in the structure according to your preferences selected from the drop-down menu and output the sorted list on the screen.
 h:small-Sort
 #c:html.call(IMG_BUTTON-SORT.onclick)
-c:html.setvalue(sorting_moiety, None)
-c:spy.SetParam('user.sorting.moiety', html.GetValue('sorting_moiety'))
 c:spy.gui.do_sort()
 c:refresh
 
