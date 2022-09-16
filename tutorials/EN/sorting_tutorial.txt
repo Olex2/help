@@ -25,13 +25,12 @@ p:Then select the <b>Sorting</b> tab.
 h:h2-sorting
 c:html.ItemState h2-work-sorting 1
 
-p:The four drop-down menus under <b>Sort Order</b> in this tab allow atoms to be sorted in any desired order, e.g., by part number first, then by atomic number (<i>Z</i>), and finally by atomic label. For now, we will select 'None' under the <b>Moiety</b> drop-down menu (we will return to this later).
+p:The four drop-down menus under <b>Sort Order</b> in this tab allow atoms to be sorted in any desired order, e.g., by part number first, then by atomic number (<i>Z</i>), and finally by atomic label. For now, we will select 'None' under the <b>Moiety</b> drop-down menu (we will return to this later in this tutorial).
 c:html.setvalue(sorting_moiety, None)
 c:spy.SetParam('user.sorting.moiety', html.GetValue('sorting_moiety'))
 
 p:Clicking the <b>Sort</b> button will re-sort the atoms in the structure according to your preferences selected from the drop-down menu and output the sorted list on the screen.
 h:small-Sort
-#c:html.call(IMG_BUTTON-SORT.onclick)
 c:spy.gui.do_sort()
 c:refresh
 
@@ -48,15 +47,15 @@ p:If there is still insufficient space on the screen to view the entire table, t
 h:toolbar-text
 c:text
 
-p:To make it remove the clutter from the output, type in the command '<c>clear</c>' first to clear the display screen.
+p:To remove the clutter from the output in the text file, type in the command '<c>clear</c>' first to clear the display screen.
 c:clear
 
-p: Next, select all atoms and sort them as desired.
+p:Next, select all atoms and sort them as desired.
 #c:html.call(IMG_BUTTON-SORT.onclick)
 c:sel $*
 c:spy.gui.do_sort()
 
-p:Type '<c>info</c>' again to display the table.
+p:Now type '<c>info</c>' again to display the table.
 c:info
 
 p:To open the whole data table in a new, decluttered text file, click on the notepad icon as before or type '<c>text</c>'.
@@ -92,11 +91,7 @@ c:sel $*
 c:info
 c:refresh
 
-p:You can combine these sorting options to get various types of sorted tables. Type '<c>help sort</c>' to see all the options available.
-c:help sort
-c:refresh
-
-p:For example, sorting by moiety can be combined with sorting by mass and label by typing into the command line '<c>sort +ml moiety</c>'.
+p:You can combine these sorting options to get various types of sorted tables. For example, sorting by moiety can be combined with sorting by mass and label by typing into the command line '<c>sort +ml moiety</c>'.
 c:sort +ml moiety
 c:refresh
 
@@ -112,6 +107,10 @@ c:refresh
 p:As before, select all atoms and type '<c>info</c>' (or '<c>text</c>') to view the resulting table.
 c:sel $*
 c:info
+c:refresh
+
+p:Type '<c>help sort</c>' to see all the options available.
+c:help sort
 c:refresh
 
 p:End of tutorial. Press 'Next' to repeat the tutorial or 'Cancel' to exit.
