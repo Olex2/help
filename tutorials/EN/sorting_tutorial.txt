@@ -61,7 +61,7 @@ c:info
 p:To open the whole data table in a new, decluttered text file, click on the notepad icon as before or type '<c>text</c>'.
 c:text
 
-p:It is also possible to sort from the command line. For example, '<c>sort +al</c>' will sort the table alphabetically by atom label, after which the results can be displayed with the '<c>info</c>' command as before.
+p:It is also possible to sort from the command line. For example, '<c>sort +al</c>' will sort the table alphabetically by atom label, after which the results can be displayed with the '<c>info</c>' command as before. Note: The order of atoms in alphabetical sorting is C, H, then all other atoms in alphabetical order.
 c:sort +al
 c:sel $*
 c:info
