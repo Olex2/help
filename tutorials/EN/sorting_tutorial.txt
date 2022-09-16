@@ -25,7 +25,7 @@ p:Then select the <b>Sorting</b> tab.
 h:h2-sorting
 c:html.ItemState h2-work-sorting 1
 
-p:The four drop-down menus under 'Sort Order' in this tab allow atoms to be sorted in any desired order, e.g., by part number first, then by atomic number (<i>Z</i>), and finally by atomic label. For now, we will select 'None' under the <b>Moiety</b> drop-down menu (we will return to this later).
+p:The four drop-down menus under <b>Sort Order</b> in this tab allow atoms to be sorted in any desired order, e.g., by part number first, then by atomic number (<i>Z</i>), and finally by atomic label. For now, we will select 'None' under the <b>Moiety</b> drop-down menu (we will return to this later).
 c:html.setvalue(sorting_moiety, None)
 c:spy.SetParam('user.sorting.moiety', html.GetValue('sorting_moiety'))
 
@@ -48,7 +48,7 @@ p:If there is still insufficient space on the screen to view the entire table, t
 h:toolbar-text
 c:text
 
-p:To make it easier to find the relevant information, type in the command '<c>clear</c>' first to clear the display screen.
+p:To make it remove the clutter from the output, type in the command '<c>clear</c>' first to clear the display screen.
 c:clear
 
 p: Next, select all atoms and sort them as desired.
@@ -59,7 +59,7 @@ c:spy.gui.do_sort()
 p:Type '<c>info</c>' again to display the table.
 c:info
 
-p:To open the whole data table in a text file, click on the notepad icon as before or type '<c>text</c>'.
+p:To open the whole data table in a new, decluttered text file, click on the notepad icon as before or type '<c>text</c>'.
 c:text
 
 p:It is also possible to sort from the command line. For example, '<c>sort +al</c>' will sort the table alphabetically by atom label, after which the results can be displayed with the '<c>info</c>' command as before.
@@ -95,7 +95,7 @@ p:You can combine these sorting options to get various types of sorted tables. T
 c:help sort
 c:refresh
 
-p:As an example of the use of this line command, let us mix the moiety sort with the mass and label sort. To do this, type into the command line '<c>sort +ml moiety</c>'.
+p:For example, sorting by moiety can be combined with sorting by mass and label by typing into the command line '<c>sort +ml moiety</c>'.
 c:sort +ml moiety
 c:refresh
 
