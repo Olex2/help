@@ -29,8 +29,7 @@ p:The four drop-down menus under <b>Sort Order</b> in this tool tab allow atoms 
 c:html.setvalue(sorting_moiety, None)
 c:spy.SetParam('user.sorting.moiety', html.GetValue('sorting_moiety'))
 
-p:Clicking the <b>Sort</b> button will re-sort the atoms in the structure according to your preferences selected from the drop-down menu and output the sorted list on the screen.<br>
-Note: Hydrogens will always be listed immediately after the atoms they're attached to in the instruction file.
+p:Clicking the <b>Sort</b> button will re-sort the atoms in the structure according to your preferences selected from the drop-down menu and output the sorted list on the screen.<br><b>Note:</b> Hydrogens will always be listed immediately after the atoms they're attached to in the instruction file.
 h:small-Sort
 c:spy.gui.do_sort()
 c:refresh
@@ -62,8 +61,7 @@ c:info
 p:To open the whole data table in a new, decluttered text file, click on the notepad icon as before or type '<c>text</c>'.
 c:text
 
-p:It is also possible to sort from the command line. For example, '<c>sort +al</c>' will sort the table alphabetically by atom label, after which the results can be displayed with the '<c>info</c>' command as before.<br>
-Note: The order of atoms in alphabetical sorting is C, H, then all other atoms in alphabetical order.
+p:It is also possible to sort from the command line. For example, '<c>sort +al</c>' will sort the table alphabetically by atom label, after which the results can be displayed with the '<c>info</c>' command as before.<br><b>Note:</b> The order of atoms in alphabetical sorting is C, H, then all other atoms in alphabetical order.
 c:sort +al
 c:sel $*
 c:info
