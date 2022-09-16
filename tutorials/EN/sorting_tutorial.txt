@@ -90,6 +90,7 @@ p:You can view the resulting data table (after selecting all the atoms) with the
 c:clear
 c:sel $*
 c:info
+c:refresh
 
 p:You can combine these sorting options to get various types of sorted tables. Type '<c>help sort</c>' to see all the options available.
 c:help sort
@@ -99,12 +100,16 @@ p:For example, sorting by moiety can be combined with sorting by mass and label 
 c:sort +ml moiety
 c:refresh
 
-p:Selecting all atoms and typing '<c>info</c>' displays the usual atomic information as a table with atoms sorted by their atomic mass but still ordered by moiety, and with their respective labels.
+p:Selecting all atoms and typing '<c>info</c>' displays the usual atomic information as a table containing atoms sorted by their respective masses and labels but still ordered by moiety.
 c:sel $*
 c:info
+c:refresh
 
-p:You can also switch the order of appearance of molecules in the moiety list by adding an extra part to the end of the command line, so for example in the example we are using, you enter in the command '<c>sort +ml moiety F2 F1</c>'. As before, select all atoms and type '<c>info</c>' (or '<c>text</c>') to view the resulting table.
+p:The order of appearance of molecules in the moiety list can also be rearranged as follows. In the example we are using, enter '<c>sort +ml moiety F2 F1</c>' to switch the moiety order.
 c:sort +ml moiety F2 F1
+c:refresh
+
+p:As before, select all atoms and type '<c>info</c>' (or '<c>text</c>') to view the resulting table.
 c:sel $*
 c:info
 c:refresh
