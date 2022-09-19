@@ -11,25 +11,25 @@ c:html.ItemState tab* 2
 c:lines 10
 c:showq false
 
-p:This tutorial will look at how to use the pack function in Olex 2, in order to show how the molecules interact with each other. The first thing this tutorial will do is to load <b>Sucrose</b> as an example to show this.
+p:This tutorial will look at how to use the packing features in Olex2, in order to show how the molecules in a crystal structure interact with one another. The first thing this tutorial will do is to load <b>Sucrose</b> as an example to show this.
 c:freeze(true)
 c:reap 'DataDir()/samples/sucrose/sucrose.res'
 c:spy.revert_to_original()
 c:freeze(false)
 
-p:First you need to click on the <b>View</b> tab in the top toolbar.
+p:First, click on the <b>View</b> tab toolbar.
 h:tab-view
 c:spy.demo.switch_tab_for_tutorials(view)
 
-p:Then you need to open the toolbar called <b>Symmetry Generation</b> by clicking it, which will extend the tab...
+p:Next, click on the <b>Symmetry Generation</b> tool tab, to show the available commands.
 h:h2-symmetry-generation
 c:html.ItemState h2-view-symmetry-generation 1
 
-p:...you then need to open the tab called <b>Packing</b>.
+p:Now open the <b>Packing</b> tool tab.
 h:h3-Packing
 c:html.ItemState h3-packing 1
 
-p:You can then choose how many units you want to pack the molecule by, either by using the slider...
+p:You can now choose how many repeating units you want to pack onto the screen. One way is by using the <b>Pack Radius</b> slider.
 c:html.setbg(slidepackradius,red)
 c:html.setvalue(slidepackradius,15)
 c:html.setvalue(packradius,15)
@@ -37,7 +37,7 @@ c:setvalue(packradius,getvalue(slidepackradius))
 c:pack getvalue(packradius)
 c:refresh
 
-p:...or you can type the command '<c>pack</c>' to show the maximum amount allowed to be shown.
+p:Or, type '<c>pack</c>' into the command line to display the structure out to maximum limits set for the <i>a</i>, <i>b</i>, and <i>c</i> directions.
 c:pack
 c:refresh
 
