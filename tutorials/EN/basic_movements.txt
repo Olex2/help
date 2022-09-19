@@ -10,16 +10,15 @@ c:html.ItemState index-home 1
 c:html.ItemState tab* 2
 c:lines 10
 
-p:Welcome to Olex2. This software will be able to help you in creating 3D models for small-molecule structure solution and refinement. The first thing this tutorial will do is to load sucrose as an example to show this.
+p:Welcome to Olex2. This software is for creating 3D models for small-molecule structure solution and refinement. The sucrose example structure will now be loaded.
 c:freeze(true)
 c:reap 'DataDir()/samples/sucrose/sucrose.res'
 c:spy.revert_to_original()
-
 c:freeze(false)
 
-p:This tutorial will teach you some of the basic controls in order to navigate round this software if you are a new user to Olex2
+p:This tutorial for new users of Olex2 will go over some of the basic controls used for navigation.
 
-p:To start with the last crystal structure that was used on the system should automatically be opened when the software is started if this is the first time you have used Olex2 then the model for sucrose should be loaded.
+p:On startup, Olex2 automatically opens the last crystal structure used. When the software is opened for the first time, the model for sucrose provided with the software (along with a few other example structures) is loaded.
 
 p:One of the most useful things to first start using is the left click on the molecule in order to rotate it. You can also use the command line '<c>rota</c>'.
 
