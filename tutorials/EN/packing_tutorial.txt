@@ -21,7 +21,7 @@ p:First, click on the <b>View</b> tab toolbar.
 h:tab-view
 c:spy.demo.switch_tab_for_tutorials(view)
 
-p:Next, click on the <b>Symmetry Generation</b> tool tab, to show the available commands.
+p:Next, click on the <b>Symmetry Generation</b> tool tab to show the available commands.
 h:h2-symmetry-generation
 c:html.ItemState h2-view-symmetry-generation 1
 
@@ -37,7 +37,15 @@ c:html.setvalue(packradius,html.getvalue(slidepackradius))
 c:pack html.getvalue(packradius)
 c:refresh
 
-p:Or, type '<c>pack</c>' into the command line to display the structure out to the currently defined limits set for the <i>a</i>, <i>b</i>, and <i>c</i> directions.
+p:Type '<c>fuse</c> at the command line to redisplay the asymmetric unit alone. (This is a very much-used command.)
+c:fuse
+c:refresh
+
+p:To display the unit cell, type '<c>cell</c>'. (The display can be switched off by typing '<c>cell</c>' again.)
+c:cell
+c:refresh
+
+p:To display the structure out to the currently defined limits set for <i>a</i>, <i>b</i>, and <i>c</i>, click on the <b>Pack to limits</b> link or type '<c>pack</c>'.
 c:pack
 c:refresh
 
