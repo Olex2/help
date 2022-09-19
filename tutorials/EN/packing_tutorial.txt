@@ -45,11 +45,13 @@ p:To display the unit cell, type '<c>cell</c>'. (The display can be switched off
 c:cell
 c:refresh
 
+p:To fill the unit cell now displayed, click the <b>Fill Unit Cell</b> link, or type '<c>pack cell</c>'.
+
 p:To display the structure out to the currently defined limits set for <i>a</i>, <i>b</i>, and <i>c</i>, click on the <b>Pack to limits</b> link or type '<c>pack</c>'.
 c:pack
 c:refresh
 
-p:You can move, rotate and use functions on these as you would for a normal single unit of the molecule. For example here is the molecule rotating 90 degrees along the x axis.
+p:You can move, rotate and manipulate these packed structures as you would a normal single unit of the molecule. For example, here is the structure rotated 90° about the <i>x</i> axis with the '<c>rota x 90</c>' line command.
 c:rota x 90
 c:refresh
 
