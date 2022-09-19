@@ -11,7 +11,7 @@ c:html.ItemState tab* 2
 c:lines 10
 c:showq false
 
-p:This tutorial will look at how to use the packing features in Olex2, in order to show how the molecules in a crystal structure interact with one another. The first thing this tutorial will do is to load the <b>Sucrose</b> example structure.
+p:This tutorial will look at how to use the packing features in Olex2, in order to show how the molecules in a crystal structure interact with one another. The <b>Sucrose</b> example structure will first be loaded.
 c:freeze(true)
 c:reap 'DataDir()/samples/sucrose/sucrose.res'
 c:spy.revert_to_original()
@@ -37,7 +37,7 @@ c:html.setvalue(packradius,html.getvalue(slidepackradius))
 c:pack html.getvalue(packradius)
 c:refresh
 
-p:Type '<c>fuse</c> at the command line to redisplay the asymmetric unit alone. (This is a very much-used command.)
+p:Type '<c>fuse</c>' at the command line to redisplay the asymmetric unit alone. (This is a much-used command.)
 c:fuse
 c:refresh
 
