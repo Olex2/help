@@ -46,6 +46,8 @@ c:cell
 c:refresh
 
 p:To fill the unit cell now displayed, click the <b>Fill Unit Cell</b> link, or type '<c>pack cell</c>'.
+c:pack cell
+c:refresh
 
 p:To display the structure out to the currently defined limits set for <i>a</i>, <i>b</i>, and <i>c</i>, click on the <b>Pack to limits</b> link or type '<c>pack</c>'.
 c:pack
