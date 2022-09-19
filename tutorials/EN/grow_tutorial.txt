@@ -28,7 +28,7 @@ c:echo extrazoom()
 p:Once you've checked this value you can change it to any value you want. Here we are going to change it to **1**, so enter in `echo extrazoom(1)`. (This is optional, and the exact value varies from structure to structure.)
 c:echo extrazoom(1)
 
-p:Before the **extrazoom** command takes effect, you need to issue a `fuse` command to display only the asymmetric unit.
+p:Before the **extrazoom** command takes effect, you need to type in `<c>fuse</c>` at the command line to display only the asymmetric unit. This is a very frequently used command.
 c:fuse
 
 p:This should now make the screen automatically zoom in or out to fit all the atoms.
