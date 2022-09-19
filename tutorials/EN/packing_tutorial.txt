@@ -37,7 +37,7 @@ c:setvalue(packradius,getvalue(slidepackradius))
 c:pack getvalue(packradius)
 c:refresh
 
-p:Or, type '<c>pack</c>' into the command line to display the structure out to maximum limits set for the <i>a</i>, <i>b</i>, and <i>c</i> directions.
+p:Or, type '<c>pack</c>' into the command line to display the structure out to the currently defined limits set for the <i>a</i>, <i>b</i>, and <i>c</i> directions.
 c:pack
 c:refresh
 
