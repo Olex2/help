@@ -53,7 +53,7 @@ p:To display the structure out to the currently defined limits set for <i>a</i>,
 c:pack
 c:refresh
 
-p:You can move, rotate and manipulate these packed structures as you would a normal single unit of the molecule. For example, here is the structure rotated 90° about the <i>x</i> axis with the '<c>rota x 90</c>' line command.
+p:You can move, rotate and manipulate these packed structures as you would a normal single unit of the molecule. For example, here is the structure rotated 90\Degree about the <i>x</i> axis with the '<c>rota x 90</c>' line command.
 c:rota x 90
 c:refresh
 
