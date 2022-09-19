@@ -29,7 +29,7 @@ p:Now open the <b>Packing</b> tool tab.
 h:h3-Packing
 c:html.ItemState h3-packing 1
 
-p:You can now choose how many repeating units you want to pack onto the screen. One way is by using the <b>Pack Radius</b> slider.
+p:One tool for specifying how many repeating units to pack onto the screen is the <b>Pack Radius</b> slider.
 c:html.setbg(slidepackradius,red)
 c:html.setvalue(slidepackradius,15)
 c:html.setvalue(packradius,15)
@@ -37,7 +37,13 @@ c:html.setvalue(packradius,html.getvalue(slidepackradius))
 c:pack html.getvalue(packradius)
 c:refresh
 
-p:Type '<c>fuse</c>' at the command line to redisplay the asymmetric unit alone. (This is a much-used command.)
+p:In order to reduce this back down to a single unit again, first click on the <b>Symmetry Tools</b> tool tab.
+c:html.ItemState h3-packing 2
+h:h3-Symmetry-Tools
+c:html.ItemState h3-symmetry-tools 1
+
+p:Then click on <b>Fuse</b>, or just type the command '<c>fuse</c>'. (This is a much-used line command.)
+h:three-Fuse
 c:fuse
 c:refresh
 
@@ -53,18 +59,8 @@ p:To display the structure out to the currently defined limits set for <i>a</i>,
 c:pack
 c:refresh
 
-p:You can move, rotate and manipulate these packed structures as you would a normal single unit of the molecule. For example, here is the structure rotated 90\Degree about the <i>x</i> axis with the '<c>rota x 90</c>' line command.
+p:Packed structures can be moved, rotated, and manipulated as normal molecular units. For example, here is the structure rotated 90 degrees about the <i>x</i> axis with the '<c>rota x 90</c>' line command.
 c:rota x 90
 c:refresh
 
-p:In order to reduce this back down to a single unit again you have to click on the tab called <b>Symmetry Tools</b>.
-c:html.ItemState h3-packing 2
-h:h3-Symmetry-Tools
-c:html.ItemState h3-symmetry-tools 1
-
-p:Once on the <b>Symmetry Tools</b> tab you need to click on <b>Fuse</b> in order to reduce the model to one unit again, or type the command '<c>fuse</c>'.
-h:three-Fuse
-c:fuse
-c:refresh
-
-p:End of tutorial, press 'Next' to repeat the tutorial or 'Cancel' to exit.
+p:End of tutorial. Press 'Next' to repeat the tutorial or 'Cancel' to exit.
