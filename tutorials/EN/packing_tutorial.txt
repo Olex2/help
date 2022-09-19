@@ -33,7 +33,7 @@ p:You can now choose how many repeating units you want to pack onto the screen. 
 c:html.setbg(slidepackradius,red)
 c:html.setvalue(slidepackradius,15)
 c:html.setvalue(packradius,15)
-c:setvalue(packradius,html.getvalue(slidepackradius))
+c:html.setvalue(packradius,html.getvalue(slidepackradius))
 c:pack html.getvalue(packradius)
 c:refresh
 
