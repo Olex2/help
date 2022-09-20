@@ -22,6 +22,10 @@ c:refresh
 
 p:The structure can also be rotated by holding down the <b>SHIFT</b> key and pressing the arrow keys.
 c:rota y 10
+c:rota y 10
+c:rota y 10
+c:rota y 10
+c:rota y 10
 c:refresh
 
 p:The structure can also be rotated by typing '<c>rota</c>' on the command line. A direction such as x, y or z must be specified along with the degrees of rotation. For example, '<c>rota x 90</c>' rotates the structure about the <i>x</i> axis by 90&deg.
