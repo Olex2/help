@@ -17,7 +17,7 @@ c:spy.revert_to_original()
 c:freeze(false)
 
 p:One of the most useful things to start using is the left mouse button, which is used to rotate the structure on the screen. Try it!
-c:rota 1 1 1 30 1
+c:rota 1 1 1 60 1
 c:refresh
 
 p:The structure can also be rotated in small increments by holding down the <b>SHIFT</b> key and pressing the arrow keys.
@@ -40,20 +40,19 @@ p:To move the entire structure on the screen, either hold the <b>CTRL</b> and <b
 c:compaq -a
 c:refresh
 
-p:To change the gradient colour in the background, press <b>F2</b>.
-c:zoom(eval(0.1-zoom()))
+p:To change the colour of the screen background, press <b>F2</b>.
 c:swapbg
 c:refresh
 
-p:You can also change the gradient so that it ends up being slightly lighter on the bottom and slightly darker on the top by pressing <b>F4</b>.
+p:Use the <b>F4</b> key to change the screen background to a gradient.
 c:grad -i
 c:refresh
 
-p:Another helpful keyboard shortcut is <b>ctrl+Q</b> this will toggle the electron densities that appear on the molecule.
+p:Another helpful keyboard shortcut is <b>ctrl+Q</b>, which toggles the display of the residual electron density spheres ('Q' peaks). Press <b>ctrl+Q</b> repeatedly to see how the display of Q peaks changes.
 c:showq
 c:refresh
 
-p:You can also toggle how the hydrogen atoms are shown in the molecule by pressing <b>ctrl+h</b>. This will cause them to either disappear, reappear or shows them with internal h bonds.
+p:You can also toggle how the hydrogen atoms are shown in the molecule by pressing <b>ctrl+H</b>. This will cause them to either disappear, reappear or shows them with internal h bonds.
 c:showh
 c:refresh
 
