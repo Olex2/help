@@ -14,9 +14,9 @@ p:Welcome to Olex2, used to create 3D models for small-molecule structure soluti
 c:freeze(true)
 c:reap 'DataDir()/samples/sucrose/sucrose.res'
 c:spy.revert_to_original()
-c:refine 4
-c:refine 4
-c:refine 4
+c:refine 1
+c:refine 1
+c:refine 1
 c:showq a false
 c:showq b false
 c:freeze(false)
