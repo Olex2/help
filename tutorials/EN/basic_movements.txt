@@ -15,6 +15,8 @@ c:freeze(true)
 c:reap 'DataDir()/samples/sucrose/sucrose.res'
 c:spy.revert_to_original()
 c:refine 4
+c:showq a false
+c:showq b false
 c:freeze(false)
 
 p:One of the most useful things to start using is the left mouse button, which is used to rotate the structure on the screen. Drag with the left mouse button to rotate the structure.
@@ -62,6 +64,7 @@ c:refresh
 p:If a mistake occurs while constructing your model, it is possible to revert to a previous point in the solution and refinement process. Click on the tab at the top called <b>Work</b>.
 c:refine 4
 c:refine 4
+c:showq b false
 h:tab-work
 c:spy.demo.switch_tab_for_tutorials(work)
 
