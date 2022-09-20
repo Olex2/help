@@ -70,7 +70,7 @@ p:If a mistake occurs while constructing your model, it is possible to revert to
 h:tab-work
 c:spy.demo.switch_tab_for_tutorials(work)
 
-p:Then click on the tab called <b>History</b>.
+p:Then click on the <b>History</b> tool tab.
 h:h2-history
 c:html.ItemState h2-work-history 1
 
@@ -80,6 +80,6 @@ p:If more than one model has been created from the same data, it is possible to 
 h:h3-History-Tree
 c:html.ItemState h3-history-tree 1
 
-p:Now any past solution can be selected by first double clicking on one of the lines labeled 'refinements', then on one of the coloured columns in the bar graph.
+p:Now any past solution can be selected by first <i>double</i> clicking on one of the lines labeled 'refinements', then on one of the coloured columns in the bar graph.
 
 p:End of tutorial. Press next to repeat the tutorial or cancel to exit.
