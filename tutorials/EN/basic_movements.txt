@@ -29,7 +29,7 @@ p:The structure can also be rotated by typing '<c>rota</c>' on the command line.
 c:rota 1 0 0 90 10
 c:refresh
 
-p:Holding down the <b>CTRL</b> key while dragging with the left mouse button rotates the structure about the <i>z</i> axis (perpendicular to the screen). Try it!
+p:Hold down the <b>CTRL</b> key and drag with the left mouse button to rotate the structure about the <i>z</i> axis. This rotates the structure in the plane of the screen. Try it!
 c:rota 0 0 1 90 10
 c:refresh
 
@@ -56,10 +56,10 @@ c:showq
 c:refresh
 
 p:You can also toggle how the hydrogen atoms are shown in the molecule by pressing <b>CTRL+H</b>, which will cause them to disappear, reappear, or appear with internal H bonds shown.
-c:showh
+c:showh a true
 c:refresh
 
-p:If a mistake occurs while constructing your model, it is possible to revert back to a previous point in the solution and refinement process. Click on the tab at the top called <b>Work</b>.
+p:If a mistake occurs while constructing your model, it is possible to revert to a previous point in the solution and refinement process. Click on the tab at the top called <b>Work</b>.
 c:refine 4
 c:refine 4
 h:tab-work
@@ -69,12 +69,12 @@ p:Then click on the tab called <b>History</b>.
 h:h2-history
 c:html.ItemState h2-work-history 1
 
-p:In this tab a few coloured columns are displayed. The furthest column on the right represents the latest stage in the refinement, and columns to its left represent previous stages. Clicking on a column (the arrow cursor turns to a hand symbol) will revert back to a previous structure model.
+p:A few coloured columns are now displayed in a bar graph. The furthest column on the right represents the latest stage in the refinement, and columns to its left represent previous stages. Clicking on a column (the arrow cursor first turns to a hand symbol) will revert to that previous structure model.
 
 p:If more than one model has been created from the same data, it is possible to view past solutions. Click on the <b>History Tree</b> tool tab.
 h:h3-History-Tree
 c:html.ItemState h3-history-tree 1
 
-p:Now any past solution can be selected by double clicking on it.
+p:Now any past solution can be selected by double clicking on one of the lines labeled 'refinements', then on one of the coloured columns.
 
 p:End of tutorial. Press next to repeat the tutorial or cancel to exit.
