@@ -17,6 +17,8 @@ c:spy.revert_to_original()
 c:freeze(false)
 
 p:One of the most useful things to start using is the left mouse button, which is used to rotate the structure on the screen. Try it!
+c:rota y 45
+c:refresh
 
 p:The structure can also be rotated by typing '<c>rota</c>' on the command line. A direction such as x, y or z must be specified along with the degrees of rotation. For example, '<c>rota x 90</c>' rotates the structure about the <i>x</i> axis by 90&deg.
 c:rota x 90
