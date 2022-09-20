@@ -10,19 +10,15 @@ c:html.ItemState index-home 1
 c:html.ItemState tab* 2
 c:lines 10
 
-p:Welcome to Olex2. This software is for creating 3D models for small-molecule structure solution and refinement. The sucrose example structure will now be loaded.
+p:Welcome to Olex2, used to create 3D models for small-molecule structure solution and refinement. This tutorial for new users of Olex2 will go over some of the basic controls used for navigation. On startup, Olex2 automatically opens the last crystal structure used, but when the software is opened for the first time, the model for sucrose is loaded.
 c:freeze(true)
 c:reap 'DataDir()/samples/sucrose/sucrose.res'
 c:spy.revert_to_original()
 c:freeze(false)
 
-p:This tutorial for new users of Olex2 will go over some of the basic controls used for navigation.
+p:One of the most useful things to start using is the left mouse button, which is used to rotate the structure on the screen. Try it!
 
-p:On startup, Olex2 automatically opens the last crystal structure used. When the software is opened for the first time, the model for sucrose provided with the software (along with a few other example structures) is loaded.
-
-p:One of the most useful things to first start using is the left click on the molecule in order to rotate it. You can also use the command line '<c>rota</c>'.
-
-p:In order to use the command line you will have to enter in the command '<c>rota</c>' along with a direction such as x,y or z and the number of degrees you want it to rotate for example '<c>rota x 90</c>'.
+p:The structure can also be rotated by typing '<c>rota</c>' on the command line. A direction such as x,y or z must be specified along with the degrees of rotation. For example, '<c>rota x 90</c>' rotates the structure about the x axis by 90&deg.
 c:rota x 90
 c:refresh
 
