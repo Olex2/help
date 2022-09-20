@@ -10,7 +10,7 @@ c:html.ItemState index-home 1
 c:html.ItemState tab* 2
 c:lines 10
 
-p:Welcome to Olex2, used to create 3D models for small-molecule structure solution and refinement. This tutorial for new users of Olex2 will go over some of the basic controls used for navigation. On startup, Olex2 automatically opens the last crystal structure used, but when the software is opened for the first time, the model for sucrose is loaded.
+p:Welcome to Olex2, used to create 3D models for small-molecule structure solution and refinement. This tutorial for new users of Olex2 will go over some of the basic controls used for navigation and display. On startup, Olex2 automatically opens the last crystal structure used, but when the software is opened for the first time, the model for sucrose is loaded. This will take a few moments.
 c:freeze(true)
 c:reap 'DataDir()/samples/sucrose/sucrose.res'
 c:spy.revert_to_original()
