@@ -32,7 +32,11 @@ p:Dragging the <i>right</i> mouse button, however, zooms the view in or out.
 c:zoom(eval(0.3-zoom()))
 c:refresh
 
-p:To change the gradient colour in the background, pressing <b>F2</b>.
+p:To move the entire structure on the screen, either hold the <b>CTRL</b> and <b>SHIFT</b> keys while dragging with the left mouse button, or drag with both mouse buttons pressed. Try translating the molecule on the screen!
+c:compaq -a
+c:refresh
+
+p:To change the gradient colour in the background, press <b>F2</b>.
 c:zoom(eval(0.1-zoom()))
 c:swapbg
 c:refresh
