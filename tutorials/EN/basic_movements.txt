@@ -18,15 +18,18 @@ c:freeze(false)
 
 p:One of the most useful things to start using is the left mouse button, which is used to rotate the structure on the screen. Try it!
 
-p:The structure can also be rotated by typing '<c>rota</c>' on the command line. A direction such as x,y or z must be specified along with the degrees of rotation. For example, '<c>rota x 90</c>' rotates the structure about the x axis by 90&deg.
+p:The structure can also be rotated by typing '<c>rota</c>' on the command line. A direction such as x, y or z must be specified along with the degrees of rotation. For example, '<c>rota x 90</c>' rotates the structure about the <i>x</i> axis by 90&deg.
 c:rota x 90
 c:refresh
 
-p:You should have noticed that the molecule rotated 90 degrees in the x direction you can also zoom in and out of a molecule by holding the right mouse button and moving it backwards and forwards.
+p:Holding down the <b>CTRL</b> key while dragging with the left mouse button rotates the structure about the <i>z</i> axis (perpendicular to the screen). Try it!
+c:refresh
+
+p:Dragging the <i>right</i> mouse button, however, zooms the view in or out.
 c:zoom(eval(0.3-zoom()))
 c:refresh
 
-p:The command window will have now zoomed in on the molecule. If you are having problems seeing the molecule easily, because of the gradient colour, you can quite easily change the gradient colour by pressing <b>F2</b>.
+p:To change the gradient colour in the background, pressing <b>F2</b>.
 c:zoom(eval(0.1-zoom()))
 c:swapbg
 c:refresh
