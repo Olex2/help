@@ -23,6 +23,7 @@ c:rota x 90
 c:refresh
 
 p:Holding down the <b>CTRL</b> key while dragging with the left mouse button rotates the structure about the <i>z</i> axis (perpendicular to the screen). Try it!
+c:rota z 90
 c:refresh
 
 p:Dragging the <i>right</i> mouse button, however, zooms the view in or out.
