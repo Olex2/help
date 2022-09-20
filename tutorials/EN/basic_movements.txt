@@ -20,7 +20,7 @@ p:One of the most useful things to start using is the left mouse button, which i
 c:rota 1 1 1 60 1
 c:refresh
 
-p:The structure can also be rotated in small increments by holding down the <b>SHIFT</b> key and pressing the arrow keys.
+p:To rotate the structure in small increments, hold down <b>SHIFT</b> and press the arrow keys.
 c:rota 0 1 0 10 1
 c:refresh
 
@@ -37,9 +37,9 @@ c:gl.zoom
 c:gl.zoom -0.01
 c:refresh
 
-p:To move the entire structure on the screen, either hold the <b>CTRL</b> and <b>SHIFT</b> keys while dragging with the left mouse button, or drag with both mouse buttons pressed. Try translating the molecule on the screen!
+p:To move the entire structure on the screen, hold down <b>CTRL</b> and <b>SHIFT</b> while dragging with the left mouse button. Or, drag with both mouse buttons pressed. Try translating the molecule on the screen!
 c:gl.zoom
-c:compaq -a
+c:center
 c:refresh
 
 p:To change the colour of the screen background, press <b>F2</b>.
