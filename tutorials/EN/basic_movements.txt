@@ -82,6 +82,6 @@ p:If more than one model has been created from the same data, it is possible to 
 h:h3-History-Tree
 c:html.ItemState h3-history-tree 1
 
-p:Now any past solution can be selected by double clicking on one of the lines labeled 'refinements', then on one of the coloured columns.
+p:Now any past solution can be selected by first double clicking on one of the lines labeled 'refinements', then on one of the coloured columns in the bar graph.
 
 p:End of tutorial. Press next to repeat the tutorial or cancel to exit.
