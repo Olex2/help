@@ -50,29 +50,35 @@ p:Use the <b>F4</b> key to change the screen background to a gradient.
 c:grad -i
 c:refresh
 
-p:Another helpful keyboard shortcut is <b>ctrl+Q</b>, which toggles the display of the residual electron density spheres ('Q' peaks). To demonstrate this command, the Co110 sample structure will now be loaded.
+p:Another helpful keyboard shortcut is <b>ctrl+Q</b>, which toggles the display of the residual electron density spheres ('Q peaks'). To demonstrate this command, the Co110 sample structure will now be loaded.
 c:freeze(true)
 c:reap 'DataDir()/samples/Co110/Co110.res'
 c:spy.revert_to_original()
 c:freeze(false)
 
-p:Now press <b>ctrl+Q</b> repeatedly to see how the display of Q peaks changes.
+p:Now press <b>CTRL+Q</b> repeatedly to see how the display of Q peaks changes.
 c:showq
 c:refresh
 
-p:You can also toggle how the hydrogen atoms are shown in the molecule by pressing <b>ctrl+H</b>, which will cause them to disappear, reappear or appear with internal H bonds.
+p:To illustrate the next command, we reopen the sucrose structure.
+c:freeze(true)
+c:reap 'DataDir()/samples/sucrose/sucrose.res'
+c:spy.revert_to_original()
+c:freeze(false)
+
+p:You can also toggle how the hydrogen atoms are shown in the molecule by pressing <b>CTRL+H</b>, which will cause them to disappear, reappear, or appear with internal H bonds shown.
 c:showh
 c:refresh
 
-p:Also if you make a mistake while constructing your model in order to revert back to an older point in the model you need to click on the tab at the top called <b>Work</b>.
+p:If a mistake occurs while constructing your model, it is possible to revert back to a previous point in the refinement. Click on the tab at the top called <b>Work</b>.
 h:tab-work
 c:spy.demo.switch_tab_for_tutorials(work)
 
-p:Then you need to click on the tab called <b>History</b>.
+p:Then click on the tab called <b>History</b>.
 h:h2-history
 c:html.ItemState h2-work-history 1
 
-p:In this tab you should be able to see some coloured columns. If you click on one of these columns then it will revert back to a previous version of your structure.
+p:In this tab a few coloured columns are displayed. The furthest column on the right represents the latest stage in the refinement, and columns to its left represent previous stages. Clicking on a column will revert back to a previous structure model.
 
 p:Also if you've created a couple of models from the same data set you can go to past solutions by clicking on the tab <b>History Tree</b>.
 h:h3-History-Tree
