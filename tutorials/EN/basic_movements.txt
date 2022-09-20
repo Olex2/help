@@ -54,16 +54,20 @@ c:grad -i
 c:refresh
 
 p:Another helpful keyboard shortcut is <b>CTRL+Q</b>, which toggles the display of the residual electron density spheres ('Q peaks'). Press <b>CTRL+Q</b> repeatedly to see how the display of Q peaks changes.
-c:showq
+c:showq a true
+c:showq b false
 c:refresh
 
-p:You can also toggle how the hydrogen atoms are shown in the molecule by pressing <b>CTRL+H</b>, which will cause them to disappear, reappear, or appear with internal H bonds shown.
+p:You can also toggle the display of hydrogen atoms in the structure by pressing <b>CTRL+H</b>, which will cause them to disappear, reappear, or appear with internal H bonds shown.
+c:showq a false
+c:showq b false
 c:showh a true
 c:refresh
 
 p:If a mistake occurs while constructing your model, it is possible to revert to a previous point in the solution and refinement process. Click on the tab at the top called <b>Work</b>.
 c:refine 4
 c:refine 4
+c:showq a true
 c:showq b false
 h:tab-work
 c:spy.demo.switch_tab_for_tutorials(work)
