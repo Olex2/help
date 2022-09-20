@@ -17,23 +17,19 @@ c:spy.revert_to_original()
 c:freeze(false)
 
 p:One of the most useful things to start using is the left mouse button, which is used to rotate the structure on the screen. Try it!
-c:rota y 45
+c:rota 1 1 1 30 1
 c:refresh
 
-p:The structure can also be rotated by holding down the <b>SHIFT</b> key and pressing the arrow keys.
-c:rota y 10
-c:rota y 10
-c:rota y 10
-c:rota y 10
-c:rota y 10
+p:The structure can also be rotated in small increments by holding down the <b>SHIFT</b> key and pressing the arrow keys.
+c:rota 0 1 0 10 1
 c:refresh
 
-p:The structure can also be rotated by typing '<c>rota</c>' on the command line. A direction such as x, y or z must be specified along with the degrees of rotation. For example, '<c>rota x 90</c>' rotates the structure about the <i>x</i> axis by 90&deg.
-c:rota x 90
+p:The structure can also be rotated by typing '<c>rota</c>' on the command line. A direction such as <i>x</i>, <i>y</i> or <i>z</i> must be specified along with the degrees of rotation. For example, '<c>rota x 90</c>' rotates the structure about the <i>x</i> axis by 90&deg.
+c:rota 1 0 0 90 10
 c:refresh
 
 p:Holding down the <b>CTRL</b> key while dragging with the left mouse button rotates the structure about the <i>z</i> axis (perpendicular to the screen). Try it!
-c:rota z 90
+c:rota 0 0 1 90 10
 c:refresh
 
 p:Dragging the <i>right</i> mouse button, however, zooms the view in or out.
