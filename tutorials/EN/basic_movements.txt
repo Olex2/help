@@ -60,7 +60,7 @@ p:Now press <b>ctrl+Q</b> repeatedly to see how the display of Q peaks changes.
 c:showq
 c:refresh
 
-p:You can also toggle how the hydrogen atoms are shown in the molecule by pressing <b>ctrl+H</b>. This will cause them to either disappear, reappear or shows them with internal h bonds.
+p:You can also toggle how the hydrogen atoms are shown in the molecule by pressing <b>ctrl+H</b>, which will cause them to disappear, reappear or appear with internal H bonds.
 c:showh
 c:refresh
 
