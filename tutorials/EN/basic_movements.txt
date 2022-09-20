@@ -15,6 +15,8 @@ c:freeze(true)
 c:reap 'DataDir()/samples/sucrose/sucrose.res'
 c:spy.revert_to_original()
 c:refine 4
+c:refine 4
+c:refine 4
 c:showq a false
 c:showq b false
 c:freeze(false)
@@ -65,10 +67,6 @@ c:showh a true
 c:refresh
 
 p:If a mistake occurs while constructing your model, it is possible to revert to a previous point in the solution and refinement process. Click on the tab at the top called <b>Work</b>.
-c:refine 4
-c:refine 4
-c:showq a true
-c:showq b false
 h:tab-work
 c:spy.demo.switch_tab_for_tutorials(work)
 
