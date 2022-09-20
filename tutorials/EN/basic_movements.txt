@@ -50,7 +50,7 @@ p:Use the <b>F4</b> key to change the screen background to a gradient.
 c:grad -i
 c:refresh
 
-p:Another helpful keyboard shortcut is <b>ctrl+Q</b>, which toggles the display of the residual electron density spheres ('Q peaks'). To demonstrate this command, the Co110 sample structure will now be loaded.
+p:Another helpful keyboard shortcut is <b>CTRL+Q</b>, which toggles the display of the residual electron density spheres ('Q peaks'). To demonstrate this command, the Co110 sample structure will now be loaded.
 c:freeze(true)
 c:reap 'DataDir()/samples/Co110/Co110.res'
 c:spy.revert_to_original()
@@ -64,13 +64,16 @@ p:To illustrate the next command, we reopen the sucrose structure.
 c:freeze(true)
 c:reap 'DataDir()/samples/sucrose/sucrose.res'
 c:spy.revert_to_original()
+c:refine 4
+c:refine 4
+c:refine 4
 c:freeze(false)
 
 p:You can also toggle how the hydrogen atoms are shown in the molecule by pressing <b>CTRL+H</b>, which will cause them to disappear, reappear, or appear with internal H bonds shown.
 c:showh
 c:refresh
 
-p:If a mistake occurs while constructing your model, it is possible to revert back to a previous point in the refinement. Click on the tab at the top called <b>Work</b>.
+p:If a mistake occurs while constructing your model, it is possible to revert back to a previous point in the solution and refinement process. Click on the tab at the top called <b>Work</b>.
 h:tab-work
 c:spy.demo.switch_tab_for_tutorials(work)
 
@@ -78,12 +81,12 @@ p:Then click on the tab called <b>History</b>.
 h:h2-history
 c:html.ItemState h2-work-history 1
 
-p:In this tab a few coloured columns are displayed. The furthest column on the right represents the latest stage in the refinement, and columns to its left represent previous stages. Clicking on a column will revert back to a previous structure model.
+p:In this tab a few coloured columns are displayed. The furthest column on the right represents the latest stage in the refinement, and columns to its left represent previous stages. Clicking on a column (the arrow cursor turns to a hand symbol) will revert back to a previous structure model.
 
-p:Also if you've created a couple of models from the same data set you can go to past solutions by clicking on the tab <b>History Tree</b>.
+p:If more than one model has been created from the same data, it is possible to view past solutions. Click on the <b>History Tree</b> tool tab.
 h:h3-History-Tree
 c:html.ItemState h3-history-tree 1
 
-p:Then simply choose a past solution by double clicking on it.
+p:Now any past solution can be selected by double clicking on it.
 
 p:End of tutorial. Press next to repeat the tutorial or cancel to exit.
