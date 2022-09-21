@@ -30,15 +30,15 @@ h:btn-refine;3
 h:btn-draw;3
 h:btn-report;3
 
-p:To solve your crystal structure with Olex2 you need to provide a reflection file (<b>name.hkl</b>) and an input file (<b>name.ins</b>) containing the crystallographic unit cell you determined during the diffraction experiment.
+p:The files needed for solving and refining a crystal structure with Olex2 are: a reflection file (<b>name.hkl</b>) and an input file (<b>name.ins</b>) containing the crystallographic unit cell you determined during the diffraction experiment. These files should have the same name and reside in the same directory.
 
-p:We can solve the structure of our example sucrose by typing '<c>solve</c>' into the graphics window or by clicking the <b>Solve</b> button. We will do this now.
+p:Click the <b>Solve</b> button or type '<c>solve</c>' into the command window to solve the structure. We will do this now for the sucrose sample structure just opened.
 h:btn-solve;1
 c:solve
 c:waitfor process
 c:refresh
 
-p:We can tidy this solution by typing 'clean' or by pressing the <b>Clean</b> button.
+p:We can tidy up this solution by pressing the <b>Clean</b> button or by typing '<c>clean</c>' at the command prompt.
 h:toolbar-tidy
 c:clean
 c:compaq -a
