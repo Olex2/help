@@ -11,7 +11,7 @@ h:h2-Start
 c:html.ItemState home-start 1
 c:reset
 
-p:Choose a sample structure by clicking one of the buttons in this tool tab. In this tutorial, we will be solving and refining one of the sample structures that come with Olex2 - <b>Sucrose</b>. Please press 'Next' to load it (this may take some time!).
+p:Click any of the buttons in this tool tab to open a sample structure provided with Olex2. In this tutorial, the <b>Sucrose</b> structure will be solved and refined. Please press 'Next' to load it (this may take some time!).
 c:refresh
 c:freeze(true)
 c:reap DataDir()/samples/sucrose/sucrose.res
