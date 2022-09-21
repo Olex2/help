@@ -11,7 +11,7 @@ h:h2-Start
 c:html.ItemState home-start 1
 c:reset
 
-p:Click any of the buttons in this tool tab to open a sample structure provided with Olex2. In this tutorial, the <b>Sucrose</b> structure will be solved and refined. Please press 'Next' to load it (this may take some time!).
+p:Clicking any of the buttons in this tool tab opens a sample structure provided with Olex2. In this tutorial, the <b>Sucrose</b> structure will be solved and refined. Please press 'Next' to load it (this may take some time!).
 c:refresh
 c:freeze(true)
 c:reap DataDir()/samples/sucrose/sucrose.res
@@ -20,13 +20,14 @@ c:center
 c:freeze(false)
 c:refresh
 
-p:By clicking on the <b>Work</b> tab, we get access to the main tools in Olex2:
+p:The <b>Work</b> tab contains all the main solution and refinement tools in Olex2.
 h:tab-work;3
 c:spy.demo.switch_tab_for_tutorials(work)
 
-p:Here we have structure <b>Solution</b>, <b>Refinement</b> and <b>Reports</b>
+p:From here, one can <b>Solve</b>, <b>Refine</b>, <b>Draw</b> and produce a final <b>Report</b> for a structure.
 h:btn-solve;3
 h:btn-refine;3
+h:btn-draw;3
 h:btn-report;3
 
 p:To solve your crystal structure with Olex2 you need to provide a reflection file (<b>name.hkl</b>) and an input file (<b>name.ins</b>) containing the crystallographic unit cell you determined during the diffraction experiment.
