@@ -1,24 +1,22 @@
 ﻿## Please note that all actions from all_tutorials_preamble.txt will be added here!
 
 c:html.ItemState home-start 2
-c:showQ True
+c:showQ a True
+c:showQ b False
 
-p:Welcome to this first demo introducing you to <font color="rgb(255,100,50)">Olex2</font color="rgb(255,100,50)">. To get the most out of it, please read this text carefully and when you are done press the 'Next' button.
+p:Welcome to this introductory <font color="rgb(255,100,50)">Olex2</font color="rgb(255,100,50)"> tutorial. Press 'Next' to advance to the next screen in the tutorial or 'Cancel' to leave the tutorial.
 
-p:You can exit the tutorial window to move the molecule in the graphics window if you like.<br>If you would like to use the Graphical User Interface (GUI) properly, press 'Cancel' and leave the tutorial.
-
-p:Structures are loaded from the <b>Start</b> tool. The tool will be highlighted when you press 'Next'.
-
+p:Structures are loaded from the <b>Start</b> tool tab. This tool tab will be highlighted when you press 'Next'.
 h:h2-Start
 c:html.ItemState home-start 1
 c:reset
 
-p:You can choose a sample structure by clicking one of the links next to the title <b>Sample Structure</b>. In this tutorial, we will be solving and refining one of the sample structures that come with Olex2 - <b>Sucrose</b>. Please press 'Next' to load it (this may take some time!).
+p:Choose a sample structure by clicking one of the buttons in this tool tab. In this tutorial, we will be solving and refining one of the sample structures that come with Olex2 - <b>Sucrose</b>. Please press 'Next' to load it (this may take some time!).
 c:refresh
 c:freeze(true)
 c:reap DataDir()/samples/sucrose/sucrose.res
 c:spy.revert_to_original()
-c:mpln -n
+c:center
 c:freeze(false)
 c:refresh
 
