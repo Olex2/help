@@ -7,6 +7,8 @@ c:showQ b False
 p:Welcome to this introductory <font color="rgb(255,100,50)">Olex2</font color="rgb(255,100,50)"> tutorial. Press 'Next' to advance to the next screen in the tutorial or 'Cancel' to leave the tutorial.
 
 p:Structures are loaded from the <b>Start</b> tool tab. This tool tab will be highlighted when you press 'Next'.
+c:@py "import time"
+c:@py "time.sleep(5)"
 h:h2-Start
 c:html.ItemState home-start 1
 c:reset
