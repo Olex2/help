@@ -152,4 +152,4 @@ This setting is for developers only. Please leave this switch *off*, unless you 
 Semicolon-separated strings entered in this box will be added to the **System Path** as new values **before** any existing folders. This means that any crystallographic software in the folders listed here will be found by Olex2 *first* and therefore will be used.
 
 # OpenMP
-This tool allows for multiprocessing during refinement with olex2.refine using the OpenMP API.
+This tool allows for multiprocessing during refinement with olex2.refine using the OpenMP API. Note: This feature is still under development and may be unstable.
