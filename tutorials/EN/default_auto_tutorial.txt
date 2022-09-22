@@ -80,8 +80,9 @@ c:sel atoms where xatom.uiso < 0.035&&xatom.type!='Q'
 c:refresh
 
 p:Convert the selected atoms to oxygens by clicking the <b>O</b> button.
-h:btn-elementO
+c:spy.ElementButtonStates(O)
 c:name sel O
+c:sel -u
 c:refresh
 
 p:We now refine this updated structure containing the newly identified oxygens.
