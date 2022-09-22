@@ -10,7 +10,7 @@ p:Welcome to this introductory <font color="rgb(255,100,50)">Olex2</font color="
 h:h2-Start
 c:html.ItemState home-start 1
 
-p:The files needed for solving and refining a crystal structure with Olex2 are a reflection file (<b>name.hkl</b>) and an input file (<b>name.ins</b>) containing the crystallographic unit cell that was determined during the diffraction experiment. These files should have the same name and reside in the same folder, normally accessed with the <b>Open</b> button. In this tutorial, however, one of the preloaded sample structures provided with Olex2 will be used.
+p:The files needed for solving and refining a crystal structure with Olex2 are a reflection file (<b>name.hkl</b>) and an input file (<b>name.ins</b>) containing the crystallographic unit cell that was determined during the diffraction experiment. These files should have the same name and reside in the same folder, normally accessed with the <b>Open</b> button.
 
 p:Olex2 comes preloaded with several sample structures, which are shown as buttons in this tab. The <b>Sucrose</b> structure will be solved and refined in this tutorial. Press 'Next' to load it.
 c:refresh
@@ -31,8 +31,10 @@ h:btn-refine;1
 h:btn-draw;1
 h:btn-report;1
 
-p:Click on the arrow next to the Solve button to open the options menu. Here, choose a solution program from the <b>Program</b> drop-down menu (e.g., ShelXT, olex.solve), make sure <b>name.hkl</b> is loaded as the <b>Reflections</b> file, and enter the expected molecular formula is entered in <b>Composition</b>.
+p:Click on the arrow next to the Solve button to open the options menu.
 c:html.ItemState cbtn* 1 cbtn-solve 2 *settings 0 solve-settings 1
+
+p:Here, choose a solution program from the <b>Program</b> drop-down menu (e.g., ShelXT, olex.solve), make sure <b>name.hkl</b> is loaded as the <b>Reflections</b> file, and enter the expected molecular formula in <b>Composition</b>.
 c:spy.set_solution_program(olex2.solve,,snum)
 c:html.Update
 c:SetVar(solution_output, strcat(FileName(),_solution_output.html))
