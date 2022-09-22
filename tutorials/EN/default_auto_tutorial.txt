@@ -60,8 +60,7 @@ p:A recognizable skeleton structure of sucrose is displayed on the screen, but a
 h:btn-refine;1
 c:html.ItemState cbtn* 1 cbtn-refine 2 *settings 0 refine-settings 1
 c:SetVar(refinement_output, strcat(FileName(),_refinement_output.html))
-c:spy.SetMaxPeaks(5)
-c:refine 4
+c:refine 4 4
 
 p:Every line command has a short help entry describing its function and listing any switches that the command may take. Type '<c>help clean</c>' at the command prompt in the graphics window.
 c:lines 15
