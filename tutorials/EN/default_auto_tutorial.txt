@@ -82,6 +82,10 @@ c:html.setvalue(UisoSelectVal,<0.035)
 c:sel atoms where xatom.uiso < 0.035&&xatom.type!='Q'
 c:refresh
 
+p:Click on atom C10, which was not identified by the Uiso method, to select it for conversion to oxygen as well.
+c:sel C10
+c:refresh
+
 p:Convert the selected atoms to oxygens by clicking the <b>O</b> button.
 #c:spy.ElementButtonStates(O)
 c:name sel O
