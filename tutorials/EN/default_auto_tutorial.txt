@@ -17,6 +17,9 @@ c:refresh
 c:freeze(true)
 c:reap DataDir()/samples/sucrose/sucrose.res
 c:spy.revert_to_original()
+c:spy.gui.get_Z_prime_from_fraction(1)
+c:html.Update
+c:SetVar(solution_output, strcat(FileName(),_solution_output.html))
 c:reset
 c:freeze(false)
 c:refresh
