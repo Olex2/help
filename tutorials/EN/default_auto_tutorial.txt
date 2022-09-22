@@ -32,13 +32,13 @@ h:btn-report;3
 
 p:The files needed for solving and refining a crystal structure with Olex2 are a reflection file (<b>name.hkl</b>) and an input file (<b>name.ins</b>) containing the crystallographic unit cell you determined during the diffraction experiment. These files should have the same name and reside in the same directory.
 
-p:Click the <b>Solve</b> button or type '<c>solve</c>' into the command window to solve the structure. We will do this now for the sucrose sample structure just opened.
+p:Choose a solution program from the <b>Program</b> dropdown menu (e.g., ShelXT, olex.solve). Click the <b>Solve</b> button or type '<c>solve</c>' into the command window to solve the structure. We will do this now for the sucrose sample structure just opened.
 h:btn-solve;1
 c:solve
 c:waitfor process
 c:refresh
 
-p:Tidy up this solution by pressing the <b>Clean</b> button or by typing '<c>clean</c>' at the command prompt.
+p:The gold spheres that appear after solution are regions of high electron density (i.e., likely positions of atoms). Tidy up this solution by pressing the <b>Clean</b> button or by typing '<c>clean</c>' at the command prompt.
 h:toolbar-tidy
 c:clean
 c:compaq -a
