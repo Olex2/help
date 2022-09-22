@@ -10,7 +10,9 @@ p:Welcome to this introductory <font color="rgb(255,100,50)">Olex2</font color="
 h:h2-Start
 c:html.ItemState home-start 1
 
-p:The files needed for solving and refining a crystal structure with Olex2 are a reflection file (<b>name.hkl</b>) and an input file (<b>name.ins</b>) containing the crystallographic unit cell that was determined during the diffraction experiment. These files should have the same name and reside in the same directory. Clicking any of the buttons in this tool tab opens these files for a sample structure provided with Olex2. In this tutorial, the <b>Sucrose</b> structure will be solved and refined. Please press 'Next' to load it.
+p:The files needed for solving and refining a crystal structure with Olex2 are a reflection file (<b>name.hkl</b>) and an input file (<b>name.ins</b>) containing the crystallographic unit cell that was determined during the diffraction experiment. These files should have the same name and reside in the same folder. The <b>Open</b> button allows you to navigate to this folder.
+
+p:In this tutorial, we will open one of the preloaded sample structures provided with Olex2 and shown in this tool tab. The <b>Sucrose</b> structure will be solved and refined. Press 'Next' to load it.
 c:refresh
 c:freeze(true)
 c:reap DataDir()/samples/sucrose/sucrose.res
