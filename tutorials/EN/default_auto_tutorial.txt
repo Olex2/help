@@ -56,7 +56,7 @@ c:compaq -a
 c:legend -r
 c:refresh
 
-p:A recognizable skeleton structure of sucrose is displayed on the screen, but all the atoms are carbon! This structure now needs to be 'refined' (correct atoms and atomic positions need to be assigned) by pressing the <b>Refine</b> button. Alternatively, type '<c>refine</c>' at the command prompt.
+p:A recognizable skeleton structure of sucrose is displayed on the screen, but all the atoms are carbon! This structure now needs to be 'refined' (correct atoms and atomic positions need to be assigned in the model). To start this important process, click the <b>Refine</b> button. Alternatively, type '<c>refine</c>' at the command prompt.
 h:btn-refine;1
 c:html.ItemState cbtn* 1 cbtn-refine 2 *settings 0 refine-settings 1
 c:SetVar(refinement_output, strcat(FileName(),_refinement_output.html))
@@ -70,7 +70,7 @@ c:refresh
 p:The macro 'Clean' is described in the graphics window. The refined structure will now be cleaned again.
 c:clean
 
-p:To identify all non-hydrogen atoms correctly, the <b>Uiso Slider</b> in the <b>Toolbox Work</b> tool tab is first used to select carbons in the skeleton that look 'too small' (these are likely to be oxygens).
+p:To identify all non-hydrogen atoms correctly, the <b>Uiso Slider</b> in the <b>Toolbox Work</b> tool tab is first used to select carbons in the skeleton that look relatively small (these are likely to be oxygens).
 c:html.ItemState work-main-toolbar 1
 c:html.ItemState h3-peak-and-uiso-sliders 1
 c:html.setBG(UISO_SELECT_SLIDER,#ff0000)
