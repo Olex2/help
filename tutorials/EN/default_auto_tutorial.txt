@@ -11,7 +11,7 @@ h:h2-Start
 c:html.ItemState home-start 1
 c:reset
 
-p:Clicking any of the buttons in this tool tab opens a sample structure provided with Olex2. In this tutorial, the <b>Sucrose</b> structure will be solved and refined. Please press 'Next' to load it (this may take some time!).
+p:Clicking any of the buttons in this tool tab opens a sample structure provided with Olex2. In this tutorial, the <b>Sucrose</b> structure will be solved and refined. Please press 'Next' to load it.
 c:refresh
 c:freeze(true)
 c:reap DataDir()/samples/sucrose/sucrose.res
@@ -25,14 +25,17 @@ h:tab-work;3
 c:spy.demo.switch_tab_for_tutorials(work)
 
 p:From here, one can <b>Solve</b>, <b>Refine</b>, <b>Draw</b> and produce a final <b>Report</b> for a structure.
-h:btn-solve;3
-h:btn-refine;3
-h:btn-draw;3
-h:btn-report;3
+h:btn-solve;1
+h:btn-refine;1
+h:btn-draw;1
+h:btn-report;1
 
-p:The files needed for solving and refining a crystal structure with Olex2 are a reflection file (<b>name.hkl</b>) and an input file (<b>name.ins</b>) containing the crystallographic unit cell you determined during the diffraction experiment. These files should have the same name and reside in the same directory.
+p:The files needed for solving and refining a crystal structure with Olex2 are a reflection file (<b>name.hkl</b>) and an input file (<b>name.ins</b>) containing the crystallographic unit cell that was determined during the diffraction experiment. These files should have the same name and reside in the same directory.
 
-p:Choose a solution program from the <b>Program</b> dropdown menu (e.g., ShelXT, olex.solve). Click the <b>Solve</b> button or type '<c>solve</c>' into the command window to solve the structure. We will do this now for the sucrose sample structure just opened.
+p:Click on the arrow next to the Solve button to open the options menu. Here, choose a solution program from the <b>Program</b> drop-down menu (e.g., ShelXT, olex.solve), make sure <b>name.hkl</b> is loaded as the <b>Reflections</b> file, and that a sensible chemical composition is entered.
+h:solve-settings; 1
+
+p:Click the <b>Solve</b> button or type '<c>solve</c>' into the command window to solve the structure. We will do this now for the sucrose sample structure just opened.
 h:btn-solve;1
 c:solve
 c:waitfor process
