@@ -45,24 +45,29 @@ c:solve
 c:waitfor process
 c:refresh
 
-p:The gold spheres that appear after solution are regions of high electron density (i.e., likely positions of atoms). Tidy up this solution by pressing the <b>Clean</b> button or by typing '<c>clean</c>' at the command prompt.
+p:The gold spheres that appear after solution are regions of high electron density (i.e., likely positions of atoms). Tidy up this solution by clicking the <b>Clean</b> button or by typing '<c>clean</c>' at the command prompt.
 h:toolbar-tidy
 c:clean
+c:refresh
+
+p:It is often helpful at this stage, especially if molecular fragments appear scattered across the screen, to compact them together in the center. To do this, click the <b>Center</b> button or type '<c>compaq -a</c>.
+h:toolbar-center
 c:compaq -a
 c:refresh
 
-p:Let's press the <b>Refine</b> button or type '<c>refine</c>' and refine what we've got so far.
+p:A recognizable skeleton structure of sucrose is displayed on the screen. This structure now needs to be 'refined' (correct atoms and atomic positions need to be assigned) by pressing the <b>Refine</b> button. Alternatively, type '<c>refine</c>' at the command prompt.
 h:btn-refine;1
 c:refine
 
-p:For every instruction that you can use in the graphics window, a short help description tells you the function and possibly switches. If you type '<c>help clean</c>'...
+p:Every line command has a short help entry describing its function and listing any switches that the command may take. Type '<c>help clean</c>' at the command prompt in the graphics window.
+c:lines 15
 c:help clean
 c:refresh
 
-p:...the 'macro Clean' is described in the graphics window. Let's clean once again.
+p:The macro 'Clean' is described in the graphics window. The refined structure will now be cleaned again.
 c:clean
 
-p:With the <b>Uiso Slider</b> in the <b>Toolbox Work</b> we can select all those atoms that look 'too small'.
+p:Using the <b>Uiso Slider</b> in the <b>Toolbox Work</b> we can select all those atoms that look 'too small'.
 c:html.ItemState work-main-toolbar 1
 c:html.ItemState h3-peak-and-uiso-sliders 1
 c:html.setBG(UISO_SELECT_SLIDER,#ff0000)
