@@ -80,7 +80,7 @@ c:sel atoms where xatom.uiso < 0.035&&xatom.type!='Q'
 c:refresh
 
 p:Convert the selected atoms to oxygens by clicking the <b>O</b> button.
-c:spy.ElementButtonStates(O)
+#c:spy.ElementButtonStates(O)
 c:name sel O
 c:sel -u
 c:refresh
@@ -101,8 +101,8 @@ p:Click the <b>Clean</b> button after the refinement once again.
 c:clean
 c:refresh
 
-p:Let's add some hydrogen atoms to this. Type '<c>hadd</c>' or click on the <b>Add H</b> button.
-h:small-Add_H
+p:The hydrogen atoms will finally be added as appropriate (in 'riding positions'). Click on the <b>Add H</b> button or type '<c>hadd</c>' and refine again.
+#h:small-Add_H
 c:hadd
 c:refine
 c:refresh
@@ -111,7 +111,6 @@ p:You can toggle the display of electron density peaks (Q-peaks) by repeatedly p
 h:toolbar-Q
 c:showQ False
 c:refresh
-##
 
 p:Of course, we can change the settings of the solution program.
 
