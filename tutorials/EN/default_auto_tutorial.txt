@@ -78,8 +78,8 @@ c:html.ItemState work-main-toolbar 1
 c:html.ItemState h3-peak-and-uiso-sliders 1
 c:html.setBG(UISO_SELECT_SLIDER,#ff0000)
 c:html.setvalue(UISO_SELECT_SLIDER,-7)
-c:html.setvalue(UisoSelectVal,<0.035)
-c:sel atoms where xatom.uiso < 0.035&&xatom.type!='Q'
+c:html.setvalue(UisoSelectVal,<0.043)
+c:sel atoms where xatom.uiso < 0.043&&xatom.type!='Q'
 c:refresh
 
 p:Convert the selected atoms to oxygens by clicking the <b>O</b> button.
