@@ -33,7 +33,7 @@ h:btn-report;1
 p:The files needed for solving and refining a crystal structure with Olex2 are a reflection file (<b>name.hkl</b>) and an input file (<b>name.ins</b>) containing the crystallographic unit cell that was determined during the diffraction experiment. These files should have the same name and reside in the same directory.
 
 p:Click on the arrow next to the Solve button to open the options menu. Here, choose a solution program from the <b>Program</b> drop-down menu (e.g., ShelXT, olex.solve), make sure <b>name.hkl</b> is loaded as the <b>Reflections</b> file, and that a sensible chemical composition is entered.
-h:solve-settings; 1
+h:cbtn-solve; 1
 c:html.ItemState cbtn* 1 cbtn-solve 2 *settings 0 solve-settings 1
 
 p:Click the <b>Solve</b> button or type '<c>solve</c>' into the command window to solve the structure. We will do this now for the sucrose sample structure just opened.
