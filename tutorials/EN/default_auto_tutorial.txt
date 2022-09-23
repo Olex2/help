@@ -5,8 +5,6 @@ c:showQ a True
 c:showQ b False
 
 p:Welcome to this introductory <font color="rgb(255,100,50)">Olex2</font color="rgb(255,100,50)"> tutorial. Press 'Next' to advance to the next screen in the tutorial or 'Cancel' to leave the tutorial.<br><br>Structures are loaded from the <b>Start</b> tool tab, which will be highlighted when you press 'Next'.
-#c:@py "import time"
-#c:@py "time.sleep(5)"
 h:h2-Start;3
 c:html.ItemState home-start 1
 
@@ -24,7 +22,7 @@ c:reset
 c:freeze(false)
 c:refresh
 
-p:To access all the main solution and refinement tools in Olex2, click the <b>Work</b> tab.
+p:At this starting point in the solution and refinement process, no atoms or electron density peaks will be visible. To access all the main solution and refinement tools in Olex2, click the <b>Work</b> tab.
 h:tab-work;3
 c:html.ItemState * 0 tab* 2 tab-work 1 logo1 1 index-work* 1 info-title 1
 
@@ -108,7 +106,6 @@ p:Tidy up this refined structure again by clicking <b>Clean</b> or typing '<c>cl
 c:clean
 
 p:To identify all the non-hydrogen atoms correctly, the <b>Uiso Slider</b> in the <b>Toolbox Work</b> tool tab is first used to select carbons in the skeleton that look relatively small (these are likely to be oxygens).
-#h:h3-peak-and-uiso-sliders;3
 c:html.ItemState work-main-toolbar 1
 c:html.ItemState h3-peak-and-uiso-sliders 1
 c:html.setBG(UISO_SELECT_SLIDER,#ff0000)
@@ -126,7 +123,7 @@ c:refresh
 p:The Uiso slider method is a coarse technique, and can miss some atom assignments. Select any incorrect carbons that were not identified as oxygens, and convert them to oxygen as well. Try it now!
 c:refresh
 
-p:We now refine this updated structure containing the correct atoms.
+p:Refine this updated structure containing the correct atoms.
 c:refine 4 4
 
 p:Click the <b>Clean</b> button after the refinement, as before.
@@ -148,7 +145,7 @@ c:hadd
 c:refine
 c:refresh
 
-p:You can toggle the display of the Q peaks, which now represent regions of residual electron density in the model, by repeatedly clicking the <b>Q peaks</b> button. The equivalent line command is either '<c>Q</c>' or '<c>CTRL+Q</c>'.
+p:A satisfactory model of sucrose now appears on the screen. The display of Q peaks, which now represent regions of residual electron density in the model, can be toggled by repeatedly clicking the <b>Q peaks</b> button. The equivalent line command is either '<c>Q</c>' or '<c>CTRL+Q</c>'.
 h:toolbar-Q
 c:showQ a False
 c:refresh
