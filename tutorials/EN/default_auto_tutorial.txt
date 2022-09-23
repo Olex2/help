@@ -72,7 +72,7 @@ c:clear
 c:refresh
 #c:html.ItemState solve-settings 2
 
-p:We now return to the solution process. Now that we have the correct space group, in the Solve tool tab area, choose a solution program from the <b>Program</b> drop-down menu, make sure <b>name.hkl</b> is loaded as the <b>Reflections</b> file, and enter the expected molecular formula in <b>Composition</b>.
+p:We now return to the solution process.<br><br>Now that we have the correct space group (P21 has the best figures of merit), in the Solve tool tab area, choose a solution program from the <b>Program</b> drop-down menu, make sure <b>name.hkl</b> is loaded as the <b>Reflections</b> file, and enter the expected molecular formula in <b>Composition</b>.
 c:spy.set_solution_program(olex2.solve,,snum)
 c:html.Update
 c:SetVar(solution_output, strcat(FileName(),_solution_output.html))
@@ -149,7 +149,7 @@ h:toolbar-Q
 c:showQ a False
 c:refresh
 
-p:We hope you enjoyed this first introduction to Olex2 - please let us know if we missed out any essential steps in this manual by visiting www.olex2.org and getting engaged in the Olex2 development.
+p:We hope you found this introduction to Olex2 helpful. Please let us know if we missed any essential steps in this tutorial by visiting www.olex2.org and getting engaged in the development of Olex2.
 c:spy.demo.switch_tab_for_tutorials(home)
 
-p:End of tutorial, press 'Next' to repeat the tutorial or 'Cancel' to exit. <br><font size='1'>Written by Stefanie Freitag-Pohl and modified by Tim Royappa.</font>
+p:End of tutorial. Press 'Next' to repeat the tutorial or 'Cancel' to exit.<br><br><font size='1'>Written by Stefanie Freitag-Pohl and modified by Tim Royappa.</font>
