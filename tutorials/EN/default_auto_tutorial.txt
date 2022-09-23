@@ -50,7 +50,7 @@ p:Clicking the <b>Suggest SG</b> link generates a table of possible space groups
 c:sg
 c:refresh
 
-p:Alternatively, one could type '<c>sg</c>' at the command prompt in the graphics window to suggest a space group. Olex2 has many such line commands. Every line command has a help entry describing its function and listing any switches that the command may take. Type '<c>help sg</c>' to see the entry for the '<c>sg</c>' command.
+p:Alternatively, one could type '<c>sg</c>' at the command prompt in the graphics window to suggest a space group.<br><br>As an aside, Olex2 has many such line commands. Every line command has a help entry describing its function and listing any switches that the command may take. Type '<c>help sg</c>' to see the entry for the '<c>sg</c>' command.
 c:help sg
 c:refresh
 
@@ -62,7 +62,7 @@ p:To show only 10 lines, type '<c>lines 10</c>'.
 c:lines 10
 c:refresh
 
-p:Click on the little text icon near the top of the GUI to open a complete transcript of the console output in your text editor. Or, type '<c>text</c>'.
+p:Click on the little text icon near the top of the GUI to open a complete transcript of the console output in your text editor. Or, simply type '<c>text</c>'.
 h:toolbar-text
 c:text
 c:refresh
@@ -70,9 +70,9 @@ c:refresh
 p:To clear the console output, type '<c>clear</c>'.
 c:clear
 c:refresh
-c:html.ItemState solve-settings 2
+#c:html.ItemState solve-settings 2
 
-p:In the Solve tool tab area, choose a solution program from the <b>Program</b> drop-down menu, make sure <b>name.hkl</b> is loaded as the <b>Reflections</b> file, and enter the expected molecular formula in <b>Composition</b>.
+p:We now return to the solution process. Now that we have the correct space group, in the Solve tool tab area, choose a solution program from the <b>Program</b> drop-down menu, make sure <b>name.hkl</b> is loaded as the <b>Reflections</b> file, and enter the expected molecular formula in <b>Composition</b>.
 c:spy.set_solution_program(olex2.solve,,snum)
 c:html.Update
 c:SetVar(solution_output, strcat(FileName(),_solution_output.html))
@@ -152,4 +152,4 @@ c:refresh
 p:We hope you enjoyed this first introduction to Olex2 - please let us know if we missed out any essential steps in this manual by visiting www.olex2.org and getting engaged in the Olex2 development.
 c:spy.demo.switch_tab_for_tutorials(home)
 
-p:End of tutorial, press 'Next' to repeat the tutorial or 'Cancel' to exit. <br><font size='1'>Written by Stefanie Freitag-Pohl.</font>
+p:End of tutorial, press 'Next' to repeat the tutorial or 'Cancel' to exit. <br><font size='1'>Written by Stefanie Freitag-Pohl and modified by Tim Royappa.</font>
