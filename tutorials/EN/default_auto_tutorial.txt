@@ -10,7 +10,7 @@ p:Welcome to this introductory <font color="rgb(255,100,50)">Olex2</font color="
 h:h2-Start
 c:html.ItemState home-start 1
 
-p:The files needed for solving and refining a crystal structure with Olex2 are a reflections file (<b>name.hkl</b>) and an instructions file (<b>name.ins</b>) containing information about the unit cell, radiation type, etc. These files should have the same name and reside in the same folder, normally accessed with the <b>Open</b> button.
+p:The files needed for solving and refining a crystal structure with Olex2 are a reflections file (<b>name.hkl</b>) and an instructions file (<b>name.ins</b>) containing information about the unit cell, radiation type, etc. These files should have the same name and reside in the same folder, normally accessed with the <b>Open</b> button in this tool tab.
 
 p:Olex2 comes with several sample structures, which are shown as buttons in this tool tab. The <b>Sucrose</b> structure will be solved and refined in this tutorial. Press 'Next' to load it.
 c:refresh
@@ -70,15 +70,14 @@ c:refresh
 p:To clear the console output, type '<c>clear</c>'.
 c:clear
 c:refresh
-#c:html.ItemState solve-settings 2
 
-p:We now return to the solution process.<br><br>Now that we have the correct space group (P21 has the best figures of merit), in the Solve tool tab area, choose a solution program from the <b>Program</b> drop-down menu, make sure <b>name.hkl</b> is loaded as the <b>Reflections</b> file, and enter the expected molecular formula in <b>Composition</b>.
+p:We now return to the solution process.<br><br>Now that we have the correct space group (P21 has the best figures of merit for this structure of sucrose), in the Solve tool tab area, choose a solution program from the <b>Program</b> drop-down menu, make sure <b>name.hkl</b> is loaded as the <b>Reflections</b> file, and enter the expected molecular formula in <b>Composition</b>.
 c:spy.set_solution_program(olex2.solve,,snum)
 c:html.Update
 c:SetVar(solution_output, strcat(FileName(),_solution_output.html))
 
 p:Now click the <b>Solve</b> button.
-h:btn-solve;1
+h:btn-solve;3
 c:solve
 c:waitfor process
 c:refresh
@@ -95,7 +94,7 @@ c:legend -r
 c:refresh
 
 p:A recognizable skeleton structure of sucrose is displayed on the screen, but all the atoms are carbon! This structure now needs to be 'refined' (correct atoms and atomic positions need to be assigned in the model). To start this important process, click the <b>Refine</b> button. Alternatively, type '<c>refine</c>' at the command prompt.
-h:btn-refine;1
+h:btn-refine;3
 c:html.ItemState cbtn* 1 cbtn-refine 2 *settings 0 refine-settings 1
 c:SetVar(refinement_output, strcat(FileName(),_refinement_output.html))
 c:refine 4 4
@@ -104,6 +103,7 @@ p:Tidy up this refined structure again by clicking <b>Clean</b> or typing '<c>cl
 c:clean
 
 p:To identify all the non-hydrogen atoms correctly, the <b>Uiso Slider</b> in the <b>Toolbox Work</b> tool tab is first used to select carbons in the skeleton that look relatively small (these are likely to be oxygens).
+h:h3-peak-and-uiso-sliders;3
 c:html.ItemState work-main-toolbar 1
 c:html.ItemState h3-peak-and-uiso-sliders 1
 c:html.setBG(UISO_SELECT_SLIDER,#ff0000)
