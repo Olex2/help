@@ -35,11 +35,8 @@ h:btn-draw;1
 h:btn-report;1
 
 p:Click on the arrow next to the <b>Solve</b> button to set the solve options.
-c:html.ItemState cbtn* 1 cbtn-solve 2 *settings 0 solve-settings 1
-
-p:Of course, we can change the settings of the solution program. We do this by clicking the <b>Solution Settings</b> button.
 h:cbtn-solve
-c:html.ItemState solve-settings 1
+c:html.ItemState cbtn* 1 cbtn-solve 2 *settings 0 solve-settings 1
 
 p:Here we can choose solution programs (e.g., ShelXT, olex.solve) and other solve settings...
 h:SET_snum_solution_PROGRAM_bg
