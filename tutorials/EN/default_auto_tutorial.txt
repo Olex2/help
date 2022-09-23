@@ -28,7 +28,7 @@ p:To access all the main solution and refinement tools in Olex2, click the <b>Wo
 h:tab-work;3
 c:html.ItemState * 0 tab* 2 tab-work 1 logo1 1 index-work* 1 info-title 1
 
-p:From this tab, one can <b>Solve</b>, <b>Refine</b>, <b>Draw</b> and produce a final <b>Report</b> for a structure.
+p:From this tab, one can <b>Solve</b>, <b>Refine</b>, <b>Draw</b> and produce a final <b>Report</b> for a structure. This tutorial is mainly about the first two of these functions.
 h:btn-solve;1
 h:btn-refine;1
 h:btn-draw;1
