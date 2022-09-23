@@ -7,7 +7,7 @@ c:showQ b False
 p:Welcome to this introductory <font color="rgb(255,100,50)">Olex2</font color="rgb(255,100,50)"> tutorial. Press 'Next' to advance to the next screen in the tutorial or 'Cancel' to leave the tutorial.<br><br>Structures are loaded from the <b>Start</b> tool tab, which will be highlighted when you press 'Next'.
 #c:@py "import time"
 #c:@py "time.sleep(5)"
-h:h2-Start
+h:h2-Start;3
 c:html.ItemState home-start 1
 
 p:The files needed for solving and refining a crystal structure with Olex2 are a reflections file (<b>name.hkl</b>) and an instructions file (<b>name.ins</b>) containing information about the unit cell, radiation type, etc. These files should have the same name and reside in the same folder, normally accessed with the <b>Open</b> button in this tool tab.
@@ -96,7 +96,7 @@ c:refresh
 p:A recognizable skeleton structure of sucrose is displayed on the screen, but all the atoms are carbon! This structure now needs to be 'refined' (correct atoms and atomic positions need to be assigned in the model). Click on the arrow next to the <b>Refine</b> button to view the refine options.
 h:cbtn-refine;3
 
-p:To start this important process, click the <b>Refine</b> button. Alternatively, type '<c>refine</c>' at the command prompt.
+p:To start the important process of refining the model, click the <b>Refine</b> button. Alternatively, type '<c>refine</c>' at the command prompt.
 h:btn-refine;3
 c:html.ItemState cbtn* 1 cbtn-refine 2 *settings 0 refine-settings 1
 c:SetVar(refinement_output, strcat(FileName(),_refinement_output.html))
@@ -121,11 +121,10 @@ c:name sel O
 c:sel -u
 c:refresh
 
-p:The Uiso slider method is a coarse technique, and can miss some atom assignments. Select the carbon that was not identified as an oxygen by clicking on it, and convert it to oxygen as well.
-c:name C10 O
+p:The Uiso slider method is a coarse technique, and can miss some atom assignments. Select any incorrect carbons that were not identified as oxygens, and convert them to oxygen as well. Try it now!
 c:refresh
 
-p:We now refine this updated structure containing the newly identified oxygens.
+p:We now refine this updated structure containing the correct atoms.
 c:refine 4 4
 
 p:Click the <b>Clean</b> button after the refinement, as before.
