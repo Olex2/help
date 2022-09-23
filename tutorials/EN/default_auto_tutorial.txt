@@ -96,9 +96,11 @@ c:refresh
 p:A recognizable skeleton structure of sucrose is displayed on the screen, but all the atoms are carbon! This structure now needs to be 'refined' (correct atoms and atomic positions need to be assigned in the model). Click on the arrow next to the <b>Refine</b> button to view the refine options.
 h:cbtn-refine;3
 c:html.ItemState cbtn* 1 cbtn-refine 2 *settings 0 refine-settings 1
+c:spy.set_refinement_program(olex2.refine,,snum)
+c:html.Update
 c:SetVar(refinement_output, strcat(FileName(),_refinement_output.html))
 
-p:To start the important process of refining the model, click the <b>Refine</b> button. Alternatively, type '<c>refine</c>' at the command prompt.
+p:This tool tab is where you select the refinement program, the number of refinement cycles, etc. For this tutorial, we will use the olex2.refine refinement program. To start refining the model, click the <b>Refine</b> button. Alternatively, type '<c>refine</c>' at the command prompt.
 h:btn-refine;3
 c:refine 4 4
 
