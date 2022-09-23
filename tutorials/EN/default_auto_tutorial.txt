@@ -37,7 +37,23 @@ h:btn-report;1
 p:Click on the arrow next to the <b>Solve</b> button to set the solve options.
 c:html.ItemState cbtn* 1 cbtn-solve 2 *settings 0 solve-settings 1
 
-p:In the Solve tool tab area, choose a solution program from the <b>Program</b> drop-down menu (e.g., ShelXT, olex.solve), make sure <b>name.hkl</b> is loaded as the <b>Reflections</b> file, and enter the expected molecular formula in <b>Composition</b>.
+p:Of course, we can change the settings of the solution program. We do this by clicking the <b>Solution Settings</b> button.
+h:cbtn-solve
+c:html.ItemState solve-settings 1
+
+p:Here we can choose solution programs (e.g., ShelXT, olex.solve) and other solve settings...
+h:SET_snum_solution_PROGRAM_bg
+h:SET_snum_solution_METHOD_bg
+
+p:...set the <b>Formula</b> and can determine the <b>space group</b>.
+h:SET_SNUM_REFINEMENT_FORMULA_bg
+h:SET_SNUM_REFINEMENT_SPACE_GROUP_bg
+
+p:When you click on <b>Suggest SG</b> link, or type '<c>sg</c>', watch what happens in the graphics window!
+c:sg
+c:refresh
+
+p:In the Solve tool tab area, choose a solution program from the <b>Program</b> drop-down menu, make sure <b>name.hkl</b> is loaded as the <b>Reflections</b> file, and enter the expected molecular formula in <b>Composition</b>.
 c:spy.set_solution_program(olex2.solve,,snum)
 c:html.Update
 c:SetVar(solution_output, strcat(FileName(),_solution_output.html))
@@ -114,28 +130,9 @@ c:hadd
 c:refine
 c:refresh
 
-p:You can toggle the display of the Q peaks, which now represent regions of residual electron density in the model, by repeatedly clicking the <b>Q peaks</b> button. The equivalent line command is either <b>Q</b> or '<c>CTRL+Q</c>'.
+p:You can toggle the display of the Q peaks, which now represent regions of residual electron density in the model, by repeatedly clicking the <b>Q peaks</b> button. The equivalent line command is either '<c>Q</c>' or '<c>CTRL+Q</c>'.
 h:toolbar-Q
 c:showQ a False
-c:refresh
-
-p:Of course, we can change the settings of the solution program.
-
-p:We do this, by clicking the <b>Solution Settings</b> button.
-h:cbtn-solve
-c:html.ItemState solve-settings 1
-
-
-p:Here we can choose solution programs and settings...
-h:SET_snum_solution_PROGRAM_bg
-h:SET_snum_solution_METHOD_bg
-
-p:...set the <b>Formula</b> and can determine the <b>space group</b>.
-h:SET_SNUM_REFINEMENT_FORMULA_bg
-h:SET_SNUM_REFINEMENT_SPACE_GROUP_bg
-
-p:When you click on <b>Suggest SG</b> link, or type '<c>sg</c>', watch what happens in the graphics window!
-c:sg
 c:refresh
 
 p:In order to see all the console output in the graphics window, you can type '<c>lines -1</c>'.
@@ -158,7 +155,6 @@ c:refresh
 c:html.ItemState solve-settings 2
 
 p:We hope you enjoyed this first introduction to Olex2 - please let us know if we missed out any essential steps in this manual by visiting www.olex2.org and getting engaged in the Olex2 development.
-
-
 c:spy.demo.switch_tab_for_tutorials(home)
+
 p:End of tutorial, press 'Next' to repeat the tutorial or 'Cancel' to exit. <br><font size='1'>Written by Stefanie Freitag-Pohl.</font>
