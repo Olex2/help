@@ -10,7 +10,7 @@ p:Welcome to this introductory <font color="rgb(255,100,50)">Olex2</font color="
 h:h2-Start
 c:html.ItemState home-start 1
 
-p:The files needed for solving and refining a crystal structure with Olex2 are a reflection file (<b>name.hkl</b>) and an input file (<b>name.ins</b>) containing the crystallographic unit cell that was determined during the diffraction experiment. These files should have the same name and reside in the same folder, normally accessed with the <b>Open</b> button.
+p:The files needed for solving and refining a crystal structure with Olex2 are a reflection file (<b>name.hkl</b>) and an instructions file (<b>name.ins</b>) containing information about the unit cell, space group, radiation type, etc. These files should have the same name and reside in the same folder, normally accessed with the <b>Open</b> button.
 
 p:Olex2 comes with several sample structures, which are shown as buttons in this tab. The <b>Sucrose</b> structure will be solved and refined in this tutorial. Press 'Next' to load it.
 c:refresh
@@ -37,12 +37,12 @@ h:btn-report;1
 p:Click on the arrow next to the <b>Solve</b> button to set the solve options.
 c:html.ItemState cbtn* 1 cbtn-solve 2 *settings 0 solve-settings 1
 
-p:Here, choose a solution program from the <b>Program</b> drop-down menu (e.g., ShelXT, olex.solve), make sure <b>name.hkl</b> is loaded as the <b>Reflections</b> file, and enter the expected molecular formula in <b>Composition</b>.
+p:In the Solve tool tab area, choose a solution program from the <b>Program</b> drop-down menu (e.g., ShelXT, olex.solve), make sure <b>name.hkl</b> is loaded as the <b>Reflections</b> file, and enter the expected molecular formula in <b>Composition</b>.
 c:spy.set_solution_program(olex2.solve,,snum)
 c:html.Update
 c:SetVar(solution_output, strcat(FileName(),_solution_output.html))
 
-p:Click the <b>Solve</b> button or type '<c>solve</c>' into the command window to solve the structure.
+p:Click the <b>Solve</b> button. Olex2 has many line commands that are entered at the command prompt in the graphics window. In this instance, instead of clicking the <b>Solve</b> button, one could type in '<c>solve</c>' instead.
 h:btn-solve;1
 c:solve
 c:waitfor process
@@ -65,7 +65,7 @@ c:html.ItemState cbtn* 1 cbtn-refine 2 *settings 0 refine-settings 1
 c:SetVar(refinement_output, strcat(FileName(),_refinement_output.html))
 c:refine 4 4
 
-p:Every line command has a short help entry describing its function and listing any switches that the command may take. Type '<c>help clean</c>' at the command prompt in the graphics window.
+p:Every line command has a short help entry describing its function and listing any switches that the command may take. Type '<c>help clean</c>' to see a sample entry.
 c:lines 15
 c:help clean
 c:refresh
