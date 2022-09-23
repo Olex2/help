@@ -108,7 +108,7 @@ p:Tidy up this refined structure again by clicking <b>Clean</b> or typing '<c>cl
 c:clean
 
 p:To identify all the non-hydrogen atoms correctly, the <b>Uiso Slider</b> in the <b>Toolbox Work</b> tool tab is first used to select carbons in the skeleton that look relatively small (these are likely to be oxygens).
-h:h3-peak-and-uiso-sliders;3
+#h:h3-peak-and-uiso-sliders;3
 c:html.ItemState work-main-toolbar 1
 c:html.ItemState h3-peak-and-uiso-sliders 1
 c:html.setBG(UISO_SELECT_SLIDER,#ff0000)
