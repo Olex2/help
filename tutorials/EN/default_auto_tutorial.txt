@@ -10,7 +10,7 @@ p:Welcome to this introductory <font color="rgb(255,100,50)">Olex2</font color="
 h:h2-Start
 c:html.ItemState home-start 1
 
-p:The files needed for solving and refining a crystal structure with Olex2 are a reflections file (<b>name.hkl</b>) and an instructions file (<b>name.ins</b>) containing information about the unit cell, space group, radiation type, etc. These files should have the same name and reside in the same folder, normally accessed with the <b>Open</b> button.
+p:The files needed for solving and refining a crystal structure with Olex2 are a reflections file (<b>name.hkl</b>) and an instructions file (<b>name.ins</b>) containing information about the unit cell, radiation type, etc. These files should have the same name and reside in the same folder, normally accessed with the <b>Open</b> button.
 
 p:Olex2 comes with several sample structures, which are shown as buttons in this tool tab. The <b>Sucrose</b> structure will be solved and refined in this tutorial. Press 'Next' to load it.
 c:refresh
@@ -35,35 +35,52 @@ h:btn-draw;1
 h:btn-report;1
 
 p:Click on the arrow next to the <b>Solve</b> button to set the solve options.
-h:cbtn-solve
+h:cbtn-solve; 3
 c:html.ItemState cbtn* 1 cbtn-solve 2 *settings 0 solve-settings 1
 
-p:Here we can choose solution programs (e.g., ShelXT, olex.solve) and other solve settings...
+p:In this tool tab area the solution program (e.g., ShelXT, olex.solve) is chosen and other solve options are set.
 h:SET_snum_solution_PROGRAM_bg
 h:SET_snum_solution_METHOD_bg
 
-p:...set the <b>Formula</b> and can determine the <b>space group</b>.
+p:This is also where the expected molecular formula is entered in the <b>Composition</b> box and where the <b>Space Group</b> is determined.
 h:SET_SNUM_REFINEMENT_FORMULA_bg
 h:SET_SNUM_REFINEMENT_SPACE_GROUP_bg
 
-p:When you click on <b>Suggest SG</b> link, or type '<c>sg</c>', watch what happens in the graphics window!
+p:Clicking the <b>Suggest SG</b> link generates a table of possible space groups and their relative merits.
 c:sg
 c:refresh
+
+p:Alternatively, one could type '<c>sg</c>' at the command prompt in the graphics window to suggest a space group. Olex2 has many such line commands. Every line command has a help entry describing its function and listing any switches that the command may take. Type '<c>help sg</c>' to see the entry for the '<c>sg</c>' command.
+c:help sg
+c:refresh
+
+p:In order to see all the console output in the graphics window, type '<c>lines -1</c>'.
+c:lines -1
+c:refresh
+
+p:To show only 10 lines, type '<c>lines 10</c>'.
+c:lines 10
+c:refresh
+
+p:Click on the little text icon near the top of the GUI to open a complete transcript of the console output in your text editor. Or, type '<c>text</c>'.
+h:toolbar-text
+c:text
+c:refresh
+
+p:To clear the console output, type '<c>clear</c>'.
+c:clear
+c:refresh
+c:html.ItemState solve-settings 2
 
 p:In the Solve tool tab area, choose a solution program from the <b>Program</b> drop-down menu, make sure <b>name.hkl</b> is loaded as the <b>Reflections</b> file, and enter the expected molecular formula in <b>Composition</b>.
 c:spy.set_solution_program(olex2.solve,,snum)
 c:html.Update
 c:SetVar(solution_output, strcat(FileName(),_solution_output.html))
 
-p:Click the <b>Solve</b> button. Olex2 has many line commands that are entered at the command prompt in the graphics window. In this instance, instead of clicking the <b>Solve</b> button, one could type in '<c>solve</c>' instead.
+p:Now click the <b>Solve</b> button.
 h:btn-solve;1
 c:solve
 c:waitfor process
-c:refresh
-
-p:Every line command has a short help entry describing its function and listing any switches that the command may take. Type '<c>help clean</c>' to see the entry for the '<c>clean</c>' command used throughout this tutorial.
-c:lines 15
-c:help clean
 c:refresh
 
 p:The gold spheres that appear after solution are regions of high electron density (i.e., likely positions of atoms) and are called 'Q peaks'. Tidy up this solution by clicking the <b>Clean</b> button or by typing '<c>clean</c>' at the command prompt.
@@ -131,25 +148,6 @@ p:You can toggle the display of the Q peaks, which now represent regions of resi
 h:toolbar-Q
 c:showQ a False
 c:refresh
-
-p:In order to see all the console output in the graphics window, you can type '<c>lines -1</c>'.
-c:lines -1
-c:refresh
-
-p:To show only 10 lines, type '<c>lines 10</c>'.
-c:lines 10
-c:refresh
-c:html.ItemState solve-settings 2
-
-p:If you type '<c>text</c>' or press the little text icon, you will get a 'transcript' of the console in your text editor.
-h:toolbar-text
-c:text
-c:refresh
-
-p:To clear the console output, type '<c>clear</c>'.
-c:clear
-c:refresh
-c:html.ItemState solve-settings 2
 
 p:We hope you enjoyed this first introduction to Olex2 - please let us know if we missed out any essential steps in this manual by visiting www.olex2.org and getting engaged in the Olex2 development.
 c:spy.demo.switch_tab_for_tutorials(home)
