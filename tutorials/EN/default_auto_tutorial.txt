@@ -4,7 +4,7 @@ c:html.ItemState home-start 2
 c:showQ a True
 c:showQ b False
 
-p:Welcome to this introductory <font color="rgb(255,100,50)">Olex2</font color="rgb(255,100,50)"> tutorial. Press 'Next' to advance to the next screen in the tutorial or 'Cancel' to leave the tutorial.<br>Structures are loaded from the <b>Start</b> tool tab. This tool tab will be highlighted when you press 'Next'.
+p:Welcome to this introductory <font color="rgb(255,100,50)">Olex2</font color="rgb(255,100,50)"> tutorial. Press 'Next' to advance to the next screen in the tutorial or 'Cancel' to leave the tutorial.<br><br>Structures are loaded from the <b>Start</b> tool tab. This tool tab will be highlighted when you press 'Next'.
 #c:@py "import time"
 #c:@py "time.sleep(5)"
 h:h2-Start
@@ -12,7 +12,7 @@ c:html.ItemState home-start 1
 
 p:The files needed for solving and refining a crystal structure with Olex2 are a reflection file (<b>name.hkl</b>) and an instructions file (<b>name.ins</b>) containing information about the unit cell, space group, radiation type, etc. These files should have the same name and reside in the same folder, normally accessed with the <b>Open</b> button.
 
-p:Olex2 comes with several sample structures, which are shown as buttons in this tab. The <b>Sucrose</b> structure will be solved and refined in this tutorial. Press 'Next' to load it.
+p:Olex2 comes with several sample structures, which are shown as buttons in this tool tab. The <b>Sucrose</b> structure will be solved and refined in this tutorial. Press 'Next' to load it.
 c:refresh
 c:freeze(true)
 c:reap DataDir()/samples/sucrose/sucrose.res
@@ -48,6 +48,11 @@ c:solve
 c:waitfor process
 c:refresh
 
+p:Every line command has a short help entry describing its function and listing any switches that the command may take. Type '<c>help clean</c>' to see the entry for the '<c>clean</c>' command used throughout this tutorial.
+c:lines 15
+c:help clean
+c:refresh
+
 p:The gold spheres that appear after solution are regions of high electron density (i.e., likely positions of atoms). Tidy up this solution by clicking the <b>Clean</b> button or by typing '<c>clean</c>' at the command prompt.
 h:toolbar-tidy
 c:clean
@@ -65,12 +70,7 @@ c:html.ItemState cbtn* 1 cbtn-refine 2 *settings 0 refine-settings 1
 c:SetVar(refinement_output, strcat(FileName(),_refinement_output.html))
 c:refine 4 4
 
-p:Every line command has a short help entry describing its function and listing any switches that the command may take. Type '<c>help clean</c>' to see a sample entry.
-c:lines 15
-c:help clean
-c:refresh
-
-p:The macro 'Clean' is described in the graphics window. The refined structure will now be cleaned again.
+p:Clean this refined structure again by clicking <b>Clean</b> or typing '<c>clean</c>' at the command prompt, as before.
 c:clean
 
 p:To identify all non-hydrogen atoms correctly, the <b>Uiso Slider</b> in the <b>Toolbox Work</b> tool tab is first used to select carbons in the skeleton that look relatively small (these are likely to be oxygens).
