@@ -146,7 +146,7 @@ c:hadd
 c:refine 12 4
 c:refresh
 
-p:A satisfactory model of sucrose now appears on the screen. The display of Q peaks, which now represent regions of residual electron density in the model, can be toggled by repeatedly clicking the <b>Q peaks</b> button. The equivalent line command is either '<c>Q</c>' or '<c>CTRL+Q</c>'.
+p:A satisfactory model of sucrose now appears on the screen. The display of Q peaks, which now represent regions of residual electron density in the model, can be toggled by repeatedly clicking the <b>Q peaks</b> button. The equivalent line command is either '<c>Q</c>' or '<c>CTRL+Q</c>'. R1 is a low value, and the largest Q peak has a negligible electron density, indicating that this is a satisfactory model for the structure (although some further refinements can still be carried out).
 h:toolbar-Q
 c:showQ a True
 c:showQ b False
