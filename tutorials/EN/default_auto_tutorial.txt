@@ -121,6 +121,7 @@ c:sel -u
 c:refresh
 
 p:The Uiso slider method is a coarse technique, and can miss some atom assignments. Select any incorrect carbons that were not identified as oxygens, and convert them to oxygen as well. Try it now!
+c:ata(1)
 c:refresh
 
 p:Refine this updated structure containing the correct atoms.
