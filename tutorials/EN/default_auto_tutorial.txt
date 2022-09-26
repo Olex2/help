@@ -100,7 +100,7 @@ c:SetVar(refinement_output, strcat(FileName(),_refinement_output.html))
 
 p:This tool tab is where you select the refinement program, the number of refinement cycles, etc. For this tutorial, we will use the olex2.refine refinement program. To start refining the model, click the <b>Refine</b> button. Alternatively, type '<c>refine</c>' at the command prompt.
 h:btn-refine;3
-c:refine 4 4
+c:refine 12 4
 
 p:Tidy up this refined structure again by clicking <b>Clean</b> or typing '<c>clean</c>' at the command prompt, as before.
 c:clean
@@ -124,7 +124,7 @@ p:The Uiso slider method is a coarse technique, and can miss some atom assignmen
 c:refresh
 
 p:Refine this updated structure containing the correct atoms.
-c:refine 4 4
+c:refine 12 4
 
 p:Click the <b>Clean</b> button after the refinement, as before.
 c:clean
@@ -133,7 +133,7 @@ c:refresh
 p:These non-hydrogen atoms are spherical. To make them anisotropic, click on the button showing the anisotropic atom in the <b>Toolbox Work</b> tool tab, or just type '<c>anis</c>'.
 h:toolbar-anis
 c:anis
-c:refine
+c:refine 12 4
 
 p:Click the <b>Clean</b> button after this refinement once again.
 c:clean
@@ -142,12 +142,13 @@ c:refresh
 p:The hydrogen atoms will finally be added as appropriate (in 'riding positions'). Click on the <b>Add H</b> button in the <b>Toolbox Work</b> tool tab or type '<c>hadd</c>' and refine again.
 #h:small-Add_H
 c:hadd
-c:refine
+c:refine 12 4
 c:refresh
 
 p:A satisfactory model of sucrose now appears on the screen. The display of Q peaks, which now represent regions of residual electron density in the model, can be toggled by repeatedly clicking the <b>Q peaks</b> button. The equivalent line command is either '<c>Q</c>' or '<c>CTRL+Q</c>'.
 h:toolbar-Q
-c:showQ a False
+c:showQ a True
+c:showQ b False
 c:refresh
 
 p:We hope you found this introduction to Olex2 helpful. Please let us know if we missed any essential steps in this tutorial by visiting www.olex2.org and getting engaged in the development of Olex2.
