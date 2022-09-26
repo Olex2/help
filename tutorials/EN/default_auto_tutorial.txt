@@ -11,7 +11,6 @@ c:html.ItemState home-start 1
 p:The files needed for solving and refining a crystal structure with Olex2 are a reflections file (<b>name.hkl</b>) and an instructions file (<b>name.ins</b>) containing information about the unit cell, radiation type, etc. These files should have the same name and reside in the same folder, normally accessed with the <b>Open</b> button in this tool tab.
 
 p:Olex2 comes with several sample structures, which are shown as buttons in this tool tab. The <b>Sucrose</b> structure will be solved and refined in this tutorial. Press 'Next' to load it.
-h:SUCROSE_BUTTON
 c:refresh
 c:freeze(true)
 c:reap DataDir()/samples/sucrose/sucrose.res
@@ -37,7 +36,7 @@ p:Click on the arrow next to the <b>Solve</b> button to set the solve options.
 h:cbtn-solve;3
 c:html.ItemState cbtn* 1 cbtn-solve 2 *settings 0 solve-settings 1
 
-p:In this tool tab area the solution program (e.g., ShelXT, olex.solve) is chosen and other solve options are set.
+p:In this tool tab area the solution program (e.g., ShelXT, olex2.solve) is chosen and other solve options are set.
 h:SET_snum_solution_PROGRAM_bg
 h:SET_snum_solution_METHOD_bg
 
