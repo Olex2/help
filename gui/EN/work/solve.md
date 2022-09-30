@@ -1,4 +1,4 @@
-# Program
+# Solution Program
 If particular solution programs are installed in a standard way on your system, Olex2 will find them and they will appear automatically as a choice in the Program drop-down menu. If they don't appear, please make sure that the directory where they are installed is either on the System Path, or has been entered under **Home > Settings > Path**. Please search the web for more information if you have any trouble with this.
 
 ## Choice of Programs
