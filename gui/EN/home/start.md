@@ -15,7 +15,7 @@ Alternatively, you can drag and drop any recognised file into Olex2. This file w
 
 ## Command Line
 
-|`reap`|Open a file via the file browser. This command can be followed by a filename: **reap sucrose.ins**, for example. |
+|`reap`|The **reap** command opens a file via the file browser. This command can also be followed by a filename: **reap sucrose.ins**, for example. |
 
 # Sample Structures
 We provide some sample structures for you to experiment with. These sample structures are copied into your Olex2 user area on start-up. If you delete them, they will come back in their original state on restart.
@@ -27,7 +27,7 @@ This very simple structure of sucrose (from our coffee room...) is an ideal stru
 An example of a simple disordered structure.
 
 ## Co110
-A simple coordination complex of Co with two identical ligands.
+A simple homoleptic coordination complex of cobalt.
 
 ## ZP2
 A structure with *Z*' = 2.
