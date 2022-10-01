@@ -7,6 +7,7 @@ A collection of useful tools
 - Peak Slider
 - Disorder Tools
 
+
 # shift-move-target
 Move Atoms
 - Hold down SHIFT
@@ -14,12 +15,13 @@ Move Atoms
 Split Atoms
 - Click on an atom to split it
 
+
 # Labels
-You can select what you would like to see as labels in the molecule display. If a particular property is not applicable for a particular atom, there will be no label.
+It is possible to customise the labels in the model display. If a particular property is not applicable to any atom, there will be no label, e.g., if 'labels -o' (see below) is typed and all atoms have occupancy 1, no atoms will be labelled.
 
-|`help labels`|To see all the command line options for the labels|
+|`help labels`|To see all options for the 'labels' command|
 
-## Toggle On/Off
+## Labels OFF/ON
 This is to display or hide atom or Q-peak labels. It will switch other types of labelling off, but selecting it again will display atom name labels. [F3] does the same thing.
 
 ## Atom Names
@@ -34,11 +36,14 @@ This is to display or hide atom or Q-peak labels. It will switch other types of 
 ## Parts
 |`labels -p`| Displays PART numbers for any atoms not in PART 0. |
 
-## Link Codes
+## Link Code
 |`labels -lo`| If atoms are linked, the link code will be shown. (FVAR 21/-21 in ShelXL language) |
 
 ## H Atom Labels
 | `labels -h -l` | This will include the hydrogen atom labels along with the atom name and Q-peak labels |
+
+## Fixed Parameters
+| `labels ?????` | Enter text here for "fixed parameters" labels |
 
 ## Variables
 | `labels -v` | Displays any atoms where the occupancy is linked to any variable |
@@ -48,6 +53,12 @@ This is to display or hide atom or Q-peak labels. It will switch other types of 
 
 ## Q-Peak Intensities
 | `labels -qi` | Relative intensities of the Q-peaks will be displayed on the structure |
+
+## Ueq
+| `labels ?????` | Enter text here for "Ueq" labels |
+
+## Label + residue rumber
+| `labels ?????` | Enter text here for "label + residue number" labels |
 
 ## Residue Numbers
 | `labels -rn` | Show the number of the residue an atom belongs to |
@@ -60,57 +71,58 @@ This is to display or hide atom or Q-peak labels. It will switch other types of 
 This is a collection of three basic tools needed for model building.
 
 ## Assign Atom Types
-All atom types that are currently in your formula are represented as a small button.
+Each element currently in the formula is represented by a small button.
 
 ### Using the GUI
-|$spy.MakeElementButtonsFromFormula('mode')|All atoms present in the model are shown.|
+|$spy.MakeElementButtonsFromFormula('mode')|All atoms present in the model are shown. The '...' button opens the Periodic Table if more elements need to be added.|
 
-You can click on one of these buttons and it will go into an atom type assignment mode for this particular atom type. Atoms you click subsequently will become that atom type. Alternatively, you can make a selection of atoms first, and then click the atom type symbol. The buttons will appear red if there are fewer atoms of that type in your model compared to the formula you have initially given. They turn green if the numbers do agree.
+Clicking on an element button launches the atom type assignment mode for this particular element. Any atoms clicked subsequently become that element. Pressing the 'ESC' key exits the mode. Alternatively, selecting atoms first and then clicking an element button turns them all into that element. The buttons will be red or blue if there is a mismatch between the number of atoms of that element in your model and those in the chemical formula. They turn green if the numbers agree.
 
 ### Using the Command Line
-It is usually much more efficient to assign atom types using the keybard. Here are the three essential command you need to know:
+It is usually much more efficient to assign elements using the keyboard. Here are three frequently used commands:
 
-|`name sel C` | Turns all selected atoms into carbon |
-|`mode name C` | Mode, where subsequently clicked atoms will turn into carbon atoms |
-|`name \$Q C` | Turns all Q-peaks into carbon atoms |
+|`name sel C` | Turns all selected atoms to carbons. |
+|`mode name C` | Enter atom naming mode; once in the mode, all clicked atoms will turn to carbons. |
+|`name \$Q C` | Turns all Q peaks to carbons. |
 
 ## Geometrically Place Hydrogen Atoms
-Pressing this button will cause Olex2 to place hydrogen atoms geometrically. If there is no selection of atoms, hydrogen atoms will be placed where possible. If there is a selection, they will only be added to the selected atoms.
+Clicking this button will cause Olex2 to place hydrogen atoms geometrically on any selected atom(s). If no atoms are selected, hydrogens will be placed on all possible atoms, to complete the structure.
 
-|`hadd`| Adds hydrogen atoms to all selected atoms (or all, if none selected)|
-|`hadd 137`|Will use specifed AFIX **if possible**. (137 adds three hydrogen atoms to a methl group, for example.|
-|`hadd -137`|If the connectivity does not allow the addition of the specified AFIX atoms, it is still possible to place them in this way. Two atoms must be selected to denote a vector, with the atom to which hydrogen atoms are to be added selected *first*|
+|`hadd`| Adds hydrogen atoms to all selected atoms (or all, if none selected). |
+|`hadd 137`| Will use specifed AFIX **if possible**. (137 adds three hydrogen atoms to a methyl group, for example.) |
+|`hadd -137`| If the connectivity does not allow the addition of the specified AFIX atoms, it is still possible to place them in this way. Two atoms must be selected to define a vector, with the atom to which hydrogen atoms are to be added selected *first*. |
 
 ## Toggle Isotropic/Anisotropic
-With these buttons, you can make atoms either isotropic or anisotropic. If there is no selection this will apply to all atoms; if there is a selection, then this change will only apply to the selection.
+These buttons make atoms either isotropic (sphere button) or anisotropic (ellipsoid button). If no atoms are selected, this change will apply to all atoms; if any atoms are selected, then only the selection is changed.
 
-|`isot`|All selected atoms will be refined **isotropically**|
-|`anis`|All selected atoms will be refined **anisotropically** (ellipsoids will result)|
+|`isot`| All selected atoms will be refined **isotropically**. |
+|`anis`| All selected atoms will be refined **anisotropically** (ellipsoids will result). |
 
-Note: If the tickbox is ticked, then refinement will happen automatically after changing either **isot**, **anis** or **hadd**.
+Note: If the tickbox is ticked, then refinement will occur automatically after clicking either **isot**, **anis** or **hadd**.
+
 
 # Quicktools
-This is a selection of the tools needed for model building.
+This is a further selection of tools useful for model building.
 
-## Affect atoms in the model or whether they are shown
-|`name \$Q C`|$spy.MakeHoverButton('toolbar-QC','name \$Q C')|This tool will change all visible electron density peaks to Carbon atoms, regardless of the peak height.|
+## Change type and display of atoms
+|`name \$Q C`| $spy.MakeHoverButton('toolbar-QC','name \$Q C') | This tool will change all displayed electron density peaks (Q peaks) to carbon atoms, regardless of the peak height. |
 
-|`name \$Q H`|$spy.MakeHoverButton('toolbar-QH','name \$Q H')|All visible Q-peaks will be turned into Hydrogen atoms|
+|`name \$Q H`| $spy.MakeHoverButton('toolbar-QH','name \$Q H') | All visible Q peaks will be changed to hydrogens. |
 
-|`clean`|$spy.MakeHoverButton('toolbar-tidy','clean')|Tidy the Structure: Small and geometrically impossible peaks will be removed, all remaining peaks will be turned into Carbon.|
+|`clean`| $spy.MakeHoverButton('toolbar-tidy','clean') | Tidy the Structure: small and geometrically impossible peaks will be removed; all remaining peaks will be changed to carbons. |
 
-|`kill \$H`|$spy.MakeHoverButton('toolbar-killH','kill \$H')|Deletes all selected Hydrogen atoms from your structure. If no hydrogen atoms are selected, all will be deleted. Undo with **Ctr+Z**.|
+|`kill \$H`| $spy.MakeHoverButton('toolbar-killH','kill \$H')  | Deletes all selected hydrogen atoms from the structure. If no hydrogen atoms are selected, all will be deleted. Undo with **CTRL+Z**. |
 
-|`showQ`|$spy.MakeHoverButton('toolbar-Q','showQ')|**CTRL+Q**. Toggle between three states: Show electron density peaks, show them with bonds or hide them.|
+|`showQ`| $spy.MakeHoverButton('toolbar-Q','showQ') | **CTRL+Q**. Toggle among three states: show electron density peaks, show them with bonds to nearby atoms, or hide them. |
 
-|`showH`|$spy.MakeHoverButton('toolbar-H','showH')|**CTRL+H**. Toggle between three states: Show H atoms, show them with H-bonds or hide them. Hydrogen atoms remain in the model.|
+|`showH`| $spy.MakeHoverButton('toolbar-H','showH') | **CTRL+H**. Toggle among three states: show H atoms, show them with H-bonds or hide them. Hydrogen atoms remain in the model, regardless of their display. |
 
-|`compaq>>compaq-a>>center`|$spy.MakeHoverButton('toolbar-center','compaq>>compaq -a>>center')|Fragments will be assembled and the structure will be centered on the screen.|
+|`compaq>>compaq-a>>center`| $spy.MakeHoverButton('toolbar-center','compaq>>compaq -a>>center') | Fragments will be assembled and the structure will be centered on the screen. |
 
-##Affect the fomula of the structure
-|Z'|Set the value of Z' here. For a molecular structure this is typically the sum formula of the molecule. If there are two independent molecules on the screen, Z' must be set to 2. If the molecule needs to be grown, Z' will smaller than one (often 0.5).|
+## Specifying the formula of the structure
+|*Z*'| Set the value of *Z*' here. (*Z*' is the number of formula units in the asymmetric unit.) For a molecular structure, *Z*' is typically 1. If there are two independent molecules on the screen, *Z*' must be set to 2. If the molecule sits on a symmetry element and has to be grown to be displayed in full, *Z*' will smaller than 1 (often 0.5). |
 
-|`fixunit`|$spy.MakeHoverButton('toolbar-OK','fixunit')| Adjusts the sum formula to what is currently present in the model, taking the value of Z' into account.|
+|`fixunit`| $spy.MakeHoverButton('toolbar-OK','fixunit') | Adjusts the sum formula to what is currently present in the model, taking the value of *Z*' into account. |
 
 
 # Part Links
@@ -138,26 +150,20 @@ This will simply generate two atoms (at the focal points of the ellipsoids) and 
 
 | `mode split` | Splits subsequently clicked atoms |
 
-
 ## EADP
-
 | `mode split -r=EADP` | This will split the atom as above, but will restrain the ADP values for both atoms to be the same. This is useful early on, and should probably be removed once the disorder model is nearly complete. You might want to apply the DELU restraint instead.|
 
 ## ISOR
-
 | `mode split -r=ISOR` | This will split the atom as above, and reply an ISOR restraint to each of the two atoms. |
 
 ## SIMU
-
 | `mode split -r=SIMU` | As above, but with a SIMU restraint. |
-
 
 
 # Disorder Tools
 These are an extremely useful set of commands for dealing with crystallographic disorder.
 
 ## Fit Group
-
 This tool operates on a selection of atoms, which can consist of any number of atoms.
 
 ## Fit or Split One Atom
@@ -284,6 +290,8 @@ This tool does not strictly belong to the 'growing' family of tools, but it is f
 
 ### Q-Peaks
 |`compaq -q`|This will move all electron density peaks as closely to existing atoms as possible.|
+
+
 
 # Finishing
 
