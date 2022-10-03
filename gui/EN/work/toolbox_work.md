@@ -125,8 +125,37 @@ This is a further selection of tools useful for model building.
 |`fixunit`| $spy.MakeHoverButton('toolbar-OK','fixunit') | Adjusts the sum formula to what is currently present in the model, taking the value of *Z*' into account. |
 
 
+# Electron Density
+This mapping tool will calculate and display various electron density maps in a variety of formats.
+Note: Close to zero, these maps become very messy (and slow to display). Olex2 therefore does not display these regions.
+
+## Available maps
+### diff
+Will display the difference map, Fobs-Fcalc. The keyboard shortcut for this command is **CTRL+m**, or **CalcFourier -diff -r=0.1 -m**. This is an extremely important tool for checking the validity of your model. Red regions of the map represent areas of missing electron density and green regions represent areas of excess electron density. Note: Make sure to select 'surface', 'wire', or 'points' on the View dropdown menu in the Map Settings for this map to be displayed properly.
+
+### Fcalc
+Will display the calculated electron density.
+
+### 2Fo-Fc
+Will display the map of 2Fobs-Fcalc.
+
+### Fobs
+Will display the observed electron density map.
+
+### Deformation
+Will display a deformation electron density map (deviations from spherical atom model).
+
+### PDF
+Will display a PDF map.
+
+|`Show Map`| Shows the currently selected map. |
+
+|`Map Settings`| This opens the Maps tool tab under **Tools** for customising the map display. |
+
+
+
 # Disorder Tools
-These are an extremely useful set of commands for dealing with crystallographic disorder.
+These are extremely useful commands for dealing with crystallographic disorder.
 
 
 # PART Links
@@ -156,32 +185,6 @@ Select two atoms, then click either the **Fit** or the **Split** button. Split w
 
 ## Fit or Split Three or more Atoms
 Select three or more atoms, then click either the **Fit** or the **Split** button. As before, split will generate a duplicate group, but fit will not, and the atoms will change color. The entire group can be moved to any desired position by dragging it while holding down the **SHIFT** key (or rotated if the **CTRL** key is held down instead).<br><br>It is also possible to rotate the group about one of its bonds. First **activate** the bond about which you wish to rotate the group by **right-clicking** on it. Now, dragging the group while holding down the **CTRL** key rotates the group around this activated bond. Press **ESC** to exit this mode; any moved atoms will remain in their new positions.<br><br>This is one of the most powerful tools in Olex2. If a grouping of atoms is disordered, and one of the parts can be modelled (no matter how badly), the **Split** button will be very useful. (Typing **mode fit -s same** is equivalent to clicking the **Split** button.) Note that the SAME restraint is applied by default in Olex2 when splitting a group; other restraints may be selected from the drop-down menu. Everything will be restrained, so if the disorder *can* be modelled, the refinement process will sort it out automatically, though sometimes a large number of refinement cycles is needed.
-
-
-# Electron Density
-The electron density viewer will calculate various electron density maps and allowsthe display of these in a variety of formats.
-Note: Close to zero, these maps become very messy (and slow to display). Olex2 therefore does not display these regions.
-
-## Available maps
-
-### diff
-Will calculate the difference map.
-
-### fcalc
-Will display the calculated electron density.
-
-### 2Fo-Fc
-Will calculate the map of 2Fobs-Fcalc.
-
-## Available Source
-
-### olex
-Olex2 will calculate the structure factors.
-
-### fcf
-The structure factors will be read from a ShelXL fcf.
-
-|`CalcFourier`| Calculates the map according to the settings set in the map tool.|
 
 
 # Peak & Uiso Sliders
