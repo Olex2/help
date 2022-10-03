@@ -146,7 +146,7 @@ Will display the observed electron density map.
 Will display a deformation electron density map (deviations from spherical atom model).
 
 ### PDF
-Will display a PDF map.
+Will display a PDF map.<br><br>
 
 |`Show Map`| Shows the currently selected map. |
 
@@ -190,20 +190,20 @@ Select three or more atoms, then click either the **Fit** or the **Split** butto
 # Peak & Uiso Sliders
 
 ## Electron Density Peak Slider
-Electron Density Peak Slider Move the slider to the **left** to filter out strongest peaks first, or to the **right** to filter out weakest peaks first. You can then do things like `name $Q C` - and this will only apply to the currently visible peaks. The same goes for the Select and Delete buttons.
+Starting from the middle of the scale at 100, move the Peaks slider to the **left** to filter out the weakest Q peaks first, or to the **right** to filter out the strongest Q peaks first. Any commands issued after filtering will only apply to the remaining visible peaks. For example, the line command 'name $Q C' will convert all visible Q peaks to carbons, and clicking **Select** or **Delete** will select or delete the peaks, respectively.
 
 ## Uiso Select Slider
-This tool allows the selection of atoms according to their Ueq values.
+This tool allows the selection of atoms according to their Uiso values.
 
 ### Slide to the RIGHT
-This will select atoms where the Ueq value is LARGER than the value indicated by the slider.
+Starting from the middle of the scale, sliding to the right will select atoms whose Uiso value is LARGER than the value indicated next to the slider.
 
-|`sel atoms where xatom.uiso > 0.06 xatom.type!='Q'`| |
+|`sel atoms where xatom.uiso < 0.02`| Selects all atoms whose Uiso value is less than 0.02. |
 
 ### Slide to the LEFT
-This will select atoms where the Ueq value is SMALLER than the value indicated by the slider.
+Starting from the middle of the scale, sliding to the left will select atoms whose Uiso value is SMALLER than the value indicated next to the slider.
 
-| `sel atoms where xatom.uiso > 0.08` | Selects all atoms where the Uiso value is larger than 0.08|
+| `sel atoms where xatom.uiso > 0.04` | Selects all atoms whose Uiso value is greater than 0.04. |
 
 
 # Growing
@@ -213,19 +213,19 @@ Olex2 shows the asymmetric unit by default. The tools combined here in three dro
 
 ### Grow All
 
-|`grow`|All 'missing' connected symmetry equivalent atoms will be generated.|
+|`grow`| All 'missing' connected symmetry equivalent atoms will be generated. |
 
 ### Shells
-|`grow -s`|This will grow atoms shell-by-shell from the currently displayed image.|
+|`grow -s`| This will grow atoms shell-by-shell from the currently displayed image. |
 
 ### Complete
-|`grow -w`|This will generate all missing symmetry equivalent atoms of an already grown structure, independent of whether these are bound to the main fragment or not. In other words: all solvent molecules and counter-ion will be generated according to what is already shown.|
+|`grow -w`| This will generate all missing symmetry equivalent atoms of an already grown structure, independent of whether these are bound to the main fragment or not. In other words: all solvent molecules and counter-ion will be generated according to what is already shown. |
 
 ### Asym. Unit
-|`fuse`|Removes all symmetry equivalent atoms and displays the asymmetric unit.|
+|`fuse`| Removes all symmetry equivalent atoms and displays the asymmetric unit. |
 
 ### Complete shown growing bonds
-|`grow -b`|If you are in a growing mode, then clickable growing bonds will be shown. All of these can be grown|
+|`grow -b`| If you are in a growing mode, then clickable growing bonds will be shown. All of these can be grown. |
 
 ## Mode Grow
 |`mode grow`|Similar to grow, but now this command will be executed only after you click on an object. When you enter a growing mode, clickable 'growing bonds' will sprout from atoms where the kind of growing you have asked for is applicable.|
