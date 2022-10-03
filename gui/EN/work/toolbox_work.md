@@ -82,18 +82,18 @@ Clicking on an element button launches the atom type assignment mode for this pa
 It is usually much more efficient to assign elements using the keyboard. Here are three frequently used commands:
 
 |`name sel C` | Turns all selected atoms to carbons. |
-|`mode name C` | Enter atom naming mode; once in the mode, all clicked atoms will turn to carbons. |
+|`mode name C` | Enter atom naming mode; once in the mode, all atoms clicked will turn to carbons. |
 |`name \$Q C` | Turns all Q peaks to carbons. |
 
 ## Geometrically Place Hydrogen Atoms
 Clicking this button will cause Olex2 to place hydrogen atoms geometrically on any selected atom(s). If no atoms are selected, hydrogens will be placed on all possible atoms, to complete the structure.
 
-|`hadd`| Adds hydrogen atoms to all selected atoms (or all, if none selected). |
+|`hadd`| Adds hydrogen atoms to selected atoms (or to all atoms, if none are selected). |
 |`hadd 137`| Will use specifed AFIX **if possible**. (137 adds three hydrogen atoms to a methyl group, for example.) |
 |`hadd -137`| If the connectivity does not allow the addition of the specified AFIX atoms, it is still possible to place them in this way. Two atoms must be selected to define a vector, with the atom to which hydrogen atoms are to be added selected *first*. |
 
 ## Toggle Isotropic/Anisotropic
-These buttons make atoms either isotropic (sphere button) or anisotropic (ellipsoid button). If no atoms are selected, this change will apply to all atoms; if any atoms are selected, then only the selection is changed.
+These buttons make the selected atoms either isotropic (sphere button) or anisotropic (ellipsoid button). If no atoms are selected, this change will be applied to all atoms.
 
 |`isot`| All selected atoms will be refined **isotropically**. |
 |`anis`| All selected atoms will be refined **anisotropically** (ellipsoids will result). |
@@ -125,8 +125,12 @@ This is a further selection of tools useful for model building.
 |`fixunit`| $spy.MakeHoverButton('toolbar-OK','fixunit') | Adjusts the sum formula to what is currently present in the model, taking the value of *Z*' into account. |
 
 
-# Part Links
-This is a selection of quick-links regarding displaying of PARTS in your structure. The command-line equivalents are also very useful to know:
+# Disorder Tools
+These are an extremely useful set of commands for dealing with crystallographic disorder.
+
+
+# PART Links
+This is a selection of quick-links regarding displaying of PARTs in the structure. The command-line equivalents are also very useful to know:
 
 | `showp 0 1` | Shows all atoms in no particular part and all atoms in PART 1 |
 
@@ -134,60 +138,24 @@ This is a selection of quick-links regarding displaying of PARTS in your structu
 
 | `showp 1` | Shows only the atoms PART 1 |
 
-| `showp` | Show all parts|
+| `showp` | Shows all PARTs|
 
 | `sel part 1` | Selects all atoms in PART 1 |
 
-The use of the **UP** key is particularly useful in this context!
+The use of the **UP** arrow key to repeat recently issued commands is particularly useful in this context!
 
 
-# Split Group
-
-The tools on this line will fully SPLIT the atom you click next into two atoms.
-
-## No Restraints
-This will simply generate two atoms (at the focal points of the ellipsoids) and set the occupancies for each atom to 0.5. One of the atoms will be in PART 1, the other in PART 2. After the splitting has occured, you can move the newly 'generated' atoms to where you would like them to be (by holding the SHIFT key while moving them).
-
-| `mode split` | Splits subsequently clicked atoms |
-
-## EADP
-| `mode split -r=EADP` | This will split the atom as above, but will restrain the ADP values for both atoms to be the same. This is useful early on, and should probably be removed once the disorder model is nearly complete. You might want to apply the DELU restraint instead.|
-
-## ISOR
-| `mode split -r=ISOR` | This will split the atom as above, and reply an ISOR restraint to each of the two atoms. |
-
-## SIMU
-| `mode split -r=SIMU` | As above, but with a SIMU restraint. |
-
-
-# Disorder Tools
-These are an extremely useful set of commands for dealing with crystallographic disorder.
-
-## Fit Group
-This tool operates on a selection of atoms, which can consist of any number of atoms.
+# Fit and Split Group
+The fit and split tools operate on one or more selected atoms. To **fit** an atom (or group of atoms) is to move it to a desired location in the model. To **split** an atom (or group of atoms) is to divide it into two parts by creating a duplicate, which can then be moved to a desired location, e.g., to model disorder in the structure.
 
 ## Fit or Split One Atom
-Select one atom, then select whether you want to fit or split the atom. If you want to **fit** the atom, you can now move that atom with the left mouse to any position you like by pressing the **SHIFT** key; when you are finished, press the **Esc** key.
-
-If you want to split the atom, you will now see **two** atoms, both of which you can move with the left mouse while holding the **SHIFT** key pressed. The occupancies of the two atoms are linked, and the atoms will now belong to different parts.
+Left-click on an atom to highlight it. To **fit** the atom, click the **Fit** button. The color of the atom changes. Now hold down the **SHIFT** key and drag the atom with the left mouse button to any desired position. Press the **ESC** key to exit the Fit/Split mode. The **fitted** atom will remain in its new position.<br><br>To **split** the atom in two, click the **Split** button. The color of the atom changes as before, but dragging the atom with the **SHIFT** key pressed moves only ONE of the two atoms that were created by the **Split** command (the other atom can be moved with a separate **fit** command, as above). The occupancies of the two atoms are linked, and the atoms will now have different PART numbers. Press the **ESC** key to exit the Fit/Split mode; the moved atom will remain in place.
 
 ## Fit or Split Two Atoms
-Select two atoms, then select whether you want to fit or split the group. Split will generate a duplicate group, fit will not.
-While pressing the **SHIFT** key, you can move the selection as a group. While pressing the **CTRL** key, you can rotate the group around the midpoint between the two atoms.
+Select two atoms, then click either the **Fit** or the **Split** button. Split will generate a duplicate pair, fit will not. The color of the atoms changes. Drag the atoms with the mouse while pressing the **SHIFT** key to move them together as a group to any desired position.<br><br>To rotate the atoms about their midpoint instead of moving them, press the **CTRL** key while dragging with the mouse. Press **ESC** to exit the Fit/Split mode; the moved pair of atoms will remain in place.
 
 ## Fit or Split Three or more Atoms
-Select three or more atoms, then select whether you want to fit or split the group. Split will generate a duplicate group, fit will not.
-
-While pressing the **SHIFT** key, you can move the entire group. You can now **activate** any bond around which you wish to rotate the group by **right-clicking** on it. While pressing the **Ctrl** key, you can rotate the group around this activated bond.
-When you are done, press the **Esc** key.
-
-## Split SAME
-This is one of the most powerful tools in Olex2. If a grouping of atoms is disordered, and you can model one of the parts (no matter how badly), this tool is what you need. Simply select the entire grouping you wish to split, then press this button (or type **mode fit -s same**) and you can now generate a duplicate grouping. Everything will be constrained, so if this *can* be modelled, then the refinement will sort this out all by itself -- sometimes a large number of refinement cycles is needed.
-
-## Split or move with **SHIFT**
-This tool can also be used to move any atom (including Hydrogen atoms) to any position. Left click on the atom while pressing the **SHIFT** key - and you can move any atom where you would like it to be. Any constraints and restraints applied to that atom will still apply. When you are done, press the **Esc** key.
-
-Note: If you click on an atom without holding down the **SHIFT** key, the atom will be split! So take great care with this tool!
+Select three or more atoms, then click either the **Fit** or the **Split** button. As before, split will generate a duplicate group, but fit will not, and the atoms will change color. The entire group can be moved to any desired position by dragging it while holding down the **SHIFT** key (or rotated if the **CTRL** key is held down instead).<br><br>It is also possible to rotate the group about one of its bonds. First **activate** the bond about which you wish to rotate the group by **right-clicking** on it. Now, dragging the group while holding down the **CTRL** key rotates the group around this activated bond. Press **ESC** to exit this mode; any moved atoms will remain in their new positions.<br><br>This is one of the most powerful tools in Olex2. If a grouping of atoms is disordered, and one of the parts can be modelled (no matter how badly), the **Split** button will be very useful. (Typing **mode fit -s same** is equivalent to clicking the **Split** button.) Note that the SAME restraint is applied by default in Olex2 when splitting a group; other restraints may be selected from the drop-down menu. Everything will be restrained, so if the disorder *can* be modelled, the refinement process will sort it out automatically, though sometimes a large number of refinement cycles is needed.
 
 
 # Electron Density
@@ -301,4 +269,21 @@ TBI - still!
 ## Quick Images
 TBI
 
+
+# Split Group
+The tools on this line will fully SPLIT the atom you click next into two atoms.
+
+## No Restraints
+This will simply generate two atoms (at the focal points of the ellipsoids) and set the occupancies for each atom to 0.5. One of the atoms will be in PART 1, the other in PART 2. After the splitting has occured, you can move the newly 'generated' atoms to where you would like them to be (by holding the SHIFT key while moving them).
+
+| `mode split` | Splits subsequently clicked atoms |
+
+## EADP
+| `mode split -r=EADP` | This will split the atom as above, but will restrain the ADP values for both atoms to be the same. This is useful early on, and should probably be removed once the disorder model is nearly complete. You might want to apply the DELU restraint instead.|
+
+## ISOR
+| `mode split -r=ISOR` | This will split the atom as above, and reply an ISOR restraint to each of the two atoms. |
+
+## SIMU
+| `mode split -r=SIMU` | As above, but with a SIMU restraint. |
 
