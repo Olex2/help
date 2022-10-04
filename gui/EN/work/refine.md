@@ -46,6 +46,10 @@ This sets the maximum number of refinement cycles for olex2.refine; if the refin
 ## Peaks
 This specifies the number of residual electron density peaks (Q peaks) to display after refinement.
 
+## From the Command Line
+|`refine 12 5`| This line command will carry out 12 cycles of refinement, after which five residual electron density peaks will be displayed. This number of cycles and peaks will persist in future refinements until changed. |
+
+
 # Set Reflection File
 The reflection file is specified here; it contains in a condensed form all the data that were collected during the X-ray diffraction experiment.
 
@@ -56,24 +60,16 @@ The standard format for a reflection file is the **hkl** file. Choose the file a
 Olex2 can also handle file formats such as **raw** and others.
 
 
-# Refinement Max Cycles
-Some refinement programs (e.g. SHELXL) will continue refining up to a maximum number of cycles. Here you can set this number. olex.refine will go up to the maximum number, but might stop beforehand if the refinement is settled.
+# Weights, Extinction and ACTA
+|`weight`| A weighting scheme should be applied to the diffraction data once the model is nearly finished and all atoms have settled into their respective positions. |
 
-## From the Command Line
-You can simply type, for example:
-`refine 4 5`
-meaning that 4 cycles of refinement will be carried out and that you will be shown 5 residual electron density peaks once the refinement has finished. The values will be remembered for future refinements.
+All refinement programs will suggest a suitable weighting scheme. Clicking on the coloured line applies the suggested weighting to the data. By ticking the box, Olex2 will automatically update to the suggested values after each refinement cycle. (In practice, this reduces to simply ticking the **Weight** tickbox after the model has settled and running additional cycles of refinement until the numbers in the **Weight** boxes turn green.)
 
+## Extinction Correction
+Extinction is a physical phenomenon affecting the intensity of reflections and can result in systematically absent reflections being observed under certain conditions. The **EXTI** parameter is designed to account for the intensity changes associated with extinction. The method used is a compromise to cover both primary and secondary extinction. In general this correction should not be included in refinement until all of the non-hydrogen atoms have been located. (In practice, first click on the **percent sign** next to R1 at top to display the Fobs vs Fcalc graph, and if it shows visible downward curvature at high Fcalc, tick the **EXTI** tickbox and run additional cycles of refinement until convergence is reached.)
 
-# Weighting Scheme
-|`weight`|A weighting scheme should be applied to your data. This is usually done when your model is finished.|
-
-All refinement programs will suggest a suitable weighting scheme. By clicking on the coloured line you will apply these suggestions. By ticking the box, Olex2 will automatically update to the suggested values after each cycle.
-
-
-# Extinction Correction
-Extinction affects the intensity of reflections and can result in systematically absent reflections being observed under special conditions. This parameter is designed to account for the intensity changes associated with extinction, the method used is a compromise to cover primary and secondary extinction. In general this should not be included until all of the non-hydrogen atoms have been located.
-
+## ACTA
+From the drop-down menu, select **No ACTA** to omit writing a CIF file, **ACTA NOHKL** to write a CIF file without an embedded hkl file, and **ACTA** to write a CIF file with an embedded hkl file.
 
 # Refinement Masks
 In some structures, solvent disorder can be so severe that modelling this disorder using atomic sites (i.e. partially occupied atoms) is neither possible nor sensible. In these cases, it is better to not even attempt to model the 'affected area' - but to simply leave the measured electron density in place. This technique requires the calculation of the area that should be 'taken out of the refinement' - and defining *that* depends on the current structure.
