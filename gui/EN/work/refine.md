@@ -1,24 +1,24 @@
 # refine-target
-Refine the structure.
+Refine the structure with, e.g.,
 - CTRL+R
 - >>'refine'
 - >>'refine 4 4'
-
-
-# draw-target
-Make an image of the structure using the current settings
-
-
-# report-target
-Generate a report
 
 
 # refine-settings-target
 Open the refinement settings
 
 
+# draw-target
+Make an image of the structure using the current settings
+
+
 # draw-settings-target
 Open the drawing settings
+
+
+# report-target
+Generate a report
 
 
 # report-settings-target
@@ -29,32 +29,28 @@ Open the report settings
 Apart from its own refinement engine (olex2.refine), Olex2 also supports all variants of ShelXL. Depending on the refinement package, different refinement methods are available.
 
 ## olex2.refine
-Our own refinement engine. It supports all ShelXL instructions, plus a number of new restraints and constraints that are not available from ShelXL. You can switch between this engine and ShelXL, and Olex2 will not 'forget' the special instructions that are available only in olex2.refine, but of course ShelXL won't heed them.
+The refinement engine built into Olex2. It supports all ShelXL instructions, plus a number of new restraints and constraints that are not available from ShelXL. One can switch between this engine and ShelXL, and Olex2 will not 'forget' the special instructions that are available only in olex2.refine, but of course ShelXL won't heed them.
 
-### Methods for olex2.refine
-
-There is the **Gauss-Newton (GN)** URL[https://en.wikipedia.org/wiki/Gauss-Newton_algorithm,WIKIPEDIA]. And then there is.
-
-#### Levenberg-Marquardt
+## Methods for olex2.refine
+The **Gauss-Newton (GN)** algorithm URL[https://en.wikipedia.org/wiki/Gauss-Newton_algorithm,WIKIPEDIA] is normally used with olex2.refine. Use the more strongly damped **Levenberg-Marquardt (LM)** algorithm URL[https://en.wikipedia.org/wiki/Levenberg-Marquardt_algorithm,WIKIPEDIA] when the refinement converges poorly.
 
 ## ShelXL-20XX
-Since 2012, modern versions of ShelXL have been released by George Sheldrick. Please make sure that you check regularly whether you have the latest version of the ShelX programs installed -- these are the **only versions** that should be used. In fact, you can use any version you wish, as long as it is on the path and is called 'shelxl'. Our recommendation is to make yourself a folder on the root of one of your drives called 'CrystallographyPrograms' and then put that folder 'on the PATH'. Any (known) executable you place in that folder will be recognised by Olex2 and you will be able to use it from within Olex2
+Since 2012, updated versions of ShelXL have been released periodically by George Sheldrick. Please check the SHELX website regularly to ensure that the latest versions of the SHELX programs are installed -- these are the **only versions** that should be used. Older versions will still work, however, as long as they are 'on the PATH' and are called 'shelxl'. See Ilia Guzei's manual under the Olex2 Home tab for instructions on how to add a folder to the PATH. Our recommendation is to make a folder called 'CrystallographyPrograms' on the root of one of your drives and then add that folder to the PATH. Any known executable in that folder will be available for use within Olex2.
 
-### Methods for ShelXL
+## Methods for ShelXL
+LS stands for full matrix Least squares refinement (most suited for small molecule structures). CGLS refers to conjugate gradient least squares refinement (faster than LS when the number of parameters is large, and therefore most suited for early stages of macromolecular structure refinement).
 
-#### L.S.
+## Cycles
+This sets the maximum number of refinement cycles for olex2.refine; if the refinement converges earlier, the refinement process will stop. For other refinement programs such as ShelXL, this is the actual number of refinement cycles that will be carried out.
 
-#### CGLS
-
-### Cyles
-This sets the maximum number or L.S. cycles. For ShelXL, this is the actual number that will be done -- for 
-
+## Peaks
+This specifies the number of residual electron density peaks (Q peaks) to display after refinement.
 
 # Set Reflection File
 The reflection file is specified here; it contains in a condensed form all the data that were collected during the X-ray diffraction experiment.
 
 ## hkl
-The standard format for a reflection file is the **hkl** file. Choose the file against which to refine your model from this drop-down menu. There is no need to rename anything -- just choose the file and press refine.
+The standard format for a reflection file is the **hkl** file. Choose the file against which to refine your model from this drop-down menu. There is no need to rename anything -- just choose the file and click **refine**.
 
 ## Other File Formats
 Olex2 can also handle file formats such as **raw** and others.
