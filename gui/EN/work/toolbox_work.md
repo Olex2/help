@@ -267,12 +267,13 @@ Strictly speaking, this tool does not belong to the **grow** family of tools, bu
 
 
 # Finishing
+The buttons in this tool tab are for convenient access to elementary versions of more powerful sorting and drawing tools elsewhere in Olex2.
 
-## Quick Sort
-TBI - still!
+# QuickSort
+The **Sort with Current Settings** button sorts the atoms in the model according to the options currently set under the **Sorting** tool tab. Clicking the pencil icon opens the **Sorting** tool tab, where the sort settings can be edited.
 
-## Quick Images
-TBI
+# QuickImages
+The **Selected** button adds labels to selected atoms and bonds in the model. If nothing is selected, all atoms and bonds will be labelled. The **non-H** button adds labels to all non-hydrogen atoms, and the **No Labels** button removes all labels from the model. Clicking the **Go** button will create an image of the labelled model in the current working folder. To edit all image file options, open the **Images** tool tab by clicking the pencil icon next to the **Go** button.
 
 
 # Split Group
