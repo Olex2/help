@@ -1,29 +1,33 @@
-#refine-target
+# refine-target
 Refine the structure.
 - CTRL+R
 - >>'refine'
 - >>'refine 4 4'
 
-#solve-target
-Solve the structure
 
-#draw-target
+# draw-target
 Make an image of the structure using the current settings
 
-#report-target
+
+# report-target
 Generate a report
 
-#refine-settings-target
+
+# refine-settings-target
 Open the refinement settings
 
-#solve-settings-target
+
+# solve-settings-target
 Open the solution settings
 
-#draw-settings-target
+
+# draw-settings-target
 Open the drawing settings
 
-#report-settings-target
+
+# report-settings-target
 Open the report settings
+
 
 # Refinement Program
 Apart from its own refinement engine (olex2.refine), Olex2 also supports all variants of ShelXL. Depending on the refinement package, different refinement methods are available.
@@ -46,15 +50,19 @@ Since 2012, modern versions of ShelXL have been released by George Sheldrick. Pl
 
 #### CGLS
 
-
 ### Cyles
 This sets the maximum number or L.S. cycles. For ShelXL, this is the actual number that will be done -- for 
 
+
 # Set Reflection File
-The reflection file contains all the data that were collected during the x-ray diffraction experiment in a condensed form.
+The reflection file is specified here; it contains in a condensed form all the data that were collected during the X-ray diffraction experiment.
 
 ## hkl
-The standard format for a reflection file is the 'hkl' file. From this drop-down menu, you can choose which file you want to refine your model against. There is no need to rename anything - just choose the file and then press refine.
+The standard format for a reflection file is the **hkl** file. Choose the file against which to refine your model from this drop-down menu. There is no need to rename anything -- just choose the file and press refine.
+
+## Other File Formats
+Olex2 can also handle file formats such as **raw** and others.
+
 
 # Refinement Max Cycles
 Some refinement programs (e.g. SHELXL) will continue refining up to a maximum number of cycles. Here you can set this number. olex.refine will go up to the maximum number, but might stop beforehand if the refinement is settled.
@@ -64,14 +72,16 @@ You can simply type, for example:
 `refine 4 5`
 meaning that 4 cycles of refinement will be carried out and that you will be shown 5 residual electron density peaks once the refinement has finished. The values will be remembered for future refinements.
 
-# Weighting Scheme
 
+# Weighting Scheme
 |`weight`|A weighting scheme should be applied to your data. This is usually done when your model is finished.|
 
 All refinement programs will suggest a suitable weighting scheme. By clicking on the coloured line you will apply these suggestions. By ticking the box, Olex2 will automatically update to the suggested values after each cycle.
 
+
 # Extinction Correction
 Extinction affects the intensity of reflections and can result in systematically absent reflections being observed under special conditions. This parameter is designed to account for the intensity changes associated with extinction, the method used is a compromise to cover primary and secondary extinction. In general this should not be included until all of the non-hydrogen atoms have been located.
+
 
 # Refinement Masks
 In some structures, solvent disorder can be so severe that modelling this disorder using atomic sites (i.e. partially occupied atoms) is neither possible nor sensible. In these cases, it is better to not even attempt to model the 'affected area' - but to simply leave the measured electron density in place. This technique requires the calculation of the area that should be 'taken out of the refinement' - and defining *that* depends on the current structure.
@@ -95,6 +105,7 @@ Only grid points within cavities _larger_ than a certain solvent radius (r) are 
 
 ### Truncation
 TBI
+
 
 # Refinement Settings Extra
 Some refinement programs may have associated extra settings (i.e. those not covered by the general GUI. This is where you find them!
