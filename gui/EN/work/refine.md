@@ -17,10 +17,6 @@ Generate a report
 Open the refinement settings
 
 
-# solve-settings-target
-Open the solution settings
-
-
 # draw-settings-target
 Open the drawing settings
 
