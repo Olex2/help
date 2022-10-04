@@ -11,7 +11,7 @@ A collection of useful tools
 # Labels
 It is possible to customise the labels in the model display. If a particular property is not applicable to any atom, there will be no label, e.g., if 'labels -o' (see below) is typed and all atoms have occupancy 1, no atoms will be labelled.
 
-|`help labels`|To see all options for the 'labels' command|
+|`help labels`| To see all options for the 'labels' command. |
 
 ## Labels OFF/ON
 This is to display or hide atom or Q-peak labels. It will switch other types of labelling off, but selecting it again will display atom name labels. [F3] does the same thing.
@@ -29,34 +29,34 @@ This is to display or hide atom or Q-peak labels. It will switch other types of 
 |`labels -p`| Displays PART numbers for any atoms not in PART 0. |
 
 ## Link Code
-|`labels -lo`| If atoms are linked, the link code will be shown. (FVAR 21/-21 in ShelXL language) |
+|`labels -lo`| If atoms are linked, the link code will be shown (FVAR 21/-21 in ShelXL language). |
 
 ## H Atom Labels
-| `labels -h -l` | This will include the hydrogen atom labels along with the atom name and Q-peak labels |
+| `labels -h -l` | This will include the hydrogen atom labels along with the atom name and Q-peak labels. |
 
 ## Fixed Parameters
-| `labels ?????` | Enter text here for "fixed parameters" labels |
+| `labels -f` | Labels atoms with fixed occupancy. |
 
 ## Variables
-| `labels -v` | Displays any atoms where the occupancy is linked to any variable |
+| `labels -v` | Displays any atoms where the occupancy is linked to any variable. |
 
 ## AFIX Commands
-| `labels -a -h` | This is useful to check the AFIX commands that are being applied to the structure |
+| `labels -a -h` | This is useful to check the AFIX commands that are being applied to the structure. |
 
 ## Q-Peak Intensities
-| `labels -qi` | Relative intensities of the Q-peaks will be displayed on the structure |
+| `labels -qi` | Relative intensities of the Q-peaks will be displayed on the structure. |
 
 ## Ueq
-| `labels ?????` | Enter text here for "Ueq" labels |
+| `labels -u` | Labels atoms with their Ueq values. |
 
 ## Label + residue rumber
-| `labels ?????` | Enter text here for "label + residue number" labels |
+| `labels -l -rn` | Displays both atom label and residue number. |
 
 ## Residue Numbers
-| `labels -rn` | Show the number of the residue an atom belongs to |
+| `labels -rn` | Show the residue number to which an atom belongs. |
 
 ## Residue Class
-| `labels -rc` | Show the number of the residue class an atom belongs to |
+| `labels -rc` | Show the residue class to which an atom belongs. |
 
 
 # Toolbar Model
