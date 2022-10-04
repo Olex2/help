@@ -8,14 +8,6 @@ A collection of useful tools
 - Disorder Tools
 
 
-# shift-move-target
-Move Atoms
-- Hold down SHIFT
-- Move atoms with left mouse button
-Split Atoms
-- Click on an atom to split it
-
-
 # Labels
 It is possible to customise the labels in the model display. If a particular property is not applicable to any atom, there will be no label, e.g., if 'labels -o' (see below) is typed and all atoms have occupancy 1, no atoms will be labelled.
 
@@ -274,6 +266,14 @@ The **Sort with Current Settings** button sorts the atoms in the model according
 
 # QuickImages
 The **Selected** button adds labels to selected atoms and bonds in the model. If nothing is selected, all atoms and bonds will be labelled. The **non-H** button adds labels to all non-hydrogen atoms, and the **No Labels** button removes all labels from the model. Clicking the **Go** button will create an image of the labelled model in the current working folder. To edit all image file options, open the **Images** tool tab by clicking the pencil icon next to the **Go** button.
+
+
+# shift-move-target
+Move Atoms
+- Hold down SHIFT
+- Move atoms with left mouse button
+Split Atoms
+- Click on an atom to split it
 
 
 # Split Group
