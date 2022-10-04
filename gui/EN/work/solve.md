@@ -35,16 +35,16 @@ For molecular compounds *Z* is just the number of full molecules in the unit cel
 
 
 # Space Group
-Usually, you will have determined the space group during data processing.
+The space group is usually determined during data acquisition and processing.
 
 ## Suggest SG
-|`sg`|Olex2 can also determine the space group. Press the 'Suggest SG' link and the most likely choices will appear in the drop-down box on the right. You can type 'text' to see the full output of the data analysis.|
+|`sg`| Olex2 can also determine the space group. Click **Suggest SG** and the most likely choices will appear in the drop-down menu on the right. Type 'text', if necessary, to open a text file containing the full output of the space group likelihood analysis. Select a space group from the drop-down menu before proceeding to refinement. |
 
-You can also type any space group into the box - when leaving the box, your structure will be set up ready to solve in that new space group.
+It is also possible to type a space group directly into the menu box. Upon leaving the box, the structure will be ready for solution in the specified space group.
 
 
 # Solution Settings Extra
-TBI
+Some solution programs may have associated extra settings not available through the GUI; these extra settings may be specified here. 
 
 
 # Reflections
