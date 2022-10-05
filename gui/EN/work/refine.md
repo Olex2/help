@@ -90,6 +90,8 @@ Only grid points within cavities *larger* than a certain solvent radius (*r*) ar
 ## Truncation
 This value is used to define a more close-fitting solvent mask than would be possible with the solvent radius *r* alone. It is usually very close, if not equal, to the solvent radius *r*.
 
+# Masking Info
+This is where information about the contents of the masked region is displayed. For each solvent void, the table displays its volume in &Aring;^3 and the number of electrons it contains. When using a solvent mask, after refinement is complete, it is best practice to enter the estimated contents of the void(s) in this table for inclusion in the CIF file. This is done by clicking the **Edit** button under **Content** in the table and typing in the number and name of the solvent molecules present in the void(s), e.g., '1/2 toluene' or 'CH2Cl2'. Olex2 will calculate the number of electrons for the contents and if there is a close match with the number of electrons in the actual contents, both e- numbers will turn green. Explanatory text is provided in the **Use & Edit** box for inclusion in the *edit_mask_special_details* section of the CIF file.
 
 # Refinement Settings Extra
 Some refinement programs may have associated extra settings not available through the GUI; these extra settings may be specified here.
