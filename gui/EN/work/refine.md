@@ -72,28 +72,24 @@ Extinction is a physical phenomenon affecting the intensity of reflections and c
 From the drop-down menu, select **No ACTA** to omit writing a CIF file, **ACTA NOHKL** to write a CIF file without an embedded hkl file, and **ACTA** to write a CIF file with an embedded hkl file.
 
 # Refinement Masks
-In some structures, solvent disorder can be so severe that modelling this disorder using atomic sites (i.e. partially occupied atoms) is neither possible nor sensible. In these cases, it is better to not even attempt to model the 'affected area' - but to simply leave the measured electron density in place. This technique requires the calculation of the area that should be 'taken out of the refinement' - and defining *that* depends on the current structure.
-<br>
-<br>
-Watch the video! URL[https://youtu.be/3jC2CVqSkgc,YOUTUBE]
-<br>
-<br>
+In some structures, solvent disorder can be so severe that modelling this disorder using atomic sites (i.e., discrete, partially occupied atoms) is neither possible nor sensible. In these cases, it is better not to even attempt to model the disordered region - but simply to leave the measured electron density in place. This solvent masking technique requires the calculation of the area that should be excluded from the refinement - and defining *that* depends on the structure at hand.<br><br>
 
-Our implementation of solvent masking is based on the **BYPASS** paper by P.van der Sluis and A.L. Spek.
-URL[https://doi.org/10.1107/S0108767389011189,PAPER]
+Watch the video! URL[https://youtu.be/3jC2CVqSkgc,YOUTUBE]<br><br>
 
-### Use solvent mask
-Include in the refinement a solvent contribution to the structure factors as the discrete Fourier transform of the electron density in the solvent area. The solvent mask can be calculated and displayed under Tools > Maps > Masks. When used with smtbx-refine, the solvent contribution is added internally to that calculated from the ordered part, whilst with SHELXL the solvent contribution is subtracted from the observed data before passing a modified hkl file to the external refinement program.
+The implementation of solvent masking in Olex2 is based on the **BYPASS** paper by P. van der Sluis and A. L. Spek. URL[https://doi.org/10.1107/S0108767389011189,PAPER]
 
-### Recompute mask before refinement
+## Use solvent mask
+Ticking this tickbox includes in the refinement a solvent contribution to the structure factors as the discrete Fourier transform of the electron density in the solvent area. The solvent mask is a region occupied by disordered solvent. It can be calculated and displayed under **Tools** > **Maps** > **Masks** (select wire' in the drop-down menu under **View** in the **Maps** tool tab). With olex2.refine, the solvent contribution is added internally to that calculated from the ordered part, whereas with SHELXL the solvent contribution is subtracted from the observed data and a modified hkl file is passed to the external refinement program.
+
+## Update mask
 When ticked, the solvent mask will be recomputed before the start of the refinement. This can lead to an improved solvent mask, particularly if the ordered part of the structure was poorly converged before the initial mask search.
 
-### Solvent r
-Only grid points within cavities _larger_ than a certain solvent radius (r) are considered. The default value is **1.2 &Aring;**. This avoids adding voids where nothing can possibly live in!
+## Solvent *r*
+Only grid points within cavities *larger* than a certain solvent radius (*r*) are taken into account in the calculation. The default value is **1.2 &Aring;**, which avoids having to examine voids in which no atom could fit.
 
-### Truncation
-TBI
+## Truncation
+This value is used to define a more close-fitting solvent mask than would be possible with the solvent radius *r* alone. It is usually very close, if not equal, to the solvent radius *r*.
 
 
 # Refinement Settings Extra
-Some refinement programs may have associated extra settings (i.e. those not covered by the general GUI. This is where you find them!
+Some refinement programs may have associated extra settings not available through the GUI; these extra settings may be specified here.
