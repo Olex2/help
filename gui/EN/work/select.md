@@ -4,10 +4,10 @@
 This menu provides several methods of selecting or deselecting atoms with varying degrees of specificity. Press '<c>ESC</c>' at any time to deselect everything.
 
 ## Exclusive
-Selects only atoms of the type clicked.
+Selects only atoms of the element clicked.
 
 ## Additive
-Adds the clicked type of atom to the selection.
+Adds all atoms of the element clicked to the selection.
 
 ## Command Line Examples
 
@@ -41,9 +41,9 @@ Once atoms and/or bonds are selected, the following links can be clicked to perf
 # Select-Criteria-help
 
 # Select Criteria
-To select atoms on the basis of their Uiso values, enter the Uiso value in the box. Then choose the **>**, **<**, or **=** operator from the drop-down menu and click **Select** to select only those atoms meeting the specified criterion.
+To select atoms on the basis of their Uiso values, choose the **>**, **<**, or **=** operator from the drop-down menu and enter a Uiso value in the box. Then click **Select** to select only those atoms meeting the specified criterion.
 
 # Select-Rings-help
 
 # Select Rings
-Select all rings of the specified type, e.g., C6, C5N, C5, or C5O, within the structure. It is possible to specify other rings by typing them directly into the drop-down menu, e.g., C4O will find all five-membered rings consisting of four carbons and an oxygen. Click outside the menu to highlight the specified ring.
+Select all rings of the specified type, e.g., C6, C5N, C5, or C5O, within the structure. It is possible to specify other rings by typing them directly into the drop-down menu, e.g., C4O will find all five-membered rings consisting of four carbons and an oxygen. Click outside the menu to highlight the specified ring. (The **Phenyl** and **Pyridine** links are provided for convenience.)
