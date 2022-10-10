@@ -151,19 +151,23 @@ These are extremely useful commands for dealing with crystallographic disorder.
 
 
 # PART Links
-This is a selection of quick-links regarding displaying of PARTs in the structure. The command-line equivalents are also very useful to know:
+This is a selection of quick-links for displaying selected PARTs in the structure. The command-line equivalents are also very useful to know:
 
-| `showp 0 1` | Shows all atoms in no particular part and all atoms in PART 1 |
+| `showp 0 1` | Shows all atoms in no particular PART (equivalently, in PART 0) and all atoms in PART 1 |
 
-| `showp 0 2` | Shows all atoms in no particular part and all atoms in PART 2 |
+| `showp 0 2` | Shows all atoms in no particular PART (equivalently, in PART 0) and all atoms in PART 2 |
 
 | `showp 1` | Shows only the atoms PART 1 |
 
-| `showp` | Shows all PARTs|
+| `showp` | Shows all atoms in all PARTs|
 
 | `sel part 1` | Selects all atoms in PART 1 |
 
-The use of the **UP** arrow key to repeat recently issued commands is particularly useful in this context!
+If the **Sel** box is ticked when **0|1** or **0|2** is clicked, atoms in PART 1 or PART 2, respectively, will be selected in the display. If the **Unique** box is ticked, a list of unique atoms in the structure will be printed in the output. Atoms will be marked with the parameter selected in the drop-down menu, e.g., **Occupancy** will indicate the occupancy of any partially occupied sites as a decimal number, **PART No** will show any non-zero PART numbers of atoms, and **Labels** will display atom labels.
+<br>
+<br>
+
+The use of the **UP** arrow key to repeat recently issued commands is particularly useful here!
 
 
 # Fit and Split Group
