@@ -1,51 +1,49 @@
 # Select-Atoms-help
 
 # Select Atoms
-Selects the atom types listed.
+This menu provides several methods of selecting or deselecting atoms with varying degrees of specificity. Press '<c>ESC</c>' at any time to deselect everything.
 
 ## Exclusive
-Selects only the types that are clicked on.
+Selects only atoms of the element clicked.
 
 ## Additive
-Adds the clicked types to the selection.
+Adds all atoms of the element clicked to the selection.
 
 ## Command Line Examples
 
-|`sel $c`|Selects all C atoms|
+|`sel $c`| Selects all C atoms. |
 
-|`sel -u`|Deselects everything|
+|`sel -u`| Deselects (unselects) everything. |
 
-|`sel c1`|Selects C1|
+|`sel c1`| Selects atom C1. |
 
-|`sel $c $n`|Selects all C and N atoms|
+|`sel $c $n`| Selects all C and N atoms. |
 
-# Selections-help
 
 # Selections
-Line before a table
+Once atoms and/or bonds are selected, the following links can be clicked to perform specific actions.
 
 ## Invert
-
-|`sel -i`|Inverts the current selection.|
+|`sel -i`| Inverts the current selection, i.e., all atoms and bonds *not* not currently selected will be selected instead. |
 
 ## Deselect
 
-|`sel -u`|Deselects (unselects) all selected atoms.|
+|`sel -u`| Deselects (unselects) all selected atoms. |
 
 ## Delete
 
-|`kill sel`|Deletes all selected atoms. Same as pressing the 'Delete' key. Undo with **CTRL+Z**.|
+|`kill sel`| Deletes all selected atoms; the same as pressing the '<c>Delete</c>' key. Undo the deletion with '<c>CTRL+Z</c>'. |
 
 ## Previous Selection
 
-|`selback`|Re-select all atoms of the previous selection.|
+|`selback`| Re-select all atoms previously selected. |
 
 # Select-Criteria-help
 
 # Select Criteria
-To select all atoms for which Uiso is within user defined parameters.
+To select atoms on the basis of their Uiso values, choose the **>**, **<**, or **=** operator from the drop-down menu and enter a Uiso value in the box. Then click **Select** to select only those atoms meeting the specified criterion.
 
 # Select-Rings-help
 
 # Select Rings
-Select all rings of the specified type (for example) C6, C5N, C5, C5O within the structure. You can type your own ring criteria in the box.
+Select all rings of the specified type, e.g., C6, C5N, C5, or C5O, within the structure. It is possible to specify other rings by typing them directly into the drop-down menu, e.g., C4O will find all five-membered rings consisting of four carbons and an oxygen. Click outside the menu to highlight the specified ring. (The **Phenyl** and **Pyridine** links are provided for convenience.)

@@ -8,82 +8,79 @@ c:html.ItemState index* 0
 c:html.ItemState index-home 1
 c:html.ItemState tab* 2
 c:lines 10
-c:showQ True
-c:showq false
+c:showQ a False
+c:showQ b False
 
-p:This tutorial will run you through how to capture images of your 3D model using the Olex2 system. The first thing this tutorial will do is to load sucrose as an example to show this.
+p:This tutorial will demonstrate how to capture images of your 3D model using the Olex2 system. The 'Co110' example structure will now be loaded.
 c:freeze(true)
 c:reap 'DataDir()/samples/Co110/Co110.res'
 c:spy.revert_to_original()
 c:freeze(false)
 
-p:First you need to click on the tab for <b>Tools</b>.
+p:First click on the <b>Tools</b> tab.
 h:tab-tools
 c:spy.demo.switch_tab_for_tutorials(tools)
 
-p:Then click on the tab marked <b>Images</b>.
+p:Now click on the tool tab marked <b>Images</b>.
 h:h2-images
 c:html.ItemState h2-tools-images 1
 
-p:When first opened there is a small section at the top that contains links that will help you with editing your model - so that you can have labels in the correct position on your model and also of any colour you would like.
+p:The upper section of this tool tab is for labelling atoms and bonds in your model and customising the labels. The <b>selected</b> button labels atoms and bonds selected in the display. If none are selected, all atoms will be labelled. The <b>non-H</b> button labels only non-hydrogen atoms.<br><br> For this tutorial, click the <b>hetero</b> button, which only labels heteroatoms in the structure.
+c:label -a $*-H,Q,C -type=spy.GetParam('user.image.label_symm_type') -symm=spy.GetParam('user.image.label_symm') -resi=_#
 
-p:The first line of links will allow you to add labels. The first link labelled <b>Add labels to the selected atoms</b> allows you to add labels to either atoms you have selected and, if none are selected, it will add them to all atoms.
+p:A label can be moved to any desired position by holding down the <b>SHIFT</b> key and dragging it with the left mouse button. To delete a label, click on it and hit the <b>delete</b> button. To make sure no atoms are deleted by mistake, press <b>ESC</b> first to deselect all atoms before clicking on a label for deletion!
 
-p:The second link <b>to non H atoms</b> adds labels to all atoms except for the Hydrogen atoms.
+p:Click on any bond(s) to be labelled and then on the <b>selected</b> button to display the bond distance in &Aring.
+c:sel bonds where xbond.length > 2
+c:label
 
-p:The drop down box allows you to choose the style in which the labels appear.
+p:The <b>Symmetry label</b> drop-down menu provides for the addition of symmetry designations to atomic labels, and the <b>Style</b> menu allows for choice of label style.
 
-p:The third line contains links which will allow you to personalise the colours of the labels more. The first link <b>Choose the label colour</b> allows you to change the colour of the label its self...
+p:Click <b>Choose the label colour</b> to change the color of the labels, and <b>Label Box</b> to set the properties of the bounding box surrounding each label.
 
-p:...the second link <b>Label Box</b> allows for the colour of the box to be changed colour..
-
-p:...and the third option <b>Transparent Box</b> allows for any boxes that may have been placed on the labels to become transparent without having to go through the settings for the label.
-
-p:Once you have the labels in a way that you like, you can now create an image of your model. The first tab allows you to create a bitmap image so click on the tab <b>Bitmap Images</b>.
+p:Open the <b>Bitmap Images</b> tool tab to customise the image further and to produce an image file.
 h:h3-Bitmap-Images
 c:html.ItemState h3-bitmap-images 1
 
-p:There are 4 links at the top of the box when you first open up this tab. The top 2 lines <b>Choose Label Font (Olex2) and Choose Label Font (system)</b> allow for the font to be changed on Olex2 and in the image respectively...
+p:Click '<b>Atom</b> Label Font (Olex2)' to change the settings of the default Olex2 font used for atom labels. To use one of the system-supplied fonts for labels instead, click the adjacent '(System Font)' link. '<b>Bond</b> Label Font (Olex2)' and its adjacent '(System Font)' link work the same way for bond labels.
 
-p:...the second line of links <b>Choose Bond Label Font (Olex2) and Choose Bond Label Font (System)</b> also allow for the change in colour for both Olex2 and the image respectively but this time for the bonds.
+p:An artificial 'fog' can be applied to obscure the rear region of the displayed model by clicking <b>Add Fog</b>. The 'Front' and 'Back' sliders govern the thickness of the fog. This can be used to emphasize the 3D nature of the model or accentuate its front-facing portion.
+c:gl.fog gl.lm.ClearColor()
 
-p:You can then choose what to name the file, the type of file it will be saved as and also the size of the model in the file.
+p:Clicking '<b>Clear Fog</b>' removes the fog.
+c:gl.fog
 
-p:Once you've selected the settings you want click the button <b>Go!</b> in order to save your image.
-h:small-Go!
-c:html.ItemState small-Go!-images 1
+p:Enter a name for the image file and choose the image type, the size of the model in the file, and other graphics parameters under <b>Bitmap Images</b>.
 
-p:The location of where the file has been saved will appear in the command box in the text. Just follow the address in order to find the file you just saved.
+p:Once these settings have been selected, click the <b>Go!</b> button to save the image.
+!h:DEFBTN_BM_GO
+c:pict -pq "Co110.png" -dpi=300 1154
+
+p:The image file is saved in the same folder where the main files (e.g., .hkl, .ins) for the structure are located.
 c:html.ItemState h3-bitmap-images 2
 
-p:The next tab <b>Postscript Images</b> allows you to save images as Postscript images.
+p:To open this folder, click on the <b>Open folder</b> button at the top of the GUI.
+h:toolbar-open
+c:dire
+
+p:To save images in Postscript or POV-Ray format, click <b>Postscript Images</b> or <b>Povray Images</b>, respectively. These images can then be viewed and manipulated with the appropriate viewers, e.g., <b>GS View</b> or <b>PS Viewer</b> for PostScript images. Open the <b>Postscript Images</b> tool tab to see the options available.
 h:h3-Postscript-Images
 c:html.ItemState h3-postscript-images 1
 
-p:In order to view these files it is recommended that you download either <b>GS View</b> or <b>PS Viewer</b>. The <b>PS Viewer</b> is probably faster and easier to install but the <b>GS View</b> allows you to do more with the image.
-
-p:Once the tab is open there are a lot of different settings which you can alter in order to get what you want to show up in the image, and once you have the settings you want simply click on the <b>GO</b> button.
-h:small-GO
-
-p:Again the command window will have the address showing of where the image was saved.
+p:Choose the desired image settings within this tool tab, then click the <b>Go!</b> button to create a Postscript image in the usual work folder.
+#h:small-GO
+c:pictps "Co110.eps"
 c:html.ItemState h3-postscript-images 2
 
-p:The last tab is <b>Image Series</b> which allows you to create a series of images in a new folder that will play like a movie when you flick through the images quickly, as it takes a set of images while the model rotates.
+p:The <b>Image Series</b> tool tab is for creating a series of images that can be displayed in sequence to make a movie of your model rotating. The image series will be stored in a separate folder within the work folder.
 h:h3-Image-Series
 c:html.ItemState h3-image-series 1
 
-p:Once the tab is opened you will see 4 boxes, the first box <b>Rotation around Axis</b> allows you to choose which axis the rotation takes place round with 1=X 2=Y and 3=Z...
+p:The <b>Rotation around Axis</b> box sets the axis of rotation, with 1 = <i>x</i>, 2 = <i>y</i>, and 3 = <i>z</i>. <b>Number of Frames</b> sets the number of images in the series, <b>Degree</b> specifies the degrees by which the model is to be rotated between frames, and <b>Size</b> determines the size of the image in each frame.
 
-p:...the second box <b>Degree</b> allows you to set how many degrees of rotation the model goes through for every image that is wanting to be taken...
-
-p:...the third box <b>Number of Frames</b> allows you to choose how many frames are taken of the model...
-
-p:...and the fourth box allows you to set what size you want each frame of the molecule to be.
-
-p:Once you have it set to the settings you want you can click on the <b>GO</b> button which will start recording the frames and put them in a file named "movie".
-h:button_small-go
-
-p:The movie file should be saved where the rest of the images get saved to for this model, since it does not show the address for where the file gets saved to.
+p:Click on the <b>GO</b> button to create the frames. The image series will be stored in a folder named 'movie' in the work folder.
+#h:button_small-go
+c:spy.run_MakeMovie()
 c:html.ItemState h3-image-series 2
 
-p:End of tutorial, press 'Next' to repeat the tutorial or 'Cancel' to exit.
+p:End of tutorial. Press 'Next' to repeat the tutorial or 'Cancel' to exit.

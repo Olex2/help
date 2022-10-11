@@ -7,19 +7,13 @@ A collection of useful tools
 - Peak Slider
 - Disorder Tools
 
-# shift-move-target
-Move Atoms
-- Hold down SHIFT
-- Move atoms with left mouse button
-Split Atoms
-- Click on an atom to split it
 
 # Labels
-You can select what you would like to see as labels in the molecule display. If a particular property is not applicable for a particular atom, there will be no label.
+It is possible to customise the labels in the model display. If a particular property is not applicable to any atom, there will be no label, e.g., if 'labels -o' (see below) is typed and all atoms have occupancy 1, no atoms will be labelled.
 
-|`help labels`|To see all the command line options for the labels|
+|`help labels`| To see all options for the 'labels' command. |
 
-## Toggle On/Off
+## Labels OFF/ON
 This is to display or hide atom or Q-peak labels. It will switch other types of labelling off, but selecting it again will display atom name labels. [F3] does the same thing.
 
 ## Atom Names
@@ -34,103 +28,259 @@ This is to display or hide atom or Q-peak labels. It will switch other types of 
 ## Parts
 |`labels -p`| Displays PART numbers for any atoms not in PART 0. |
 
-## Link Codes
-|`labels -lo`| If atoms are linked, the link code will be shown. (FVAR 21/-21 in ShelXL language) |
+## Link Code
+|`labels -lo`| If atoms are linked, the link code will be shown (FVAR 21/-21 in ShelXL language). |
 
 ## H Atom Labels
-| `labels -h -l` | This will include the hydrogen atom labels along with the atom name and Q-peak labels |
+| `labels -h -l` | This will include the hydrogen atom labels along with the atom name and Q-peak labels. |
+
+## Fixed Parameters
+| `labels -f` | Labels atoms with fixed occupancy. |
 
 ## Variables
-| `labels -v` | Displays any atoms where the occupancy is linked to any variable |
+| `labels -v` | Displays any atoms where the occupancy is linked to any variable. |
 
 ## AFIX Commands
-| `labels -a -h` | This is useful to check the AFIX commands that are being applied to the structure |
+| `labels -a -h` | This is useful to check the AFIX commands that are being applied to the structure. |
 
 ## Q-Peak Intensities
-| `labels -qi` | Relative intensities of the Q-peaks will be displayed on the structure |
+| `labels -qi` | Relative intensities of the Q-peaks will be displayed on the structure. |
+
+## Ueq
+| `labels -u` | Labels atoms with their Ueq values. |
+
+## Label + residue rumber
+| `labels -l -rn` | Displays both atom label and residue number. |
 
 ## Residue Numbers
-| `labels -rn` | Show the number of the residue an atom belongs to |
+| `labels -rn` | Show the residue number to which an atom belongs. |
 
 ## Residue Class
-| `labels -rc` | Show the number of the residue class an atom belongs to |
+| `labels -rc` | Show the residue class to which an atom belongs. |
 
 
 # Toolbar Model
 This is a collection of three basic tools needed for model building.
 
 ## Assign Atom Types
-All atom types that are currently in your formula are represented as a small button.
+Each element currently in the formula is represented by a small button.
 
 ### Using the GUI
-|$spy.MakeElementButtonsFromFormula('mode')|All atoms present in the model are shown.|
+|$spy.MakeElementButtonsFromFormula('mode')|All atoms present in the model are shown. The '...' button opens the Periodic Table if more elements need to be added.|
 
-You can click on one of these buttons and it will go into an atom type assignment mode for this particular atom type. Atoms you click subsequently will become that atom type. Alternatively, you can make a selection of atoms first, and then click the atom type symbol. The buttons will appear red if there are fewer atoms of that type in your model compared to the formula you have initially given. They turn green if the numbers do agree.
+Clicking on an element button launches the atom type assignment mode for this particular element. Any atoms clicked subsequently become that element. Pressing the 'ESC' key exits the mode. Alternatively, selecting atoms first and then clicking an element button turns them all into that element. The buttons will be red or blue if there is a mismatch between the number of atoms of that element in your model and those in the chemical formula. They turn green if the numbers agree.
 
 ### Using the Command Line
-It is usually much more efficient to assign atom types using the keybard. Here are the three essential command you need to know:
+It is usually much more efficient to assign elements using the keyboard. Here are three frequently used commands:
 
-|`name sel C` | Turns all selected atoms into carbon |
-|`mode name C` | Mode, where subsequently clicked atoms will turn into carbon atoms |
-|`name \$Q C` | Turns all Q-peaks into carbon atoms |
+|`name sel C` | Turns all selected atoms to carbons. |
+|`mode name C` | Enter atom naming mode; once in the mode, all atoms clicked will turn to carbons. |
+|`name \$Q C` | Turns all Q peaks to carbons. |
 
 ## Geometrically Place Hydrogen Atoms
-Pressing this button will cause Olex2 to place hydrogen atoms geometrically. If there is no selection of atoms, hydrogen atoms will be placed where possible. If there is a selection, they will only be added to the selected atoms.
+Clicking this button will cause Olex2 to place hydrogen atoms geometrically on any selected atom(s). If no atoms are selected, hydrogens will be placed on all possible atoms, to complete the structure.
 
-|`hadd`| Adds hydrogen atoms to all selected atoms (or all, if none selected)|
-|`hadd 137`|Will use specifed AFIX **if possible**. (137 adds three hydrogen atoms to a methl group, for example.|
-|`hadd -137`|If the connectivity does not allow the addition of the specified AFIX atoms, it is still possible to place them in this way. Two atoms must be selected to denote a vector, with the atom to which hydrogen atoms are to be added selected *first*|
+|`hadd`| Adds hydrogen atoms to selected atoms (or to all atoms, if none are selected). |
+|`hadd 137`| Will use specifed AFIX **if possible**. (137 adds three hydrogen atoms to a methyl group, for example.) |
+|`hadd -137`| If the connectivity does not allow the addition of the specified AFIX atoms, it is still possible to place them in this way. Two atoms must be selected to define a vector, with the atom to which hydrogen atoms are to be added selected *first*. |
 
 ## Toggle Isotropic/Anisotropic
-With these buttons, you can make atoms either isotropic or anisotropic. If there is no selection this will apply to all atoms; if there is a selection, then this change will only apply to the selection.
+These buttons make the selected atoms either isotropic (sphere button) or anisotropic (ellipsoid button). If no atoms are selected, this change will be applied to all atoms.
 
-|`isot`|All selected atoms will be refined **isotropically**|
-|`anis`|All selected atoms will be refined **anisotropically** (ellipsoids will result)|
+|`isot`| All selected atoms will be refined **isotropically**. |
+|`anis`| All selected atoms will be refined **anisotropically** (ellipsoids will result). |
 
-Note: If the tickbox is ticked, then refinement will happen automatically after changing either **isot**, **anis** or **hadd**.
+Note: If the tickbox is ticked, then refinement will occur automatically after clicking either **isot**, **anis** or **hadd**.
+
 
 # Quicktools
-This is a selection of the tools needed for model building.
+This is a further selection of tools useful for model building.
 
-## Affect atoms in the model or whether they are shown
-|`name \$Q C`|$spy.MakeHoverButton('toolbar-QC','name \$Q C')|This tool will change all visible electron density peaks to Carbon atoms, regardless of the peak height.|
+## Change type and display of atoms
+|`name \$Q C`| $spy.MakeHoverButton('toolbar-QC','name \$Q C') | This tool will change all displayed electron density peaks (Q peaks) to carbon atoms, regardless of the peak height. |
 
-|`name \$Q H`|$spy.MakeHoverButton('toolbar-QH','name \$Q H')|All visible Q-peaks will be turned into Hydrogen atoms|
+|`name \$Q H`| $spy.MakeHoverButton('toolbar-QH','name \$Q H') | All visible Q peaks will be changed to hydrogens. |
 
-|`clean`|$spy.MakeHoverButton('toolbar-tidy','clean')|Tidy the Structure: Small and geometrically impossible peaks will be removed, all remaining peaks will be turned into Carbon.|
+|`clean`| $spy.MakeHoverButton('toolbar-tidy','clean') | Tidy the Structure: small and geometrically impossible peaks will be removed; all remaining peaks will be changed to carbons. |
 
-|`kill \$H`|$spy.MakeHoverButton('toolbar-killH','kill \$H')|Deletes all selected Hydrogen atoms from your structure. If no hydrogen atoms are selected, all will be deleted. Undo with **Ctr+Z**.|
+|`kill \$H`| $spy.MakeHoverButton('toolbar-killH','kill \$H')  | Deletes all selected hydrogen atoms from the structure. If no hydrogen atoms are selected, all will be deleted. Undo with **CTRL+Z**. |
 
-|`showQ`|$spy.MakeHoverButton('toolbar-Q','showQ')|**CTRL+Q**. Toggle between three states: Show electron density peaks, show them with bonds or hide them.|
+|`showQ`| $spy.MakeHoverButton('toolbar-Q','showQ') | **CTRL+Q**. Toggle among three states: show electron density peaks, show them with bonds to nearby atoms, or hide them. |
 
-|`showH`|$spy.MakeHoverButton('toolbar-H','showH')|**CTRL+H**. Toggle between three states: Show H atoms, show them with H-bonds or hide them. Hydrogen atoms remain in the model.|
+|`showH`| $spy.MakeHoverButton('toolbar-H','showH') | **CTRL+H**. Toggle among three states: show H atoms, show them with H-bonds or hide them. Hydrogen atoms remain in the model, regardless of their display. |
 
-|`compaq>>compaq-a>>center`|$spy.MakeHoverButton('toolbar-center','compaq>>compaq -a>>center')|Fragments will be assembled and the structure will be centered on the screen.|
+|`compaq>>compaq-a>>center`| $spy.MakeHoverButton('toolbar-center','compaq>>compaq -a>>center') | Fragments will be assembled and the structure will be centered on the screen. |
 
-##Affect the fomula of the structure
-|Z'|Set the value of Z' here. For a molecular structure this is typically the sum formula of the molecule. If there are two independent molecules on the screen, Z' must be set to 2. If the molecule needs to be grown, Z' will smaller than one (often 0.5).|
+## Specifying the formula of the structure
+|*Z*'| Set the value of *Z*' here. (*Z*' is the number of formula units in the asymmetric unit.) For a molecular structure, *Z*' is typically 1. If there are two independent molecules on the screen, *Z*' must be set to 2. If the molecule sits on a symmetry element and has to be grown to be displayed in full, *Z*' will smaller than 1 (often 0.5). |
 
-|`fixunit`|$spy.MakeHoverButton('toolbar-OK','fixunit')| Adjusts the sum formula to what is currently present in the model, taking the value of Z' into account.|
+|`fixunit`| $spy.MakeHoverButton('toolbar-OK','fixunit') | Adjusts the sum formula to what is currently present in the model, taking the value of *Z*' into account. |
 
 
-# Part Links
-This is a selection of quick-links regarding displaying of PARTS in your structure. The command-line equivalents are also very useful to know:
+# Electron Density
+This mapping tool will calculate and display various electron density maps in a variety of formats.
+Note: Close to zero, these maps become very messy (and slow to display). Olex2 therefore does not display these regions.
 
-| `showp 0 1` | Shows all atoms in no particular part and all atoms in PART 1 |
+## Available maps
+### diff
+Will display the difference map, Fobs-Fcalc. The keyboard shortcut for this command is **CTRL+m**, or **CalcFourier -diff -r=0.1 -m**. This is an extremely important tool for checking the validity of your model. Red regions of the map represent areas of missing electron density and green regions represent areas of excess electron density. Note: Make sure to select 'surface', 'wire', or 'points' on the View dropdown menu in the Map Settings for this map to be displayed properly.
 
-| `showp 0 2` | Shows all atoms in no particular part and all atoms in PART 2 |
+### Fcalc
+Will display the calculated electron density.
+
+### 2Fo-Fc
+Will display the map of 2Fobs-Fcalc.
+
+### Fobs
+Will display the observed electron density map.
+
+### Deformation
+Will display a deformation electron density map (deviations from spherical atom model).
+
+### PDF
+Will display a PDF map.<br><br>
+
+|`Show Map`| Shows the currently selected map. |
+
+|`Map Settings`| This opens the Maps tool tab under **Tools** for customising the map display. |
+
+
+
+# Disorder Tools
+These are extremely useful commands for dealing with crystallographic disorder.
+
+
+# PART Links
+This is a selection of quick-links for displaying selected PARTs in the structure. The command-line equivalents are also very useful to know:
+
+| `showp 0 1` | Shows all atoms in no particular PART (equivalently, in PART 0) and all atoms in PART 1 |
+
+| `showp 0 2` | Shows all atoms in no particular PART (equivalently, in PART 0) and all atoms in PART 2 |
 
 | `showp 1` | Shows only the atoms PART 1 |
 
-| `showp` | Show all parts|
+| `showp` | Shows all atoms in all PARTs|
 
 | `sel part 1` | Selects all atoms in PART 1 |
 
-The use of the **UP** key is particularly useful in this context!
+If the **Sel** box is ticked when **0|1** or **0|2** is clicked, atoms in PART 1 or PART 2, respectively, will be selected in the display. If the **Unique** box is ticked, a list of unique atoms in the structure will be printed in the output. Atoms will be marked with the parameter selected in the drop-down menu, e.g., **Occupancy** will indicate the occupancy of any partially occupied sites as a decimal number, **PART No** will show any non-zero PART numbers of atoms, and **Labels** will display atom labels.
+<br>
+<br>
+
+The use of the **UP** arrow key to repeat recently issued commands is particularly useful here!
+
+
+# Fit and Split Group
+The fit and split tools operate on one or more selected atoms. To **fit** an atom (or group of atoms) is to move it to a desired location in the model. To **split** an atom (or group of atoms) is to divide it into two parts by creating a duplicate, which can then be moved to a desired location, e.g., to model disorder in the structure.
+
+## Fit or Split One Atom
+Left-click on an atom to highlight it. To **fit** the atom, click the **Fit** button. The color of the atom changes. Now hold down the **SHIFT** key and drag the atom with the left mouse button to any desired position. Press the **ESC** key to exit the Fit/Split mode. The **fitted** atom will remain in its new position.<br><br>To **split** the atom in two, click the **Split** button. The color of the atom changes as before, but dragging the atom with the **SHIFT** key pressed moves only ONE of the two atoms that were created by the **Split** command (the other atom can be moved with a separate **fit** command, as above). The occupancies of the two atoms are linked, and the atoms will now have different PART numbers. Press the **ESC** key to exit the Fit/Split mode; the moved atom will remain in place.
+
+## Fit or Split Two Atoms
+Select two atoms, then click either the **Fit** or the **Split** button. Split will generate a duplicate pair, fit will not. The color of the atoms changes. Drag the atoms with the mouse while pressing the **SHIFT** key to move them together as a group to any desired position.<br><br>To rotate the atoms about their midpoint instead of moving them, press the **CTRL** key while dragging with the mouse. Press **ESC** to exit the Fit/Split mode; the moved pair of atoms will remain in place.
+
+## Fit or Split Three or more Atoms
+Select three or more atoms, then click either the **Fit** or the **Split** button. As before, split will generate a duplicate group, but fit will not, and the atoms will change color. The entire group can be moved to any desired position by dragging it while holding down the **SHIFT** key (or rotated if the **CTRL** key is held down instead).<br><br>It is also possible to rotate the group about one of its bonds. First **activate** the bond about which you wish to rotate the group by **right-clicking** on it. Now, dragging the group while holding down the **CTRL** key rotates the group around this activated bond. Press **ESC** to exit this mode; any moved atoms will remain in their new positions.<br><br>This is one of the most powerful tools in Olex2. If a grouping of atoms is disordered, and one of the parts can be modelled (no matter how badly), the **Split** button will be very useful. (Typing **mode fit -s same** is equivalent to clicking the **Split** button.) Note that the SAME restraint is applied by default in Olex2 when splitting a group; other restraints may be selected from the drop-down menu. Everything will be restrained, so if the disorder *can* be modelled, the refinement process will sort it out automatically, though sometimes a large number of refinement cycles is needed.
+
+
+# Peak & Uiso Sliders
+This tool tab provides tools for selecting Q peaks and atoms according to their properties.
+
+# Electron Density Peak Slider
+This tool enables the selection of Q peaks by intensity.<br><br>Starting from the middle of the scale at 100, move the Peaks slider to the **left** to filter out the weakest Q peaks first, or to the **right** to filter out the strongest Q peaks first. Any commands issued after filtering will only apply to the remaining visible peaks. For example, the line command 'name $Q C' will convert all visible Q peaks to carbons, and clicking **Select** or **Delete** will select or delete the peaks, respectively.
+
+# Uiso Select Slider
+This tool allows the selection of atoms according to their Uiso values.
+
+## Slide to the RIGHT
+Starting from the middle of the scale, move the Uiso slider to the **right** to select atoms whose Uiso value is LARGER than the value indicated next to the slider.
+
+|`sel atoms where xatom.uiso < 0.02`| Selects all atoms whose Uiso value is less than 0.02. |
+
+## Slide to the LEFT
+Starting from the middle of the scale, move the Uiso slider to the **left** to select atoms whose Uiso value is SMALLER than the value indicated next to the slider.
+
+|`sel atoms where xatom.uiso > 0.04`| Selects all atoms whose Uiso value is greater than 0.04. |
+
+
+# Growing
+Olex2 shows the asymmetric unit by default. This tool tab contains very powerful techniques for 'assembling' a structure model on the screen exactly as desired. It is then possible to refine the model repeatedly in Olex2 without dismantling this assembly.
+
+# Grow
+## Growing
+**Growing** here is used as a general term for adding atoms to the existing model on the screen in some systematic way, e.g., by adding symmetry-equivalent atoms to visualize an entire molecule when *Z*' < 1 for the structure.
+
+### Grow All
+
+|`grow`| Generates all 'missing' connected symmetry-equivalent atoms. |
+
+### Shells
+|`grow -s`| This adds atoms in concentric shells outward from the currently displayed image. |
+
+### Complete
+|`grow -w`| Generates all missing symmetry-equivalent atoms of an already grown structure, whether bound to the main fragment or not. Thus, this command will display symmetry-equivalent solvent molecules and counter-ions not generated by a plain **grow** command. |
+
+### Asymmetric Unit
+|`fuse`| Removes all symmetry-equivalent atoms and displays the asymmetric unit. |
+
+### Complete shown growing bonds
+|`grow -b`| Shows growable 'bonds' in a growing mode (see **Mode Grow** below). Click on any of these bonds to grow the structure. |
+
+## Mode Grow
+|`mode grow`| Similar to **grow**, but now the **grow** command will be executed only when an object is clicked. Upon entering a growing mode, growable 'bonds' will sprout from atoms satisfying the chosen growing conditions. |
+
+There are various modifiers for this command:
+
+### Short Contacts
+|`mode grow -s`| Shows growable 'bonds' to atoms involved in 'short interactions' (e.g., hydrogen bonds) with the currently displayed structure. |
+
+### Selection
+|`mode grow -r`| Shows growable 'bonds' to other occurrences of the currently selected atoms. |
+
+### Van der Waals Radii
+|`mode grow -v 2.0`| Shows growable 'bonds' to other occurrences of the currently selected atoms that are at most 2.0 &Aring; away from the selected atom. |
+
+### Move
+|`mode grow -a`| When a growable 'bond' is clicked, the symmetry-equivalent atom is moved to the new position. This is really useful when trying to assemble a meaningful asymmetric unit for extended structures (polymers). |
+
+### Shells
+|`mode grow shells`| Shows growable 'bonds' that can be clicked to grow the structure outward in concentric shells. |
+
+## Assemble
+Strictly speaking, this tool does not belong to the **grow** family of tools, but it is frequently used together with the growing tools. It is used to rearrange components of the asymmetric unit for a more compact or chemically sensible display of the model.
+
+### Broken Fragments
+|`compaq -a`| Sometimes, parts of a model may become 'broken' - parts that should be bonded are shown as separate fragments. This tool will bring them back together. |
+
+### Atom-to-Atom
+|`compaq -c`| Similar to the 'Broken Fragments' tool, but using a different reassembly algorithm. |
+
+### Metal Last
+|`compaq -m`| In this tool, metal ions are first taken out of the reassembly process (which is very useful when trying to assemble a ligand!), after which they are placed at the shortest possible distance to the other atoms in the structure. |
+
+### Peaks
+|`compaq -q`| This moves all electron density peaks as close to existing atoms as possible. |
+
+
+# Finishing
+The buttons in this tool tab are for convenient access to elementary versions of more powerful sorting and drawing tools elsewhere in Olex2.
+
+# QuickSort
+The **Sort with Current Settings** button sorts the atoms in the model according to the options currently set under the **Sorting** tool tab. Clicking the pencil icon opens the **Sorting** tool tab, where the sort settings can be edited.
+
+# QuickImages
+The **Selected** button adds labels to selected atoms and bonds in the model. If nothing is selected, all atoms and bonds will be labelled. The **non-H** button adds labels to all non-hydrogen atoms, and the **No Labels** button removes all labels from the model. Clicking the **Go** button will create an image of the labelled model in the current working folder. To edit all image file options, open the **Images** tool tab by clicking the pencil icon next to the **Go** button.
+
+
+# shift-move-target
+Move Atoms
+- Hold down SHIFT
+- Move atoms with left mouse button
+Split Atoms
+- Click on an atom to split it
 
 
 # Split Group
-
 The tools on this line will fully SPLIT the atom you click next into two atoms.
 
 ## No Restraints
@@ -138,159 +288,12 @@ This will simply generate two atoms (at the focal points of the ellipsoids) and 
 
 | `mode split` | Splits subsequently clicked atoms |
 
-
 ## EADP
-
 | `mode split -r=EADP` | This will split the atom as above, but will restrain the ADP values for both atoms to be the same. This is useful early on, and should probably be removed once the disorder model is nearly complete. You might want to apply the DELU restraint instead.|
 
 ## ISOR
-
 | `mode split -r=ISOR` | This will split the atom as above, and reply an ISOR restraint to each of the two atoms. |
 
 ## SIMU
-
 | `mode split -r=SIMU` | As above, but with a SIMU restraint. |
-
-
-
-# Disorder Tools
-These are an extremely useful set of commands for dealing with crystallographic disorder.
-
-## Fit Group
-
-This tool operates on a selection of atoms, which can consist of any number of atoms.
-
-## Fit or Split One Atom
-Select one atom, then select whether you want to fit or split the atom. If you want to **fit** the atom, you can now move that atom with the left mouse to any position you like by pressing the **SHIFT** key; when you are finished, press the **Esc** key.
-
-If you want to split the atom, you will now see **two** atoms, both of which you can move with the left mouse while holding the **SHIFT** key pressed. The occupancies of the two atoms are linked, and the atoms will now belong to different parts.
-
-## Fit or Split Two Atoms
-Select two atoms, then select whether you want to fit or split the group. Split will generate a duplicate group, fit will not.
-While pressing the **SHIFT** key, you can move the selection as a group. While pressing the **CTRL** key, you can rotate the group around the midpoint between the two atoms.
-
-## Fit or Split Three or more Atoms
-Select three or more atoms, then select whether you want to fit or split the group. Split will generate a duplicate group, fit will not.
-
-While pressing the **SHIFT** key, you can move the entire group. You can now **activate** any bond around which you wish to rotate the group by **right-clicking** on it. While pressing the **Ctrl** key, you can rotate the group around this activated bond.
-When you are done, press the **Esc** key.
-
-## Split SAME
-This is one of the most powerful tools in Olex2. If a grouping of atoms is disordered, and you can model one of the parts (no matter how badly), this tool is what you need. Simply select the entire grouping you wish to split, then press this button (or type **mode fit -s same**) and you can now generate a duplicate grouping. Everything will be constrained, so if this *can* be modelled, then the refinement will sort this out all by itself -- sometimes a large number of refinement cycles is needed.
-
-## Split or move with **SHIFT**
-This tool can also be used to move any atom (including Hydrogen atoms) to any position. Left click on the atom while pressing the **SHIFT** key - and you can move any atom where you would like it to be. Any constraints and restraints applied to that atom will still apply. When you are done, press the **Esc** key.
-
-Note: If you click on an atom without holding down the **SHIFT** key, the atom will be split! So take great care with this tool!
-
-
-# Electron Density
-The electron density viewer will calculate various electron density maps and allowsthe display of these in a variety of formats.
-Note: Close to zero, these maps become very messy (and slow to display). Olex2 therefore does not display these regions.
-
-## Available maps
-
-### diff
-Will calculate the difference map.
-
-### fcalc
-Will display the calculated electron density.
-
-### 2Fo-Fc
-Will calculate the map of 2Fobs-Fcalc.
-
-## Available Source
-
-### olex
-Olex2 will calculate the structure factors.
-
-### fcf
-The structure factors will be read from a ShelXL fcf.
-
-|`CalcFourier`| Calculates the map according to the settings set in the map tool.|
-
-
-# Peak & Uiso Sliders
-
-## Electron Density Peak Slider
-Electron Density Peak Slider Move the slider to the **left** to filter out strongest peaks first, or to the **right** to filter out weakest peaks first. You can then do things like `name $Q C` - and this will only apply to the currently visible peaks. The same goes for the Select and Delete buttons.
-
-## Uiso Select Slider
-This tool allows the selection of atoms according to their Ueq values.
-
-### Slide to the RIGHT
-This will select atoms where the Ueq value is LARGER than the value indicated by the slider.
-
-|`sel atoms where xatom.uiso > 0.06 xatom.type!='Q'`| |
-
-### Slide to the LEFT
-This will select atoms where the Ueq value is SMALLER than the value indicated by the slider.
-
-| `sel atoms where xatom.uiso > 0.08` | Selects all atoms where the Uiso value is larger than 0.08|
-
-
-# Growing
-Olex2 shows the asymmetric unit by default. The tools combined here in three drop-down boxes are very powerful, and will allow you to 'assemble' your structure in exactly the way you want it to be. In Olex2 you can keep refining your structure without 'destroying' the assembly you have created.
-
-## Grow
-
-### Grow All
-
-|`grow`|All 'missing' connected symmetry equivalent atoms will be generated.|
-
-### Shells
-|`grow -s`|This will grow atoms shell-by-shell from the currently displayed image.|
-
-### Complete
-|`grow -w`|This will generate all missing symmetry equivalent atoms of an already grown structure, independent of whether these are bound to the main fragment or not. In other words: all solvent molecules and counter-ion will be generated according to what is already shown.|
-
-### Asym. Unit
-|`fuse`|Removes all symmetry equivalent atoms and displays the asymmetric unit.|
-
-### Complete shown growing bonds
-|`grow -b`|If you are in a growing mode, then clickable growing bonds will be shown. All of these can be grown|
-
-## Mode Grow
-|`mode grow`|Similar to grow, but now this command will be executed only after you click on an object. When you enter a growing mode, clickable 'growing bonds' will sprout from atoms where the kind of growing you have asked for is applicable.|
-
-There are various modifiers for this command:
-
-### Short Contacts
-|`mode grow -s`|Will show these growable 'bonds' to those atoms where 'short interactions' exist.|
-
-### Selection
-|`mode grow -r`|Will show growable 'bonds' to other occurances of the currently selected atoms.|
-
-###Van der Waals Radii
-|`mode grow -v 2.0`|Will show growable 'bonds' to other occurances of the currently selected atoms that are at least the indicated distance away from the selected atom.|
-
-### Move
-|`mode grow -a`|When you click on growable bonds the symmetry equivalent atom will be moved to the new position. This is really useful when you are trying to assemble a meaningful asymmetric unit for extended structures (polymers).|
-
-### Shells
-See above.
-
-## Assemble
-This tool does not strictly belong to the 'growing' family of tools, but it is frequently used together with the growing tools. It allows you to re-arrange the asymmetric unit contents into a different configuration.
-
-### Broken Fragments
-|`compaq -a`|Sometimes, your structure may become 'broken' - parts that should be bonded are shown as separate fragments. This tool will bring them back together.|
-
-### Atom-to-Atom
-|`compaq -c`|Similar to the 'Broken Fragments' tool, but a different algorithm is used.|
-
-### Metal Last
-|`compaq -m`|In this tool, metal ions are taken out of the equation at first (which is very useful when trying to assemble a ligand!) and then the metal ion is placed at the shortest possible distance.|
-
-### Q-Peaks
-|`compaq -q`|This will move all electron density peaks as closely to existing atoms as possible.|
-
-# Finishing
-
-## Quick Sort
-TBI - still!
-
-## Quick Images
-TBI
-
 

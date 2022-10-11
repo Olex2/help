@@ -1,31 +1,68 @@
 # Quick Drawing Styles
 
 # Quick Drawing Styles
-This tool allows you to quickly select from a number of preset drawing styles. If no atoms are selected, then the new style will apply to all atoms, otherwise it will apply only to the current selection.
+A number of preset drawing styles can be selected using the buttons in this tool tab. The new style will be applied only to the current selection. If no atoms are selected, the style will be applied to all atoms.
 
 ## Balls & Sticks
-|`pers`|Atoms are shown as spheres. The size of the sphere depends on the radius of the atom type represented by the sphere.|
+|`pers`| Atoms are shown as perfect spheres. The size of the sphere depends on the radius of the element represented by the sphere. |
 
 ## Ellipsoids
-|`telp n` where default n = 50%|Aniosotropic atoms are shown as ellipsoids. Isotropic atoms are shown as spheres, who'se size depends on the value of the Uiso of the individual atom represented by the sphere.|
+|`telp n` where default n = 50%| Anisotropic atoms are shown as ellipsoids. Isotropic atoms are shown as spheres, whose size depends on the Uiso value of the individual atom represented by the sphere. |
+
+## Ellipsoids with hydrogen
+Anisotropic atoms are shown as ellipsoids, and hydrogen atoms are shown as spheres with radii proportional to their respective Uiso values.
 
 ## Wireframe
-|`proj`|The structure is shown as a wireframe.|
+|`proj`| The structure model is shown as a wireframe. |
 
 ## Sphere Packing
-|`sfil`|Atoms are represented as space-filling spheres.|
-## Tubes
-|`tubes`|Atoms are represented as connected tubes.|
+|`sfil`| Atoms are represented as space-filling spheres. |
 
-## Default Style
-|`default`|All display settings are reset to the default values.|
+## Tubes
+|`tubes`| The entire model is represented as a set of connected tubes. |
 
 ## Polyhedra
-|`mask atoms 37`|Shows the structure in a polyhedral representation.|
+|`mask atoms 37`| Shows the structure in a polyhedral representation. |
+
+## Default Style
+|`default`| All display settings are reset to their default values. |
+
+
+# Graphical objects
+A variety of tools are provided here to enhance the visualisation of a structure.
+
+## Cell
+Toggles the unit cell display. If the structure is not within the unit cell, type '<c>move</c>' to relocate it within the cell.
+
+## Base
+Toggles the display of basis vectors.
+
+## Box Function 1
+Toggles the display of a translucent box of the same size and shape as the unit cell. The box can be moved and rotated independently of the structure or the unit cell.
+
+## Box Function 2
+Select two or more atoms. Clicking this button will toggle the display of a rectanglular parallelepiped enclosing those atoms. This box can also be rotated and moved independently of the structure or the unit cell.
+
+## Align
+
+### View
+Click this link to show the suggested best view of the structure.
+
+### Plane
+This aligns the view of the structure perpendicular to its mean square plane. Typing '<c>mpln -r<c>' displays the mean plane and prints its equation in the output window. To delete the plane, click on it and press '<c>Delete</c>'.
+
+### Locking Motions
+Tick these boxes to prevent zooming, rotating, or translating the model on the screen. Prevent all motions by ticking the **Lock all** box.
+
+# Add Fog
+An artificial 'fog' can be applied to the display. This may be helpful, for example, to emphasise the 3D nature of the structure or to highlight its front-facing portion. The **Front** and **Back** sliders govern the thickness of the 'fog'.
+
+
+
+
 
 # Atom Styles
-The visual style of the atom display can be customised. Clicking on the link will display a periodic table, from where you can start customising your styles.
-
+The visual style of the atom display can be customised. Clicking on the link will display a Periodic Table, from where you can start customising your styles.
 
 ## About Styles and Scenes
 There are two types of style sheets in Olex2 - one deals with the atom objects (styles) and the other deals with the lighting and background settings (scene). Both have to be carefully tuned to each other in order to get good results. To load or save a style or scene, right-click on the background and then follow the relevant links.
@@ -41,30 +78,3 @@ When you see the periodic table, type the word 'pers' - and you will see a spher
 
 # Bonds
 TBI
-
-# Bond Properties
-Here are a number of functions one can use to help with arrangement of molecules:
-## Cell
-Toggles between showing the unit cell OFF/ON.
-
-## Base
-Toggles between showing the basis vectors OFF/ON.
-
-## Box Function 1
-TBI
-
-## Box Function 2
-Draws a box around your mocecule.
-
-## Align
-### View
-This shows the suggested best view of the molecule.
-
-### Plane
-Shows the mean square plane of the molecule.
-
-### Locking Functions
-These boxes can be ticked in order to stop the system from rotating, zooming or translating the molecule. You can also choose to lock them all or lock separate components.
-
-# Add Fog
-These functions can add a fade to your molecule or the background in order to see the molecule better.

@@ -1,100 +1,100 @@
-#refine-target
-Refine the structure.
+# refine-target
+Refine the structure with, e.g.,
 - CTRL+R
 - >>'refine'
 - >>'refine 4 4'
 
-#solve-target
-Solve the structure
 
-#draw-target
-Make an image of the structure using the current settings
-
-#report-target
-Generate a report
-
-#refine-settings-target
+# refine-settings-target
 Open the refinement settings
 
-#solve-settings-target
-Open the solution settings
 
-#draw-settings-target
+# draw-target
+Make an image of the structure using the current settings
+
+
+# draw-settings-target
 Open the drawing settings
 
-#report-settings-target
+
+# report-target
+Generate a report
+
+
+# report-settings-target
 Open the report settings
+
 
 # Refinement Program
 Apart from its own refinement engine (olex2.refine), Olex2 also supports all variants of ShelXL. Depending on the refinement package, different refinement methods are available.
 
 ## olex2.refine
-Our own refinement engine. It supports all ShelXL instructions, plus a number of new restraints and constraints that are not available from ShelXL. You can switch between this engine and ShelXL, and Olex2 will not 'forget' the special instructions that are available only in olex2.refine, but of course ShelXL won't heed them.
+The refinement engine built into Olex2. It supports all ShelXL instructions, plus a number of new restraints and constraints that are not available from ShelXL. One can switch between this engine and ShelXL, and Olex2 will not 'forget' the special instructions that are available only in olex2.refine, but of course ShelXL won't heed them.
 
-### Methods for olex2.refine
-
-There is the **Gauss-Newton (GN)** URL[https://en.wikipedia.org/wiki/Gauss-Newton_algorithm,WIKIPEDIA]. And then there is.
-
-#### Levenberg-Marquardt
+## Methods for olex2.refine
+The **Gauss-Newton (GN)** algorithm URL[https://en.wikipedia.org/wiki/Gauss-Newton_algorithm,WIKIPEDIA] is normally used with olex2.refine. Use the more strongly damped **Levenberg-Marquardt (LM)** algorithm URL[https://en.wikipedia.org/wiki/Levenberg-Marquardt_algorithm,WIKIPEDIA] when the refinement converges poorly.
 
 ## ShelXL-20XX
-Since 2012, modern versions of ShelXL have been released by George Sheldrick. Please make sure that you check regularly whether you have the latest version of the ShelX programs installed -- these are the **only versions** that should be used. In fact, you can use any version you wish, as long as it is on the path and is called 'shelxl'. Our recommendation is to make yourself a folder on the root of one of your drives called 'CrystallographyPrograms' and then put that folder 'on the PATH'. Any (known) executable you place in that folder will be recognised by Olex2 and you will be able to use it from within Olex2
+Since 2012, updated versions of ShelXL have been released periodically by George Sheldrick. Please check the SHELX website regularly to ensure that the latest versions of the SHELX programs are installed -- these are the **only versions** that should be used. Older versions will still work, however, as long as they are 'on the PATH' and are called 'shelxl'. See Ilia Guzei's manual under the Olex2 Home tab for instructions on how to add a folder to the PATH. Our recommendation is to make a folder called 'CrystallographyPrograms' on the root of one of your drives and then add that folder to the PATH. Any known executable in that folder will be available for use within Olex2.
 
-### Methods for ShelXL
+## Methods for ShelXL
+LS stands for full matrix Least squares refinement (most suited for small molecule structures). CGLS refers to conjugate gradient least squares refinement (faster than LS when the number of parameters is large, and therefore most suited for early stages of macromolecular structure refinement).
 
-#### L.S.
+## Cycles
+This sets the maximum number of refinement cycles for olex2.refine; if the refinement converges earlier, the refinement process will stop. For other refinement programs such as ShelXL, this is the actual number of refinement cycles that will be carried out.
 
-#### CGLS
-
-
-### Cyles
-This sets the maximum number or L.S. cycles. For ShelXL, this is the actual number that will be done -- for 
-
-# Set Reflection File
-The reflection file contains all the data that were collected during the x-ray diffraction experiment in a condensed form.
-
-## hkl
-The standard format for a reflection file is the 'hkl' file. From this drop-down menu, you can choose which file you want to refine your model against. There is no need to rename anything - just choose the file and then press refine.
-
-# Refinement Max Cycles
-Some refinement programs (e.g. SHELXL) will continue refining up to a maximum number of cycles. Here you can set this number. olex.refine will go up to the maximum number, but might stop beforehand if the refinement is settled.
+## Peaks
+This specifies the number of residual electron density peaks (Q peaks) to display after refinement.
 
 ## From the Command Line
-You can simply type, for example:
-`refine 4 5`
-meaning that 4 cycles of refinement will be carried out and that you will be shown 5 residual electron density peaks once the refinement has finished. The values will be remembered for future refinements.
+|`refine 12 5`| This line command will carry out 12 cycles of refinement, after which five residual electron density peaks will be displayed. This number of cycles and peaks will persist in future refinements until changed. |
 
-# Weighting Scheme
 
-|`weight`|A weighting scheme should be applied to your data. This is usually done when your model is finished.|
+# Set Reflection File
+The reflection file is specified here; it contains in a condensed form all the data that were collected during the X-ray diffraction experiment.
 
-All refinement programs will suggest a suitable weighting scheme. By clicking on the coloured line you will apply these suggestions. By ticking the box, Olex2 will automatically update to the suggested values after each cycle.
+## hkl
+The standard format for a reflection file is the **hkl** file. Choose the file against which to refine your model from this drop-down menu. There is no need to rename anything -- just choose the file and click **refine**.
 
-# Extinction Correction
-Extinction affects the intensity of reflections and can result in systematically absent reflections being observed under special conditions. This parameter is designed to account for the intensity changes associated with extinction, the method used is a compromise to cover primary and secondary extinction. In general this should not be included until all of the non-hydrogen atoms have been located.
+## Other File Formats
+Olex2 can also handle file formats such as **raw** and others.
+
+
+# Weights, Extinction and ACTA
+|`weight`| A weighting scheme should be applied to the diffraction data once the model is nearly finished and all atoms have settled into their respective positions. |
+
+All refinement programs will suggest a suitable weighting scheme. Clicking on the coloured line applies the suggested weighting to the data. By ticking the box, Olex2 will automatically update to the suggested values after each refinement cycle. (In practice, this reduces to simply ticking the **Weight** tickbox after the model has settled and running additional cycles of refinement until the numbers in the **Weight** boxes turn green.)
+
+## Extinction Correction
+Extinction is a physical phenomenon affecting the intensity of reflections and can result in certain reflections being systematically absent under certain conditions. The **EXTI** parameter is designed to account for the intensity changes associated with extinction. The method used is a compromise to cover both primary and secondary extinction. In general this correction should not be included in refinement until all of the non-hydrogen atoms have been located. Depending on the structural problem, either the **EXTI** or the **SWAT** box can be ticked, but not both. (In practice, first click on the **percent sign** next to R1 at top to display the Fobs vs Fcalc graph, and if it shows visible downward curvature at high Fcalc, tick the **EXTI** tickbox and run additional cycles of refinement until convergence is reached.)
+
+## SWAT
+This is a method for dealing with diffuse solvent regions (usually water in macromolecular structures), by introducing two refinable parameters, *g* and *U*. Either **EXTI** or **SWAT** can be used, depending on the nature of the structural problem, but not both at once.
+
+## ACTA
+From the drop-down menu, select **No ACTA** to omit writing a CIF file, **ACTA NOHKL** to write a CIF file without an embedded hkl file, and **ACTA** to write a CIF file with an embedded hkl file.
 
 # Refinement Masks
-In some structures, solvent disorder can be so severe that modelling this disorder using atomic sites (i.e. partially occupied atoms) is neither possible nor sensible. In these cases, it is better to not even attempt to model the 'affected area' - but to simply leave the measured electron density in place. This technique requires the calculation of the area that should be 'taken out of the refinement' - and defining *that* depends on the current structure.
-<br>
-<br>
-Watch the video! URL[https://youtu.be/3jC2CVqSkgc,YOUTUBE]
-<br>
-<br>
+In some structures, solvent disorder can be so severe that modelling this disorder using atomic sites (i.e., discrete, partially occupied atoms) is neither possible nor sensible. In these cases, it is better not to even attempt to model the disordered region - but simply to leave the measured electron density in place. This solvent masking technique requires the calculation of the area that should be excluded from the refinement - and defining *that* depends on the structure at hand.<br><br>
 
-Our implementation of solvent masking is based on the **BYPASS** paper by P.van der Sluis and A.L. Spek.
-URL[https://doi.org/10.1107/S0108767389011189,PAPER]
+Watch the video! URL[https://youtu.be/3jC2CVqSkgc,YOUTUBE]<br><br>
 
-### Use solvent mask
-Include in the refinement a solvent contribution to the structure factors as the discrete Fourier transform of the electron density in the solvent area. The solvent mask can be calculated and displayed under Tools > Maps > Masks. When used with smtbx-refine, the solvent contribution is added internally to that calculated from the ordered part, whilst with SHELXL the solvent contribution is subtracted from the observed data before passing a modified hkl file to the external refinement program.
+The implementation of solvent masking in Olex2 is based on the **BYPASS** paper by P. van der Sluis and A. L. Spek. URL[https://doi.org/10.1107/S0108767389011189,PAPER]
 
-### Recompute mask before refinement
+## Use solvent mask
+Ticking this tickbox includes in the refinement a solvent contribution to the structure factors as the discrete Fourier transform of the electron density in the solvent area. The solvent mask is a region occupied by disordered solvent. It can be calculated and displayed under **Tools** > **Maps** > **Masks** (select wire' in the drop-down menu under **View** in the **Maps** tool tab). With olex2.refine, the solvent contribution is added internally to that calculated from the ordered part, whereas with SHELXL the solvent contribution is subtracted from the observed data and a modified hkl file is passed to the external refinement program.
+
+## Update mask
 When ticked, the solvent mask will be recomputed before the start of the refinement. This can lead to an improved solvent mask, particularly if the ordered part of the structure was poorly converged before the initial mask search.
 
-### Solvent r
-Only grid points within cavities _larger_ than a certain solvent radius (r) are considered. The default value is **1.2 &Aring;**. This avoids adding voids where nothing can possibly live in!
+## Solvent *r*
+Only grid points within cavities *larger* than a certain solvent radius (*r*) are taken into account in the calculation. The default value is **1.2 &Aring;**, which avoids having to examine voids in which no atom could fit.
 
-### Truncation
-TBI
+## Truncation
+This value is used to define a more close-fitting solvent mask than would be possible with the solvent radius *r* alone. It is usually very close, if not equal, to the solvent radius *r*.
+
+# Masking Info
+This is where information about the contents of the masked region is displayed. For each solvent void, the table displays its volume in &Aring;^3 and the number of electrons it contains. When using a solvent mask, after refinement is complete, it is best practice to enter the estimated contents of the void(s) in this table for inclusion in the CIF file. This is done by clicking the **Edit** button under **Content** in the table and typing in the number and name of the solvent molecules present in the void(s), e.g., '1/2 toluene' or 'CH2Cl2'. Olex2 will calculate the number of electrons for the contents and if there is a close match with the number of electrons in the actual contents, both e- numbers will turn green. Explanatory text is provided in the **Use & Edit** box for inclusion in the *edit_mask_special_details* section of the CIF file.
 
 # Refinement Settings Extra
-Some refinement programs may have associated extra settings (i.e. those not covered by the general GUI. This is where you find them!
+Some refinement programs may have associated extra settings not available through the GUI; these extra settings may be specified here.

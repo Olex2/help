@@ -60,7 +60,7 @@ p:To show only 10 lines, type '<c>lines 10</c>'.
 c:lines 10
 c:refresh
 
-p:Click on the little text icon near the top of the GUI to open a complete transcript of the console output in your text editor. Or, simply type '<c>text</c>'.
+p:Click on the notepad icon near the top of the GUI to open a complete transcript of the console output in your text editor. Or, simply type '<c>text</c>'.
 h:toolbar-text
 c:text
 c:refresh
