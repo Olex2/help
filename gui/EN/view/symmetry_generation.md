@@ -1,26 +1,36 @@
 # Symmetry Tools
-Tools for growing your structure, changing the composition/location of the asymmetric unit and viewing the basis vectors and cell.
+This tool tab features a set of buttons for changing the appearance/location of the asymmetric unit; expanding ('growing') a structure on the screen; viewing the basis vectors and unit cell; and other similar tasks.
 
 # symmetry tools 1
-The tools in this row are useful for re-organising parts of a structure if there is more than one moiety present in the structure.
+The tools in this row are useful for re-organising parts of a structure if the structure contains more than one moiety.
 
 ## Move Near
-  1. Select the atom to which you want to move another moiety close to.
-  2. Activate the mode by clicking on the 'Move Near' button.
-  3. Click on on atom of each moiety that you wish to move close to the previously selected atom
+This is useful for moving moieties of a structure close to a particular atom of interest.
+<br>
+<br>
+
+  1. Click on an atom near which another moiety is to be moved.
+  2. Activate the mode by clicking on the **Move Near** button (or typing '<c>mode move</c>').
+  3. Click on an atom of each moiety that is to be moved close to the initially selected atom.
 
 |`mode move`| |
 
 ## Copy Near
-  1. Select the atom to which you want to copy another moiety close to.
-  2. Activate the mode by clicking on the 'Copy Near' button.
-  3. Click on on atom of each moiety that you wish to copy close to the previously selected atom
+This is a slightly different method for collecting moieties of a structure close to a particular atom of interest.
+<br>
+<br>
+
+  1. Click on an atom near which another moiety is to be copied.
+  2. Activate the mode by clicking on the **Copy Near** button (or typing '<c>mode move -c</c>').
+  3. Click on an atom of each moiety that is to be copied close to the initially selected atom.
 
 |`mode move -c`| |
 
 ## Assemble
 
-|`compaq` , `compaq -a` |In cases where parts of your structure have become fragmented or 'disjointed', this command will re-assemble the fragments.|
+|`compaq`| This command brings the various fragments of a structure as close together as possible on the screen. |
+
+|`compaq -a`| Brings fragments of a structure together as above, but also assembles any 'broken' fragments. |
 
 # symmetry tools 2
 Tools in this row will achieve centering of the moieties in a stucture.
