@@ -72,11 +72,11 @@ This tool tab provides methods of visualizing the 3D packing of a structure.
 
 
 # Expand Short Contacts
-Use this slider bar to define the miniumum distance for interatomic 'short contact' such as hydrogen bonds or halogen bonds. As the slider moves to the right, more clickable 'bonds' will be shown from atoms meeting the contact criterion. Clicking on one of these 'bonds' expands the display of the structure in that direction.
+Use this slider bar to define the miniumum distance for interatomic 'short contact' such as hydrogen bonds or halogen bonds. As the slider moves to the right, more clickable 'bonds' will be shown from atoms meeting the contact criterion. Alternatively, a number can be entered in the box next to the slider. Clicking on one of these 'bonds' expands the display of the structure in that direction.
 
 
 # Pack Radius
-Move the slider to the right to show all symmetry-equivalent fragments around the current structure within the specified radius.
+Move the slider to the right to show all symmetry-equivalent fragments around the current structure within the specified radius. It is also possible to type a number into the box adjacent to the slider.
 
 
 # Pack Limits
