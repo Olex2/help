@@ -43,7 +43,7 @@ c:sel collection DEMO_PLANE
 c:kill
 c:refresh
 
-p:The next function will allow you to find the best line through the selected atoms by clicking on <b>Best Line</b> (of active selection).
+p:The next function will allow you to find the best-fit line through the selected atoms by clicking on <b>Best Line</b> (of active selection).
 
 p:To get an overall best line through the whole molecule, select all atoms with <b>ctrl+A</b> and click <b>Best Line</b>.
 c:sel -a
