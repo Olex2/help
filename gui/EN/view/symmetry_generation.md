@@ -50,7 +50,7 @@ These tools toggle the display of symmetry-related items on the screen.
 |`basis`| Displays/Hides the basis vectors of this structure. |
 
 ## Show Cell
-|`cell`| Displays/Hides a drawing of the unit cell. |
+|`cell`| Displays/Hides the edges of the unit cell. |
 
 ## Quality
 Use the slider to change the quality of the display graphics from low (far left) to medium (middle) to high (far right). A lower quality setting may be useful if the computer struggles with the display of large structures.
@@ -61,16 +61,47 @@ Use the slider to change the quality of the display graphics from low (far left)
 # symmetry tools 4
 
 ## Fuse
-|`fuse`|Display the asymmetric unit of the structure only. All symmetry generated atoms will be removed.|
+|`fuse`| Display the asymmetric unit of the structure only. All symmetry-generated atoms will be removed. This is a command of fundamental importance. |
 
 ## Grow All
-|`grow`|All symmetry equivalent atoms that are required to show the 'complete' structure will be generated. Of course, in the case of polymeric structures, this is somewhat arbitrary, and more controlled growing conditions will need to be employed.|
+|`grow`| All symmetry-equivalent atoms required to show the 'complete' structure will be displayed. In the case of polymeric structures, this is somewhat arbitrary, and more clearly defined '<c>grow</c>' commands may need to be issued to display the structure as desired. Open the **Growing** tool tab for more options. |
+
+
+# Packing
+This tool tab provides methods of visualizing the 3D packing of a structure.
+
+
+# Expand Short Contacts
+Use this slider bar to define the miniumum distance for interatomic 'short contact' such as hydrogen bonds or halogen bonds. As the slider moves to the right, more clickable 'bonds' will be shown from atoms meeting the contact criterion. Clicking on one of these 'bonds' expands the display of the structure in that direction.
+
+
+# Pack Radius
+Move the slider to the right to show all symmetry-equivalent fragments around the current structure within the specified radius.
+
+
+# Pack Limits
+This packs one or more unit cells to the limits specified, including fractional limits.
+
+## Pack to limits
+Displays all fragments of the structure within the limits defined for unit cell edges *a*, *b* and *c*. The numbers in the box are multiples of the edge lengths.
+
+## Fill Unit Cell
+Displays only those atoms lying within the unit cell.
+
+## Complete Fragments
+Completes any fragments that are only partially displayed as a result of the various packing options. This is often useful after the **Fill Unit Cell** command.
+
+
+
+
+
+
 
 
 # Growing
 Olex2 shows the asymmetric unit by default. The tools combined here in three drop-down boxes are very powerful, and will allow you to 'assemble' your structure in exactly the way you want it to be. In Olex2 you can keep refining your structure without 'destroying' the assembly you have created.
 
-## Grow
+# Grow
 
 ### Grow All
 |`grow`|All 'missing' connected symmetry equivalent atoms will be generated.|
@@ -122,24 +153,3 @@ This tool does not strictly belong to the 'growing' family of tools, but it is f
 
 ### Q-Peaks
 |`compaq -q`|This will move all electron density peaks as closely to existing atoms as possible.|
-
-
-# Packing
-Packing options to display the packing of your structure.
-
-## Pack Close Contact
-Use the slider bar to set the distance from atoms that you want clickable growing options to be displayed.
-
-## Pack Radius
-Move the slider to adjust the radius around the original molecule where symmetry equivalent molecules should be shown.
-
-## Pack to limits
-
-### Pack to limit
-Packs the structure within the limits defined for a, b and c.
-
-### Fill Unit Cell
-Displays all atoms within the unit cell.
-
-### Complete Fragments
-Completes any fragments that are only partially displayed as a result of the various packing options.
