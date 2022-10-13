@@ -1,5 +1,11 @@
 # Quick Drawing Styles
 
+# cell-target
+Draw unit cell
+
+# base-target
+Display basis vectors
+
 # Quick Drawing Styles
 A number of preset drawing styles can be selected using the buttons in this tool tab. The new style will be applied only to the current selection. If no atoms are selected, the style will be applied to all atoms.
 
