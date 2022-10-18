@@ -61,6 +61,8 @@ Olex2 can also handle file formats such as **raw** and others.
 
 
 # Weights, Extinction and ACTA
+
+## Weight
 |`weight`| A weighting scheme should be applied to the diffraction data once the model is nearly finished and all atoms have settled into their respective positions. |
 
 All refinement programs will suggest a suitable weighting scheme. Clicking on the coloured line applies the suggested weighting to the data. By ticking the box, Olex2 will automatically update to the suggested values after each refinement cycle. (In practice, this reduces to simply ticking the **Weight** tickbox after the model has settled and running additional cycles of refinement until the numbers in the **Weight** boxes turn green.)
