@@ -1,7 +1,7 @@
 # Twinning-help
 
 # Twinning
-These tools provide methods of determining whether a structure is twinned, and if so, to calculate the twin law.
+These tools provide methods of determining whether a structure is twinned, and if so, to calculate the twin law. The first two buttons on this row are for searching for twin laws, while the third button is to determine whether a structure is twinned.
 
 ## Find 2-fold
 Clicking **Find 2-fold** will initiate a rapid search for 2-fold twin laws applicable to the structure. If a viable twin law is found, the corresponding transformation matrix will be printed in the output window. For example, suppose a 2-fold twin law is found with the following transformation matrix:
@@ -32,36 +32,47 @@ BASF 0.204
 This searches for *all* twin laws applicable to the structure, not just the common 2-fold twin laws. If any are found, the corresponding transformation matrix and BASF will be printed at the bottom of this tool tab.
 
 ## Cumulative Plot
-**Cumulative Plot** opens the cumulative intensity distribution plot for the experimentally observed reflections. If the data points in the plot lie mostly along the bottom (red) line, there is a very strong likelihood that the structure is twinned.
+**Cumulative Plot** opens the cumulative intensity distribution plot for the experimentally observed reflections. If the data points in the plot lie mostly along the bottom (red) line, the structure is very likely twinned.
+
 
 # General
-This row contains general settings for your searches, as well as an automated search which will try different procedures to attempt to find twin laws.
+This row contains the general settings that will be applied to all methods of searching for twin laws.
 
 ## Extended
-This toggle causes any searches to be run in 'extended' mode, doing a more in depth search at the cost of time. If you find that no laws are found, ticking this may allow some to be found.
+When this box is ticked, any twin law searches will be run in 'extended' mode, i.e., more exhaustive (and therefore more time-consuming) searches will be performed. If no twin laws are found with this box unticked, then repeating the search with box ticked may find a twin law missed by a normal search.
 
-## Min Laws
-The minimum number of viable twin laws to return. This allows the search to cut off early if it has found sufficient twin laws, but they may be inferior to later found laws. If you find that twin laws are returned but they are of poor quality, it is worthwhile increasing this.
+## Min. Laws
+The minimum number of viable twin laws to return. Setting a low number in this box speeds up the search, as the search terminates once the specified number of twin laws is found. However, they may be inferior to other applicable laws that may have been missed by setting **Min. Laws** too low. If the twin laws initially returned do not properly account for the twinning in the structure, increase this number and repeat the search.
 
-## Threshold
-The threshold at which two points are considered 'overlapping'. A greater value will cause more potential twin laws to be considered, but may erroneously return laws as useful when they do not in fact represent an overlap. Smaller values will restrict the amount of laws considered, but those which are will be more precise.
+## Threshold for all searches
+This threshold is the separation below which two points in reciprocal space (i.e., reflections) are considered to overlap. A larger value will suggest more potential twin laws for consideration, but may return laws that do not accurately describe the twinning in the structure; a smaller threshold will return fewer, more accurate laws.
 
 # Spherical Angle Axis
-This search directly uses strong reflections, and the potential points they could map to around a sphere, calculating viable twin laws given these limitations. It is in general a faster search which searches less space whilst finding more laws, and is not restricted in the angle that the twin law rotates by.
+This tool tab offers two further ways to search for twin laws: **Spherical** and **Angle-Axis**.
+<br>
+<br>
 
-Spherical search is strongly affected by the minimum law number, and if it gives poor results it is recommended to increase that.
+The **Spherical** search method directly uses strong reflections, and the potential points they could map to on a sphere, to calculate viable twin laws for the structure. It is in general a faster search which searches less space whilst finding more laws, and is not restricted by the angle of rotation of the twin law. **Spherical** searching is strongly affected by the minimum law number, so if this search method yields poor results, increase **Min. Laws** and repeat the search.
+<br>
+<br>
 
-## Bad Reflns
-The number of bad reflections to consider before stating there are no twin laws relevant to those reflections.
+The **Angle-Axis** search method, on the other hand, searches step-by-step for rotational twin laws by considering potential twin axes and rotations about them. Axes are taken from integer points in both direct and reciprocal space.
+<br>
+<br>
 
-## Threshold
-The threshold by which the bad reflection points are considered well overlapping within the spherical search. This should be lower than the general threshold.
+To try the first search method, first select the number of bad reflections to evaluate and then click **Spherical**. Specify **Max Index** and **Rot. Fract'n**, and click **Angle-Axis** to try the second.
 
-# Angle-Axis
-This search searches step-by-step for twin laws by considering potential axes and rotations about them.
+## Bad Refl'ns
+Specify the number of bad reflections to use in the **Spherical** twin law search method. These are taken from the list in the **Bad Reflections** tool tab under the **Info** tab.
+
+## Spherical
+Click this button to initiate a **Spherical** search for applicable twin laws.
 
 ## Max index
-The maximum index of axes to use. Axes are taken from integer points in both direct and reciprocal space. Increase this to search a greater variety of twin laws.
+This variable specifies the highest value of *h*, *k*, or *l* to use when searching for twin laws by the **Angle-Axis** method. A higher **Max Index** will find more twin laws, but the search will take longer.
 
-## Rot Fract'n
-The rotation fraction 'n' gives us the angle = 360/n by which we try to rotate about each axis. Increase this to search a more fine stepping of twin laws.
+## Rot. Fract'n
+The rotation fraction *n* governs the angle 360&deg;/<i>n </i>, which is the step size of rotation about each axis during an **Angle-Axis** search. Increasing this variable will lead to finer steps and thereby to more twin laws.
+
+## Angle-Axis
+Click this button to initiate an **Angle-Axis** search for applicable twin laws.
