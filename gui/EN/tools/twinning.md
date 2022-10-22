@@ -12,7 +12,7 @@ Clicking **Find 2-fold** will initiate a rapid search for 2-fold twin laws appli
 <br>
 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0
 <br>
-0.667 &nbsp; 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1
+2/3 &nbsp;&nbsp;&nbsp;&nbsp; 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1
 <br>
 <br>
 
@@ -79,4 +79,4 @@ Click this button to initiate an **Angle-Axis** search for applicable twin laws.
 
 
 # Set HKLF5 Reflection File
-The HKLF5 file format is used for twinned structures. It is similar to the ordinary HKLF4 file format, but contains an additional data column identifying the twin component to which each reflection belongs. A file of this type is required for non-merohedral twinning, when the reciprocal lattices of the twin components cannot be exactly superimposed on one another.
+The HKLF5 file format is used exclusively for twinned structures, but is not always necessary if the structure is twinned. It is similar to the ordinary HKLF4 file format, but contains an additional data column identifying the twin component to which each reflection belongs. A file of this type is required for non-merohedral twinning, when the reciprocal lattices of the twin components cannot be exactly superimposed on one another.
