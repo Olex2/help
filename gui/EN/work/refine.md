@@ -53,8 +53,8 @@ This specifies the number of residual electron density peaks (Q peaks) to displa
 # Set Reflection File
 The reflection file is specified here; it contains in a condensed form all the data that were collected during the X-ray diffraction experiment.
 
-## hkl
-The standard format for a reflection file is the **hkl** file. Choose the file against which to refine your model from this drop-down menu. There is no need to rename anything -- just choose the file and click **refine**.
+## hkl file
+The standard format for a data file containing observed reflections and their intensities from the diffraction experiment is the **hkl** file. Select from this drop-down menu the file against which to refine your model. There is no need to rename anything -- just choose the file and click **refine**.
 
 ## Other File Formats
 Olex2 can also handle file formats such as **raw** and others.
