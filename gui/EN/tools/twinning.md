@@ -76,3 +76,7 @@ The rotation fraction *n* governs the angle 360&deg;/<i>n </i>, which is the ste
 
 ## Angle-Axis
 Click this button to initiate an **Angle-Axis** search for applicable twin laws.
+
+
+# Set HKLF5 Reflection File
+The HKLF5 file format is used for twinned structures. It is similar to the ordinary HKLF4 file format, but contains an additional data column identifying the twin component to which each reflection belongs. A file of this type is required for non-merohedral twinning, when the reciprocal lattices of the twin components cannot be exactly superimposed on one another.
