@@ -53,14 +53,16 @@ This specifies the number of residual electron density peaks (Q peaks) to displa
 # Set Reflection File
 The reflection file is specified here; it contains in a condensed form all the data that were collected during the X-ray diffraction experiment.
 
-## hkl
-The standard format for a reflection file is the **hkl** file. Choose the file against which to refine your model from this drop-down menu. There is no need to rename anything -- just choose the file and click **refine**.
+## hkl file
+The standard format for a data file containing observed reflections and their intensities from the diffraction experiment is the **hkl** file. Select from this drop-down menu the file against which to refine your model. There is no need to rename anything -- just choose the file and click **refine**.
 
 ## Other File Formats
 Olex2 can also handle file formats such as **raw** and others.
 
 
 # Weights, Extinction and ACTA
+
+## Weight
 |`weight`| A weighting scheme should be applied to the diffraction data once the model is nearly finished and all atoms have settled into their respective positions. |
 
 All refinement programs will suggest a suitable weighting scheme. Clicking on the coloured line applies the suggested weighting to the data. By ticking the box, Olex2 will automatically update to the suggested values after each refinement cycle. (In practice, this reduces to simply ticking the **Weight** tickbox after the model has settled and running additional cycles of refinement until the numbers in the **Weight** boxes turn green.)

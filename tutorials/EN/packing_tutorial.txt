@@ -9,12 +9,13 @@ c:html.ItemState index* 0
 c:html.ItemState index-home 1
 c:html.ItemState tab* 2
 c:lines 10
-c:showq false
 
 p:This tutorial will look at how to use the packing features in Olex2, in order to show how the molecules in a crystal structure interact with one another. The <b>Sucrose</b> example structure will first be loaded.
 c:freeze(true)
 c:reap 'DataDir()/samples/sucrose/sucrose.res'
 c:spy.revert_to_original()
+c:showQ a false
+c:showQ b false
 c:freeze(false)
 
 p:First, click on the <b>View</b> tab toolbar.

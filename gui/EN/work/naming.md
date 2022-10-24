@@ -35,7 +35,7 @@ If the structure contains two or more equivalent fragments, it is only necessary
 <br>
 <br>
 
-Name all the atoms in the first moiety. Enter a suffix in the **Suffix** box; this will be appended to atom names in a second identical moiety. Click **any one atom** of the *first* moiety, then the **corresponding atom** in the *other* moiety (or moieties). Click the **Equivalent Fragments (*Z*' > 1)** link to name all the atoms in the second moiety with the same naming scheme as the first, but with the suffix appended. This process of copying the naming scheme of the first moiety can then be repeated with each of the other identical moieties in the structure. Reset the number of bonds to the metal center, if necessary.
+Name all the atoms in the first moiety. Enter a suffix in the **Suffix** box; this will be appended to atom names in a second identical moiety. Click **any one atom** of the *first* moiety, then the **corresponding atom** in the *other* moiety (or moieties). Click the **Equivalent Fragments (*Z*' > 1)** link to name all the atoms in the second moiety with the same naming scheme as the first, but with the suffix appended. If the **Invert for matching** box is ticked, the second moiety will be inverted before the naming scheme is applied. This process of copying the naming scheme of the first moiety can then be repeated with each of the other identical moieties in the structure. Reset the number of bonds to the metal center, if necessary.
 <br>
 <br>
 

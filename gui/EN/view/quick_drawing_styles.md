@@ -1,5 +1,11 @@
 # Quick Drawing Styles
 
+# cell-target
+Draw unit cell
+
+# base-target
+Display basis vectors
+
 # Quick Drawing Styles
 A number of preset drawing styles can be selected using the buttons in this tool tab. The new style will be applied only to the current selection. If no atoms are selected, the style will be applied to all atoms.
 
@@ -54,8 +60,8 @@ This aligns the view of the structure perpendicular to its mean square plane. Ty
 ### Locking Motions
 Tick these boxes to prevent zooming, rotating, or translating the model on the screen. Prevent all motions by ticking the **Lock all** box.
 
-# Add Fog
-An artificial 'fog' can be applied to the display. This may be helpful, for example, to emphasise the 3D nature of the structure or to highlight its front-facing portion. The **Front** and **Back** sliders govern the thickness of the 'fog'.
+# Add or Remove Fog
+An artificial 'fog' can be applied to the display by clicking the **Add Fog** button. This may be helpful, for example, to emphasise the 3D nature of the structure or to highlight its front-facing portion. The **Front** and **Back** sliders govern the thickness of the 'fog'. Click **Clear Fog** to remove the fog from the display.
 
 
 
