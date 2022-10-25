@@ -25,7 +25,7 @@ p:Now click on the tool tab marked <b>Images</b>.
 h:h2-images
 c:html.ItemState h2-tools-images 1
 
-p:The upper section of this tool tab is for labelling atoms and bonds in your model and customising the labels. The <b>selected</b> button labels atoms and bonds selected in the display. If none are selected, all atoms will be labelled. The <b>non-H</b> button labels only non-hydrogen atoms.<br><br> For this tutorial, click the <b>hetero</b> button, which only labels heteroatoms in the structure.
+p:The upper section of this tool tab is for specifying the name of the image file, labelling atoms and bonds in your model and customising the labels. The <b>selected</b> button labels atoms and bonds selected in the display. If none are selected, all atoms will be labelled. The <b>non-H</b> button labels only non-hydrogen atoms.<br><br> For this tutorial, click the <b>hetero</b> button, which only labels heteroatoms in the structure.
 c:label -a $*-H,Q,C -type=spy.GetParam('user.image.label_symm_type') -symm=spy.GetParam('user.image.label_symm') -resi=_#
 
 p:A label can be moved to any desired position by holding down the <b>SHIFT</b> key and dragging it with the left mouse button. To delete a label, click on it and hit the <b>delete</b> button. To make sure no atoms are deleted by mistake, press <b>ESC</b> first to deselect all atoms before clicking on a label for deletion!
@@ -50,7 +50,7 @@ c:gl.fog gl.lm.ClearColor()
 p:Clicking '<b>Clear Fog</b>' removes the fog.
 c:gl.fog
 
-p:Enter a name for the image file and choose the image type, the size of the model in the file, and other graphics parameters under <b>Bitmap Images</b>.
+p:Choose the image type, the size of the model in the file, and other graphics parameters under <b>Bitmap Images</b>.
 
 p:Once these settings have been selected, click the <b>Go!</b> button to save the image.
 !h:DEFBTN_BM_GO
