@@ -10,12 +10,10 @@ These two views show an interactive 2D slice of the map in the plane of the scre
 <br>
 <br>
 
-To move the map perpendicular to the screen (i.e., into or out of the screen), hold down the <c>Shift</c>' key while dragging the left mouse button on the map or use the **Depth** slider bar.
-
-The visible area of the map can be adjusted with the size slider, or by holding down the **Ctrl** key whilst dragging the right mouse key. Finally, the levels can be adjusted with the **SHIFT** key and right mouse key. In contour mode, the number of contours can be altered with the contours slider. Positive electron density is displayed as solid lines, whilst negative electron density (holes) are displayed as dashed lines. A contour map will be included in any postscript drawing created whilst the map is displayed.
+To move the map perpendicular to the screen (i.e., into or out of the screen), hold down the <c>Shift</c>' key while dragging the left mouse button on the map or use the **Depth** slider bar. The visible area of the map can be adjusted with the size slider, or by holding down the '<c>Ctrl</c>' key whilst dragging the right mouse button. Finally, the levels can be adjusted by holding down the '<c>Shift</c>' key and dragging the right mouse button. In contour mode, the number of contours can be altered with the **Contours** slider. Positive electron density is displayed as solid lines, whilst negative electron density (holes) are displayed as dashed lines. A contour map will be included in any PostScript drawing created whilst the map is displayed.
 
 ### surface, wire, points
-These are all three dimensional displays of the electron density. However, the 3D display will only work if there is enough electron density to display, otherwise the 2D display will the shown. It is a good idea to start adjusting the levels in the points view, and only then to select wire or surface for a graphically more demanding display. Negative values of electron density (holes) will be displayed in a reddish colour.
+These three views show 3D displays of the electron density. If there is insufficient electron density, however, only the 2D display will the shown. It is a good idea to start adjusting the display levels in the **points** view, and only then to select **wire** or **surface**, since the latter are more computationally demanding graphics displays. Positive values of electron density are shown in green and negative values (holes) in red.
 
 ## Extended
 Ticking this box will extend the map display out from one unit cell to 27 (3 x 3 x 3) adjacent unit cells. This is very useful for viewing the shapes, sizes, and distribution of voids in the structure.
