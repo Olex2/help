@@ -3,15 +3,22 @@
 # Map View
 
 ## Available Display Modes
+The **plane**, **contour**, **surface**, **wire**, and **points** options are different viewing styles available for displaying maps and masks in Olex2.
 
 ### contour, plane
-This is an interactive slice of the map in the plane of the screen. The molecule can be rotated and also zoomed through this plane. This is done by holding down the **SHIFT** key while dragging the left mouse key on the area of the map or using the depth slider. The visible area of the map can be adjusted with the size slider, or by holding down the **Ctrl** key whilst dragging the right mouse key. Finally, the levels can be adjusted with the **SHIFT** key and right mouse key. In contour mode, the number of contours can be altered with the contours slider. Positive electron density is displayed as solid lines, whilst negative electron density (holes) are displayed as dashed lines. A contour map will be included in any postscript drawing created whilst the map is displayed.
+These two views show an interactive 2D slice of the map in the plane of the screen. The structure can be rotated, moved or zoomed while the map is displayed, and the 2D slice will change accordingly as different portions of the structure pass through the plane.
+<br>
+<br>
 
-### surface, wire, point
-These are all three dimensional displays of the electron density. However, the 3D display will only work if there is enough electron density to display, otherwise the 2D display will the shown. It is a good idea to start adjusting the levels in the points view, and only then to select wire or surface for a graphically more demanding display. Negative values of electron density (holes) will be displayed in a reddish colour. The extended mode will extend the grid to an array of 27 (3 x 3 x 3) unit cells.
+To move the map perpendicular to the screen (i.e., into or out of the screen), hold down the <c>Shift</c>' key while dragging the left mouse button on the map or use the **Depth** slider bar.
 
-### Extended
-Will extend the map display out from the unit cell.
+The visible area of the map can be adjusted with the size slider, or by holding down the **Ctrl** key whilst dragging the right mouse key. Finally, the levels can be adjusted with the **SHIFT** key and right mouse key. In contour mode, the number of contours can be altered with the contours slider. Positive electron density is displayed as solid lines, whilst negative electron density (holes) are displayed as dashed lines. A contour map will be included in any postscript drawing created whilst the map is displayed.
+
+### surface, wire, points
+These are all three dimensional displays of the electron density. However, the 3D display will only work if there is enough electron density to display, otherwise the 2D display will the shown. It is a good idea to start adjusting the levels in the points view, and only then to select wire or surface for a graphically more demanding display. Negative values of electron density (holes) will be displayed in a reddish colour.
+
+## Extended
+Ticking this box will extend the map display out from one unit cell to 27 (3 x 3 x 3) adjacent unit cells. This is very useful for viewing the shapes, sizes, and distribution of voids in the structure.
 
 ### Edit Style
 Edits the colour of the various map surfaces.
