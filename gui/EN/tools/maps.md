@@ -60,7 +60,7 @@ The **Size** slider controls the size of the plotted map. Larger values will act
 
 
 # Map 3D
-The **Level** slider adjusts the level of detail desired in the displayed map. A value can also be entered into the box next to the slider. If the level is set high, only the most prominent features (i.e., biggest electron density peaks and holes) will be shown. If the level is low, on the other hand, many more peaks and holes will be displayed. Below a certain cutoff level, however, the features of the map become so overwhelmed by the noise in the data that the map becomes meaningless. To avoid this, the level will be locked at and below the cutoff level.
+The **Level** slider adjusts the level of detail desired in the displayed map. A value can also be entered into the box next to the slider. If the level is set high, only the most prominent features (i.e., biggest electron density peaks and holes) will be shown. If the level is low, on the other hand, many more peaks and holes will be displayed. Below a certain cutoff level, however, the features of the map become so overwhelmed by the noise in the data that the map becomes overcrowded and meaningless, besides being slow to display. To avoid this, the level will be locked at and below the cutoff level.
 
 
 # Calculate Voids
