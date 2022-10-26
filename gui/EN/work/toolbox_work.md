@@ -118,12 +118,11 @@ This is a further selection of tools useful for model building.
 
 
 # Electron Density
-This mapping tool will calculate and display various electron density maps in a variety of formats.
-Note: Close to zero, these maps become very messy (and slow to display). Olex2 therefore does not display these regions.
+This tool tab provides options for the calculation of various electron density maps, which can be displayed in different 2D or 3D formats using the tools in this tab. However, when the **Level** setting approaches zero, electron density maps become very messy (and slow to display), and Olex2 therefore does not display these regions.
 
 ## Available maps
 ### diff
-Will display the difference map, Fobs-Fcalc. The keyboard shortcut for this command is **CTRL+m**, or **CalcFourier -diff -r=0.1 -m**. This is an extremely important tool for checking the validity of your model. Red regions of the map represent areas of missing electron density and green regions represent areas of excess electron density. Note: Make sure to select 'surface', 'wire', or 'points' on the View dropdown menu in the Map Settings for this map to be displayed properly.
+Will display the difference map, Fobs-Fcalc. The keyboard shortcut for this command is '<c>CTRL+m</c>', or **CalcFourier -diff -r=0.1 -m**. This is an extremely important tool for checking the validity of the model. Red regions of the map represent areas of missing electron density and green regions represent areas of excess electron density. Note: Make sure to select 'surface', 'wire', or 'points' on the View dropdown menu in the Map Settings for this map to be displayed properly.
 
 ### Fcalc
 Will display the calculated electron density.
@@ -138,12 +137,15 @@ Will display the observed electron density map.
 Will display a deformation electron density map (deviations from spherical atom model).
 
 ### PDF
-Will display a PDF map.<br><br>
+Will display a PDF map.
+<br>
+<br>
 
-|`Show Map`| Shows the currently selected map. |
+### Show/Hide Map
+Turns the display of the currently selected map on and off.
 
-|`Map Settings`| This opens the Maps tool tab under **Tools** for customising the map display. |
-
+### Map Settings
+This opens the **Maps** tool tab under **Tools** for further customising the map display.
 
 
 # Disorder Tools
