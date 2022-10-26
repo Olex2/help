@@ -118,11 +118,11 @@ This is a further selection of tools useful for model building.
 
 
 # Electron Density
-This tool tab provides options for the calculation of various electron density maps, which can be displayed in different 2D or 3D formats using the tools in this tab. However, when the **Level** setting approaches zero, electron density maps become very messy (and slow to display), and Olex2 therefore does not display these regions.
+This tool tab provides options for the calculation of various electron density maps, which can be displayed in different 2D or 3D formats using the tools in this tab. However, when the **Level** setting (see **Maps** tool tab help) approaches zero, electron density maps become very messy (and slow to display), and Olex2 therefore does not display these regions.
 
 ## Available maps
 ### diff
-Will display the difference map, Fobs-Fcalc. The keyboard shortcut for this command is '<c>CTRL+m</c>', or **CalcFourier -diff -r=0.1 -m**. This is an extremely important tool for checking the validity of the model. Red regions of the map represent areas of missing electron density and green regions represent areas of excess electron density. Note: Make sure to select 'surface', 'wire', or 'points' on the View dropdown menu in the Map Settings for this map to be displayed properly.
+Will display the difference map, Fobs-Fcalc. Make sure to select **surface**, **wire**, or **points** from the **View** drop-down menu under the **Maps** tool tab (accessed through **Map Settings** in this tool tab) for this map to be displayed correctly. The keyboard shortcut for this command is '<c>CalcFourier -diff -r=0.1 -m</c>' or simply '<c>CTRL+m</c>'. This is an extremely important tool for checking the validity of a model. Red regions of the map represent areas of missing electron density and green regions represent areas of excess electron density.
 
 ### Fcalc
 Will display the calculated electron density.
