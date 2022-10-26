@@ -122,7 +122,7 @@ This tool tab provides options for the calculation of various electron density m
 
 ## Available maps
 ### diff
-Will display the difference map, Fobs-Fcalc. Make sure to select **surface**, **wire**, or **points** from the **View** drop-down menu under the **Maps** tool tab (accessed through **Map Settings** in this tool tab) for this map to be displayed correctly. The keyboard shortcut for this command is '<c>CalcFourier -diff -r=0.1 -m</c>' or simply '<c>CTRL+m</c>'. This is an extremely important tool for checking the validity of a model. Red regions of the map represent areas of missing electron density and green regions represent areas of excess electron density.
+Will display the difference map, Fobs-Fcalc. Make sure to select **surface**, **wire**, or **points** from the **View** drop-down menu under the **Maps** tool tab (accessed through **Map Settings** in this tool tab) for this map to be displayed correctly. The corresponding line command is '<c>CalcFourier -diff -r=0.1 -m</c>' or simply '<c>CTRL+m</c>'. This is an extremely important tool for checking the validity of a model. Red regions of the map represent areas of missing electron density and green regions represent areas of excess electron density.
 
 ### Fcalc
 Will display the calculated electron density.
