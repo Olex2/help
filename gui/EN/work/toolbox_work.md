@@ -117,7 +117,7 @@ This is a further selection of tools useful for model building.
 |`fixunit`| $spy.MakeHoverButton('toolbar-OK','fixunit') | Adjusts the sum formula to what is currently present in the model, taking the value of *Z*' into account. |
 
 
-# Electron Density
+# Electron Density Quick Maps
 This tool tab provides options for the calculation of various electron density maps, which can be displayed in different 2D or 3D formats using the tools in this tab. However, when the **Level** setting (see **Maps** tool tab help) approaches zero, electron density maps become very messy (and slow to display), and Olex2 therefore does not display these regions.
 
 ## Available maps
