@@ -16,7 +16,7 @@ These three views show a 3D display of a parameter, such as the calculated elect
 <br>
 <br>
 
-In the **surface**, **wire**, and **points** display modes, positive values of electron density are shown in green and negative values (holes) in red, providing a very powerful tool for checking the validity of a structure during refinement. Thus, for example, if the **diff** (difference between Fobs and Fcalc) map for a structure is displayed in the **wire** view and a hydrogen atom is encased in a red blob, with a green blob nearby, then that hydrogen should probably be moved to the position of the green blob if the new position is chemically reasonable. A useful keyboard shortcut to display the **diff** map is '<c>CTRL+M</c>'.
+In the **surface**, **wire**, and **points** display modes, positive values of electron density are shown in green and negative values (holes) in red, providing a very powerful tool for checking the validity of a structure during refinement. Thus, for example, if the **diff** (difference between Fobs and Fcalc) map for a structure is displayed in the **wire** view and a hydrogen atom is encased in a red blob, with a green blob nearby, then that hydrogen should probably be moved to the position of the green blob if the new position is chemically reasonable. A useful keyboard shortcut to display the **diff** map is '<c>CTRL+m</c>'.
 
 ### Extended
 Ticking this box will extend the map display out from one unit cell to 27 adjacent unit cells, a 3 x 3 x 3 stack. This is very useful for viewing the shapes, sizes, and distribution of voids in the structure.
@@ -62,30 +62,99 @@ The **Size** slider controls the size of the plotted map. Larger values will act
 # Map 3D
 The **Level** slider adjusts the level of detail desired in the displayed map. A value can also be entered into the box next to the slider. If the level is set high, only the most prominent features (i.e., biggest electron density peaks and holes) will be shown. If the level is low, on the other hand, many more peaks and holes will be displayed. Below a certain cutoff level, however, the features of the map become so overwhelmed by the noise in the data that the map becomes overcrowded and meaningless, besides being slow to display. To avoid this, the level will be locked at and below the cutoff level.
 
+# Electron Density
+This tool tab is for displaying various electron density maps. The specific parameter to be mapped is selected from the **Map** drop-down menu.
+
+## diff
+Will display the difference map, Fobs-Fcalc. Make sure to select **surface**, **wire**, or **points** from the **View** drop-down menu under the **Maps** tool tab (accessed through **Map Settings** in this tool tab) for this map to be displayed correctly. The corresponding line command is '<c>CalcFourier -diff -r=0.1 -m</c>' or simply '<c>CTRL+m</c>'. This is an extremely important tool for checking the validity of a model. Red regions of the map represent areas of missing electron density and green regions represent areas of excess electron density.
+
+# Fcalc
+Will display the calculated electron density map.
+
+## 2Fo-Fc
+Will display the map of 2Fobs-Fcalc.
+
+## Fobs
+Will display the observed (experimentally measured) electron density map.
+
+## fcfmc
+Will display the FCF Fc-Fc map.
+
+## Source
+Select a data source to be used in constructing the map from this drop-down menu.
+
+## Res/&Aring;
+Type in the desired resolution (in &Aring;) for the map.
+
+## Mask
+If the **Mask** box is ticked, all electron density features (peaks or holes) near the structure on the screen will be displayed. If the box is left unticked, only electron density features within the unit cell will be displayed.
+
+## Show/Hide Map
+Toggles the display of the map on the screen.
+
 
 # Calculate Voids
 
 # Calculate Voids
-Calculates the voids and channels in the structure. This calculation is based on the Olex2 internal libraries, and help is available from
+Calculates the voids and channels in the structure, if present. This calculation is based on the Olex2 internal libraries. For further information, type '<c>help calcvoid</c>' or click the button below.
 
-|`help calcvoid`| |
+|`help calcvoid`| Help entry for the 'calcvoid' command. |
+
+## Resolution/&Aring;
+Specify the resolution of the void map here, in &Aring;.
+
+## Distance/&Aring;
+Specify any additional distance (in &Aring;) from the van der Waals surface at which the void space is to be calculated.
+
+## Precise
+Tick this box for a more precise calculation of the voids in the structure.
+
+## Show/Hide Void
+Toggles the display of the voids on the screen. A list of voids (if any) in the structure is also printed in the graphics window. When the **Extended** option at the top of this tool tab is checked, the voids are displayed in a 3 x 3 x 3 stack of adjacent unit cells.
 
 
 # Calculate Solvent Accessible Voids
 
-
 # Calculate Solvent Accessible Voids
-|`calcsolv`|Calculates the solvent accessible voids. This calculation is based on the smtbx/cctbx Olex2 libraries. |
+This checks for the presence of voids in the structure large enough to hold solvent. This calculation is based on the smtbx/cctbx Olex2 libraries, and provides an alternative algorithm to '<c>calcvoid</c>' above for detecting voids in the structure. No map is produced, but a list of voids is printed in the graphics window.
 
+## Probe/&Aring;
+This adjusts the size (in &Aring) of a spherical "probe" that rolls about the structure, fitting into gaps and mapping out any cavities that may be present. A smaller sphere would fit into smaller gaps and therefore return a larger void size.
 
-Calculates voids that are large enough to contain solvent. Probe/&Aring; adjusts the probe size (think of it as a 'sphere' rolling about the structure - a smaller sphere will fit into smaller gaps and therefore return a larger void than a larger sphere would). The Grid/ANGST is the resolution of the map that will be explored when calculating the voids. If the resolution is too high, the calculation might take a Very Long Time at not much benefit. Click on Void to toggle between displaying and not displaying solvent accessible voids. On the graphics screen the size of any solvent accessible voids that are found will be displayed.
+## Grid/&Aring;
+This governs the resolution of the solvent void map. If the grid is set too high, the calculation will take a very long time, without producing a much improved map.
 
-
-# masks-help
+## Show Info
+A list of solvent-accessible voids (if any) in the structure is printed in the graphics window.
 
 
 # Masks
-The Masks option serves as an alternative to SQUEEZE which is implemented in Platon !!!More Info Online!!!. These sorts of approaches should only be used when the solvent can't be identified or modelled, effort should be made to try and identify or model solvent. If refinement has been attempted using both ShelXL and olex2.refine the option to select either olex or an fcf files, ensure that the file from the last cycle of refinement is used.
+The **Masks** option serves as an alternative to the well-known ~SQUEEZE~ routine in ~Platon~ for dealing with disordered solvent. Search online for "modelling solvent disorder" for more information. This sort of approach should only be used as a last resort when the solvent cannot be identified or modelled because of the severity of the disorder. Every effort should first be made to identify and model the solvent using the **Disorder Tools** in the **Work** tab and **FragmentDB** in the **Tools** tab. If refinement has been attempted using both ShelXL and olex2.refine, when the option appears to select either an olex or fcf file, ensure that the file from the last cycle of refinement is used.
+<br>
+<br>
+
+See Acta Cryst. D61, 2005, 1299-1301 for more details on the algorithm used in this calculation.
+
+## Reflection File
+Select a .hkl file for use in the calculation of the mask.
+
+## Use set completion
+If low angle reflections are missing (even one is sometimes enough), the electron count in a cavity may be underestimated. If this option is selected, missing reflections are filled in and allowed to 'float' throughout the Fourier transform iterations, resulting in more accurate estimates of the true electron count.
+
+## Show/Hide Void
+Toggles the display of the voids on the screen. A list of voids (if any) in the structure is also printed in the graphics window. When the **Extended** option at the top of this tool tab is checked, the voids are displayed in a 3 x 3 x 3 stack of adjacent unit cells.
+
+## Map
+Select **mask** from the **Map** drop-down menu to view the solvent-accessible voids in the structure. Selecting **f\_mask** displays the Fourier transform of the solvent contribution to the structure factors. Lastly, selecting **f\_model** displays the Fourier transform of the sum of contributions to the structure factors of both the solvent region and the ordered part of the structure.
+
+## Grid/&Aring;
+The **Grid** parameter is the resolution of the map, in &Aring;. The entire structure, both atoms and solvent void regions, is divided into grid points given by this resolution in order to calculate the mask.
+
+## Solvent R in &Aring;
+All grid points at a distance greater than the sum of the van der Waals radius of an atom in the structure and **Solvent R** are initially set to be inside the solvent void region. The default value is 1.2 &Aring;, which avoids displaying voids in which no atom could fit.
+
+## Shrink truncation R in &Aring;
+After **Solvent R** above has been used to determine the solvent void region, all grid points outside this region are tested to see if they fall within a distance **Shrink truncation R** of the region. If this is the case, they are added to the solvent void region. **Shrink truncation R** is generally very close, or equal, to **Solvent R**. The process involving **Shrink truncation R** essentially results in a more close-fitting mask of the solvent void region.
 
 
 
@@ -94,6 +163,12 @@ The Masks option serves as an alternative to SQUEEZE which is implemented in Pla
 
 
 
+
+
+
+
+
+# masks-help
 
 ### Select Volume
 A box with moveable sides will appear. Left-click on the coloured areas and then move the sides while pressing the **SHIFT** key. The map will be calculated only inside the defined box. You can delete the box by right-clicking on it and select 'Hide'.
