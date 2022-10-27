@@ -151,7 +151,7 @@ Select **mask** from the **Map** drop-down menu to view the solvent-accessible v
 The **Grid** parameter is the resolution of the map, in &Aring;. The entire structure, both atoms and solvent void regions, is divided into grid points given by this resolution in order to calculate the mask.
 
 ## Solvent R in &Aring;
-All grid points at a distance greater than the sum of the van der Waals radius of an atom in the structure and **Solvent R** are initially set to be inside the solvent void region. The default value is 1.2 &Aring;, which avoids displaying voids in which no atom could fit.
+All grid points at a distance greater than the sum of the van der Waals radius of an atom in the structure and **Solvent R** are initially set to be inside the solvent void region. The default value is 1.2 &Aring;, which is large enough to avoid displaying voids in which no atom could fit.
 
 ## Shrink truncation R in &Aring;
 After **Solvent R** above has been used to determine the solvent void region, all grid points outside this region are tested to see if they fall within a distance **Shrink truncation R** of the region. If this is the case, they are added to the solvent void region. **Shrink truncation R** is generally very close, or equal, to **Solvent R**. The process involving **Shrink truncation R** essentially results in a more close-fitting mask of the solvent void region.
