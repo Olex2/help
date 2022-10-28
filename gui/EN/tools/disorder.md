@@ -53,18 +53,18 @@ If a structure contains atoms that have been assigned to PARTs, then it is somet
 
 
 # Split Group
-The tools on this line will fully **SPLIT** the atom clicked on next into two atoms.
+The tools on this line will fully **SPLIT** each of the next atom(s) clicked into two atoms.
 
 ## Split
-With this is selected, Olex2 will enter a mode wherein each atom clicked will generate two atoms (at the focal points of the ellipsoids) and set the occupancies for each atom to 0.5. One of the atoms will be in **PART 1**, the other in **PART 2**. After the splitting has occurred, the newly 'generated' atoms can be moved to any desired location by holding the '<c>SHIFT</c>' key while dragging them with the mouse. Press '<c>ESC</c>' to exit the mode.
+When this button is clicked, Olex2 will enter a mode in which each atom clicked will generate two atoms (at the focal points of the ellipsoids). The occupancy of each "split" atom will be set initially to 0.5; one of the atoms will be in PART 1, the other in PART 2. After the splitting has occurred, the newly 'generated' atoms can be moved to any desired location by holding the '<c>SHIFT</c>' key and dragging each one with the mouse. Press '<c>ESC</c>' to exit the mode.
 
 | `mode split` | Splits subsequently clicked atoms. |
 
 ## EADP
-| `mode split -r=EADP` | This will split the atom as above, but will constrain the ADPs for both atoms to be the same. This is useful early on during refinement, but should probably be removed once the disorder model is nearly complete, preferably applying a **DELU** restraint instead. |
+This will split the atom(s) as above, but will constrain the ADPs for both atoms to be the same. This is useful in early stages of refinement, but should probably be removed once the disorder model is nearly complete, preferably applying a **DELU** restraint instead. This corresponds to the line command '<c>mode split -r=EADP</c>'.
 
 ## ISOR
-| `mode split -r=ISOR` | This will split the atom as above, and apply an **ISOR** restraint to each of the two atoms. |
+This will split the atom(s) as above, and apply an **ISOR** restraint to each of the two atoms. The equivalent line command is <c>mode split -r=ISOR</c>'.
 
 ## SIMU
-| `mode split -r=SIMU` | As above, but with a **SIMU** restraint. |
+As above, but with a **SIMU** restraint. The line command for this function is '<c>mode split -r=SIMU</c>'.
