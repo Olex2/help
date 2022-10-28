@@ -176,20 +176,33 @@ The use of the **UP** arrow key to repeat recently issued commands is particular
 The fit and split tools operate on one or more selected atoms. To **fit** an atom (or group of atoms) is to move it to a desired location in the model. To **split** an atom (or group of atoms) is to divide it into two parts by creating a duplicate, which can then be moved to a desired location, e.g., to model disorder in the structure.
 
 ## Fit or Split One Atom
-Left-click on an atom to highlight it. To **fit** the atom, click the **Fit** button. The color of the atom changes. Now hold down the **SHIFT** key and drag the atom with the left mouse button to any desired position. Press the **ESC** key to exit the Fit/Split mode. The **fitted** atom will remain in its new position.<br><br>To **split** the atom in two, click the **Split** button. The color of the atom changes as before, but dragging the atom with the **SHIFT** key pressed moves only ONE of the two atoms that were created by the **Split** command (the other atom can be moved with a separate **fit** command, as above). The occupancies of the two atoms are linked, and the atoms will now have different PART numbers. Press the **ESC** key to exit the Fit/Split mode; the moved atom will remain in place.
+Left-click on an atom to highlight it. To **fit** the atom, click the **Fit** button. The color of the atom changes. Now hold down the **SHIFT** key and drag the atom with the left mouse button to any desired position. Press the **ESC** key to exit the Fit/Split mode. The **fitted** atom will remain in its new position.
+<br>
+<br>
+
+To **split** the atom in two, click the **Split** button. The color of the atom changes as before, but dragging the atom with the **SHIFT** key pressed moves only ONE of the two atoms that were created by the **Split** command (the other atom can be moved with a separate **fit** command, as above). The occupancies of the two atoms are linked, and the atoms will now have different PART numbers. Press the **ESC** key to exit the Fit/Split mode; the moved atom will remain in place.
 
 ## Fit or Split Two Atoms
 Select two atoms, then click either the **Fit** or the **Split** button. Split will generate a duplicate pair, fit will not. The color of the atoms changes. Drag the atoms with the mouse while pressing the **SHIFT** key to move them together as a group to any desired position.<br><br>To rotate the atoms about their midpoint instead of moving them, press the **CTRL** key while dragging with the mouse. Press **ESC** to exit the Fit/Split mode; the moved pair of atoms will remain in place.
 
 ## Fit or Split Three or more Atoms
-Select three or more atoms, then click either the **Fit** or the **Split** button. As before, split will generate a duplicate group, but fit will not, and the atoms will change color. The entire group can be moved to any desired position by dragging it while holding down the **SHIFT** key (or rotated if the **CTRL** key is held down instead).<br><br>It is also possible to rotate the group about one of its bonds. First **activate** the bond about which you wish to rotate the group by **right-clicking** on it. Now, dragging the group while holding down the **CTRL** key rotates the group around this activated bond. Press **ESC** to exit this mode; any moved atoms will remain in their new positions.<br><br>This is one of the most powerful tools in Olex2. If a grouping of atoms is disordered, and one of the parts can be modelled (no matter how badly), the **Split** button will be very useful. (Typing **mode fit -s same** is equivalent to clicking the **Split** button.) Note that the SAME restraint is applied by default in Olex2 when splitting a group; other restraints may be selected from the drop-down menu. Everything will be restrained, so if the disorder *can* be modelled, the refinement process will sort it out automatically, though sometimes a large number of refinement cycles is needed.
+Select three or more atoms, then click either the **Fit** or the **Split** button. As before, split will generate a duplicate group, but fit will not, and the atoms will change color. The entire group can be moved to any desired position by dragging it while holding down the **SHIFT** key (or rotated if the **CTRL** key is held down instead).
+<br>
+<br>
+
+It is also possible to rotate the group about one of its bonds. First **activate** the bond about which you wish to rotate the group by **right-clicking** on it. Now, dragging the group while holding down the **CTRL** key rotates the group around this activated bond. Press **ESC** to exit this mode; any moved atoms will remain in their new positions.
+
+## Split with SAME
+This is one of the most powerful tools in Olex2. If a grouping of atoms is disordered, and one of the parts can be modelled (no matter how badly), the **Split** button with the **SAME** restraint will be very useful. (Typing **mode fit -s same** is equivalent to clicking the **Split** button with this restraint active.) Note that the **SAME** restraint is applied by default in Olex2 when splitting a group; other restraints may be selected from the drop-down menu. Everything will be restrained, so if the disorder *can* be modelled, the refinement process will sort it out automatically, though sometimes a large number of refinement cycles is needed.
 
 
 # Peak & Uiso Sliders
 This tool tab provides tools for selecting Q peaks and atoms according to their properties.
 
+
 # Electron Density Peak Slider
 This tool enables the selection of Q peaks by intensity.<br><br>Starting from the middle of the scale at 100, move the Peaks slider to the **left** to filter out the weakest Q peaks first, or to the **right** to filter out the strongest Q peaks first. Any commands issued after filtering will only apply to the remaining visible peaks. For example, the line command 'name $Q C' will convert all visible Q peaks to carbons, and clicking **Select** or **Delete** will select or delete the peaks, respectively.
+
 
 # Uiso Select Slider
 This tool allows the selection of atoms according to their Uiso values.
@@ -207,6 +220,7 @@ Starting from the middle of the scale, move the Uiso slider to the **left** to s
 
 # Growing
 Olex2 shows the asymmetric unit by default. This tool tab contains very powerful techniques for 'assembling' a structure model on the screen exactly as desired. It is then possible to refine the model repeatedly in Olex2 without dismantling this assembly.
+
 
 # Grow
 ## Growing
