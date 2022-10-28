@@ -1,10 +1,10 @@
 # Fragment Library
-Clicking this link opens Ilia Guzei's Idealized Molecular Geometry Library in your default internet browser. Fragments contained in this library can be copied and pasted straight from the web site into Olex2. Simply copy the fragment atomic coordinates, including the **FRAG** and **FEND** lines, off the web site and paste them directly into the command line to insert the fragment into the structure. (Consult the URL[https://shelx.uni-goettingen.de/shelxl_html.php, ShelX Manual] for information on the **FRAG** command.)
+Clicking this link opens Ilia Guzei's Idealized Molecular Geometry Library (IMGL) in your default internet browser. Fragments contained in this library can be copied and pasted straight from the web site into Olex2. Simply copy the desired fragment atomic coordinates, including the **FRAG** and **FEND** lines, from the web site and paste them directly into the command line to insert the fragment into the structure. Detailed, step-by-step instructions, with examples, for this process are found in **Ilia Guzei's Manual** linked on the Olex2 **Home** tab. For more information on the **FRAG** command, consult the URL[https://shelx.uni-goettingen.de/shelxl_html.php, ShelX Manual].
 
 Note: No constraints, restraints, or occupancies will be applied to the pasted fragment! These will have to be entered separately.
 
 ## Pasted fragments
-These will appear in a slightly greenish colour on the screen while in the matching mode. Fragments can be matched to electron density peaks by first clicking on an atom in the imported fragment and then on the corresponding Q-peak, then repeating the process with other atom/Q pairs until the fragment is in the desired position and orientation.
+The inserted fragments will appear in a slightly greenish colour on the screen while in the matching mode. Fragments can be matched to electron density peaks by first clicking on an atom in the imported fragment and then on the corresponding Q-peak, then repeating the process with other atom/Q pairs until the fragment is in the desired position and orientation.
 
 ## Exit matching mode
 Press '<c>Esc</c>' repeatedly, click the **Esc** link in the orange mode box, or type '<c>mode off</c>' to exit the matching mode.
