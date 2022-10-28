@@ -267,11 +267,23 @@ Strictly speaking, this tool does not belong to the **grow** family of tools, bu
 # Finishing
 The buttons in this tool tab are for convenient access to elementary versions of more powerful sorting and drawing tools elsewhere in Olex2.
 
+
 # QuickSort
 The **Sort with Current Settings** button sorts the atoms in the model according to the options currently set under the **Sorting** tool tab. Clicking the pencil icon opens the **Sorting** tool tab, where the sort settings can be edited.
 
+
 # QuickImages
 The **Selected** button adds labels to selected atoms and bonds in the model. If nothing is selected, all atoms and bonds will be labelled. The **non-H** button adds labels to all non-hydrogen atoms, and the **No Labels** button removes all labels from the model. Clicking the **Go** button will create an image of the labelled model in the current working folder. To edit all image file options, open the **Images** tool tab by clicking the pencil icon next to the **Go** button.
+
+
+
+
+
+
+
+
+
+
 
 
 # shift-move-target
@@ -281,21 +293,4 @@ Move Atoms
 Split Atoms
 - Click on an atom to split it
 
-
-# Split Group
-The tools on this line will fully SPLIT the atom you click next into two atoms.
-
-## No Restraints
-This will simply generate two atoms (at the focal points of the ellipsoids) and set the occupancies for each atom to 0.5. One of the atoms will be in PART 1, the other in PART 2. After the splitting has occured, you can move the newly 'generated' atoms to where you would like them to be (by holding the SHIFT key while moving them).
-
-| `mode split` | Splits subsequently clicked atoms. |
-
-## EADP
-| `mode split -r=EADP` | This will split the atom as above, but will restrain the ADP values for both atoms to be the same. This is useful early on, and should probably be removed once the disorder model is nearly complete. You might want to apply the **DELU** restraint instead.|
-
-## ISOR
-| `mode split -r=ISOR` | This will split the atom as above, and apply an **ISOR** restraint to each of the two atoms. |
-
-## SIMU
-| `mode split -r=SIMU` | As above, but with a **SIMU** restraint. |
 
