@@ -288,14 +288,14 @@ The tools on this line will fully SPLIT the atom you click next into two atoms.
 ## No Restraints
 This will simply generate two atoms (at the focal points of the ellipsoids) and set the occupancies for each atom to 0.5. One of the atoms will be in PART 1, the other in PART 2. After the splitting has occured, you can move the newly 'generated' atoms to where you would like them to be (by holding the SHIFT key while moving them).
 
-| `mode split` | Splits subsequently clicked atoms |
+| `mode split` | Splits subsequently clicked atoms. |
 
 ## EADP
-| `mode split -r=EADP` | This will split the atom as above, but will restrain the ADP values for both atoms to be the same. This is useful early on, and should probably be removed once the disorder model is nearly complete. You might want to apply the DELU restraint instead.|
+| `mode split -r=EADP` | This will split the atom as above, but will restrain the ADP values for both atoms to be the same. This is useful early on, and should probably be removed once the disorder model is nearly complete. You might want to apply the **DELU** restraint instead.|
 
 ## ISOR
-| `mode split -r=ISOR` | This will split the atom as above, and reply an ISOR restraint to each of the two atoms. |
+| `mode split -r=ISOR` | This will split the atom as above, and apply an **ISOR** restraint to each of the two atoms. |
 
 ## SIMU
-| `mode split -r=SIMU` | As above, but with a SIMU restraint. |
+| `mode split -r=SIMU` | As above, but with a **SIMU** restraint. |
 
