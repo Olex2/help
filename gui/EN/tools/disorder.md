@@ -1,39 +1,70 @@
 # Fragment Library
-This link will open in your default internet browser. Fragments contained in this library can be copied and pasted straight from the web into Olex2.
+Clicking this link opens Ilia Guzei's Idealized Molecular Geometry Library in your default internet browser. Fragments contained in this library can be copied and pasted straight from the web site into Olex2. Simply copy the fragment atomic coordinates, including the **FRAG** and **FEND** lines, off the web site and paste them directly into the command line to insert the fragment into the structure. (Consult the URL[https://shelx.uni-goettingen.de/shelxl_html.php, ShelX Manual] for information on the **FRAG** command.)
+
+Note: No constraints, restraints, or occupancies will be applied to the pasted fragment! These will have to be entered separately.
 
 ## Pasted fragments
-These will appear in a strange green colour, and you can then anchor them onto electron density peaks by first clicking on an atom in the imported fragment and then on the corresponding Q-peak. Repeat this progress with another atom/Q pair until a reasonable match is achieved.
+These will appear in a slightly greenish colour on the screen while in the matching mode. Fragments can be matched to electron density peaks by first clicking on an atom in the imported fragment and then on the corresponding Q-peak, then repeating the process with other atom/Q pairs until the fragment is in the desired position and orientation.
 
 ## Exit matching mode
-Press **Esc** repeatedly, or press the **Esc** link in the orange mode box to get out of this matching mode.
+Press '<c>Esc</c>' repeatedly, click the **Esc** link in the orange mode box, or type '<c>mode off</c>' to exit the matching mode.
+
 
 # Link Selected
-**Two** Selected atoms will be 'linked' in the refinement.
+Select two atoms to be 'linked' in the refinement, as described below.
 
 ## Occupancies
-
-|`fvar sel`|The occupancies will be linked such that the individual occupancies add up to unity.|
+Clicking **Occupancies** links the occupancies of the two atoms to one another so that the individual occupancies add up to unity. This is also accomplished by the '<c>fvar sel</c>' command.
 
 ## Parts and Occupancies
-|`part -p=2 -lo sel`|The occupancies will be linked such that the individual occupancies add up to unity, and the selected atoms will be added to Parts.|
+The occupancies will be linked such that the individual occupancies add up to unity, as above, and the selected atoms will be added to different PARTs as well. Equivalent to the line command '<c>part -p=2 -lo sel</c>'. Here, the '-p=2' switch dictates that the atoms should be assigned to two PARTs, and '-lo' stands for 'link occupancy'.
 
-
-**Note**: the -p parameter determines the number of parts that should be assigned. -lo stands for 'link occupancy'.
 
 # Link Constraints
-Link Parts, Occupancies and apply either and EADP constraint or ISOR restraint to selected atoms.
+Link PARTs and occupancies of selected atoms, then apply either an **EADP** constraint or an **ISOR** restraint to them.
+
 
 # Link Parts 1
-Assign selected atoms to the part number selected.
+Assign the selected atoms to the PART number in the scroll box at the end of this line.
+
 
 # Link Parts 2
-TBI
+Assign the selected atoms to two PART numbers, in order.
+
 
 # Show Parts
-If your structure contains atoms that have been assigned to parts, then it is sometimes useful to look only at atoms belonging to the same part.
+If a structure contains atoms that have been assigned to PARTs, then it is sometimes useful to look only at atoms belonging to certain PARTs.
 
-|`showP 1`|Will show only atoms belonging to Part 1.|
+| `showP 0 1` | Will show only atoms belonging to PARTs 0 and 1. |
 
-|`showP 0 2`|Will only show atoms that don't belong to a Part and those that belong to Part 2.|
+| `showP 0 2` | Will show only atoms belonging to PARTs 0 and 2. |
 
-|`showP 0`|Will show all atoms.|
+| `showP 0 -1` | Will show only atoms belonging to PARTs 0 and -1. |
+
+| `showP 0 -2` | Will show only atoms belonging to PARTs 0 and -2. |
+
+| `showP 1 2` | Will show only atoms belonging to PARTs 1 and 2. |
+
+| `showP 1` | Will show only atoms belonging to PART 1. |
+
+| `showP 2` | Will only show atoms belonging to PART 2. |
+
+| `showP` | Will show all atoms in all PARTs. |
+
+
+# Split Group
+The tools on this line will fully **SPLIT** the atom clicked on next into two atoms.
+
+## Split
+With this is selected, Olex2 will enter a mode wherein each atom clicked will generate two atoms (at the focal points of the ellipsoids) and set the occupancies for each atom to 0.5. One of the atoms will be in **PART 1**, the other in **PART 2**. After the splitting has occurred, the newly 'generated' atoms can be moved to any desired location by holding the '<c>SHIFT</c>' key while dragging them with the mouse. Press '<c>ESC</c>' to exit the mode.
+
+| `mode split` | Splits subsequently clicked atoms. |
+
+## EADP
+| `mode split -r=EADP` | This will split the atom as above, but will constrain the ADPs for both atoms to be the same. This is useful early on during refinement, but should probably be removed once the disorder model is nearly complete, preferably applying a **DELU** restraint instead. |
+
+## ISOR
+| `mode split -r=ISOR` | This will split the atom as above, and apply an **ISOR** restraint to each of the two atoms. |
+
+## SIMU
+| `mode split -r=SIMU` | As above, but with a **SIMU** restraint. |
