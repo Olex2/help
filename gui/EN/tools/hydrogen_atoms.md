@@ -1,37 +1,55 @@
 # HFIX Quickmodes
-This is one of the older tools in Olex2 and is due for refurbishment soon!
-Common Hydrogen constraints: hover over the little symbols and it will show you the constraints that will be inserted on the selected atoms (in Shelx-speak!). You can always type the code yourself after having made the selection.
+This tool tab contains common constraints relevant to hydrogen atom placement. Hover over each little symbol to display the ShelX constraint that will be applied to the selected atom(s). When one of the symbols is clicked, Olex2 will enter a mode for the application of that particular constraint. Click on the atom(s) to which the constraint is to be applied, then press '<c>ESC</c>' to exit the mode. It is also possible simply to type the code for the constraint after selecting an atom.
+
 
 # Toolbar Hydrogen_2
-This is one of the older tools in Olex2 and is due for refurbishment soon!
+This tool tab provides methods of adding H atoms to the structure with custom X-H bond distances.
 
-## HFIX
-You can enter any HFIX command in the box and then press the button - hydrogen atoms will be placed geometrically on subsequently clicked atoms according to your choice, regardless of the geometry involved.
+## A, D, and HFIX
+Type the desired AFIX code into the **A** box, the desired X-H bond length (in &Aring;) into the **D** box, and click **HFIX**. This will enter a mode in which this constraint is applied to any atom(s) clicked (hydrogen atoms will be placed geometrically on the clicked atoms). Press '<c>ESC</c>' to exit the mode.
 
 ## H 'Improve'
-Another command taken straight from the XP syntax. This will move the selected hydrogen atoms along the bond axis to the distance typed in the box (or the one selected from the pre-set values in the drop-down box. The distances in the box are typical bond distances as observed by neutron diffraction.
+This feature is taken straight from the syntax of the crystallography graphics program XP. The distances provided in the **HIMP** drop-down menu are typical X-H bond distances observed by neutron diffraction. Selecting a bond distance from this menu enters a mode for assigning this bond distance to X-H bonds. Alternatively, typing a value into the **HIMP** box and pressing '<c> TAB</c>' also enters the mode. Once in the mode, clicking a hydrogen atom will move it along its X-H bond axis to the distance specified in the **HIMP** box.
 
-|`himp 0.983`| Is an example command of this.|
+| `himp 0.983` | This will set all X-H bonds in the structure to 0.983 &Aring;. |
+
 
 # Toolbar Hydrogen_3
-This is one of the older tools in Olex2 and is due for refurbishment soon!
 
 ## Add Hydrogen
-This will geometrically place hydrogen atoms and constrain them depending on the environment the hydrogen atoms are in. If you want to refine them freely, select the atoms and type 'AFIX 0 `HADD`'
+Clicking this link will place hydrogen atoms geometrically throughout the structure and constrain them according to their respective environments (sp<sup>2</sup>, sp<sup>3</sup>, etc.). To refine any hydrogen atom positions freely, select the atom(s) to which the hydrogens are bonded, type '<c>AFIX 0</c>', then refine again.
 
-## Show Hydrogen Labels
-|`labels -h -l`| Will show all hydrogen labels.|
+## H Labels
+Will display the names of all atoms, including hydrogen atoms.
 
-## Hide Hydrogen Labels
-|`labels -l`| This will hide all hydrogen labels.|
+| `labels -h -l` | Show all atom names, including hydrogen atom names. |
 
-## Show AFIX constraints
-|`labels -h -a`| This will show the AFIX constraints.|
+## No H Labels
+Displays the names of all non-hydrogen atoms.
+
+| `labels -l` | Show all non-hydrogen atom names. |
+
+## Show AFIX
+Displays the AFIX code (if any) on each hydrogen atom in the structure.
+
+| `labels -h -a` | This shows the AFIX constraint code for each hydrogen in the structure. |
+
+## FREE ALL H
+Removes all AFIX constraints from all hydrogen atoms, and also frees their Uiso values, so that they can be freely refined.
+
+## Hide Q
+Hides all electron density peaks (Q peaks) on the screen.
+
 
 # HTAB Slider
+The '<c>HTAB</c>' instruction provides an analysis of hydrogen bonding in the structure. It can only be used when the asymmetric unit alone is on the screen, but hydrogen bonds to symmetry-equivalent atoms will be shown. The list of hydrogen bonds matching the criteria set by the sliders below is printed in the graphics window.
 
-This slider extends the radius of the HTAB instuction that will be used.
+## Distance
+This slider specifies the maximum D-A distance (in &Aring;) for a D-H&middot;&middot;&middot;A interaction in the structure to be counted as a hydrogen bond.
+
+## Angle
+This slider specifies the minimum D-H-A angle (in degrees) for a D-H&middot;&middot;&middot;A interaction in the structure to be counted as a hydrogen bond.
+
 
 # Hydrogen Bond Slider
-
-Successive potential hydrogen bond interactions will be shown. Bit by bit, there will always be two growing bonds 'added' to your display -- and each newly added bond refers to the same interaction.
+Slide this indicator to the right to enter a mode showing potential hydrogen bonding interactions at increasingly longer distances. Clicking on any of the broken-line "bonds" growing from an atom will display the portion of the structure to which that atom is hydrogen bonded. Press '<c>ESC</c>' to exit the mode.
