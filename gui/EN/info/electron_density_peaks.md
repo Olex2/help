@@ -1,19 +1,9 @@
 # Electron-Density-Peak-Slider-help
 
-# Electron Density Peak Slider
-Move the slider to the left to filter out strongest peaks first, or to the right to filter out weakest peaks first. You can then do things like:
+
+# Electron Density Transparency Slider
+The relative height of Q peaks in the structure is portrayed by their relative transparency: the strongest Q peak is the least transparent and the weakest Q peak is the most transparent. This makes it easy to identify missing heavy (non-hydrogen) atoms in the structure as the least transparent Q peaks. Move the **Transparency** slider to the *right* to make the Q peaks more opaqe and to the *left* to make them more transparent.
 
 
-|`name $Q C`|This will only apply to the currently visible peaks.|
-
-
-The same goes for the 'Select' and 'Delete' buttons.
-
-# Electron Density Transparancy Slider
-The relative peak height is displayed by altering the transparency of the displayed peaks, scaled to the strongest peak. This means that it is very easy to identify when heavy (or non-hydrogen) atoms are missing from your structure.
-
-### Adjust transparency
-With this slider, you can adjust the transparency of the electron density peaks.
-
-# electron density peaks
-Click on these bars to select the corresponding peaks.
+# Electron density peaks
+This bar chart lists all the Q peaks and their heights. The bars are colour-coded red, orange, and green, in order of decreasing peak height. Click on a bar to select the corresponding Q peak on the screen.
