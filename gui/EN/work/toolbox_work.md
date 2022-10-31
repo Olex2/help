@@ -201,7 +201,11 @@ This tool tab provides tools for selecting Q peaks and atoms according to their 
 
 
 # Electron Density Peak Slider
-This tool enables the selection of Q peaks by intensity.<br><br>Starting from the middle of the scale at 100, move the Peaks slider to the **left** to filter out the weakest Q peaks first, or to the **right** to filter out the strongest Q peaks first. Any commands issued after filtering will only apply to the remaining visible peaks. For example, the line command 'name $Q C' will convert all visible Q peaks to carbons, and clicking **Select** or **Delete** will select or delete the peaks, respectively.
+This tool enables the selection of Q peaks by intensity.
+<br>
+<br>
+
+Starting from the middle of the scale at 100, move the **Peaks** slider to the *left* to filter out the weakest Q peaks first, or to the *right* to filter out the strongest Q peaks first. Any commands issued after filtering will only apply to the remaining visible peaks. For example, the line command 'name $Q C' will convert all visible Q peaks to carbons, and clicking **Select** or **Delete** will select or delete the peaks, respectively.
 
 
 # Uiso Select Slider
