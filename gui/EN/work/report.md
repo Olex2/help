@@ -1,6 +1,5 @@
 # Report Settings
-Here is a collection of tools that can help you to form a report about your structure.
-
+This is a collection of tools to create (a) a report about the structure in HTML format, and (b) a CIF file for the structure.
 
 # h3-collection-help
 # Collection
@@ -8,16 +7,16 @@ Enter data collection information here, including **Sample ID**; **Submitter** a
 <br>
 <br>
 
-**Information entered in these boxes will take precedence over information provided in other files when the CIF file is written**. If the CIF information is edited using the **Edit Cif Info** button below, then that will take precedence over what is entered here, and those new values will be displayed in these boxes.
+**Information entered in these boxes will take precedence over information provided in other files when the CIF file is written**. If the CIF information is edited using the **Edit CIF Info** button below, then that will take precedence over what is entered here, and those new values will be displayed in these boxes.
 
 
 # h3-crystal-help
 # Crystal
-Enter information here pertaining to the actual crystal used for the diffraction experiment: the systematic name of the compound, crystal colour, crystal dimensions in mm, synthesis method used to make the compound, crytallisation method, and crystal mounting technique.
+Enter information here pertaining to the actual crystal used for the diffraction experiment: the **Systematic Name** of the compound, if known (enter '?' if unknown); **Colour** (usually extracted automatically from .CIF_OD file); **Size** (dimensions in mm) and **Shape** (crystal description chosen from drop-down menu); synthesis method used to make the compound (**Preparation Details**); **Crystallisation Details** (technique used for growing the crystal); and **Crystal Mounting** technique.
 <br>
 <br>
 
-**Information entered in these boxes will take precedence over information provided in other files when the CIF file is written**. If the CIF information is edited using the **Edit Cif Info** button below, then that will take precedence over what is entered here, and those new values will be displayed in these boxes.
+**Information entered in these boxes will take precedence over information provided in other files when the CIF file is written**. If the CIF information is edited using the **Edit CIF Info** button below, then that will take precedence over what is entered here, and those new values will be displayed in these boxes.
 
 
 # Crystal Image
@@ -26,11 +25,11 @@ Any photographs taken of the crystal present in the 'movie' folder in the workin
 
 # h3-diffraction-help
 # Diffraction
-Enter information about the diffraction experiment here: **Diffractometer** type; other diffractometer/diffraction details (click the **Definition File** link to select a diffractometer from the window that opens); and **Diffraction** and **Cell Measurement** temperatures. Other **Special Details** of the experiment and of the refinement may be typed into the respective boxes provided.
+Enter information about the diffraction experiment here: **Diffractometer** type; other diffractometer/diffraction details (click the **Definition File** link to select a diffractometer from the window that opens); and **Diffraction** and **Cell Measurement** temperatures. Other **Special Details** of the experiment and of the refinement (e.g., disorder treatment, solvent masking) may be typed into the respective boxes provided.
 <br>
 <br>
 
-**Information entered in these boxes will take precedence over information provided in other files when the CIF file is written**. If the CIF information is edited using the **Edit Cif Info** button below, then that will take precedence over what is entered here, and those new values will be displayed in these boxes.
+**Information entered in these boxes will take precedence over information provided in other files when the CIF file is written**. If the CIF information is edited using the **Edit CIF Info** button below, then that will take precedence over what is entered here, and those new values will be displayed in these boxes.
 
 # h3-absorption correction-help
 # Absorption Correction
@@ -43,84 +42,90 @@ Enter the following details related to publications here, to be included in the 
 <br>
 <br>
 
-**Information entered in these boxes will take precedence over information provided in other files when the CIF file is written**. If the CIF information is edited using the **Edit Cif Info** button below, then that will take precedence over what is entered here, and those new values will be displayed in these boxes.
+**Information entered in these boxes will take precedence over information provided in other files when the CIF file is written**. If the CIF information is edited using the **Edit CIF Info** button below, then that will take precedence over what is entered here, and those new values will be displayed in these boxes.
 
 
 # Citations
-Olex2 automatically creates literature citations for all software, including plugins, used during structure determination (if invoked through Olex2 or found in the relevant files).
+Olex2 automatically creates literature citations for all software, including plugins, used during structure determination (if invoked through Olex2 or found in the source files).
 
 
 # Reference
-Further details about the journal in which the structure is published may be entered here: **CSD Refcode** for the structure (if known); the list of **Authors** on the article; the **Journal** name, **Volume** number, **Page** numbers, and publication **Year**. A **Comment** on the publication may be entered in the final box in this panel.
+Further details about the journal in which the structure is published may be entered here: the **CSD Refcode** for the structure (if known); list of **Authors** on the article; and **Journal** name, **Volume** number, **Page** numbers, and publication **Year**. A **Comment** on the publication may be entered in the final box in this panel.
 <br>
 <br>
 
-**Information entered in these boxes will take precedence over information provided in other files when the CIF file is written**. If the CIF information is edited using the **Edit Cif Info** button below, then that will take precedence over what is entered here, and those new values will be displayed in these boxes.
+**Information entered in these boxes will take precedence over information provided in other files when the CIF file is written**. If the CIF information is edited using the **Edit CIF Info** button below, then that will take precedence over what is entered here, and those new values will be displayed in these boxes.
 
 
 # h3-source files-help
 # Source Files
-Olex2 reads your source files, and extracts relevant information to include into the cif file. This process is not always easy, and can result in conflicts. In this section you can inspect which files Olex2 has read.
+This tool tab lists the source files used by Olex2 to construct a CIF file for the structure and prints a warning if there is conflicting information among the sources.
 
 
 # Metadata Sources
-Sources of CIF metadata.
+Olex2 searches the working folder for sources of metadata such as diffractometer information and data collection parameters, for incorporation into the final CIF file created for the structure after refinement is complete. Such details are normally recorded during the diffraction experiment in a .CIF_OD file. If no files containing metadata are found, Olex2 prints out a brief message to that effect.
+
+
+# Metadata Conflicts
+Olex2 automatically extracts relevant information from metadata source files for inclusion in the final CIF, but the process is not always straightforward because the sources may contain conflicting information. In this case, Olex2 prints an error message and the user has to resolve the conflicts manually, i.e., choose the correct information source for the CIF data. Collapse the **Report** tab and re-expand it, then resolve the conflicts in the window that opens. Olex2 then prints a message indicating no conflicts remain. The **Show ALL** link lists all the sources of CIF data and the **Reset Previously Resolved Conflicts** link removes any manually entered information (and any previous conflicts will reoccur).
+
 
 # CIF-Part-1-help
 # CIF Part 1
-This section deals with your CIF file. The CIF file contains everything that is known about your structure in a format that has been defined by the IUCr. Getting a complete and correct cif file is vital for the successful publication of your structures in any peer reviewed journals.
-
-Ideally, the creation of the CIF file should be completely automatic and you won't have to worry about it. But just in case, we provide a number of tools here to help you with your CIF files.
+This section deals with the creation and modification of the CIF file. The CIF contains everything known about the structure in a format defined by the IUCr. A complete and correct CIF file is vital for the successful publication of a structure in any peer-reviewed journal. Creation of the CIF is normally handled automatically by Olex2, but these tools are provided in case the CIF needs to be modified.
 
 ## Edit CIF Info
-Pressing this button will bring up a text editor, in which all the information that is known about your structure is shown. You can modify the contents of this file and even add and remove items. Your edits will take precedence over any previous values.
+Pressing this button will open a file containing all the information that Olex2 will be adding to the CIF file when it is created. Information entered in the above tool tabs (**Collection**, **Crystal**, **Diffraction**, etc.) will appear here. It is possible to modify the contents of this file, and even add or remove entries. Edits made here will take precedence over any other previously entered values, and the values entered using **Edit CIF Info** will appear when the above tool tabs are reopened.
 
 ## Merge CIF
-This will open the current CIF of your structure - a file in which the 'meta-data' has been merged with the CIF that originated from your last refinement.
+Clicking **Merge CIF** will take the metadata from the source files, the tool tabs above, and information entered using the **Edit CIF Info** button, and merge them into the CIF created during the last cycle of refinement. This final CIF will then be opened in the default text editor.
 
 ## Include/Exclude HKL and RES in your CIF
-Here you can determine whether you want to include the HKL/RES files in your final CIF or not. Please note: If you choose 'ignore', then nothing will be done to your CIF - the HKL/RES part will be included **exactly** as it was returned by the refinement program. ShelXL-2013 includes the HKL and RES information as plain text by default. If you select 'exclude', no HKL and res information will be included. If you choose 'include', the RES and HKL information will be included in the official IUCr/CIF definition format: as a loop.
+Select from the drop-down menu how reflection data and refinement instructions will be included in the final CIF. **Leave as is** includes the .hkl and .res files as returned by the refinement program. ShelXL includes the HKL and RES information as plain text by default. **Include** incorporates the HKL/RES information in the CIF as a loop (IUCr format). **Exclude** leaves out both the HKL and RES information - this option is strongly discouraged.
 
 
 # CIF-Part-2-help
 # CIF Part 2
-The IUCr offer a free checking service for your CIF files.
+The IUCr offer a free error-checking service called ~checkCIF~ for validating CIF files.
 
-## The CheckCif report
-This will help you to identify potential problems with your structure. Click the 'CheckCif Report' button to send your CIF file to the IUCr server and obtain your report in either html or pdf format. For a full report, you will also have to send your 'structure factors', which are contained in the fcf file. Tick the box if you want a full report.
+## IUCr checkCIF Report
+Click the **IUCr checkCIF** button to send the merged CIF to this service for checking. The resulting ~checkCIF~ report may be received in PDF or in HTML format (select from drop-down menu). The report helps identify potential problems with the structure. For full validation of both the CIF and the structure factors, it will also be necessary to upload the structure factors as a .fcf file. For this and other ~checkCIF~ options, see the URL[https://checkcif.iucr.org/,checkCIF] website.
 
-## Merge CIF
-This tick-box is included here only for the very rare case where you might experience problems with the merging of the CIF created by the refinement program and the information contained within Olex2. If you ever feel the need to untick this box, please make sure to let us know what the problem was and we will try and fix it for everyone. Thanks!
+## Depositing a structure with the CCDC
+There are two types of submissions to the Cambridge Crystallographic Data Centre (URL[https://www.ccdc.cam.ac.uk/,CCDC]).
 
-## CCDC Number
-The first step in the submission to the CSD is to obtain a CCDC number. Pressing this button will do that for you: it will send your CIF file and your structure factor file (optional) to the CCDC. After a few days of processing in Cambridge, you will obtain an e-mail containing your CCDC submission number. A number will only be requested if **all** the required data is provided - so make sure you fill in all the forms as much as you can!
+### Request CCDC Number
+Submitting a structure to the ~Cambridge Structural Database~ (URL[https://www.ccdc.cam.ac.uk/solutions/csd-core/components/csd/,CSD]) is now a requirement for most journals. Click this button to send the CIF file and the optional structure factor file to the CCDC. Once the CIF has been processed, a unique CCDC number will be assigned to the structure and sent by email to the depositing author, usually within a few days. This is the number that needs to be provided to the journal in which the structure is to be published.
+
+Note: To expedite processing, it is important that *all* the required data are provided, i.e., the CCDC forms need to be filled out as completely as possible.
+<br>
+<br>
+
+If any structure is not published within three years and no other instructions have been received, the CCDC will attempt to contact the depositing author and the corresponding author by e-mail. If no response is obtained, the CCDC will retain the data indefinitely pending future publication. 
+
+### Publish as CSD Communication
+Sometimes, a structure is not intended for publication in a scientific journal, but is deposited with the CSD to make it available to other scientists. In such cases, it is possible to publish the structure as a "CSD Communication" by authorising the CCDC to include it directly in the CSD. This occurs as soon as the structure is processed by the CCDC.
+<br>
+<br>
+
+Please refer to this URL[https://www.ccdc.cam.ac.uk/Community/blog/2018-06-CSDComm1/,blog] and these URL[https://www.ccdc.cam.ac.uk/Community/depositastructure/CSDCommunications/,instructions] for more details about CSD Communications.
 
 
 # CIF-Part-3-help
 # CIF Part 3
-One of the really strong points of Olex2 is that it will keep your CIF information synchronised throughout the entire solution and refinement process. This is quite a tricky thing to do, but if it all works the way it should, you will never need to edit a CIF by hand again.
+One of the really strong points of Olex2 is that it will keep CIF information synchronised throughout the entire solution and refinement process. This is quite a tricky thing to do, but if it all works the way it should, it will never be necessary to edit a CIF by hand again.
 
-## Merge CIF
-If this box is ticked, the files that are listed in this line will all be merged with your CIF information. 'metacif' is the builtin-file where Olex2 collects all the information about your structure it can. You can edit this file using the 'Edit Cif Info' button above, and **your edits will take precedence over all other sources of information**. If something goes dreadfully wrong here, you may choose to untick this box. However, we really don't recommend this and if you feel that you need to do this, please contact us and we will try and find a solution to your problem. Thank you!
+## Merge CIF 1
+This tick-box is included here only for the very rare cases when problems occur in merging CIF data from the refinement program and information obtained by Olex2. If this box is ticked, the files that are listed on this line will all be merged with the CIF information.
 
+## metacif
+The **metacif** link opens the file in which Olex2 collects all the information available about the structure. It is also possible to open this file using the **Edit CIF Info** button above, and any edits made will take precedence over all other sources of information, as mentioned earlier. If anything goes dreadfully wrong here with the construction of the final CIF file, untick this box. However, this is really not recommended, and if it ever necessary to untick the box, please send an email describing the problem to support@olex2.org so that the issue can be fixed.
 
-# Request CSD Number
-The structure will be deposited with the CCDC, and you will receive an e-mail shortly containing your CCDC number for this structure. This is the number you need to tell your chosen journal if you are ready to publish.
+## Add local/default CIF
+This features allows information from an external CIF file to be added to the CIF file being constructed for the current structure. Click **local** if the external CIF file is in the current working folder or **default** to access any of the built-in CIF files of Olex2, e.g., to add diffractometer information.
 
+# CIF Part 4
+Tick this box to merge **metacif** items even if they have been previously marked for skipping.
 
-# Publish as CSD Communications
-The structure is not intended for publication in a scientific journal, but I wish to make it available to other scientists through the CSD. I am therefore authorising the CCDC to include this data directly into the CSD. This will happen ASAP.
-
-
-# CCDC Deposition Options
-There are two 'types' of submissions to the CCDC
-
-## Request CSD Number Only
-The structure will be deposited with the CCDC, and you will receive an e-mail shortly containing your CCDC number for this structure. This is the number you need to tell your chosen journal if you are ready to publish.
-
-If any structure is not published within three years and no instructions have otherwise been received, the CCDC will attempt to contact you and the corresponding author by e-mail. If no response is obtained, the CCDC will retain the data indefinitely pending future publication. 
-
-## Publish as CSD Communications
-The structure is not intended for publication in a scientific journal, but I wish to make it available to other scientists through the CSD. **I am therefore authorising the CCDC to include this data directly into the CSD**. This will happen ASAP.
-
-Please refer to this URL[https://www.ccdc.cam.ac.uk/Community/blog/2018-06-CSDComm1/,BLOG] and these URL[https://www.ccdc.cam.ac.uk/Community/depositastructure/CSDCommunications/,INSTRUCTIONS]
+# ABS STR
+The value of the Flack parameter *x* and Hooft parameter *y* are given here for chiral structures. For a correctly determined absolute structure, both are close to 0. If they are close to 1, then it may be necessary to invert the structure with '<c>inv -f</c>'. Select from the drop-down menu the method used to determine the absolute structure (most commonly it is **Anomalous dispersion**).
