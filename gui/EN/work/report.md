@@ -1,6 +1,7 @@
 # Report Settings
 This is a collection of tools to create (a) a report about the structure in HTML format, and (b) a CIF file for the structure.
 
+
 # h3-collection-help
 # Collection
 Enter data collection information here, including **Sample ID**; **Submitter** and **Operator** names; and various dates.
@@ -30,6 +31,7 @@ Enter information about the diffraction experiment here: **Diffractometer** type
 <br>
 
 **Information entered in these boxes will take precedence over information provided in other files when the CIF file is written**. If the CIF information is edited using the **Edit CIF Info** button below, then that will take precedence over what is entered here, and those new values will be displayed in these boxes.
+
 
 # h3-absorption correction-help
 # Absorption Correction
@@ -124,8 +126,10 @@ The **metacif** link opens the file in which Olex2 collects all the information 
 ## Add local/default CIF
 This features allows information from an external CIF file to be added to the CIF file being constructed for the current structure. Click **local** if the external CIF file is in the current working folder or **default** to access any of the built-in CIF files of Olex2, e.g., to add diffractometer information.
 
+
 # CIF Part 4
-Tick this box to merge **metacif** items even if they have been previously marked for skipping.
+Tick this box to force information from **metacif** to be merged into the final CIF for the structure. Normally, items such as refinement details (and other items listed in the "skip_merge" section of the Olex2 system file *customisation.xlt*) are obtained from the refinement program, not from **metacif**, so this box is usually left unticked.
+
 
 # ABS STR
 The value of the Flack parameter *x* and Hooft parameter *y* are given here for chiral structures. For a correctly determined absolute structure, both are close to 0. If they are close to 1, then it may be necessary to invert the structure with '<c>inv -f</c>'. Select from the drop-down menu the method used to determine the absolute structure (most commonly it is **Anomalous dispersion**).
