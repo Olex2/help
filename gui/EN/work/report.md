@@ -1,5 +1,17 @@
-# Report Settings
+# Report Settings 1
 This is a collection of tools to create (a) a report about the structure in HTML format, and (b) a CIF file for the structure.
+<br>
+<br>
+
+Choose the report name (the default name is the same as the name of the structure) and select from the drop-down menu the image to be included in the report. The drop-down menu shows all image files in the working folder for the structure. Once the other report settings below have been selected, click **HTML Report** to create a report as a .HTML file in the working folder for the structure.
+
+
+# Report Settings 2
+Select a style and the format for the header and footer for the report.
+
+
+# Report Settings 3
+Select a style for the atom labels to be used in the report.
 
 
 # h3-collection-help
