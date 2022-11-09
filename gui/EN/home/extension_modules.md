@@ -1,25 +1,22 @@
 # Extension Modules
+The **Extension Modules** either provide functionality or make frequently performed tasks easier to do. We are currently working on a number of these modules and will make them available for testing as they are ready. To test and use them, it is necessary to agree to the following conditions:
 
-The **Extension Modules** either provide functionality or make commonly used tasks easier to use. We are currently working on a number of these modules and will make them available for testing as they are ready. You are welcome to test and use them, provided you agree to the following conditions:
-
-  1. We take no responsibility for any modules that are in the testing phase. Please use your own discretion and check everything carefully!
-  2. Please tell us about bugs and suggest improvements.
-  3. Testing modules will be available for 30 days. After this period, you may get a new version of the module two more times (30 days each). After this period, you must contact us to continue using/testing the modules.
+  1. We take no responsibility for any modules that are in the testing phase. Please use discretion and check everything carefully!
+  2. Please tell us about bugs and suggest improvements by sending an email to **support-at-olex2.org**.
+  3. Testing modules will be initially made available for 30 days. After this period, it is possible to renew the module two more times for 30 days at a time. After this period, contact us at **support-at-olex2.org** to continue using/testing the modules.
   4. Some of these modules will not be available free of charge after the end of the testing phase.
 
 ## Email
-You must enter a **valid e-mail address**, select the module you wish to test and then press the button below. An e-mail will be sent to you and you need to **activate it from the link in the e-mail**. After activation, go back to this tool here and select the requested module again from the drop-down menu. This will install the module, which will be available **after restarting Olex2**.
+Enter a **valid** email address, select the module to be installed from the drop-down menu, and press the **Install** button. An email containing a link to activate the module will be sent to the email address entered here. **Click the link to activate the module.** After activation, reopen this tool tab and select the requested module again from the drop-down menu. This will install the module, which will be available **after restarting Olex2**.
 
 ## Reference
-This can be any text for your records and that will help you identify the machine where the module has been installed to. Typically this is something like *My Work Computer*.
+Enter any text here to maintain a record of the machine on which the module has been installed, e.g., *My Work Computer*.
 
 ## Modules
-
 ### List of Extension Modules
-All extension modules that are available for this version of Olex2 (version number and also alpha, beta or release) will be listed here. Select the module you are interested in and the 'Please Choose' button will change to 'Install'. Press this button to start the installation.
+All extension modules that are available for this version of Olex2 (version number and also alpha, beta or release) are found here. Once a module is selected from the drop-down menu, the **Please Choose** button will change to **Install**. Press this button to start the installation.
 
-Note: You must be ~online~ to see the list of available modules! The list will remain empty if you are offline!
+Note: The list of available modules will only be visible when the computer is ~online~ (connected to the internet)! The list will remain empty when offline!
 
 ## Offline Installation
-
-If it is impossible to perform an online installation of the extension modules, then you may also contact us directly at "enquiries@olexsys.org". We will then send you a **.zip** file containing the requested module. Save this file somewhere on your disk and then point to this location after pressing the "Install Offline" button.
+If it is impossible to perform an online installation of the extension modules, please contact us directly at **enquiries@olexsys.org** to obtain a .zip file containing the requested module. Save this file somewhere on the computer's hard disk and then point to this location after pressing the "Install Offline" button.
