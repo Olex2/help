@@ -54,4 +54,4 @@ Searchable and structured documentation is available from the OlexSys website.
 We have also provided a PDF manual, which is shipped with this version of Olex2.
 
 ## Ilia Guzei's Manual
-Besides Ilia Guzei's excellent Olex2 user guide which we have linked in the GUI, one can also try an internet search to look for the extensive amount of third-party help available online for Olex2.
+Besides Ilia Guzei's excellent Olex2 user guide which we have linked in the GUI, there is extensive third-party help available online for Olex2 to be found with an internet search.
