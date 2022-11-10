@@ -3,7 +3,7 @@ This is a collection of tools to create (a) a report about the structure in HTML
 <br>
 <br>
 
-Choose the report name (the default name is the same as the name of the structure) and select from the drop-down menu the image to be included in the report. The drop-down menu shows all image files in the working folder for the structure. Once the other report settings below have been selected, click **HTML Report** to create a report as a .HTML file in the working folder for the structure.
+Choose the report name (the default name is the same as the name of the current file open in Olex2) and select from the drop-down menu the image to be included in the report. The drop-down menu shows all image files in the working folder for the structure. Once the other report settings below have been selected, click **HTML Report** to create a report as a .HTML file in the working folder for the structure.
 
 
 # Report Settings 2
@@ -11,7 +11,7 @@ Select a style and the format for the header and footer for the report.
 
 
 # Report Settings 3
-Select a style for the atom labels to be used in the report.
+Select a style for displaying numbers and suffixes in atom labels in the report.
 
 
 # h3-collection-help
@@ -52,7 +52,7 @@ Information about the type of absorption correction employed in the experiment (
 
 # h3-publication-help
 # Publication
-Enter the following details related to publications here, to be included in the CIF file: **CCDC number** for the structure (if known); **Contact author** and any additional authors on the article (added from the user database); **Journal** name; and **Journal style** (general or Acta Cryst.). Click the **Contact Letter** link to type an entry for the _publ_contact_letter field of the CIF.
+Enter the following details related to publications here, to be included in the CIF file: **CCDC number** for the structure (if known); **Contact author** and any additional authors on the article (added from the user database); **Journal** name; and **Journal style** (general or Acta Cryst.). Click the **Contact Letter** link to type an entry for the *\_publ\_contact\_letter* field of the CIF.
 <br>
 <br>
 
@@ -64,7 +64,7 @@ Olex2 automatically creates literature citations for all software, including plu
 
 
 # Reference
-Further details about the journal in which the structure is published may be entered here: the **CSD Refcode** for the structure (if known); list of **Authors** on the article; and **Journal** name, **Volume** number, **Page** numbers, and publication **Year**. A **Comment** on the publication may be entered in the final box in this panel.
+Further details about the journal in which the structure is published may be entered here: the **CSD Refcode** for the structure (if known); list of **Authors** on the article; **Journal** name; **Volume** number of journal; article **Page** numbers; and publication **Year**. A **Comment** on the publication may be entered in the final box in this panel.
 <br>
 <br>
 
@@ -81,15 +81,19 @@ Olex2 searches the working folder for sources of metadata such as diffractometer
 
 
 # Metadata Conflicts
-Olex2 automatically extracts relevant information from metadata source files for inclusion in the final CIF, but the process is not always straightforward because the sources may contain conflicting information. In this case, Olex2 prints an error message and the user has to resolve the conflicts manually, i.e., choose the correct information source for the CIF data. Collapse the **Report** tab and re-expand it, then resolve the conflicts in the window that opens. Olex2 then prints a message indicating no conflicts remain. The **Show ALL** link lists all the sources of CIF data and the **Reset Previously Resolved Conflicts** link removes any manually entered information (and any previous conflicts will reoccur).
+Olex2 automatically extracts relevant information from metadata source files for inclusion in the final CIF, but the process is not always straightforward because the sources may contain conflicting information. In this case, Olex2 prints an error message and the user has to resolve the conflicts manually, i.e., choose the correct information source for the CIF data.
+<br>
+<br>
+
+To remove the **<font color="red">There are unresolved conflicts</font>** error message, collapse the **Report** tab and re-expand it, then resolve the conflicts in the window that opens. Click on the **Source Files** tool tab to open and close it. Olex2 will now display a message confirming that all conflicts have been resolved. The **Show ALL** link lists all the sources of CIF data and the **Reset Previously Resolved Conflicts** link removes any manually entered information (causing any previous conflicts to reoccur).
 
 
 # CIF-Part-1-help
 # CIF Part 1
-This section deals with the creation and modification of the CIF file. The CIF contains everything known about the structure in a format defined by the IUCr. A complete and correct CIF file is vital for the successful publication of a structure in any peer-reviewed journal. Creation of the CIF is normally handled automatically by Olex2, but these tools are provided in case the CIF needs to be modified.
+This section deals with the creation and modification of the CIF file, which contains everything known about the structure in a format defined by the IUCr. A complete and correct CIF file is vital for the successful publication of a structure in any peer-reviewed journal. Creation of the CIF is normally handled automatically by Olex2, but these tools are provided in case the CIF needs to be modified.
 
 ## Edit CIF Info
-Pressing this button will open a file containing all the information that Olex2 will be adding to the CIF file when it is created. Information entered in the above tool tabs (**Collection**, **Crystal**, **Diffraction**, etc.) will appear here. It is possible to modify the contents of this file, and even add or remove entries. Edits made here will take precedence over any other previously entered values, and the values entered using **Edit CIF Info** will appear when the above tool tabs are reopened.
+Pressing this button will open a file containing all the information that Olex2 will add to the CIF file when it is created. Information entered in the above tool tabs (**Collection**, **Crystal**, **Diffraction**, etc.) will appear here. It is possible to modify the contents of this file, and even add or remove entries. Edits made here will take precedence over any other previously entered values, and the values entered using **Edit CIF Info** will appear when the above tool tabs are reopened.
 
 ## Merge CIF
 Clicking **Merge CIF** will take the metadata from the source files, the tool tabs above, and information entered using the **Edit CIF Info** button, and merge them into the CIF created during the last cycle of refinement. This final CIF will then be opened in the default text editor.
@@ -118,7 +122,7 @@ Note: To expedite processing, it is important that *all* the required data are p
 If any structure is not published within three years and no other instructions have been received, the CCDC will attempt to contact the depositing author and the corresponding author by e-mail. If no response is obtained, the CCDC will retain the data indefinitely pending future publication. 
 
 ### Publish as CSD Communication
-Sometimes, a structure is not intended for publication in a scientific journal, but is deposited with the CSD to make it available to other scientists. In such cases, it is possible to publish the structure as a "CSD Communication" by authorising the CCDC to include it directly in the CSD. This occurs as soon as the structure is processed by the CCDC.
+Sometimes, a structure is not intended for publication in a scientific journal, but is deposited with the CSD to make it available to other scientists. In such cases, it is possible to publish the structure as a "CSD Communication" by authorising the CCDC to include it directly in the CSD, which occurs as soon as the structure is processed by the CCDC.
 <br>
 <br>
 
@@ -130,13 +134,13 @@ Please refer to this URL[https://www.ccdc.cam.ac.uk/Community/blog/2018-06-CSDCo
 One of the really strong points of Olex2 is that it will keep CIF information synchronised throughout the entire solution and refinement process. This is quite a tricky thing to do, but if it all works the way it should, it will never be necessary to edit a CIF by hand again.
 
 ## Merge CIF 1
-This tick-box is included here only for the very rare cases when problems occur in merging CIF data from the refinement program and information obtained by Olex2. If this box is ticked, the files that are listed on this line will all be merged with the CIF information.
+This tick-box is included here only for the very rare cases when problems occur in merging CIF data from the refinement program and information obtained by Olex2. If this box is ticked, as is normally the case, the files that are listed on this line will all be merged with the CIF information. If anything goes dreadfully wrong here with the construction of the final CIF file, untick this box. However, this is really not recommended, and if it ever necessary to untick the box, please send an email describing the problem to **support@olex2.org** so that the issue can be fixed.
 
 ## metacif
-The **metacif** link opens the file in which Olex2 collects all the information available about the structure. It is also possible to open this file using the **Edit CIF Info** button above, and any edits made will take precedence over all other sources of information, as mentioned earlier. If anything goes dreadfully wrong here with the construction of the final CIF file, untick this box. However, this is really not recommended, and if it ever necessary to untick the box, please send an email describing the problem to **support@olex2.org** so that the issue can be fixed.
+The **metacif** link opens the file in which Olex2 collects all the information available about the structure. It is also possible to open this file using the **Edit CIF Info** button above, and any edits made will take precedence over all other sources of information, as mentioned earlier.
 
 ## Add local/default CIF
-This features allows information from an external CIF file to be added to the CIF file being constructed for the current structure. Click **local** if the external CIF file is in the current working folder or **default** to access any of the built-in CIF files of Olex2, e.g., to add diffractometer information.
+This features allows information from an external CIF file to be added to the CIF file being constructed for the current structure. Click **local** if the external CIF file is in the current working folder or **default** to access any of the built-in CIF files of Olex2, e.g., to add information for a specific diffractometer.
 
 
 # CIF Part 4
@@ -144,4 +148,4 @@ Tick this box to force information from **metacif** to be merged into the final 
 
 
 # ABS STR
-The value of the Flack parameter *x* and Hooft parameter *y* are given here for chiral structures. For a correctly determined absolute structure, both are close to 0. If they are close to 1, then it may be necessary to invert the structure with '<c>inv -f</c>'. Select from the drop-down menu the method used to determine the absolute structure (most commonly it is **Anomalous dispersion**).
+The value of the Flack parameter *x* and Hooft parameter *y* are given here for chiral structures. For a correctly determined absolute structure, both are close to 0. If they are close to 1, it may be necessary to invert the structure with '<c>inv -f</c>'. Select from the drop-down menu the method used to determine the absolute structure (most commonly **Anomalous dispersion**).
