@@ -60,8 +60,8 @@ This aligns the view of the structure perpendicular to its mean square plane. Ty
 ### Locking Motions
 Tick these boxes to prevent zooming, rotating, or translating the model on the screen. Prevent all motions by ticking the **Lock all** box.
 
-# Add or Remove Fog
-An artificial 'fog' can be applied to the display by clicking the **Add Fog** button. This may be helpful, for example, to emphasise the 3D nature of the structure or to highlight its front-facing portion. The **Front** and **Back** sliders govern the thickness of the 'fog'. Click **Clear Fog** to remove the fog from the display.
+# Add Fog
+An artificial "fog" can be applied to the display by clicking the **Add Fog** button. This may be helpful, for example, to emphasise the 3D nature of the structure or to highlight its front-facing portion. The **Front** and **Back** sliders govern the thickness of the "fog". Click **Clear Fog** to remove the fog from the display.
 
 
 
