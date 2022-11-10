@@ -9,27 +9,27 @@ A collection of useful tools
 
 
 # Labels
-It is possible to customise the labels in the model display. If a particular property is not applicable to any atom, there will be no label, e.g., if 'labels -o' (see below) is typed and all atoms have occupancy 1, no atoms will be labelled.
+It is possible to customise the labels in the model display. If a particular property is not applicable to any atom, there will be no label, e.g., if '<c>labels -o</c>' (see below) is typed and all atoms have occupancy 1, no atoms will be labelled.
 
-|`help labels`| To see all options for the 'labels' command. |
+| `help labels` | To see all options for the '<c>labels</c>' command. |
 
 ## Labels OFF/ON
-This is to display or hide atom or Q-peak labels. It will switch other types of labelling off, but selecting it again will display atom name labels. [F3] does the same thing.
+This is to display or hide atom or Q-peak labels. It will switch other types of labelling off, but selecting it again will display atom name labels. Pressing '<c>F3</c>' does the same thing.
 
 ## Atom Names
-|`labels -l`| All atom names of **non-hydrogen atoms** will be displayed next to the atoms. |
+| `labels -l` | All atom names of **non-hydrogen atoms** will be displayed next to the atoms. |
 
 ## Crystallographic Occupancy
-|`labels -o`| This displays the crystallographic occupancy of any atoms which are not 100% occupied i.e. their occupancy is not 1. |
+| `labels -o` | This displays the crystallographic occupancy of any atoms which are not 100% occupied i.e. their occupancy is not 1. |
 
 ## Chemical Occupancy
-|`labels -co`| Displays the 'chemical occupancy' on the labels. Basically, the occupancy values for atoms that are located on symmetry elements are not shown. |
+| `labels -co` | Displays the 'chemical occupancy' on the labels. Basically, the occupancy values for atoms that are located on symmetry elements are not shown. |
 
 ## Parts
-|`labels -p`| Displays PART numbers for any atoms not in PART 0. |
+| `labels -p` | Displays PART numbers for any atoms not in PART 0. |
 
 ## Link Code
-|`labels -lo`| If atoms are linked, the link code will be shown (FVAR 21/-21 in ShelXL language). |
+| `labels -lo` | If atoms are linked, the link code will be shown (FVAR 21/-21 in ShelXL language). |
 
 ## H Atom Labels
 | `labels -h -l` | This will include the hydrogen atom labels along with the atom name and Q-peak labels. |
@@ -66,29 +66,29 @@ This is a collection of three basic tools needed for model building.
 Each element currently in the formula is represented by a small button.
 
 ### Using the GUI
-|$spy.MakeElementButtonsFromFormula('mode')|All atoms present in the model are shown. The '...' button opens the Periodic Table if more elements need to be added.|
+| $spy.MakeElementButtonsFromFormula('mode') | All atoms present in the model are shown. The '...' button opens the Periodic Table if more elements need to be added. |
 
 Clicking on an element button launches the atom type assignment mode for this particular element. Any atoms clicked subsequently become that element. Pressing the 'ESC' key exits the mode. Alternatively, selecting atoms first and then clicking an element button turns them all into that element. The buttons will be red or blue if there is a mismatch between the number of atoms of that element in your model and those in the chemical formula. They turn green if the numbers agree.
 
 ### Using the Command Line
 It is usually much more efficient to assign elements using the keyboard. Here are three frequently used commands:
 
-|`name sel C` | Turns all selected atoms to carbons. |
-|`mode name C` | Enter atom naming mode; once in the mode, all atoms clicked will turn to carbons. |
-|`name \$Q C` | Turns all Q peaks to carbons. |
+| `name sel C` | Turns all selected atoms to carbons. |
+| `mode name C` | Enter atom naming mode; once in the mode, all atoms clicked will turn to carbons. |
+| `name \$Q C` | Turns all Q peaks to carbons. |
 
 ## Geometrically Place Hydrogen Atoms
 Clicking this button will cause Olex2 to place hydrogen atoms geometrically on any selected atom(s). If no atoms are selected, hydrogens will be placed on all possible atoms, to complete the structure.
 
-|`hadd`| Adds hydrogen atoms to selected atoms (or to all atoms, if none are selected). |
-|`hadd 137`| Will use specifed AFIX **if possible**. (137 adds three hydrogen atoms to a methyl group, for example.) |
-|`hadd -137`| If the connectivity does not allow the addition of the specified AFIX atoms, it is still possible to place them in this way. Two atoms must be selected to define a vector, with the atom to which hydrogen atoms are to be added selected *first*. |
+| `hadd` | Adds hydrogen atoms to selected atoms (or to all atoms, if none are selected). |
+| `hadd 137` | Will use specifed AFIX **if possible**. (137 adds three hydrogen atoms to a methyl group, for example.) |
+| `hadd -137` | If the connectivity does not allow the addition of the specified AFIX atoms, it is still possible to place them in this way. Two atoms must be selected to define a vector, with the atom to which hydrogen atoms are to be added selected *first*. |
 
 ## Toggle Isotropic/Anisotropic
 These buttons make the selected atoms either isotropic (sphere button) or anisotropic (ellipsoid button). If no atoms are selected, this change will be applied to all atoms.
 
-|`isot`| All selected atoms will be refined **isotropically**. |
-|`anis`| All selected atoms will be refined **anisotropically** (ellipsoids will result). |
+| `isot` | All selected atoms will be refined **isotropically**. |
+| `anis` | All selected atoms will be refined **anisotropically** (ellipsoids will result). |
 
 Note: If the tickbox is ticked, then refinement will occur automatically after clicking either **isot**, **anis** or **hadd**.
 
@@ -97,24 +97,24 @@ Note: If the tickbox is ticked, then refinement will occur automatically after c
 This is a further selection of tools useful for model building.
 
 ## Change type and display of atoms
-|`name \$Q C`| $spy.MakeHoverButton('toolbar-QC','name \$Q C') | This tool will change all displayed electron density peaks (Q peaks) to carbon atoms, regardless of the peak height. |
+| `name \$Q C` | $spy.MakeHoverButton('toolbar-QC','name \$Q C') | This tool will change all displayed electron density peaks (Q peaks) to carbon atoms, regardless of the peak height. |
 
-|`name \$Q H`| $spy.MakeHoverButton('toolbar-QH','name \$Q H') | All visible Q peaks will be changed to hydrogens. |
+| `name \$Q H` | $spy.MakeHoverButton('toolbar-QH','name \$Q H') | All visible Q peaks will be changed to hydrogens. |
 
-|`clean`| $spy.MakeHoverButton('toolbar-tidy','clean') | Tidy the Structure: small and geometrically impossible peaks will be removed; all remaining peaks will be changed to carbons. |
+| `clean` | $spy.MakeHoverButton('toolbar-tidy','clean') | Tidy the structure: small and geometrically impossible peaks will be removed; all remaining peaks will be changed to carbons. |
 
-|`kill \$H`| $spy.MakeHoverButton('toolbar-killH','kill \$H')  | Deletes all selected hydrogen atoms from the structure. If no hydrogen atoms are selected, all will be deleted. Undo with **CTRL+Z**. |
+| `kill \$H` | $spy.MakeHoverButton('toolbar-killH','kill \$H')  | Deletes all selected hydrogen atoms from the structure. If no hydrogen atoms are selected, all will be deleted. Undo with **CTRL+Z**. |
 
-|`showQ`| $spy.MakeHoverButton('toolbar-Q','showQ') | **CTRL+Q**. Toggle among three states: show electron density peaks, show them with bonds to nearby atoms, or hide them. |
+| `showQ` | $spy.MakeHoverButton('toolbar-Q','showQ') | **CTRL+Q**. Toggle among three states: show electron density peaks, show them with bonds to nearby atoms, or hide them. |
 
-|`showH`| $spy.MakeHoverButton('toolbar-H','showH') | **CTRL+H**. Toggle among three states: show H atoms, show them with H-bonds or hide them. Hydrogen atoms remain in the model, regardless of their display. |
+| `showH` | $spy.MakeHoverButton('toolbar-H','showH') | **CTRL+H**. Toggle among three states: show H atoms, show them with H-bonds or hide them. Hydrogen atoms remain in the model, regardless of their display. |
 
-|`compaq>>compaq-a>>center`| $spy.MakeHoverButton('toolbar-center','compaq>>compaq -a>>center') | Fragments will be assembled and the structure will be centered on the screen. |
+| `compaq>>compaq-a>>center` | $spy.MakeHoverButton('toolbar-center','compaq>>compaq -a>>center') | Fragments will be assembled and the structure will be centered on the screen. |
 
 ## Specifying the formula of the structure
-|*Z*'| Set the value of *Z*' here. (*Z*' is the number of formula units in the asymmetric unit.) For a molecular structure, *Z*' is typically 1. If there are two independent molecules on the screen, *Z*' must be set to 2. If the molecule sits on a symmetry element and has to be grown to be displayed in full, *Z*' will smaller than 1 (often 0.5). |
+| *Z*' | Set the value of *Z*' here. (*Z*' is the number of formula units in the asymmetric unit.) For a molecular structure, *Z*' is typically 1. If there are two independent molecules on the screen, *Z*' must be set to 2. If the molecule sits on a symmetry element and has to be grown to be displayed in full, *Z*' will smaller than 1 (often 0.5). |
 
-|`fixunit`| $spy.MakeHoverButton('toolbar-OK','fixunit') | Adjusts the sum formula to what is currently present in the model, taking the value of *Z*' into account. |
+| `fixunit` | $spy.MakeHoverButton('toolbar-OK','fixunit') | Adjusts the sum formula to what is currently present in the model, taking the value of *Z*' into account. |
 
 
 # Electron Density Quick Maps
@@ -214,12 +214,12 @@ This tool allows the selection of atoms according to their Uiso values.
 ## Slide to the RIGHT
 Starting from the middle of the scale, move the Uiso slider to the **right** to select atoms whose Uiso value is LARGER than the value indicated next to the slider.
 
-|`sel atoms where xatom.uiso < 0.02`| Selects all atoms whose Uiso value is less than 0.02. |
+| `sel atoms where xatom.uiso < 0.02` | Selects all atoms whose Uiso value is less than 0.02. |
 
 ## Slide to the LEFT
 Starting from the middle of the scale, move the Uiso slider to the **left** to select atoms whose Uiso value is SMALLER than the value indicated next to the slider.
 
-|`sel atoms where xatom.uiso > 0.04`| Selects all atoms whose Uiso value is greater than 0.04. |
+| `sel atoms where xatom.uiso > 0.04` | Selects all atoms whose Uiso value is greater than 0.04. |
 
 
 # Growing
@@ -232,54 +232,54 @@ Olex2 shows the asymmetric unit by default. This tool tab contains very powerful
 
 ### Grow All
 
-|`grow`| Generates all 'missing' connected symmetry-equivalent atoms. |
+| `grow` | Generates all 'missing' connected symmetry-equivalent atoms. |
 
 ### Shells
-|`grow -s`| This adds atoms in concentric shells outward from the currently displayed image. |
+| `grow -s` | This adds atoms in concentric shells outward from the currently displayed image. |
 
 ### Complete
-|`grow -w`| Generates all missing symmetry-equivalent atoms of an already grown structure, whether bound to the main fragment or not. Thus, this command will display symmetry-equivalent solvent molecules and counter-ions not generated by a plain **grow** command. |
+| `grow -w` | Generates all missing symmetry-equivalent atoms of an already grown structure, whether bound to the main fragment or not. Thus, this command will display symmetry-equivalent solvent molecules and counter-ions not generated by a plain **grow** command. |
 
 ### Asymmetric Unit
-|`fuse`| Removes all symmetry-equivalent atoms and displays the asymmetric unit. |
+| `fuse` | Removes all symmetry-equivalent atoms and displays the asymmetric unit. |
 
 ### Complete shown growing bonds
-|`grow -b`| Shows growable 'bonds' in a growing mode (see **Mode Grow** below). Click on any of these bonds to grow the structure. |
+| `grow -b` | Shows growable 'bonds' in a growing mode (see **Mode Grow** below). Click on any of these bonds to grow the structure. |
 
 ## Mode Grow
-|`mode grow`| Similar to **grow**, but now the **grow** command will be executed only when an object is clicked. Upon entering a growing mode, growable 'bonds' will sprout from atoms satisfying the chosen growing conditions. |
+| `mode grow` | Similar to **grow**, but now the **grow** command will be executed only when an object is clicked. Upon entering a growing mode, growable 'bonds' will sprout from atoms satisfying the chosen growing conditions. |
 
 There are various modifiers for this command:
 
 ### Short Contacts
-|`mode grow -s`| Shows growable 'bonds' to atoms involved in 'short interactions' (e.g., hydrogen bonds) with the currently displayed structure. |
+| `mode grow -s` | Shows growable 'bonds' to atoms involved in 'short interactions' (e.g., hydrogen bonds) with the currently displayed structure. |
 
 ### Selection
-|`mode grow -r`| Shows growable 'bonds' to other occurrences of the currently selected atoms. |
+| `mode grow -r` | Shows growable 'bonds' to other occurrences of the currently selected atoms. |
 
 ### Van der Waals Radii
-|`mode grow -v 2.0`| Shows growable 'bonds' to other occurrences of the currently selected atoms that are at most 2.0 &Aring; away from the selected atom. |
+| `mode grow -v 2.0` | Shows growable 'bonds' to other occurrences of the currently selected atoms that are at most 2.0 &Aring; away from the selected atom. |
 
 ### Move
-|`mode grow -a`| When a growable 'bond' is clicked, the symmetry-equivalent atom is moved to the new position. This is really useful when trying to assemble a meaningful asymmetric unit for extended structures (polymers). |
+| `mode grow -a` | When a growable 'bond' is clicked, the symmetry-equivalent atom is moved to the new position. This is really useful when trying to assemble a meaningful asymmetric unit for extended structures (polymers). |
 
 ### Shells
-|`mode grow shells`| Shows growable 'bonds' that can be clicked to grow the structure outward in concentric shells. |
+| `mode grow shells` | Shows growable 'bonds' that can be clicked to grow the structure outward in concentric shells. |
 
 ## Assemble
 Strictly speaking, this tool does not belong to the **grow** family of tools, but it is frequently used together with the growing tools. It is used to rearrange components of the asymmetric unit for a more compact or chemically sensible display of the model.
 
 ### Broken Fragments
-|`compaq -a`| Sometimes, parts of a model may become 'broken' - parts that should be bonded are shown as separate fragments. This tool will bring them back together. |
+| `compaq -a` | Sometimes, parts of a model may become 'broken' - parts that should be bonded are shown as separate fragments. This tool will bring them back together. |
 
 ### Atom-to-Atom
-|`compaq -c`| Similar to the 'Broken Fragments' tool, but using a different reassembly algorithm. |
+| `compaq -c` | Similar to the 'Broken Fragments' tool, but using a different reassembly algorithm. |
 
 ### Metal Last
-|`compaq -m`| In this tool, metal ions are first taken out of the reassembly process (which is very useful when trying to assemble a ligand!), after which they are placed at the shortest possible distance to the other atoms in the structure. |
+| `compaq -m` | In this tool, metal ions are first taken out of the reassembly process (which is very useful when trying to assemble a ligand!), after which they are placed at the shortest possible distance to the other atoms in the structure. |
 
 ### Peaks
-|`compaq -q`| This moves all electron density peaks as close to existing atoms as possible. |
+| `compaq -q` | This moves all electron density peaks as close to existing atoms as possible. |
 
 
 # Finishing
@@ -294,14 +294,7 @@ The **Sort with Current Settings** button sorts the atoms in the model according
 The **Selected** button adds labels to selected atoms and bonds in the model. If nothing is selected, all atoms and bonds will be labelled. The **non-H** button adds labels to all non-hydrogen atoms, and the **No Labels** button removes all labels from the model. Clicking the **Go** button will create an image of the labelled model in the current working folder. To edit all image file options, open the **Images** tool tab by clicking the pencil icon next to the **Go** button.
 
 
-
-
-
-
-
-
-
-
+[comment]: < The text below is legacy help documentation that doesn't seem to be used anywhere. >
 
 
 # shift-move-target
