@@ -15,9 +15,8 @@ This feature is taken straight from the syntax of the crystallography graphics p
 
 
 # Toolbar Hydrogen_3
-
 ## Add Hydrogen
-Clicking this link will place hydrogen atoms geometrically throughout the structure and constrain them according to their respective environments (sp<sup>2</sup>, sp<sup>3</sup>, etc.). To refine any hydrogen atom positions freely, select the atom(s) to which the hydrogens are bonded, type '<c>AFIX 0</c>', then refine again.
+Clicking this link will place hydrogen atoms geometrically throughout the structure and constrain them according to their respective environments (sp<sup>2</sup>, sp<sup>3</sup>, etc.). To refine any hydrogen atom positions freely, select the atom(s) to which the hydrogens are bonded, type '<c> AFIX 0</c>', then refine again.
 
 ## H Labels
 Will display the names of all atoms, including hydrogen atoms.
@@ -30,19 +29,19 @@ Displays the names of all non-hydrogen atoms.
 | `labels -l` | Show all non-hydrogen atom names. |
 
 ## Show AFIX
-Displays the AFIX code (if any) on each hydrogen atom in the structure.
+Displays the *AFIX* code (if any) on each hydrogen atom in the structure.
 
-| `labels -h -a` | This shows the AFIX constraint code for each hydrogen in the structure. |
+| `labels -h -a` | This shows the *AFIX* constraint code for each hydrogen in the structure. |
 
 ## FREE ALL H
-Removes all AFIX constraints from all hydrogen atoms, and also frees their Uiso values, so that they can be freely refined.
+Removes all *AFIX* constraints from all hydrogen atoms, and also frees their Uiso values, so that they can be freely refined.
 
 ## Hide Q
 Hides all electron density peaks (Q peaks) on the screen.
 
 
 # HTAB Slider
-The '<c>HTAB</c>' instruction provides an analysis of hydrogen bonding in the structure. It can only be used when the asymmetric unit alone is on the screen, but hydrogen bonds to symmetry-equivalent atoms will be shown. The list of hydrogen bonds matching the criteria set by the sliders below is printed in the graphics window.
+The '<c>htab</c>' instruction provides an analysis of hydrogen bonding in the structure. It can only be used when the asymmetric unit alone is on the screen, but hydrogen bonds to symmetry-equivalent atoms will be shown. The list of hydrogen bonds matching the criteria set by the sliders below is printed in the graphics window.
 
 ## Distance
 This slider specifies the maximum D-A distance (in &Aring;) for a D-H&middot;&middot;&middot;A interaction in the structure to be counted as a hydrogen bond.
