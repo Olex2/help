@@ -16,9 +16,13 @@ Hold down the '<c>Shift</c>' key and drag a label with the left mouse button to 
 ## Label Colour and Label Box
 To alter the colour and appearance of atomic labels, click the **Choose the label colour** link to open a menu for customising a label's colour properties. Click the **Label Box** link to customise the properties of the bounding box enclosing each atomic label.
 
+
+[comment]: < The help text given below for "Align and Lock" is the same as in quick_drawing_styles.md. >
+
+
 ## Align and Lock
 ### View and Plane
-Clicking on one of these links will orient and centre the structure within the display window, which can be useful before creating images. **View** centres and orients a structure on the screen using an algorithm involving the calculation of the structure's principal axes of inertia. **Plane** calculates a mean plane through the entire structure, orients the structure on the screen perpendicular to this plane, and centres the structure on the screen. Neither of these methods changes the zoom level.
+Clicking on one of these links will orient and centre the structure within the display window, which can be useful before creating images. **View** centres and orients a structure on the screen using an algorithm involving the calculation of the structure's principal axes of inertia. **Plane** calculates a mean plane through the entire structure, orients the structure on the screen perpendicular to this plane, and centres the structure on the screen. Neither of these methods changes the zoom level. Typing '<c>mpln -r<c>' displays the mean plane and prints its equation in the output window. To delete the plane, click on it and press '<c>Delete</c>'.
 <br>
 <br>
 
