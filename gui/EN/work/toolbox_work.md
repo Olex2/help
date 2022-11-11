@@ -144,7 +144,7 @@ Will display the observed electron density map.
 Will display a deformation electron density map (deviations from spherical atom model).
 
 ### PDF
-Will display a PDF map.
+Will display a probability density function map for evaluating the quality of an anharmonic refinement.
 
 ## Show Map
 Turns the display of the currently selected map on.
