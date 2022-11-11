@@ -166,8 +166,8 @@ Right-click on either the cylinders or lines, then choose **Draw Styles**. For t
 Olex2 supports a database of people and their institutions. Set the location of this sqlite database here (a restart is required). The database can also be managed from here.
 
 
-# Network Operations
-If this box is not ticked, then Olex2 will not communicate with the internet at all, except for checking for updates on startup.
+# Enable Network
+If this box is not ticked, Olex2 will not communicate with the internet at all, except for checking for updates on startup.
 
 
 # Debug Mode
