@@ -11,52 +11,55 @@ A collection of useful tools
 # Labels
 It is possible to customise the labels in the model display. If a particular property is not applicable to any atom, there will be no label, e.g., if '<c>labels -o</c>' (see below) is typed and all atoms have occupancy 1, no atoms will be labelled.
 
-| `help labels` | To see all options for the '<c>labels</c>' command. |
+| `help labels` | Print all options for the '<c>labels</c>' command. |
 
-## Labels OFF/ON
-This is to display or hide atom or Q-peak labels. It will switch other types of labelling off, but selecting it again will display atom name labels. Pressing '<c>F3</c>' does the same thing.
+### Atom Names
+| `labels -l` | All atom names of *non-hydrogen atoms* will be displayed next to the atoms. |
 
-## Atom Names
-| `labels -l` | All atom names of **non-hydrogen atoms** will be displayed next to the atoms. |
+### Crystallographic Occupancy
+| `labels -o` | This displays the crystallographic occupancy of any atoms which are not 100% occupied, i.e., whose occupancy is not 1. |
 
-## Crystallographic Occupancy
-| `labels -o` | This displays the crystallographic occupancy of any atoms which are not 100% occupied i.e. their occupancy is not 1. |
+### Chemical Occupancy
+| `labels -co` | Labels atoms with their "chemical occupancy" if less than 1. Basically the same as **Crystallographic Occupancy** above, but the occupancy values for atoms located on symmetry elements are not shown. |
 
-## Chemical Occupancy
-| `labels -co` | Displays the 'chemical occupancy' on the labels. Basically, the occupancy values for atoms that are located on symmetry elements are not shown. |
-
-## Parts
+### Parts
 | `labels -p` | Displays PART numbers for any atoms not in PART 0. |
 
-## Link Code
-| `labels -lo` | If atoms are linked, the link code will be shown (FVAR 21/-21 in ShelXL language). |
+### Link Code
+| `labels -lo` | If there are atoms in the structure whose occupancies are linked, their link codes will be shown (FVAR 21/-21 in ShelXL language). |
 
-## H Atom Labels
-| `labels -h -l` | This will include the hydrogen atom labels along with the atom name and Q-peak labels. |
+### Fixed Parameters
+| `labels -f` | Labels all atoms with fixed occupancy, regardless of the actual value of the occupancy. |
 
-## Fixed Parameters
-| `labels -f` | Labels atoms with fixed occupancy. |
+### Variables
+| `labels -v` | Displays any atoms whose occupancy is linked to any variable. |
 
-## Variables
-| `labels -v` | Displays any atoms where the occupancy is linked to any variable. |
-
-## AFIX Commands
+### AFIX Commands
 | `labels -a -h` | This is useful to check the AFIX commands that are being applied to the structure. |
 
-## Q-Peak Intensities
-| `labels -qi` | Relative intensities of the Q-peaks will be displayed on the structure. |
+### Q-Peak Intensities
+| `labels -qi` | Relative intensities of Q peaks will be displayed on the structure. |
 
-## Ueq
+### Ueq
 | `labels -u` | Labels atoms with their Ueq values. |
 
-## Label + residue rumber
+### Label + residue rumber
 | `labels -l -rn` | Displays both atom label and residue number. |
 
-## Residue Numbers
-| `labels -rn` | Show the residue number to which an atom belongs. |
+### Residue numbers
+| `labels -rn` | Shows the residue number to which an atom belongs. |
 
-## Residue Class
-| `labels -rc` | Show the residue class to which an atom belongs. |
+### Residue class
+| `labels -rc` | Shows the residue class to which an atom belongs. |
+
+## Label H
+Ticking this box will display labels on hydrogen atoms (unlabeled by default) *after* a selection is made from the **Labels** drop-down menu.
+
+### H Atom Labels
+| `labels -h -l` | This will label all atoms, including hydrogen atoms, and Q peaks with their atom name labels. |
+
+## Hide
+Press this button to hide atom or Q-peak labels. It will switch other types of labelling (e.g., occupancy, AFIX codes) off as well. Pressing '<c>F3</c>' toggles the display of atom and Q-peak labels on and off.
 
 
 # Toolbar Model
