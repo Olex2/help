@@ -3,7 +3,7 @@ This tool tab features a set of buttons for changing the appearance/location of 
 
 
 # symmetry tools 1
-The tools in this row are useful for reorganising parts of a structure if the structure contains more than one moiety.
+The tools in this row are useful for reorganising parts of a structure containing more than one moiety.
 
 ## Move Near
 This is useful for moving moieties of a structure close to a particular atom of interest.
@@ -53,7 +53,7 @@ These tools toggle the display of symmetry-related items on the screen.
 | `cell` | Displays/Hides the edges of the unit cell. |
 
 ## Quality
-Use the slider to change the quality of the display graphics from low (far left) to medium (middle) to high (far right). A lower quality setting may be useful if the computer struggles with the display of large structures.
+Use the slider to change the quality of the display graphics from low (far left) to medium (middle) to high (far right). A lower quality setting may be useful if the computer struggles to display large structures.
 
 | `qual -l` , `qual -m` , `qual -h` | Changes the quality of the display graphics to low, medium, or high. |
 
@@ -76,7 +76,7 @@ This tool tab provides methods of visualizing the 3D packing of a structure.
 
 
 # Expand Short Contacts
-Use this slider bar to define the miniumum distance for interatomic "short contact" such as hydrogen bonds or halogen bonds. As the slider moves to the right, more clickable "bonds" will be shown from atoms meeting the contact criterion. Alternatively, a number can be entered in the box next to the slider. Clicking on one of these "bonds" expands the display of the structure in that direction.
+Use this slider bar to define the minimum distance for interatomic "short contacts" such as hydrogen bonds or halogen bonds. As the slider moves to the right, more clickable "bonds" will be shown from atoms meeting the contact criterion. Alternatively, a number can be entered in the box next to the slider. Clicking on one of these "bonds" expands the display of the structure in the direction of the bond.
 
 
 # Pack Radius
