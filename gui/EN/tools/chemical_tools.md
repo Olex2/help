@@ -7,6 +7,7 @@ Click this button to calculate the expected values of a CHN analysis from the st
 ## Calculate Molecular Isotope Pattern: Mass Spec
 Calculates a simulated molecular isotope pattern for the structure using the natural abundances of all isotopes. Equivalent to typing '<c>calcms</c>' at the command prompt. 
 
+
 # Molecular Volume
 Total molecular volume and polyhedral volume of individual atoms.
 
@@ -15,6 +16,7 @@ Calculates the total molecular surface area in &Aring;<sup>2</sup> and molecular
 
 ## Calculate Polyhedral Volume
 Calculates the volume of a polyhedron defined by the selected atom (line command '<c>calcvol</c>').
+
 
 # Molecular Bounding Box
 Rectangular bounding box and R/S designations for chiral carbons.
