@@ -57,16 +57,16 @@ There are several variables whose settings can influence the Charge Flipping sol
 <br>
 <br>
 
-AMPT - Charge flipping can be done on F, E or quasi-E.
+AMPT - Charge flipping can be done on F, E, or quasi-E.
 <br>
 <br>
 
-MAPT - Maximum Attempts to find a Phase Transition 
+MAPT - Maximum number of attempts to find a Phase Transition 
 <br>
 <br>
 
-MACM - Maximum Attempts to get sharp Correlation Map 
+MACM - Maximum number of attempts to get a sharp Correlation Map 
 <br>
 <br>
 
-MASI - Maximum Number of Solving Iterations 
+MASI - Maximum number of Solving Iterations 
