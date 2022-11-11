@@ -209,6 +209,12 @@ It is also possible to rotate the group about one of its bonds. First *activate*
 ## Split with SAME
 This is one of the most powerful tools in Olex2. If a grouping of atoms is disordered, and one of the parts can be modelled (no matter how badly), the **Split** button with the **SAME** restraint will be very useful. (Typing '<c>mode fit -s same</c>' is equivalent to clicking the **Split** button with this restraint active.) Note that the **SAME** restraint is applied by default in Olex2 when splitting a group; other restraints may be selected from the drop-down menu. Everything will be restrained, so if the disorder *can* be modelled, the refinement process will sort it out automatically, though sometimes a large number of refinement cycles will be needed.
 
+## Split with RIGU
+As **Split with SAME**, except that the *RIGU* "rigid-bond" restraint is applied instead when splitting a group. See the **Shelx Compatible Restraints** tool tab help for more details on *RIGU*.
+
+## Split with SAME, RIGU
+As above, except that both *SAME* and *RIGU* restraints are applied when splitting a group.
+
 
 [comment]: < Help text for "Show/Hide the list of restraints" is now taken from FragmentDB.md. >
 
