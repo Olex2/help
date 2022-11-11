@@ -1,5 +1,5 @@
 # Symmetry Tools
-This tool tab features a set of buttons for changing the appearance/location of the asymmetric unit; expanding ('growing') a structure on the screen; viewing the basis vectors and unit cell; and other similar tasks.
+This tool tab features a set of buttons for changing the appearance/location of the asymmetric unit; expanding ("growing") a structure on the screen; viewing the basis vectors and unit cell; and other similar tasks.
 
 
 # symmetry tools 1
@@ -14,7 +14,7 @@ This is useful for moving moieties of a structure close to a particular atom of 
   2. Activate the mode by clicking on the **Move Near** button (or typing '<c>mode move</c>').
   3. Click on an atom of each moiety that is to be moved close to the initially selected atom.
 
-|`mode move`| |
+| `mode move` | |
 
 ## Copy Near
 This is a slightly different method for collecting moieties of a structure close to a particular atom of interest.
@@ -25,46 +25,50 @@ This is a slightly different method for collecting moieties of a structure close
   2. Activate the mode by clicking on the **Copy Near** button (or typing '<c>mode move -c</c>').
   3. Click on an atom of each moiety that is to be copied close to the initially selected atom.
 
-|`mode move -c`| |
+| `mode move -c` | |
 
 ## Assemble
-|`compaq`| This command brings the various fragments of a structure as close together as possible on the screen. |
+| `compaq` | This command brings the various fragments of a structure as close together as possible on the screen. |
 
-|`compaq -a`| Brings fragments of a structure together as above, but also assembles any 'broken' fragments. |
+| `compaq -a` | Brings fragments of a structure together as above, but also assembles any "broken" fragments. |
 
 
 # symmetry tools 2
-These buttons centre the moieties in a stucture in different ways.
+These buttons centre the moieties in a structure in different ways.
 
 ## Centre on Cell
-|`move`| All moieties in the structure will be centred within the cell. |
+| `move` | All moieties in the structure will be centred within the cell. |
 
 ## Centre on Largest Part
-|`move`| All moieties in the structure will be centred on the largest moiety.|
+| `move` | All moieties in the structure will be centred on the largest moiety. |
 
 
 # symmetry tools 3
 These tools toggle the display of symmetry-related items on the screen.
 
 ## Show Basis
-|`basis`| Displays/Hides the basis vectors of this structure. |
+| `basis` | Displays/Hides the basis vectors of this structure. |
 
 ## Show Cell
-|`cell`| Displays/Hides the edges of the unit cell. |
+| `cell` | Displays/Hides the edges of the unit cell. |
 
 ## Quality
 Use the slider to change the quality of the display graphics from low (far left) to medium (middle) to high (far right). A lower quality setting may be useful if the computer struggles with the display of large structures.
 
-|`qual -l` , `qual -m` , `qual -h`| Changes the quality of the display graphics to low, medium, or high. |
+| `qual -l` , `qual -m` , `qual -h` | Changes the quality of the display graphics to low, medium, or high. |
 
 
 # symmetry tools 4
+These two important commands contract and expand the extent of the structure displayed on the screen.
 
 ## Fuse
-|`fuse`| Display the asymmetric unit of the structure only. All symmetry-generated atoms will be removed. This is a command of fundamental importance. |
+| `fuse` | Display the asymmetric unit of the structure only. All symmetry-generated atoms will be removed. This is a command of fundamental importance. |
 
 ## Grow All
-|`grow`| All symmetry-equivalent atoms required to show the 'complete' structure will be displayed. In the case of polymeric structures, this is somewhat arbitrary, and more clearly defined '<c>grow</c>' commands may need to be issued to display the structure as desired. Open the **Growing** tool tab for more options. |
+| `grow` | All symmetry-equivalent atoms required to show the "complete" structure will be displayed. In the case of polymeric structures, this is somewhat arbitrary, and more clearly defined '<c>grow</c>' commands may need to be issued to display the structure as desired. See the **Growing** tool tab help for more options. |
+
+
+[comment]: < Help text for "Growing" is now taken from toolbox_work.md. >
 
 
 # Packing
@@ -72,7 +76,7 @@ This tool tab provides methods of visualizing the 3D packing of a structure.
 
 
 # Expand Short Contacts
-Use this slider bar to define the miniumum distance for interatomic 'short contact' such as hydrogen bonds or halogen bonds. As the slider moves to the right, more clickable 'bonds' will be shown from atoms meeting the contact criterion. Alternatively, a number can be entered in the box next to the slider. Clicking on one of these 'bonds' expands the display of the structure in that direction.
+Use this slider bar to define the miniumum distance for interatomic "short contact" such as hydrogen bonds or halogen bonds. As the slider moves to the right, more clickable "bonds" will be shown from atoms meeting the contact criterion. Alternatively, a number can be entered in the box next to the slider. Clicking on one of these "bonds" expands the display of the structure in that direction.
 
 
 # Pack Radius
@@ -90,66 +94,3 @@ Displays only those atoms lying within the unit cell.
 
 ## Complete Fragments
 Completes any fragments that are only partially displayed as a result of the various packing options. This is often useful after the **Fill Unit Cell** command.
-
-
-
-
-
-
-
-
-# Growing
-Olex2 shows the asymmetric unit by default. The tools combined here in three drop-down boxes are very powerful, and will allow you to 'assemble' your structure in exactly the way you want it to be. In Olex2 you can keep refining your structure without 'destroying' the assembly you have created.
-
-# Grow
-
-### Grow All
-|`grow`|All 'missing' connected symmetry equivalent atoms will be generated.|
-
-### Shells
-|`grow -s`|This will grow atoms shell-by-shell from the currently displayed image.|
-
-### Complete
-|`grow -w`|This will generate all missing symmetry equivalent atoms of an already grown structure, independent of whether these are bound to the main fragment or not. In other words: all solvent molecules and counter-ion will be generated according to what is already shown.|
-
-### Asym. Unit
-|`fuse`|Removes all symmetry equivalent atoms and displays the asymmetric unit.|
-
-### Complete shown growing bonds
-|`grow -b`|If you are in a growing mode, then clickable growing bonds will be shown. All of these can be grown|
-
-
-# Mode Grow
-|`mode grow`|Similar to grow, but now this command will be executed only after you click on an object. When you enter a growing mode, clickable 'growing bonds' will sprout from atoms where the kind of growing you have asked for is applicable.|
-
-There are various modifiers for this command:
-
-### Short Contacts
-|`mode grow -s`|Will show these growable 'bonds' to those atoms where 'short interactions' exist.
-
-### Selection
-|`mode grow -r`|Will show growable 'bonds' to other occurances of the currently selected atoms.|
-
-### Van der Waals Radii
-|`mode grow -v 2.0`|Will show growable 'bonds' to other occurances of the currently selected atoms that are at least the indicated distance away from the selected atom.|
-
-### Move
-|`mode grow -a`|when you click on growable bonds the symmetry equivalent atom will be moved to the new position. This is really useful when you are trying to assemble a meaningful asymmetric unit for extended structures (polymers).|
-
-### Shells
-|`grow -s`|This will grow atoms shell-by-shell from the currently displayed image.|
-
-## Assemble
-This tool does not strictly belong to the 'growing' family of tools, but it is frequently used together with the growing tools. It allows you to re-arrange the asymmetric unit contents into a different configuration.
-
-### Broken Fragments
-|`compaq -a`|Sometimes, your structure may become 'broken' - parts that should be bonded are shown as separate fragments. This tool will bring them back together.|
-
-### Atom-to-Atom
-|`compaq -c`|Similar to the 'Broken Fragments' tool, but a different algorithm is used.|
-
-### Metal Last
-|`compaq -m`|In this tool, metal ions are taken out of the equation at first (which is very useful when trying to assemble a ligand!) and then the metal ion is placed at the shortest possible distance.|
-
-### Q-Peaks
-|`compaq -q`|This will move all electron density peaks as closely to existing atoms as possible.|
