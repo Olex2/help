@@ -11,10 +11,10 @@ This mode is a different method for viewing a structure with red/cyan 3D glasses
 Requires special hardware (3D monitor and accompanying 3D glasses) to view the 3D image.
 
 ## Stereo (Interlaced)
-As with **Stereo (Hardware)**, requires special hardware for viewing.
+As with **Stereo (Hardware)**, this mode requires special hardware for viewing.
 
 ## Normal View
 Returns to the normal 2D display mode.
 
 ## Viewing a structure in 3D without special equipment
-It is possible to generate a 3D image that can be viewed using the 'cross-eyed' method of 'Magic Eye' books, using no special equipment. Type '<c>gl.stereo(cross)</c>' to generate the image. For best results, first resize the entire Olex2 window until the graphics display clearly shows both structures side by side within about a 10 cm x 10 cm square. Cross the eyes (or relax their focus as if staring off into the distance) to view the structure in 3D. The 3D image can be rotated, zoomed, and moved as usual.
+It is possible to generate a 3D image that can be viewed using the "cross-eyed" method of the popular "Magic Eye" books, using no special equipment. Type '<c>gl.stereo(cross)</c>' to generate the image. For best results, first resize the entire Olex2 window until the graphics display clearly shows both structures side by side within about a 10 cm x 10 cm square. Cross the eyes (or relax their focus as if staring off into the distance) to view the structure in 3D. The 3D image can be rotated, zoomed, and moved as usual.
