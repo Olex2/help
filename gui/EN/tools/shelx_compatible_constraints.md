@@ -1,5 +1,5 @@
 # Shelx Constraints
-These are SHELX constraints. All of these will also apply to a refinement using olex2.refine.
+These are ShelX constraints. All of these will also apply to a refinement with olex2.refine.
 
 ## AFIX
 The **AFIX** instruction is for placing hydrogen atoms in idealized (riding) positions.
@@ -10,8 +10,9 @@ The **EXYZ** instruction is for specifying that two or more atoms share the same
 ## EADP
 Specifies that the same anisotropic displacement parameters are to be used for two or more atoms, e.g., the three fluorines of a CF<sub>3</sub> group.
 
+
 # AFIX
-AFIX instructions are for placing hydrogen atoms in idealized (riding) positions in a structure.
+*AFIX* instructions are for placing hydrogen atoms in idealized (riding) positions in a structure.
 
 ## Syntax of the AFIX command
 Usage: **AFIX mn d[number] sof[11] U[10.08]**
@@ -23,16 +24,16 @@ From the ShelX manual:<br>
 For more details, refer to the URL[https://shelx.uni-goettingen.de/shelxl_html.php, ShelX Manual].
 
 ## Number drop-down menus
-In this row, the first two drop-down menus *after* the constraint menu refer to m and n, respectively, in the AFIX command.
+In this row, the first two drop-down menus *after* the constraint menu refer to m and n, respectively, in the *AFIX* command.
 
 ## clear
-Select any atom(s) to which an AFIX command has been applied. Clicking **clear** will remove the AFIX command.
+Select any atom(s) to which an *AFIX* command has been applied. Clicking **clear** will remove the *AFIX* command.
 
 ## de
-Click **de** to enter a mode in which all AFIX instructions being applied to the structure are displayed. Also in this mode, the AFIX command currently specified in this tool tab can be applied to individual atoms by clicking on them.
+Click **de** to enter a mode in which all *AFIX* instructions being applied to the structure are displayed. Also in this mode, the *AFIX* command currently specified in this tool tab can be applied to individual atoms by clicking on them.
 
 ## go
-Click **go** to apply the AFIX command currently specified in this tool tab.
+Click **go** to apply the *AFIX* command currently specified in this tool tab.
 
 
 # EXYZ
@@ -40,7 +41,7 @@ Usage: **EXYZ atomnames**
 <br>
 <br>
 
-This command imposes the same *x*, *y*, and *z* coordinates on all the named atoms (used when two or more elements share the same site in a structure, as commonly occurs in minerals). Often combined with **EADP**. The coordinates (and possibly free variable references as well) are taken from the first named atom in the list. An atom must not appear in more than one **EXYZ** instruction.
+This command imposes the same *x*, *y*, and *z* coordinates on all the named atoms (used when two or more elements share the same site in a structure, as commonly occurs in minerals). Often combined with *EADP*. The coordinates (and possibly free variable references as well) are taken from the first named atom in the list. An atom must not appear in more than one *EXYZ* instruction.
 
 
 # EADP
@@ -49,7 +50,7 @@ Usage: **EADP atomnames**
 <br>
 
 From the ShelX manual:<br>
-"The same isotropic or anisotropic displacement parameters are used for all the named atoms. The displacement parameters (and possibly free variable references) are taken from the first atom in the atom list that is linked to other atoms by **EADP**. The actual values, free variable references etc. given for the Uij of the other atoms are ignored. The atoms involved must either be all isotropic or all anisotropic. 'Opposite' fluorines of PF<sub>6 </sub> or disordered -CF<sub>3 </sub> groups are good candidates for **EADP**, e.g.
+"The same isotropic or anisotropic displacement parameters are used for all the named atoms. The displacement parameters (and possibly free variable references) are taken from the first atom in the atom list that is linked to other atoms by EADP. The actual values, free variable references etc. given for the Uij of the other atoms are ignored. The atoms involved must either be all isotropic or all anisotropic. 'Opposite' fluorines of PF<sub>6 </sub> or disordered -CF<sub>3 </sub> groups are good candidates for EADP, e.g.
 <br>
 <br>
 
