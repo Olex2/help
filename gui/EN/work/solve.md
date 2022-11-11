@@ -51,3 +51,22 @@ It is also possible to type a space group directly into the menu box on this lin
 
 # Solution Settings Extra
 Some solution programs may have associated extra settings not available through the GUI; these extra settings may be specified here.
+
+# CF
+There are several variables whose settings can influence the Charge Flipping solution:
+<br>
+<br>
+
+AMPT - Charge flipping can be done on F, E or quasi-E.
+<br>
+<br>
+
+MAPT - Maximum Attempts to find a Phase Transition 
+<br>
+<br>
+
+MACM - Maximum Attempts to get sharp Correlation Map 
+<br>
+<br>
+
+MASI - Maximum Number of Solving Iterations 
