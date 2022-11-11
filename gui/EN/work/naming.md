@@ -1,14 +1,11 @@
 # naming-help
-
 # Naming
 This tool tab is for naming atoms in a model structure. In some cases, however, it might be more convenient to use the command line to name atoms more efficiently.
 
 ## Using the Naming Tools
 Clicking the **Name** button enters the naming mode. Once in this mode, the first atom clicked will be named with its element symbol according to the settings specified on this line, and any subsequently clicked atoms will be named in numerical sequence after the first. Press '<c>ESC</c>' to exit the mode, and '<c>CTRL+Z</c>' to undo the naming.
-<br>
-<br>
 
-**Note**: When in this mode, the mouse pointer changes to indicate the type of label that would be attached to the next atom clicked.
+Note: When in this mode, the mouse pointer changes to indicate the type of label that would be attached to the next atom clicked.
 
 ### Start
 The first atom clicked will be named with its element symbol and the number in this box (usually 1).
@@ -27,11 +24,13 @@ If an element is specified in this box, any atom clicked will be converted to th
 <br>
 '<c>CTRL+Z</c>' undoes these changes.
 
+
 # Automatic Hydrogen Naming
 Olex2 automatically names all hydrogen atoms in a systematic way. This feature can be switched off by unticking the 'Automatic Hydrogen Naming' box if any hydrogens are to have special names.
 
+
 # Match Naming
-If the structure contains two or more equivalent fragments, it is only necessary to name one of them, as Olex2 is capable of applying the same naming scheme to the others. This is helpful when naming atoms in structures with *Z*' > 1 and also in structures containing a metal center coordinated to more than one ligand of the same type. In the latter case it is necessary to set the maximum number of bonds for the metal to 0 before naming the equivalent fragments. This is done by right-clicking the metal, then setting Bonds to 0 in the menu that appears.
+If the structure contains two or more equivalent fragments, it is only necessary to name one of them, as Olex2 is capable of applying the same naming scheme to the others. This is helpful when naming atoms in structures with *Z*' > 1 and also in structures containing a metal center coordinated to more than one ligand of the same type. In the latter case it is necessary to set the maximum number of bonds for the metal to 0 before naming the equivalent fragments. This is done by right-clicking the metal, then setting **Bonds** to 0 in the menu that appears.
 <br>
 <br>
 
@@ -45,8 +44,8 @@ A few line commands useful for naming are described below. Some of these command
 |`match sel -n=suffix`| Match naming can also be carried out from the command line. First select two corresponding atoms of two identical moieties. Typing this command will apply the naming scheme used for the first moiety to the second moiety; atom names in the second moiety will have the *suffix* character appended. For example, '<c>match sel -n=A</c>' will add the suffix 'A' to the names of the second moiety. |
 
 ## Replace a Suffix
-|`suffix'>match sel -n=$suffix`| This is similar to **Add a Suffix**. However, instead of adding a suffix, this command replaces the first character of the original naming scheme with another character. This is useful, for example, if carbons in one ligand are named C101, C102, C103 ... and corresponding atoms in the other ligand are to be named C201, C202, C203 ...|
+|`suffix'>match sel -n=$suffix`| This is similar to *Add a Suffix*. However, instead of adding a suffix, this command replaces the first character of the original naming scheme with another character. This is useful, for example, if carbons in one ligand are named C101, C102, C103 ... and corresponding atoms in the other ligand are to be named C201, C202, C203 ...|
 
 ## Replace last character
-|`suffix'>match sel -n=-suffix`| As in **Replace a Suffix**, but the last character of the atom name is replaced instead. |
+|`suffix'>match sel -n=-suffix`| As in *Replace a Suffix*, but the last character of the atom name is replaced instead. |
 
