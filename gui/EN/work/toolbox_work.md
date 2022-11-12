@@ -228,14 +228,14 @@ This tool enables the selection of Q peaks by intensity.
 <br>
 <br>
 
-Starting from the middle of the scale at 100, move the **Peaks** slider to the *left* to filter out the weakest Q peaks first, or to the *right* to filter out the strongest Q peaks first. Any commands issued after filtering will only apply to the remaining visible peaks. For example, the line command 'name $Q C' will convert all visible Q peaks to carbons, and clicking **Select** or **Delete** will select or delete the peaks, respectively.
+Starting from the middle of the scale at 100, move the **Peaks** slider to the *left* to filter out the weakest Q peaks first, or to the *right* to filter out the strongest Q peaks first. Any commands issued after filtering will only apply to the remaining visible peaks. For example, the line command '<c>name $Q C</c>' will convert all visible Q peaks to carbons, and clicking **Select** or **Delete** will select or delete the peaks, respectively.
 
 
 # Uiso Select Slider
 This tool allows the selection of atoms according to their Uiso values.
 
 ## Slide to the RIGHT
-Starting from the middle of the scale, move the Uiso slider to the **right** to select atoms whose Uiso value is LARGER than the value indicated next to the slider.
+Starting from the middle of the scale, move the Uiso slider to the *right* to select atoms whose Uiso value is *larger* than the value indicated next to the slider.
 
 | `sel atoms where xatom.uiso < 0.02` | Selects all atoms whose Uiso value is less than 0.02. |
 
