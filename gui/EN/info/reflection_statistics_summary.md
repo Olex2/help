@@ -27,16 +27,16 @@ Minimum resolution of the data set, in &Aring;.
 Maximum resolution of the data set, in &Aring;.
 
 ## LimDmin
-Minimum possible resolution (theoretical limit based on the unit cell dimensions), in &Aring;. This value may be higher than the theoretical limit due to SHEL or ranged OMIT commands (e.g., "SHEL 15 0.8" or "OMIT -3 50") applied to the data.
+Minimum possible resolution (theoretical limit based on the unit cell dimensions), in &Aring;. This value may be higher than the theoretical limit due to *SHEL* or ranged *OMIT* commands (e.g., "SHEL 15 0.8" or "OMIT -3 50") applied to the data.
 
 ## LimDmax
-Maximum possible resolution, in &Aring;. This value may be affected by SHEL or ranged OMIT commands (e.g., "SHEL 15 0.8" or "OMIT -3 50") applied to the data.
+Maximum possible resolution, in &Aring;. This value may be affected by *SHEL* or ranged *OMIT* commands (e.g., "SHEL 15 0.8" or "OMIT -3 50") applied to the data.
 
 ## FilteredOff
-Number of reflections removed from the data by SHEL or ranged OMIT commands (e.g., "SHEL 15 0.8" or "OMIT -3 50").
+Number of reflections removed from the data by *SHEL* or ranged *OMIT* commands (e.g., "SHEL 15 0.8" or "OMIT -3 50").
 
 ## OmittedByUser
-Number of reflections omitted from the data by specific OMIT commands such as "OMIT 1 0 0".
+Number of reflections omitted from the data by specific *OMIT* commands such as "OMIT 1 0 0".
 
 ## OmittedReflections
 Number of reflections removed from the data set and placed after the (*h*, *k*, *l*) = (0, 0, 0) line in the .hkl file.
@@ -57,10 +57,10 @@ Average value of I/&sigma;(I) over the entire data set; a measure of the signal-
 Point group completeness of the data set out to the maximum 2&theta; recorded in the diffraction experiment.
 
 ## MaxIndices
-Maximum values of the indices *h*, *k*, and *l* in the data set used for refinement (i.e., after OMIT statements have been applied).
+Maximum values of the indices *h*, *k*, and *l* in the data set used for refinement (i.e., after *OMIT* statements have been applied).
 
 ## MinIndices
-Minimum values of the indices *h*, *k*, and *l* in the data set used for refinement (i.e., after OMIT statements have been applied).
+Minimum values of the indices *h*, *k*, and *l* in the data set used for refinement (i.e., after *OMIT* statements have been applied).
 
 ## FileMaxIndices
 Maximum values of the indices *h*, *k*, and *l* in the data set, as originally recorded in the diffraction experiment.
