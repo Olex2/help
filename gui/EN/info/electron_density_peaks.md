@@ -1,4 +1,4 @@
-# Electron-Density-Peak-Slider-help
+[comment]: < Help text for Electron Density Peak Slider is now taken from toolbox_work.md. >
 
 
 # Electron Density Transparency Slider
