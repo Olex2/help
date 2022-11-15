@@ -117,7 +117,7 @@ In order to avoid too much clutter on the GUI, we have decided to provide the co
 
 
 # Auto MORE
-Keywords entered here control the output of refinement, e.g., 'MORE -1' dictates the amount of refinement information to be written to the .lst output file; 'CONF' generates a table of torsion angles; 'BOND 'DOLLAR'H' produces bond length and bond angle information (including bonds to H atoms); and 'ACTA' writes a CIF file to the current working folder.
+Keywords entered here control the output of refinement, e.g., **MORE -1** dictates the amount of refinement information to be written to the .lst output file; **CONF** generates a table of torsion angles; **BOND DOLLARH** produces bond length and bond angle information (including bonds to H atoms); and **ACTA** writes a CIF file to the current working folder.
 
 
 # Save View
