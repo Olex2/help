@@ -136,10 +136,6 @@ On startup, Olex2 will open the tab selected from this drop-down menu. This take
 When opening a new tool, all other open tools will automatically be closed.
 
 
-# Close Settings
-We ourselves are figuring out what this tick box does...
-
-
 # Modules Update
 If updates to extension modules are availabe, a pop-up box will appear whenever Olex2 is started. This can be switched off here.
 
