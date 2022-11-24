@@ -7,8 +7,45 @@ A collection of useful tools
 - Peak Slider
 - Disorder Tools
 
+
+# QC-target
+Convert all Q peaks to C
+
+
+# QH-target
+Convert all Q peaks to H
+
+
+# tidy-target
+Tidy up your structure. Only recommended in early stages of refinement!
+
+
+# killH-target
+Deletes all H atoms from the model. Undo with CTRL+Z.
+
+
+# Q-target
+Toggle among three states: show Q peaks, show Q peaks with bonds, or hide Q peaks
+
+
+# H-target
+Toggle among three states: show hydrogens, show hydrogens with H-bonds, or hide hydrogens
+
+
+# center-target
+Center the structure on the screen and adjust the zoom level.
+
+
+# ok-target
+Adjust the chemical formula to what is present in the model. The value of Z' will be taken into account, so check it!
+
+
 # disorder tools-target
 Tools for dealing with disordered structures
+
+
+# peak & Uiso sliders-target
+Sliding scales for Q peak and atom selection
 
 
 # growing-target
