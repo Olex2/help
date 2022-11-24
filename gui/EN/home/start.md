@@ -1,8 +1,8 @@
 # start-target
 Start here!
-- Sample Structures
-- Open Existing File
-- Links to more help
+- Sample structures
+- Open existing file
+- Links to help documentation
 
 
 # Open a Structure
