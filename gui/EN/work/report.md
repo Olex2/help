@@ -1,3 +1,39 @@
+# collection-target
+Sample ID and submitter information
+
+
+# crystal-target
+Compound name; crystal size, shape, color, etc.
+
+
+# crystal image-target
+Pictures of the crystal
+
+
+# diffraction-target
+Diffractometer information, temperature, refinement details, etc.
+
+
+# absorption correction-target
+Absorption correction details
+
+
+# publication-target
+Publication and author information
+
+
+# citations-target
+Citations for software and modules used in solution and refinement
+
+
+# reference-target
+CSD refcode and journal information
+
+
+# source files-target
+Files from which CIF information is collated
+
+
 # Report Settings 1
 This is a collection of tools to create (a) a report about the structure in HTML format, and (b) a CIF file for the structure.
 <br>
