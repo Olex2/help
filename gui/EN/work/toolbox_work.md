@@ -7,6 +7,17 @@ A collection of useful tools
 - Peak Slider
 - Disorder Tools
 
+# change_element-target
+Change atom types to&nbsp;
+
+
+# anis-target
+Make selected atoms anisotropic. If no atoms are selected, all atoms will be transformed.
+
+
+# isot-target
+Make selected atoms isotropic. If no atoms are selected, all atoms will be transformed.
+
 
 # QC-target
 Convert all Q peaks to C
