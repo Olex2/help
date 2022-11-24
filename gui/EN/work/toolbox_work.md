@@ -44,7 +44,7 @@ Toggle among three states: show hydrogens, show hydrogens with H-bonds, or hide 
 
 
 # center-target
-Center the structure on the screen and adjust the zoom level.
+Center the structure on the screen and adjust the zoom level
 
 
 # ok-target
