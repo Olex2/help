@@ -15,6 +15,9 @@ p:This tutorial will show you how to use the sorting options in Olex2. The first
 c:freeze(true)
 c:reap 'DataDir()/samples/sucrose/sucrose.res'
 c:spy.revert_to_original()
+c:mpln -n
+c:showQ a false
+c:showQ b false
 c:freeze(false)
 
 p:Click on the <b>Work</b> tab in the top toolbar.
@@ -69,7 +72,7 @@ c:info
 p:To open the whole data table in a new, uncluttered text file, click on the notepad icon as before or type '<c>text</c>'.
 c:text
 
-p:It is also possible to sort from the command line. For example, '<c>sort +al</c>' will sort the table alphabetically by atom label, after which the results can be displayed with the '<c>info</c>' command as before.<br>Note that the order of atoms in alphabetical sorting is C, H, then all other atoms in alphabetical order.
+p:It is also possible to sort from the command line. For example, '<c>sort +al</c>' will sort the table alphabetically by atom label, after which the results can be displayed with the '<c>info</c>' command as before.<br><br>Note that the order of atoms in alphabetical sorting is C, H, then all other atoms in alphabetical order.
 c:sort +al
 c:sel $*
 c:info
