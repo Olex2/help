@@ -7,6 +7,17 @@ A collection of useful tools
 - Peak Slider
 - Disorder Tools
 
+# disorder tools-target
+Tools for dealing with disordered structures
+
+
+# growing-target
+Expand the structure on the screen
+
+
+# finishing-target
+Tools for quickly sorting atoms and making images
+
 
 # Labels
 It is possible to customise the labels in the model display. If a particular property is not applicable to any atom, there will be no label, e.g., if '<c>labels -o</c>' (see below) is typed and all atoms have occupancy 1, no atoms will be labelled.
