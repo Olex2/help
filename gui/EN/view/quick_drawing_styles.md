@@ -31,8 +31,11 @@ Anisotropic atoms are shown as ellipsoids, and hydrogen atoms are shown as spher
 ## Polyhedra
 | `mask atoms 37` | Shows the structure in a polyhedral representation. |
 
-## Default Style
+## Def
 | `default` | All display settings are reset to their default values. |
+
+## Light
+A display style showing carbon atoms in a light color against a dark background.
 
 
 [comment]: < Help text for "Atom r" and "Bond r" is now taken from settings.md. >
