@@ -26,3 +26,14 @@ Click this button (or type '<c>wbox</c>') to display a rectangular box surroundi
 
 ## List R/S designations of chiral carbons
 Clicking this button prints a list of all the chiral carbons in the asymmetric unit along with the R/S configuration of each. The equivalent line command is '<c>rsa</c>'.
+
+# Geometry Index
+Four 4-coordinate and 5-coordindate geometries, this will calculate the **Geometry Index** URL[https://en.wikipedia.org/wiki/Geometry_index,WIKIPEDIA]. The procedure and relevant citations can be found in the linked Wikipedia article
+
+## 4-coordinate
+A parameter &tau; is calculated from the bond angles, and this parameter is a measure whether the geometry around the selected central atom is square planar (&tau; = 0) or tetrahedral (&tau; = 1).
+An additional parameter &tau;' is also calculated, which will always be less or equal to &tau;, so the deviation from ideal tetrahedral geometry is more visible.
+
+## 5-coordinate
+A parameter &tau;5 is calculated from the bond angles, and this parameter is a measure whether the geometry around the selected central atom is square pyramidal (&tau;5 = 0) or trigonal bipyramidal (&tau; = 1).
+
