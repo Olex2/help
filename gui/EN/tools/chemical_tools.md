@@ -28,12 +28,15 @@ Click this button (or type '<c>wbox</c>') to display a rectangular box surroundi
 Clicking this button prints a list of all the chiral carbons in the asymmetric unit along with the R/S configuration of each. The equivalent line command is '<c>rsa</c>'.
 
 # Geometry Index
-Four 4-coordinate and 5-coordindate geometries, this will calculate the **Geometry Index** URL[https://en.wikipedia.org/wiki/Geometry_index,WIKIPEDIA]. The procedure and relevant citations can be found in the linked Wikipedia article
+For 4-coordinate and 5-coordinate geometries, this will calculate the **Geometry Index** of the central atom URL[https://en.wikipedia.org/wiki/Geometry_index,WIKIPEDIA]. The procedure and relevant citations can be found in the linked Wikipedia article.
 
 ## 4-coordinate
-A parameter &tau; is calculated from the bond angles, and this parameter is a measure whether the geometry around the selected central atom is square planar (&tau; = 0) or tetrahedral (&tau; = 1).
-An additional parameter &tau;' is also calculated, which will always be less or equal to &tau;, so the deviation from ideal tetrahedral geometry is more visible.
+A parameter &tau;<sub>4</sub> is calculated from the bond angles about a selected tetracoordinate atom. This parameter provides a measure of whether the geometry around the selected atom is square planar (&tau;<sub>4</sub> = 0) or tetrahedral (&tau;<sub>4</sub> = 1).
+<br>
+<br>
+
+An additional parameter &tau;<sub>4</sub>' is also calculated, which will always be less than or equal to &tau;<sub>4</sub>. The parameter &tau;<sub>4</sub>' is also 0 for square planar geometry and 1 for tetrahedral geometry. However, &tau;<sub>4</sub>' can be used to distinguish other forms besides the square planar and tetrahedral geometries, such as the seesaw geometry, for which &tau;<sub>4</sub> &asymp; 0.43 and &tau;<sub>4</sub>' &asymp; 0.24.
 
 ## 5-coordinate
-A parameter &tau;5 is calculated from the bond angles, and this parameter is a measure whether the geometry around the selected central atom is square pyramidal (&tau;5 = 0) or trigonal bipyramidal (&tau; = 1).
+A parameter &tau;<sub>5</sub> is calculated from the bond angles about a selected pentacoordinate atom, which measures whether the geometry around that atom is square pyramidal (&tau;<sub>5</sub> = 0) or trigonal bipyramidal (&tau;<sub>5</sub> = 1).
 
