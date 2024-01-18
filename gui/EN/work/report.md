@@ -178,6 +178,15 @@ The **metacif** link opens the file in which Olex2 collects all the information 
 ## Add local/default CIF
 This features allows information from an external CIF file to be added to the CIF file being constructed for the current structure. Click **local** if the external CIF file is in the current working folder or **default** to access any of the built-in CIF files of Olex2, e.g., to add information for a specific diffractometer.
 
+# ABS STR
+For acentric space groups, the basis on which the decision for the given absolute configuration is based should be specified.
+
+Anomalous dispersion: The absolute structure was derived from anomalous dispersion. See Flack/Bernardinelli[https://doi.org/10.1107/S0021889800007184] for guidelines on how to assess significance and validity of absolute structure parameters like the ones of Flack, Hooft, or Parsons.
+Reference molecule: The decision for an absolute structure is based on a chiral reference molecule whose absolute configuration is undoubtedly known.
+Reference molecule + AD: As above; Additionally, the assigned absolute configuration is supported by anomalous dispersion.
+Synthesis: The absolute structure is based on the configuration of a stereocenter whose configuration remained unchanged during synthetical transformations.
+Unknown: There is no chemical evidence or reliable information from anomalous dispersion available that confirms the absolute configuration. Thus, an arbitrary decision on the absolute configuration has been made.
+Not applicable
 
 # CIF Part 4
 Tick this box to force information from **metacif** to be merged into the final CIF for the structure. Normally, items such as refinement details (and other items listed in the "skip_merge" section of the Olex2 system file *customisation.xlt*) are obtained from the refinement program, not from **metacif**, so this box is usually left unticked.
